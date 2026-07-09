@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zixiao Ma - Portfolio</title>
+  <title>马子潇 - 个人作品集</title>
   <style>
-    /* --- 1. Global Brutalist Reset & Industrial Grey Palette --- */
+    /* --- 1. 全局极致主义重置 & 中度冷工业灰调体系 --- */
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
       height: 100vh;
       display: flex;
       flex-direction: column;
@@ -22,7 +22,7 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* --- 2. Header / Profile Bar --- */
+    /* --- 2. 顶部个人信息栏 --- */
     header {
       background-color: #ff5500; 
       padding: 0 40px;
@@ -49,14 +49,14 @@
       opacity: 0.85;
     }
     
-    /* Header Action Panel for Control Units */
+    /* 顶部控制单元面板 */
     .header-actions {
       display: flex;
       align-items: center;
       gap: 30px;
     }
 
-    /* --- Language Toggle Mechanism Styles --- */
+    /* --- 双语滑块按键样式 --- */
     .lang-switch-wrapper {
       display: flex;
       align-items: center;
@@ -128,7 +128,7 @@
       opacity: 0.6;
     }
 
-    /* Main Container Layout */
+    /* 主体布局 */
     .main-container {
       display: flex;
       flex: 1;
@@ -137,7 +137,7 @@
       background-color: #2a2a2a;
     }
 
-    /* --- 3. Left Panel (Tab Items) --- */
+    /* --- 3. 左侧选项卡栏 --- */
     .left-panel {
       width: 25%;
       height: 100%;
@@ -147,7 +147,7 @@
       border-right: 1px solid #1a1a1a;
       background-color: #1a1a1a; 
       z-index: 50;
-      /* Enhanced Perspective Value to Make Rotations Pop Harder */
+      /* 增强的透视值，使卡片上下旋转幅度更大、立体感更足 */
       perspective: 800px; 
       box-shadow: 5px 0 25px rgba(0, 0, 0, 0.3); 
     }
@@ -165,14 +165,14 @@
       transform: translateX(-7.4%);
       box-shadow: 0 0 0 rgba(0, 0, 0, 0);
       
-      /* Reset/Return Animation Curve */
+      /* 退回动画 */
       transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.2), box-shadow 0.3s ease;
     }
     .project-item:last-child {
       border-bottom: none;
     }
     
-    /* Hover Animation state */
+    /* 鼠标悬停划出 */
     .project-item:hover {
       transform: translateX(0);
       z-index: 60; 
@@ -183,7 +183,7 @@
       z-index: 55; 
     }
     
-    /* 3D Card Container */
+    /* 3D 卡牌联动容器 */
     .project-item-card {
       width: 100%;
       height: 100%;
@@ -194,7 +194,7 @@
       transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), border 0.25s ease;
     }
     
-    /* Active & Hover Border Highlight */
+    /* 高亮橙色描边 */
     .project-item:hover .project-item-card, 
     .project-item.active .project-item-card {
       border: 2px solid #ff5500; 
@@ -208,14 +208,14 @@
       filter: none; 
     }
 
-    /* Persistent Title Overlays */
+    /* 文本遮罩层 */
     .item-hover-overlay {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.2) 100%); 
+      background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.2) 100%); 
       display: flex;
       justify-content: center;
       align-items: center;
@@ -228,7 +228,7 @@
     
     .project-item:hover .item-hover-overlay,
     .project-item.active .item-hover-overlay {
-      background: rgba(0, 0, 0, 0.7); 
+      background: rgba(0, 0, 0, 0.65); 
     }
     
     .item-hover-overlay span {
@@ -241,13 +241,14 @@
       transition: color 0.25s ease;
     }
 
+    /* 悬停或选中状态下文字变橙 */
     .project-item:hover .item-hover-overlay span,
     .project-item.active .item-hover-overlay span {
       color: #ff5500;
       text-shadow: 0 2px 4px rgba(0,0,0,0.5);
     }
 
-    /* --- 4. Right Showcase Area --- */
+    /* --- 4. 右侧展示区 --- */
     .right-panel {
       width: 75%;
       height: 100%;
@@ -266,7 +267,7 @@
       scrollbar-width: none;  
     }
 
-    /* Content Layout Wrapper */
+    /* 详情页排版包装器 */
     .detail-content-wrapper {
       max-width: 880px;
       margin: 0 auto;
@@ -279,7 +280,7 @@
       opacity: 0;
     }
 
-    /* Headers and Metrics Breakdown */
+    /* 大标题与参数表 */
     .project-title-area h2 {
       font-size: 32px;
       font-weight: 700;
@@ -317,7 +318,7 @@
       font-weight: 500;
     }
 
-    /* Modular Content Blocks */
+    /* 独立的图文拆解块 */
     .detail-section {
       margin-bottom: 65px;
     }
@@ -343,7 +344,7 @@
       font-weight: 600;
     }
 
-    /* Media Containers */
+    /* 媒体展示容器 */
     .showcase-block {
       width: 100%;
       border: 1px solid #444444;
@@ -369,14 +370,14 @@
 
   <header>
     <div class="profile-info">
-      <h1 id="headerName">Zixiao Ma</h1>
-      <p id="headerTitle">Level Designer / Game Designer</p>
+      <h1 id="headerName">马子潇</h1>
+      <p id="headerTitle">关卡策划 / 游戏设计</p>
     </div>
     <div class="header-actions">
       <div class="lang-switch-wrapper">
         <span class="lang-label">ZH</span>
         <label class="toggle-switch">
-          <input type="checkbox" id="langToggle" checked>
+          <input type="checkbox" id="langToggle">
           <span class="slider-knob"></span>
         </label>
         <span class="lang-label">EN</span>
@@ -393,38 +394,38 @@
     <div class="left-panel" id="leftPanel">
       <div class="project-item active" data-id="project1">
         <div class="project-item-card">
-          <img src="https://picsum.photos/600/400?random=11" alt="Project 1 Layout Image">
-          <div class="item-hover-overlay"><span data-key="nav1">Starfield Level Design</span></div>
+          <img src="https://picsum.photos/600/400?random=11" alt="项目1封面图">
+          <div class="item-hover-overlay"><span data-key="nav1">星空关卡设计</span></div>
         </div>
       </div>
       <div class="project-item" data-id="project2">
         <div class="project-item-card">
-          <img src="https://picsum.photos/600/400?random=12" alt="Project 2 Layout Image">
-          <div class="item-hover-overlay"><span data-key="nav2">Half-Life 2 Level Design</span></div>
+          <img src="https://picsum.photos/600/400?random=12" alt="项目2封面图">
+          <div class="item-hover-overlay"><span data-key="nav2">半条命2关卡设计</span></div>
         </div>
       </div>
       <div class="project-item" data-id="project3">
         <div class="project-item-card">
-          <img src="https://picsum.photos/600/400?random=13" alt="Project 3 Layout Image">
-          <div class="item-hover-overlay"><span data-key="nav3">UE5 3D Multiplayer Racing<br>HamsterBallin‘</span></div>
+          <img src="https://picsum.photos/600/400?random=13" alt="项目3封面图">
+          <div class="item-hover-overlay"><span data-key="nav3">UE5 3D多人竞速<br>HamsterBallin‘</span></div>
         </div>
       </div>
       <div class="project-item" data-id="project4">
         <div class="project-item-card">
-          <img src="https://picsum.photos/600/400?random=14" alt="Project 4 Layout Image">
-          <div class="item-hover-overlay"><span data-key="nav4">Unity 2D Platformer<br>FLING</span></div>
+          <img src="https://picsum.photos/600/400?random=14" alt="项目4封面图">
+          <div class="item-hover-overlay"><span data-key="nav4">Unity 2D平台跳跃<br>FLING</span></div>
         </div>
       </div>
       <div class="project-item" data-id="project5">
         <div class="project-item-card">
-          <img src="https://picsum.photos/600/400?random=15" alt="Project 5 Layout Image">
-          <div class="item-hover-overlay"><span data-key="nav5">More Projects</span></div>
+          <img src="https://picsum.photos/600/400?random=15" alt="项目5封面图">
+          <div class="item-hover-overlay"><span data-key="nav5">更多项目</span></div>
         </div>
       </div>
       <div class="project-item" data-id="project6">
         <div class="project-item-card">
-          <img src="https://picsum.photos/600/400?random=16" alt="Project 6 Layout Image">
-          <div class="item-hover-overlay"><span data-key="nav6">About Me</span></div>
+          <img src="https://picsum.photos/600/400?random=16" alt="项目6封面图">
+          <div class="item-hover-overlay"><span data-key="nav6">关于我</span></div>
         </div>
       </div>
     </div>
@@ -436,106 +437,8 @@
   </div>
 
   <script>
-    /* Multi-lingual Unified Application State Localization Registry */
+    /* 多语言本地化核心注册中心 */
     const localizationData = {
-      EN: {
-        header: { name: "Zixiao Ma", title: "Level Designer / Game Designer" },
-        nav: {
-          nav1: "Starfield Level Design",
-          nav2: "Half-Life 2 Level Design",
-          nav3: "UE5 3D Multiplayer Racing<br>HamsterBallin‘",
-          nav4: "Unity 2D Platformer<br>FLING",
-          nav5: "More Projects",
-          nav6: "About Me"
-        },
-        uiLabels: { type: "Project Type", role: "Responsibilities", time: "Timeline" },
-        database: {
-          project1: {
-            title: "Starfield Level Design - Resource Outpost Exploration",
-            tag: "Level Design Case Study / Starfield Theme",
-            type: "3D Open World RPG Level",
-            role: "Layout Design / Point of Interest Placement / Atmosphere",
-            time: "3 Weeks",
-            sections: [
-              {
-                heading: "1. Core Mission Intent & Spatial Flow",
-                text: "This layout prototype explicitly structures sandbox exploration in low-gravity celestial environments. Players leverage jetpack mechanics to navigate a defunct refinery vertically, where strategically applied <span class='highlight-text'>sightline occlusion</span> and complex ventilation passages carve out multiple high-reward stealth vectors.",
-                caption: "▲ Fig 1.1: Multi-tier blockout composition testing vertical movement limits."
-              }
-            ]
-          },
-          project2: {
-            title: "Half-Life 2 Level Design - City 17 Industrial Breach",
-            tag: "Classic Level Design / Source Engine Philosophy",
-            type: "Linear First-Person Shooter",
-            role: "Physics-Based Puzzles / Pacing & Combat Encounters",
-            time: "2 Weeks",
-            sections: [
-              {
-                heading: "1. Gravity Gun Environmental Architecture",
-                text: "Adhering strictly to Valve's signature mechanics-driven pacing, the layout features a closed water valve ecosystem that naturally guides players to employ buoying dynamics to build bridges. This puzzle sequence transitions smoothly into a Combine ambush, where physics props directly convert into <span class='highlight-text'>destructible tactical cover</span>.",
-                caption: "▲ Fig 2.1: Logic loop diagram mapping physics leverage and liquid buoyancy mechanics."
-              }
-            ]
-          },
-          project3: {
-            title: "UE5 3D Multiplayer Racing - HamsterBallin‘",
-            tag: "Gameplay & Level Mechanics / Unreal Engine 5",
-            type: "3D Multiplayer Arcade Racing",
-            role: "Curved Tracking / Collision Mesh Optimization / Handling Calibration",
-            time: "4 Weeks",
-            sections: [
-              {
-                heading: "1. Managing High-Velocity Curvatures",
-                text: "The definitive design problem was securing player agency and directional control under extreme velocities. Track borders rely on micro-sloped profiles to buffer centripetal displacement, deploying varying surface physics to afford expert players high-risk <span class='highlight-text'>tangential cutting paths</span> across hairpin loops.",
-                caption: "▲ Fig 3.1: High-velocity structural sweep showcasing geometry boundaries and trigger volume layout."
-              }
-            ]
-          },
-          project4: {
-            title: "Unity 2D Platformer - FLING",
-            tag: "2D Precision Platformer / Unity 2D",
-            type: "Hardcore Precision Platformer",
-            role: "Level Layout Configuration / Frame-Perfect Collision Tuning",
-            time: "3 Weeks",
-            sections: [
-              {
-                heading: "1. Projectile Velocity & Frustration Management",
-                text: "The foundational gameplay loop of FLING focuses on momentum and kinetic trajectory arcs. Every corridor coordinates 'launch, micro-correction, and micro-landing' patterns, inserting critical <span class='highlight-text'>buffer platforms</span> within lethal hazard fields to balance the steep difficulty scaling.",
-                caption: "▲ Fig 4.1: Vector mapping for launch variables contrasted against player telemetry models."
-              }
-            ]
-          },
-          project5: {
-            title: "More Projects - Prototypes & System Sandboxes",
-            tag: "Prototypes & Game Jam Works",
-            type: "Multi-genre Gameplay Validation",
-            role: "Rapid Prototyping / Core Mechanic Abstraction",
-            time: "Ongoing",
-            sections: [
-              {
-                heading: "1. Game Jam Mechanical Proof-of-Concepts",
-                text: "A repository compiling diverse systemic prototypes developed during 48-hour sprints. Concepts investigate localized gravity inversion matrix setups and non-Euclidean perspective shift mechanics, emphasizing responsive, rapid-turnaround development practices.",
-                caption: "▲ Fig 5.1: Blockout structural inventory detailing spatial logic validation testing."
-              }
-            ]
-          },
-          project6: {
-            title: "About Me / Profile & Design Philosophy",
-            tag: "About Me / Resume & Core Credentials",
-            type: "Personal Profile",
-            role: "Level Designer",
-            time: "Full-Time",
-            sections: [
-              {
-                heading: "1. Professional Profile",
-                text: "Level Designer at SMU Guildhall with a passion for exploration, player guidance, and environmental storytelling. Dedicated to crafting engaging and memorable gameplay experiences through level design.",
-                caption: "▲ Committed to refining pristine pacing frameworks and advanced space design."
-              }
-            ]
-          }
-        }
-      },
       ZH: {
         header: { name: "马子潇", title: "关卡策划 / 游戏设计" },
         nav: {
@@ -633,10 +536,108 @@
             ]
           }
         }
+      },
+      EN: {
+        header: { name: "Zixiao Ma", title: "Level Designer / Game Designer" },
+        nav: {
+          nav1: "Starfield Level Design",
+          nav2: "Half-Life 2 Level Design",
+          nav3: "UE5 3D Multiplayer Racing<br>HamsterBallin‘",
+          nav4: "Unity 2D Platformer<br>FLING",
+          nav5: "More Projects",
+          nav6: "About Me"
+        },
+        uiLabels: { type: "Project Type", role: "Responsibilities", time: "Timeline" },
+        database: {
+          project1: {
+            title: "Starfield Level Design - Resource Outpost Exploration",
+            tag: "Level Design Case Study / Starfield Theme",
+            type: "3D Open World RPG Level",
+            role: "Layout Design / Point of Interest Placement / Atmosphere",
+            time: "3 Weeks",
+            sections: [
+              {
+                heading: "1. Core Mission Intent & Spatial Flow",
+                text: "This layout prototype explicitly structures sandbox exploration in low-gravity celestial environments. Players leverage jetpack mechanics to navigate a defunct refinery vertically, where strategically applied <span class='highlight-text'>sightline occlusion</span> and complex ventilation passages carve out multiple high-reward stealth vectors.",
+                caption: "▲ Fig 1.1: Multi-tier blockout composition testing vertical movement limits."
+              }
+            ]
+          },
+          project2: {
+            title: "Half-Life 2 Level Design - City 17 Industrial Breach",
+            tag: "Classic Level Design / Source Engine Philosophy",
+            type: "Linear First-Person Shooter",
+            role: "Physics-Based Puzzles / Pacing & Combat Encounters",
+            time: "2 Weeks",
+            sections: [
+              {
+                heading: "1. Gravity Gun Environmental Architecture",
+                text: "Adhering strictly to Valve's signature mechanics-driven pacing, the layout features a closed water valve ecosystem that naturally guides players to employ buoying dynamics to build bridges. This puzzle sequence transitions smoothly into a Combine ambush, where physics props directly convert into <span class='highlight-text'>destructible tactical cover</span>.",
+                caption: "▲ Fig 2.1: Logic loop diagram mapping physics leverage and liquid buoyancy mechanics."
+              }
+            ]
+          },
+          project3: {
+            title: "UE5 3D Multiplayer Racing - HamsterBallin‘",
+            tag: "Gameplay & Level Mechanics / Unreal Engine 5",
+            type: "3D Multiplayer Arcade Racing",
+            role: "Curved Tracking / Collision Mesh Optimization / Handling Calibration",
+            time: "4 Weeks",
+            sections: [
+              {
+                heading: "1. Managing High-Velocity Curvatures",
+                text: "The definitive design problem was securing player agency and directional control under extreme velocities. Track borders rely on micro-sloped profiles to buffer centripetal displacement, deploying varying surface physics to afford expert players high-risk <span class='highlight-text'>tangential cutting paths</span> across hairpin loops.",
+                caption: "▲ Fig 3.1: High-velocity structural sweep showcasing geometry boundaries and trigger volume layout."
+              }
+            ]
+          },
+          project4: {
+            title: "Unity 2D Platformer - FLING",
+            tag: "2D Precision Platformer / Unity 2D",
+            type: "Hardcore Precision Platformer",
+            role: "Level Layout Configuration / Frame-Perfect Collision Tuning",
+            time: "3 Weeks",
+            sections: [
+              {
+                heading: "1. Projectile Velocity & Frustration Management",
+                text: "The foundational gameplay loop of FLING focuses on momentum and kinetic trajectory arcs. Every corridor coordinates 'launch, micro-correction, and micro-landing' patterns, inserting critical <span class='highlight-text'>buffer platforms</span> within lethal hazard fields to balance the steep difficulty scaling.",
+                caption: "▲ Fig 4.1: Vector mapping for launch variables contrasted against player telemetry models."
+              }
+            ]
+          },
+          project5: {
+            title: "More Projects - Prototypes & System Sandboxes",
+            tag: "Prototypes & Game Jam Works",
+            type: "Multi-genre Gameplay Validation",
+            role: "Rapid Prototyping / Core Mechanic Abstraction",
+            time: "Ongoing",
+            sections: [
+              {
+                heading: "1. Game Jam Mechanical Proof-of-Concepts",
+                text: "A repository compiling diverse systemic prototypes developed during 48-hour sprints. Concepts investigate localized gravity inversion matrix setups and non-Euclidean perspective shift mechanics, emphasizing responsive, rapid-turnaround development practices.",
+                caption: "▲ Fig 5.1: Blockout structural inventory detailing spatial logic validation testing."
+              }
+            ]
+          },
+          project6: {
+            title: "About Me / Profile & Design Philosophy",
+            tag: "About Me / Resume & Core Credentials",
+            type: "Personal Profile",
+            role: "Level Designer",
+            time: "Full-Time",
+            sections: [
+              {
+                heading: "1. Professional Profile",
+                text: "Level Designer at SMU Guildhall with a passion for exploration, player guidance, and environmental storytelling. Dedicated to crafting engaging and memorable gameplay experiences through level design.",
+                caption: "▲ Committed to refining pristine pacing frameworks and advanced space design."
+              }
+            ]
+          }
+        }
       }
     };
 
-    let currentLanguage = "EN";
+    let currentLanguage = "ZH";
 
     document.addEventListener('DOMContentLoaded', () => {
       const items = document.querySelectorAll('.project-item');
@@ -645,7 +646,7 @@
       const langToggle = document.getElementById('langToggle');
 
       /* ===================================================
-         1. High-Precision Hyper-Exaggerated 3D Tilt Engine
+         1. 高精度 3D 深度交互悬停扭曲引擎
          =================================================== */
       function applyTiltEffect(itemElement, cardElement, maxRotate = 48, scale = 1.08) {
         itemElement.addEventListener('mousemove', (e) => {
@@ -653,11 +654,11 @@
           const x = e.clientX - rect.left;
           const y = e.clientY - rect.top;
           
-          // Normalized calculations (-0.5 to 0.5)
+          // 标准化计算 (-0.5 到 0.5)
           const xc = x / rect.width - 0.5;
           const yc = y / rect.height - 0.5;
           
-          // Amplified calculations for high dramatic vertical/pitch rotations
+          // 【核心调整】：放大 maxRotate 到 48 度，提供极具张力的上下大动作翻转响应
           const rotateX = yc * -maxRotate; 
           const rotateY = xc * maxRotate;
           
@@ -675,12 +676,11 @@
       
       items.forEach(item => {
         const card = item.querySelector('.project-item-card');
-        // Max pitch angle increased to 48 degrees for immense rotational impact
         applyTiltEffect(item, card, 48, 1.08); 
       });
 
       /* ===================================================
-         2. Content Renderer (Language Aware Layout Builder)
+         2. 长轴内容构造组装器
          =================================================== */
       function renderLongProjectPage(projectId) {
         const currentPack = localizationData[currentLanguage];
@@ -700,7 +700,7 @@
           </div>
         `;
 
-        // Image IDs mapping for dynamic generation matching original references
+        // 统一媒体映射
         const mediaIndices = { project1: 101, project2: 201, project3: 302, project4: 401, project5: 501, project6: 601 };
         const imageId = mediaIndices[projectId] || 101;
 
@@ -710,7 +710,7 @@
               <h4>${sec.heading}</h4>
               <p>${sec.text}</p>
               <div class="showcase-block">
-                <img src="https://picsum.photos/1920/1080?random=${imageId}" alt="Showcase Visual Portfolio Grid Asset">
+                <img src="https://picsum.photos/1920/1080?random=${imageId}" alt="作品展示图片">
               </div>
               <div class="showcase-caption">${sec.caption}</div>
             </div>
@@ -726,17 +726,17 @@
       }
 
       /* ===================================================
-         3. Dynamic Application Swapping Localization Engine
+         3. 动态热插拔多语言运行时切换控制单元
          =================================================== */
       function executeLanguageSwap(targetLanguage) {
         currentLanguage = targetLanguage;
         const currentPack = localizationData[currentLanguage];
 
-        // Refreshes structural header tags
+        // 刷新头部区域文本
         document.getElementById('headerName').textContent = currentPack.header.name;
         document.getElementById('headerTitle').textContent = currentPack.header.title;
 
-        // Iterates and modifies textual values within the left menu tabs
+        // 迭代刷新左侧所有选项卡标题
         const navSpans = document.querySelectorAll('.item-hover-overlay span');
         navSpans.forEach(span => {
           const key = span.getAttribute('data-key');
@@ -745,7 +745,7 @@
           }
         });
 
-        // Re-renders the current actively viewed display panel item
+        // 刷新右侧当前展示面板内容
         const activeItem = document.querySelector('.project-item.active');
         if (activeItem) {
           renderLongProjectPage(activeItem.getAttribute('data-id'));
@@ -757,7 +757,7 @@
       });
 
       /* ===================================================
-         4. Tab Navigation Click Registration Engine
+         4. 选项卡联动切换点击监听
          =================================================== */
       items.forEach(item => {
         item.addEventListener('click', () => {
@@ -771,8 +771,8 @@
         });
       });
 
-      // Initializes View in English Mode on application boot
-      executeLanguageSwap("EN");
+      // 初始化启动：默认加载中文状态下页面视图
+      executeLanguageSwap("ZH");
     });
   </script>
 </body>
