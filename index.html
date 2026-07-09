@@ -147,7 +147,6 @@
       border-right: 1px solid #1a1a1a;
       background-color: #1a1a1a; 
       z-index: 50;
-      /* 增强的透视值，使卡片上下旋转幅度更大、立体感更足 */
       perspective: 800px; 
       box-shadow: 5px 0 25px rgba(0, 0, 0, 0.3); 
     }
@@ -165,7 +164,7 @@
       transform: translateX(-7.4%);
       box-shadow: 0 0 0 rgba(0, 0, 0, 0);
       
-      /* 退回动画 */
+      /* 退回与状态恢复动画 */
       transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.2), box-shadow 0.3s ease;
     }
     .project-item:last-child {
@@ -191,6 +190,7 @@
       position: relative;
       transform-style: preserve-3d;
       border: 0px solid transparent;
+      /* 将缩放与倾斜的过渡交由 JS 引擎控制，确保瞬时点击无延迟感 */
       transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), border 0.25s ease;
     }
     
@@ -646,28 +646,69 @@
       const langToggle = document.getElementById('langToggle');
 
       /* ===================================================
-         1. 高精度 3D 深度交互悬停扭曲引擎
+         1. 高度拟真 3D 悬停扭曲与物理按压点击引擎
          =================================================== */
-      function applyTiltEffect(itemElement, cardElement, maxRotate = 48, scale = 1.08) {
+      function applyDynamicPhysicsEngine(itemElement, cardElement, maxRotate = 48, defaultScale = 1.08) {
+        let isPressed = false;
+        let lastRotateX = 0;
+        let lastRotateY = 0;
+
+        // 鼠标在卡片内移动时：计算 3D 倾斜
         itemElement.addEventListener('mousemove', (e) => {
           const rect = itemElement.getBoundingClientRect();
           const x = e.clientX - rect.left;
           const y = e.clientY - rect.top;
           
-          // 标准化计算 (-0.5 到 0.5)
           const xc = x / rect.width - 0.5;
           const yc = y / rect.height - 0.5;
           
-          // 【核心调整】：放大 maxRotate 到 48 度，提供极具张力的上下大动作翻转响应
-          const rotateX = yc * -maxRotate; 
-          const rotateY = xc * maxRotate;
+          lastRotateX = yc * -maxRotate; 
+          lastRotateY = xc * maxRotate;
+          
+          // 如果当前处于按下状态，保持缩小的比例，否则维持悬停放大比例
+          const currentScale = isPressed ? 0.94 : defaultScale;
           
           requestAnimationFrame(() => {
-            cardElement.style.transform = `scale(${scale}) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            cardElement.style.transform = `scale(${currentScale}) rotateX(${lastRotateX}deg) rotateY(${lastRotateY}deg)`;
           });
         });
         
+        // 鼠标按下时：卡片迅速向里陷（缩小，营造放远效果）
+        itemElement.addEventListener('mousedown', () => {
+          isPressed = true;
+          requestAnimationFrame(() => {
+            cardElement.style.transform = `scale(0.94) rotateX(${lastRotateX}deg) rotateY(${lastRotateY}deg)`;
+          });
+        });
+
+        // 鼠标松开或移出时：恢复比例
+        const releaseCard = () => {
+          if (!isPressed) return;
+          isPressed = false;
+          requestAnimationFrame(() => {
+            cardElement.style.transform = `scale(${defaultScale}) rotateX(${lastRotateX}deg) rotateY(${lastRotateY}deg)`;
+          });
+        };
+
+        itemElement.addEventListener('mouseup', releaseCard);
+        
         itemElement.addEventListener('mouseleave', () => {
+          isPressed = false;
+          requestAnimationFrame(() => {
+            cardElement.style.transform = 'scale(1) rotateX(0deg) rotateY(0deg)';
+          });
+        });
+
+        // 支持移动端触控按压反馈
+        itemElement.addEventListener('touchstart', () => {
+          isPressed = true;
+          requestAnimationFrame(() => {
+            cardElement.style.transform = `scale(0.94) rotateX(0deg) rotateY(0deg)`;
+          });
+        }, {passive: true});
+
+        itemElement.addEventListener('touchend', () => {
+          isPressed = false;
           requestAnimationFrame(() => {
             cardElement.style.transform = 'scale(1) rotateX(0deg) rotateY(0deg)';
           });
@@ -676,7 +717,7 @@
       
       items.forEach(item => {
         const card = item.querySelector('.project-item-card');
-        applyTiltEffect(item, card, 48, 1.08); 
+        applyDynamicPhysicsEngine(item, card, 48, 1.08); 
       });
 
       /* ===================================================
@@ -700,7 +741,6 @@
           </div>
         `;
 
-        // 统一媒体映射
         const mediaIndices = { project1: 101, project2: 201, project3: 302, project4: 401, project5: 501, project6: 601 };
         const imageId = mediaIndices[projectId] || 101;
 
@@ -726,17 +766,15 @@
       }
 
       /* ===================================================
-         3. 动态热插拔多语言运行时切换控制单元
+         3. 动态热插拔多语言 运行时切换控制单元
          =================================================== */
       function executeLanguageSwap(targetLanguage) {
         currentLanguage = targetLanguage;
         const currentPack = localizationData[currentLanguage];
 
-        // 刷新头部区域文本
         document.getElementById('headerName').textContent = currentPack.header.name;
         document.getElementById('headerTitle').textContent = currentPack.header.title;
 
-        // 迭代刷新左侧所有选项卡标题
         const navSpans = document.querySelectorAll('.item-hover-overlay span');
         navSpans.forEach(span => {
           const key = span.getAttribute('data-key');
@@ -745,7 +783,6 @@
           }
         });
 
-        // 刷新右侧当前展示面板内容
         const activeItem = document.querySelector('.project-item.active');
         if (activeItem) {
           renderLongProjectPage(activeItem.getAttribute('data-id'));
