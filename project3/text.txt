@@ -1,1 +1,5 @@
-This is project3.
+Hamsterballin'
+
+《Hamsterballin’》是一款本地多人类马里奥赛车竞速游戏，玩家将化身为可爱迷人的仓鼠，在各种赛道上展开角逐。与传统的卡丁车竞速不同，本作中玩家驾驶的是会在赛道上滚动与弹跳的“仓鼠球”。你需要掌握仓鼠球独特的物理特性，从而超越对手并寻找捷径。
+
+由SMU Guildhall的学生制作《Hamsterballin’》由SMU Guildhall第35届的学生在“团队游戏项目II”（Team Game Project II）课程期间开发，整个开发周期为12周，开发人数为42人。
