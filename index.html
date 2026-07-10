@@ -190,7 +190,6 @@
       position: relative;
       transform-style: preserve-3d;
       border: 0px solid transparent;
-      /* 将缩放与倾斜的过渡交由 JS 引擎控制，确保瞬时点击无延迟感 */
       transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), border 0.25s ease;
     }
     
@@ -394,37 +393,37 @@
     <div class="left-panel" id="leftPanel">
       <div class="project-item active" data-id="project1">
         <div class="project-item-card">
-          <img src="https://picsum.photos/600/400?random=11" alt="项目1封面图">
+          <img src="project1/cover.jpg" alt="项目1封面图">
           <div class="item-hover-overlay"><span data-key="nav1">星空关卡设计</span></div>
         </div>
       </div>
       <div class="project-item" data-id="project2">
         <div class="project-item-card">
-          <img src="https://picsum.photos/600/400?random=12" alt="项目2封面图">
+          <img src="project2/cover.jpg" alt="项目2封面图">
           <div class="item-hover-overlay"><span data-key="nav2">半条命2关卡设计</span></div>
         </div>
       </div>
       <div class="project-item" data-id="project3">
         <div class="project-item-card">
-          <img src="https://picsum.photos/600/400?random=13" alt="项目3封面图">
+          <img src="project3/cover.jpg" alt="项目3封面图">
           <div class="item-hover-overlay"><span data-key="nav3">UE5 3D多人竞速<br>HamsterBallin‘</span></div>
         </div>
       </div>
       <div class="project-item" data-id="project4">
         <div class="project-item-card">
-          <img src="https://picsum.photos/600/400?random=14" alt="项目4封面图">
+          <img src="project4/cover.jpg" alt="项目4封面图">
           <div class="item-hover-overlay"><span data-key="nav4">Unity 2D平台跳跃<br>FLING</span></div>
         </div>
       </div>
-      <div class="project-item" data-id="project5">
+      <div class="project-item" data-id="moreprojects">
         <div class="project-item-card">
-          <img src="https://picsum.photos/600/400?random=15" alt="项目5封面图">
+          <img src="moreprojects/cover.jpg" alt="项目5封面图">
           <div class="item-hover-overlay"><span data-key="nav5">更多项目</span></div>
         </div>
       </div>
-      <div class="project-item" data-id="project6">
+      <div class="project-item" data-id="aboutme">
         <div class="project-item-card">
-          <img src="https://picsum.photos/600/400?random=16" alt="项目6封面图">
+          <img src="aboutme/cover.jpg" alt="项目6封面图">
           <div class="item-hover-overlay"><span data-key="nav6">关于我</span></div>
         </div>
       </div>
@@ -437,7 +436,7 @@
   </div>
 
   <script>
-    /* 多语言本地化核心注册中心 */
+    /* 多语言本地化核心注册中心 (元数据信息保持精简，具体长文本将从本地 txt 异步加载) */
     const localizationData = {
       ZH: {
         header: { name: "马子潇", title: "关卡策划 / 游戏设计" },
@@ -451,90 +450,12 @@
         },
         uiLabels: { type: "项目类型", role: "负责模块", time: "研发测试周期" },
         database: {
-          project1: {
-            title: "星空关卡设计 - 开放宇宙资源站探索",
-            tag: "Level Design Case Study / Starfield Theme",
-            type: "3D 开放世界 RPG 关卡",
-            role: "动线流线设计 / 资源点规划 / 氛围营造",
-            time: "3 Weeks",
-            sections: [
-              {
-                heading: "1. 关卡核心设计意图",
-                text: "本关卡专注于模拟低重力地外行星环境。玩家需要利用宇航喷气背包在废弃的采矿枢纽中进行三维纵向探索，通过<span class='highlight-text'>视线阻断</span>与隐藏通风管道提供多样化的潜入路径。",
-                caption: "▲ 图 1.1：低重力纵向探索动线白模推演"
-              }
-            ]
-          },
-          project2: {
-            title: "半条命2关卡设计 - 17号城工业区突围",
-            tag: "Classic Level Design / Source Engine Philosophy",
-            type: "线性第一人称射击",
-            role: "物理机关解谜 / 战斗节奏把控",
-            time: "2 Weeks",
-            sections: [
-              {
-                heading: "1. 经典重力枪物理交互设计",
-                text: "秉承《Half-Life 2》的隐性教学理念，关卡前半段通过一处闭环水箱解谜教导玩家利用浮力物搭建桥梁，随后在后半段无缝引入联合军遭遇战，将物理交互转化为<span class='highlight-text'>战术掩体破坏</span>。",
-                caption: "▲ 图 2.1：基于物理杠杆与浮力装置的解谜闭环"
-              }
-            ]
-          },
-          project3: {
-            title: "UE5 3D多人竞速游戏 - HamsterBallin‘",
-            tag: "Gameplay & Level Mechanics / Unreal Engine 5",
-            type: "3D 多人联机竞速",
-            role: "高动态曲面设计 / 碰撞体边界优化 / 速度感调校",
-            time: "4 Weeks",
-            sections: [
-              {
-                heading: "1. 高动态仓鼠球速度包络曲线",
-                text: "核心挑战在于在极端高时速下保持玩家对方向的控制力。关卡重度依赖跑道边缘的隐性弧度分流，利用物理表面材质的摩擦力差异，在弯道处为硬核玩家提供<span class='highlight-text'>‘极限切线切入点’</span>。",
-                caption: "▲ 图 3.1：高流速曲面赛道与触发边界拓扑分析"
-              }
-            ]
-          },
-          project4: {
-            title: "Unity 2D平台跳跃游戏 - FLING",
-            tag: "2D Precision Platformer / Unity 2D",
-            type: "硬核精密跳跃",
-            role: "关卡配置 / 动态判定校准",
-            time: "3 Weeks",
-            sections: [
-              {
-                heading: "1. 弹性机制与手感缓释区",
-                text: "FLING 的核心乐趣在于抛射带来的物理惯性。关卡设计围绕‘起跳-空中修正-精准落地’展开，在容错率极低的钉刺阵列中，精心预留了可反复微调手感的<span class='highlight-text'>平台缓冲区</span>。",
-                caption: "▲ 图 4.1：抛物线轨迹判定与关卡挫败感峰值控制图"
-              }
-            ]
-          },
-          project5: {
-            title: "更多项目组件与独立原型沉淀",
-            tag: "Prototypes & Game Jam Works",
-            type: "多类型玩法验证",
-            role: "快速原型搭建 / 核心玩法抽象",
-            time: "Ongoing",
-            sections: [
-              {
-                heading: "1. Game Jam 极限原型创意孵化",
-                text: "这里收录了多款在 48 小时内孵化的关卡机制原型，涵盖了空间重力反转、多维度视差解谜等前沿探索，展现了快速敏捷迭代的工业开发能力。",
-                caption: "▲ 图 5.1：机制验证阶段的多构型白模归档"
-              }
-            ]
-          },
-          project6: {
-            title: "关于我 / 教育背景与设计哲学",
-            tag: "About Me / Resume & Design Philosophy",
-            type: "个人档案",
-            role: "关卡策划 / 游戏设计师",
-            time: "Full-Time",
-            sections: [
-              {
-                heading: "1. 设计哲学：用空间讲述属于玩家的故事",
-                text: "我认为关卡策划是‘游戏世界沉默的导演’。优秀的关卡不应通过频繁的 UI 或台词强迫玩家，而是通过<span class='highlight-text'>光影、几何结构、AI 压制感</span>去激发玩家本能的探索欲与战斗心流。期待与优秀的团队一起构建令人沉浸的虚拟世界。",
-                caption: "▲ 致力于打磨极致的心流曲线与黑箱关卡艺术"
-              }
-            ]
-          }
+          project1: { title: "星空关卡设计 - 开放宇宙资源站探索", tag: "Level Design Case Study / Starfield Theme", type: "3D 开放世界 RPG 关卡", role: "动线流线设计 / 资源点规划 / 氛围营造", time: "3 Weeks", caption: "▲ 图 1.1：低重力纵向探索动线物理资产包推演" },
+          project2: { title: "半条命2关卡设计 - 17号城工业区突围", tag: "Classic Level Design / Source Engine Philosophy", type: "线性第一人称射击", role: "物理机关解谜 / 战斗节奏把控", time: "2 Weeks", caption: "▲ 图 2.1：基于物理杠杆与浮力装置的解谜闭环" },
+          project3: { title: "UE5 3D多人竞速游戏 - HamsterBallin‘", tag: "Gameplay & Level Mechanics / Unreal Engine 5", type: "3D 多人联机竞速", role: "高动态曲面设计 / 碰撞体边界优化 / 速度感调校", time: "4 Weeks", caption: "▲ 图 3.1：高流速曲面赛道与触发边界拓扑分析" },
+          project4: { title: "Unity 2D平台跳跃游戏 - FLING", tag: "2D Precision Platformer / Unity 2D", type: "硬核精密跳跃", role: "关卡配置 / 动态判定校准", time: "3 Weeks", caption: "▲ 图 4.1：抛物线轨迹判定与关卡挫败感峰值控制图" },
+          moreprojects: { title: "更多项目组件与独立原型沉淀", tag: "Prototypes & Game Jam Works", type: "多类型玩法验证", role: "快速原型搭建 / 核心玩法抽象", time: "Ongoing", caption: "▲ 图 5.1：机制验证阶段的多构型白模归档" },
+          aboutme: { title: "关于我 / 教育背景与设计哲学", tag: "About Me / Resume & Design Philosophy", type: "个人档案", role: "关卡策划 / 游戏设计师", time: "Full-Time", caption: "▲ 致力于打磨极致的心流曲线与黑箱关卡艺术" }
         }
       },
       EN: {
@@ -549,90 +470,12 @@
         },
         uiLabels: { type: "Project Type", role: "Responsibilities", time: "Timeline" },
         database: {
-          project1: {
-            title: "Starfield Level Design - Resource Outpost Exploration",
-            tag: "Level Design Case Study / Starfield Theme",
-            type: "3D Open World RPG Level",
-            role: "Layout Design / Point of Interest Placement / Atmosphere",
-            time: "3 Weeks",
-            sections: [
-              {
-                heading: "1. Core Mission Intent & Spatial Flow",
-                text: "This layout prototype explicitly structures sandbox exploration in low-gravity celestial environments. Players leverage jetpack mechanics to navigate a defunct refinery vertically, where strategically applied <span class='highlight-text'>sightline occlusion</span> and complex ventilation passages carve out multiple high-reward stealth vectors.",
-                caption: "▲ Fig 1.1: Multi-tier blockout composition testing vertical movement limits."
-              }
-            ]
-          },
-          project2: {
-            title: "Half-Life 2 Level Design - City 17 Industrial Breach",
-            tag: "Classic Level Design / Source Engine Philosophy",
-            type: "Linear First-Person Shooter",
-            role: "Physics-Based Puzzles / Pacing & Combat Encounters",
-            time: "2 Weeks",
-            sections: [
-              {
-                heading: "1. Gravity Gun Environmental Architecture",
-                text: "Adhering strictly to Valve's signature mechanics-driven pacing, the layout features a closed water valve ecosystem that naturally guides players to employ buoying dynamics to build bridges. This puzzle sequence transitions smoothly into a Combine ambush, where physics props directly convert into <span class='highlight-text'>destructible tactical cover</span>.",
-                caption: "▲ Fig 2.1: Logic loop diagram mapping physics leverage and liquid buoyancy mechanics."
-              }
-            ]
-          },
-          project3: {
-            title: "UE5 3D Multiplayer Racing - HamsterBallin‘",
-            tag: "Gameplay & Level Mechanics / Unreal Engine 5",
-            type: "3D Multiplayer Arcade Racing",
-            role: "Curved Tracking / Collision Mesh Optimization / Handling Calibration",
-            time: "4 Weeks",
-            sections: [
-              {
-                heading: "1. Managing High-Velocity Curvatures",
-                text: "The definitive design problem was securing player agency and directional control under extreme velocities. Track borders rely on micro-sloped profiles to buffer centripetal displacement, deploying varying surface physics to afford expert players high-risk <span class='highlight-text'>tangential cutting paths</span> across hairpin loops.",
-                caption: "▲ Fig 3.1: High-velocity structural sweep showcasing geometry boundaries and trigger volume layout."
-              }
-            ]
-          },
-          project4: {
-            title: "Unity 2D Platformer - FLING",
-            tag: "2D Precision Platformer / Unity 2D",
-            type: "Hardcore Precision Platformer",
-            role: "Level Layout Configuration / Frame-Perfect Collision Tuning",
-            time: "3 Weeks",
-            sections: [
-              {
-                heading: "1. Projectile Velocity & Frustration Management",
-                text: "The foundational gameplay loop of FLING focuses on momentum and kinetic trajectory arcs. Every corridor coordinates 'launch, micro-correction, and micro-landing' patterns, inserting critical <span class='highlight-text'>buffer platforms</span> within lethal hazard fields to balance the steep difficulty scaling.",
-                caption: "▲ Fig 4.1: Vector mapping for launch variables contrasted against player telemetry models."
-              }
-            ]
-          },
-          project5: {
-            title: "More Projects - Prototypes & System Sandboxes",
-            tag: "Prototypes & Game Jam Works",
-            type: "Multi-genre Gameplay Validation",
-            role: "Rapid Prototyping / Core Mechanic Abstraction",
-            time: "Ongoing",
-            sections: [
-              {
-                heading: "1. Game Jam Mechanical Proof-of-Concepts",
-                text: "A repository compiling diverse systemic prototypes developed during 48-hour sprints. Concepts investigate localized gravity inversion matrix setups and non-Euclidean perspective shift mechanics, emphasizing responsive, rapid-turnaround development practices.",
-                caption: "▲ Fig 5.1: Blockout structural inventory detailing spatial logic validation testing."
-              }
-            ]
-          },
-          project6: {
-            title: "About Me / Profile & Design Philosophy",
-            tag: "About Me / Resume & Core Credentials",
-            type: "Personal Profile",
-            role: "Level Designer",
-            time: "Full-Time",
-            sections: [
-              {
-                heading: "1. Professional Profile",
-                text: "Level Designer at SMU Guildhall with a passion for exploration, player guidance, and environmental storytelling. Dedicated to crafting engaging and memorable gameplay experiences through level design.",
-                caption: "▲ Committed to refining pristine pacing frameworks and advanced space design."
-              }
-            ]
-          }
+          project1: { title: "Starfield Level Design - Resource Outpost Exploration", tag: "Level Design Case Study / Starfield Theme", type: "3D Open World RPG Level", role: "Layout Design / Point of Interest Placement / Atmosphere", time: "3 Weeks", caption: "▲ Fig 1.1: Multi-tier blockout composition testing vertical movement limits." },
+          project2: { title: "Half-Life 2 Level Design - City 17 Industrial Breach", tag: "Classic Level Design / Source Engine Philosophy", type: "Linear First-Person Shooter", role: "Physics-Based Puzzles / Pacing & Combat Encounters", time: "2 Weeks", caption: "▲ Fig 2.1: Logic loop diagram mapping physics leverage and liquid buoyancy mechanics." },
+          project3: { title: "UE5 3D Multiplayer Racing - HamsterBallin‘", tag: "Gameplay & Level Mechanics / Unreal Engine 5", type: "3D Multiplayer Arcade Racing", role: "Curved Tracking / Collision Mesh Optimization / Handling Calibration", time: "4 Weeks", caption: "▲ Fig 3.1: High-velocity structural sweep showcasing geometry boundaries and trigger volume layout." },
+          project4: { title: "Unity 2D Platformer - FLING", tag: "2D Precision Platformer / Unity 2D", type: "Hardcore Precision Platformer", role: "Level Layout Configuration / Frame-Perfect Collision Tuning", time: "3 Weeks", caption: "▲ Fig 4.1: Vector mapping for launch variables contrasted against player telemetry models." },
+          moreprojects: { title: "More Projects - Prototypes & System Sandboxes", tag: "Prototypes & Game Jam Works", type: "Multi-genre Gameplay Validation", role: "Rapid Prototyping / Core Mechanic Abstraction", time: "Ongoing", caption: "▲ Fig 5.1: Blockout structural inventory detailing spatial logic validation testing." },
+          aboutme: { title: "About Me / Profile & Design Philosophy", tag: "About Me / Resume & Core Credentials", type: "Personal Profile", role: "Level Designer", time: "Full-Time", caption: "▲ Committed to refining pristine pacing frameworks and advanced space design." }
         }
       }
     };
@@ -653,19 +496,14 @@
         let lastRotateX = 0;
         let lastRotateY = 0;
 
-        // 鼠标在卡片内移动时：计算 3D 倾斜
         itemElement.addEventListener('mousemove', (e) => {
           const rect = itemElement.getBoundingClientRect();
           const x = e.clientX - rect.left;
           const y = e.clientY - rect.top;
-          
           const xc = x / rect.width - 0.5;
           const yc = y / rect.height - 0.5;
-          
           lastRotateX = yc * -maxRotate; 
           lastRotateY = xc * maxRotate;
-          
-          // 如果当前处于按下状态，保持缩小的比例，否则维持悬停放大比例
           const currentScale = isPressed ? 0.94 : defaultScale;
           
           requestAnimationFrame(() => {
@@ -673,7 +511,6 @@
           });
         });
         
-        // 鼠标按下时：卡片迅速向里陷（缩小，营造放远效果）
         itemElement.addEventListener('mousedown', () => {
           isPressed = true;
           requestAnimationFrame(() => {
@@ -681,7 +518,6 @@
           });
         });
 
-        // 鼠标松开或移出时：恢复比例
         const releaseCard = () => {
           if (!isPressed) return;
           isPressed = false;
@@ -691,23 +527,7 @@
         };
 
         itemElement.addEventListener('mouseup', releaseCard);
-        
         itemElement.addEventListener('mouseleave', () => {
-          isPressed = false;
-          requestAnimationFrame(() => {
-            cardElement.style.transform = 'scale(1) rotateX(0deg) rotateY(0deg)';
-          });
-        });
-
-        // 支持移动端触控按压反馈
-        itemElement.addEventListener('touchstart', () => {
-          isPressed = true;
-          requestAnimationFrame(() => {
-            cardElement.style.transform = `scale(0.94) rotateX(0deg) rotateY(0deg)`;
-          });
-        }, {passive: true});
-
-        itemElement.addEventListener('touchend', () => {
           isPressed = false;
           requestAnimationFrame(() => {
             cardElement.style.transform = 'scale(1) rotateX(0deg) rotateY(0deg)';
@@ -721,13 +541,40 @@
       });
 
       /* ===================================================
-         2. 长轴内容构造组装器
+         2. 长轴内容构造异步组装器 (通过 fetch 读取工程文件)
          =================================================== */
-      function renderLongProjectPage(projectId) {
+      async function renderLongProjectPage(projectId) {
         const currentPack = localizationData[currentLanguage];
         const data = currentPack.database[projectId];
         if (!data) return;
 
+        // 默认显示淡出效果
+        wrapper.classList.add('content-fade');
+
+        let loadedText = "";
+        try {
+          // 核心逻辑：根据 data-id 异步抓取该文件夹下的 text.txt 
+          const response = await fetch(`${projectId}/text.txt`);
+          if (response.ok) {
+            loadedText = await response.text();
+            // 将文本文件里的换行符转换为网页的 <br> 标签
+            loadedText = loadedText.replace(/\n/g, '<br>');
+          } else {
+            loadedText = "未检测到本地介绍文本文件 (text.txt)，请检查工程路径。";
+          }
+        } catch (error) {
+          loadedText = "读取本地文本失败，请确保在 Local Server（本地服务器）环境下运行此项目。";
+        }
+
+        // 判断本地媒体资源的展示逻辑优先级：1. 有视频播视频 -> 2. 有图播图
+        // 建议你把最想主展示的文件，分别命名为：main.mp4 或 main.jpg
+        let mediaHtml = `
+          <div class="showcase-block">
+            <img src="${projectId}/images/main.jpg" onerror="this.onerror=null; this.src='${projectId}/gifs/main.gif'; this.alt='GIF演示';" alt="作品细节展示">
+          </div>
+        `;
+        
+        // 组装最终渲染的页面 HTML
         let htmlContent = `
           <div class="project-title-area">
             <h2>${data.title}</h2>
@@ -739,25 +586,15 @@
             <div class="spec-cell"><h3>${currentPack.uiLabels.role}</h3><p>${data.role}</p></div>
             <div class="spec-cell"><h3>${currentPack.uiLabels.time}</h3><p>${data.time}</p></div>
           </div>
+
+          <div class="detail-section">
+            <h4>Overview / 核心内容解构</h4>
+            <p>${loadedText}</p>
+            ${mediaHtml}
+            <div class="showcase-caption">${data.caption}</div>
+          </div>
         `;
 
-        const mediaIndices = { project1: 101, project2: 201, project3: 302, project4: 401, project5: 501, project6: 601 };
-        const imageId = mediaIndices[projectId] || 101;
-
-        data.sections.forEach(sec => {
-          htmlContent += `
-            <div class="detail-section">
-              <h4>${sec.heading}</h4>
-              <p>${sec.text}</p>
-              <div class="showcase-block">
-                <img src="https://picsum.photos/1920/1080?random=${imageId}" alt="作品展示图片">
-              </div>
-              <div class="showcase-caption">${sec.caption}</div>
-            </div>
-          `;
-        });
-
-        wrapper.classList.add('content-fade');
         setTimeout(() => {
           wrapper.innerHTML = htmlContent;
           wrapper.classList.remove('content-fade');
