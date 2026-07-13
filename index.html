@@ -49,13 +49,6 @@
       opacity: 0.85;
     }
     
-    /* 顶部控制单元面板 */
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-    }
-
     .contact-info {
       text-align: right;
       font-size: 11px;
@@ -106,271 +99,89 @@
       background-color: #222222;
       overflow: visible;
       opacity: 1; 
-      
       transform: translateX(-7.4%);
-      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-      
-      /* 退回与状态恢复动画 */
       transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.2), box-shadow 0.3s ease;
     }
-    .project-item:last-child {
-      border-bottom: none;
-    }
     
-    /* 鼠标悬停划出 */
     .project-item:hover {
       transform: translateX(0);
       z-index: 60; 
       box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5); 
-      transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.25s cubic-bezier(0.25, 1, 0.5, 1);
     }
-    .project-item.active {
-      z-index: 55; 
-    }
+    .project-item.active { z-index: 55; }
     
-    /* 3D 卡牌联动容器 */
     .project-item-card {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      position: relative;
-      transform-style: preserve-3d;
-      border: 0px solid transparent;
+      width: 100%; height: 100%; overflow: hidden; position: relative; transform-style: preserve-3d;
       transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), border 0.25s ease;
     }
     
-    /* 高亮橙色描边 */
     .project-item:hover .project-item-card, 
-    .project-item.active .project-item-card {
-      border: 2px solid #ff5500; 
-    }
+    .project-item.active .project-item-card { border: 2px solid #ff5500; }
 
-    .project-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; 
-      display: block;
-      filter: none; 
-    }
+    .project-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-    /* 文本遮罩层 */
     .item-hover-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
       background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.2) 100%); 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0 15px;
-      text-align: center;
-      opacity: 1; 
-      pointer-events: none;
-      transition: background 0.25s ease;
+      display: flex; justify-content: center; align-items: center; padding: 0 15px;
+      text-align: center; pointer-events: none;
     }
-    
-    .project-item:hover .item-hover-overlay,
-    .project-item.active .item-hover-overlay {
-      background: rgba(0, 0, 0, 0.65); 
-    }
-    
-    .item-hover-overlay span {
-      color: #ffffff; 
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      line-height: 1.4;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 0 10px rgba(0,0,0,0.5); 
-      transition: color 0.25s ease;
-    }
-
-    /* 悬停或选中状态下文字变橙 */
-    .project-item:hover .item-hover-overlay span,
-    .project-item.active .item-hover-overlay span {
-      color: #ff5500;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-    }
+    .project-item:hover .item-hover-overlay, .project-item.active .item-hover-overlay { background: rgba(0, 0, 0, 0.65); }
+    .item-hover-overlay span { color: #ffffff; font-size: 13px; font-weight: 600; letter-spacing: 1px; }
+    .project-item:hover .item-hover-overlay span, .project-item.active .item-hover-overlay span { color: #ff5500; }
 
     /* --- 4. 右侧展示区 --- */
     .right-panel {
-      width: 75%;
-      height: 100%;
-      background-color: #333333; 
-      overflow-y: auto; 
-      overflow-x: hidden;
-      scroll-behavior: smooth;
+      width: 75%; height: 100%; background-color: #333333; 
+      overflow-y: auto; overflow-x: hidden; scroll-behavior: smooth;
     }
+    .right-panel::-webkit-scrollbar { width: 0px; }
 
-    .right-panel::-webkit-scrollbar {
-      width: 0px;
-      background: transparent;
-    }
-    .right-panel {
-      -ms-overflow-style: none;  
-      scrollbar-width: none;  
-    }
-
-    /* 详情页排版包装器 */
     .detail-content-wrapper {
-      max-width: 880px;
-      margin: 0 auto;
-      padding: 60px 40px 120px 40px;
-      opacity: 1;
-      transition: opacity 0.25s ease;
+      max-width: 880px; margin: 0 auto; padding: 60px 40px 120px 40px;
+      opacity: 1; transition: opacity 0.25s ease;
     }
-    
-    .content-fade {
-      opacity: 0;
-    }
+    .content-fade { opacity: 0; }
 
-    /* 大标题与参数表 */
-    .project-title-area h2 {
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      margin-bottom: 8px;
-      color: #ffffff; 
-    }
-    .project-title-area .sub-tag {
-      font-size: 12px;
-      color: #aaaaaa;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      margin-bottom: 35px;
-    }
+    .project-title-area h2 { font-size: 32px; font-weight: 700; margin-bottom: 8px; color: #ffffff; }
+    .project-title-area .sub-tag { font-size: 12px; color: #aaaaaa; text-transform: uppercase; margin-bottom: 35px; }
 
     .spec-table-mini {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      margin-bottom: 50px;
-      background: #222222; 
-      padding: 22px;
-      border: 1px solid #444444;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+      margin-bottom: 50px; background: #222222; padding: 22px; border: 1px solid #444444;
     }
-    .spec-cell h3 {
-      font-size: 11px;
-      color: #ff5500; 
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 6px;
-    }
-    .spec-cell p {
-      font-size: 13.5px;
-      color: #eeeeee;
-      font-weight: 500;
-    }
+    .spec-cell h3 { font-size: 11px; color: #ff5500; text-transform: uppercase; margin-bottom: 6px; }
+    .spec-cell p { font-size: 13.5px; color: #eeeeee; font-weight: 500; }
 
-    /* 独立的图文拆解块 */
-    .detail-section {
-      margin-bottom: 65px;
-    }
-    .detail-section h4 {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 18px;
-      letter-spacing: 0.5px;
-      border-left: 4px solid #ff5500; 
-      padding-left: 12px;
-      color: #ffffff;
-    }
-    .detail-section p {
-      font-size: 14.5px;
-      line-height: 1.8;
-      color: #cccccc; 
-      margin-bottom: 25px;
-      text-align: justify;
-    }
-    
-    .highlight-text {
-      color: #ff5500;
-      font-weight: 600;
-    }
+    .detail-section { margin-bottom: 65px; }
+    .detail-section h4 { font-size: 18px; font-weight: 700; margin-bottom: 18px; border-left: 4px solid #ff5500; padding-left: 12px; }
+    .detail-section p { font-size: 14.5px; line-height: 1.8; color: #cccccc; margin-bottom: 30px; text-align: justify; }
 
-    /* 媒体展示容器 */
+    /* 图片展示列表样式 */
+    .image-gallery { display: flex; flex-direction: column; gap: 20px; }
     .showcase-block {
-      width: 100%;
-      border: 1px solid #444444;
-      background: #222222;
-      margin-bottom: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      width: 100%; border: 1px solid #444444; background: #222222;
+      overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     }
-    .showcase-block img, .showcase-block video {
-      width: 100%;
-      display: block;
-      height: auto;
-    }
-    .showcase-caption {
-      font-size: 11.5px;
-      color: #999999;
-      text-align: center;
-      margin-bottom: 30px;
-    }
+    .showcase-block img { width: 100%; display: block; height: auto; }
+    .showcase-caption { font-size: 11.5px; color: #999999; text-align: center; margin-top: 10px; margin-bottom: 40px; }
 
-    /* PDF简历专属按钮样式 */
-    .resume-btn-container {
-      margin-top: 30px;
-      margin-bottom: 40px;
-    }
+    /* 简历按钮 */
+    .resume-btn-container { margin-bottom: 40px; }
     .resume-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background-color: #ff5500;
-      color: #000000;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      padding: 14px 28px;
-      border: 2px solid #ff5500;
-      cursor: pointer;
-      transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
-      box-shadow: 0 4px 15px rgba(255, 85, 0, 0.2);
+      display: inline-flex; align-items: center; gap: 10px; background-color: #ff5500;
+      color: #000; text-decoration: none; font-size: 14px; font-weight: 700; padding: 14px 28px;
+      transition: all 0.25s ease; box-shadow: 0 4px 15px rgba(255, 85, 0, 0.2);
     }
-    .resume-btn:hover {
-      background-color: transparent;
-      color: #ff5500;
-      box-shadow: 0 6px 20px rgba(255, 85, 0, 0.4);
-      transform: translateY(-2px);
-    }
-    .resume-btn:active {
-      transform: translateY(1px);
-    }
+    .resume-btn:hover { background-color: transparent; color: #ff5500; border: 1px solid #ff5500; }
   
 @media (max-width: 768px){
-  body{overflow:auto;height:auto;}
-  header{height:auto;padding:12px 16px;flex-direction:column;align-items:flex-start;gap:8px;}
-  .contact-info{text-align:left;font-size:10px;}
-  .main-container{flex-direction:column;height:auto;overflow:auto;}
-  .left-panel{
-    width:100%;
-    height:auto;
-    flex-direction:row;
-    overflow-x:auto;
-    overflow-y:hidden;
-    white-space:nowrap;
-    border-right:none;
-    border-bottom:1px solid #1a1a1a;
-    perspective:none;
-  }
-  .project-item{
-    width:180px;
-    min-width:180px;
-    height:110px;
-    transform:none !important;
-  }
-  .right-panel,.detail-panel,.content-panel{
-    width:100% !important;
-  }
-  .detail-content-wrapper{
-    padding:20px 16px 60px 16px !important;
-  }
-  h1{font-size:20px;}
-  img,video{max-width:100%;height:auto;}
+  header{padding:16px; flex-direction: column; height: auto; align-items: flex-start;}
+  .main-container{flex-direction:column;height:auto;}
+  .left-panel{width:100%;height:auto;flex-direction:row;overflow-x:auto;perspective:none;border-right:none;border-bottom:1px solid #1a1a1a;}
+  .project-item{width:180px;min-width:180px;height:110px;transform:none !important;}
+  .right-panel{width:100% !important;}
+  .detail-content-wrapper{padding:20px 16px !important;}
 }
 </style>
 </head>
@@ -381,50 +192,47 @@
       <h1 id="headerName">马子潇</h1>
       <p id="headerTitle">关卡策划 / 游戏设计</p>
     </div>
-    <div class="header-actions">
-      <div class="contact-info">
-        <p>📧 <a href="mailto:marsshow2000@outlook.com">marsshow2000@outlook.com</a></p>
-        <p>📱 (+1) 945-949-6840</p>
-      </div>
+    <div class="contact-info">
+      <p>📧 <a href="mailto:marsshow2000@outlook.com">marsshow2000@outlook.com</a></p>
+      <p>📱 (+1) 945-949-6840</p>
     </div>
   </header>
 
   <div class="main-container">
-    
     <div class="left-panel" id="leftPanel">
       <div class="project-item active" data-id="project1">
         <div class="project-item-card">
-          <img src="project1/cover.jpg" alt="项目1封面图">
+          <img src="project1/cover.jpg" alt="项目1">
           <div class="item-hover-overlay"><span>星空关卡设计</span></div>
         </div>
       </div>
       <div class="project-item" data-id="project2">
         <div class="project-item-card">
-          <img src="project2/cover.jpg" alt="项目2封面图">
+          <img src="project2/cover.jpg" alt="项目2">
           <div class="item-hover-overlay"><span>半条命2关卡设计</span></div>
         </div>
       </div>
       <div class="project-item" data-id="project3">
         <div class="project-item-card">
-          <img src="project3/cover.jpg" alt="项目3封面图">
-          <div class="item-hover-overlay"><span>UE5 3D多人竞速<br>HamsterBallin‘</span></div>
+          <img src="project3/cover.jpg" alt="项目3">
+          <div class="item-hover-overlay"><span>UE5 3D多人竞速</span></div>
         </div>
       </div>
       <div class="project-item" data-id="project4">
         <div class="project-item-card">
-          <img src="project4/cover.jpg" alt="项目4封面图">
-          <div class="item-hover-overlay"><span>Unity 2D平台跳跃<br>FLING</span></div>
+          <img src="project4/cover.jpg" alt="项目4">
+          <div class="item-hover-overlay"><span>Unity 2D平台跳跃</span></div>
         </div>
       </div>
       <div class="project-item" data-id="moreprojects">
         <div class="project-item-card">
-          <img src="moreprojects/cover.jpg" alt="项目5封面图">
+          <img src="moreprojects/cover.jpg" alt="项目5">
           <div class="item-hover-overlay"><span>更多项目</span></div>
         </div>
       </div>
       <div class="project-item" data-id="aboutme">
         <div class="project-item-card">
-          <img src="aboutme/cover.jpg" alt="项目6封面图">
+          <img src="aboutme/cover.jpg" alt="项目6">
           <div class="item-hover-overlay"><span>关于我</span></div>
         </div>
       </div>
@@ -433,18 +241,20 @@
     <div class="right-panel" id="rightPanel">
       <div class="detail-content-wrapper" id="detailContentWrapper"></div>
     </div>
-
   </div>
 
   <script>
-    /* 核心数据中心 (移除了多语言包，统一合并为精简的单语言数据库) */
+    /* 
+      核心数据库 
+      请在 imageCount 中填入每个文件夹下 images 目录内的图片张数
+    */
     const projectDatabase = {
-      project1: { title: "星空关卡设计 - 开放宇宙资源站探索", tag: "Level Design Case Study / Starfield Theme", type: "3D 开放世界 RPG 关卡", role: "动线流线设计 / 资源点规划 / 氛围营造", time: "3 Weeks", caption: "▲ 图 1.1：低重力纵向探索动线物理资产包推演" },
-      project2: { title: "半条命2关卡设计 - 17号城工业区突围", tag: "Classic Level Design / Source Engine Philosophy", type: "线性第一人称射击", role: "物理机关解谜 / 战斗节奏把控", time: "2 Weeks", caption: "▲ 图 2.1：基于物理杠杆与浮力装置的解谜闭环" },
-      project3: { title: "UE5 3D多人竞速游戏 - HamsterBallin‘", tag: "Gameplay & Level Mechanics / Unreal Engine 5", type: "3D 多人联机竞速", role: "高动态曲面设计 / 碰撞体边界优化 / 速度感调校", time: "4 Weeks", caption: "▲ 图 3.1：高流速曲面赛道与触发边界拓扑分析" },
-      project4: { title: "Unity 2D平台跳跃游戏 - FLING", tag: "2D Precision Platformer / Unity 2D", type: "硬核精密跳跃", role: "关卡配置 / 动态判定校准", time: "3 Weeks", caption: "▲ 图 4.1：抛物线轨迹判定与关卡挫败感峰值控制图" },
-      moreprojects: { title: "更多项目组件与独立原型沉淀", tag: "Prototypes & Game Jam Works", type: "多类型玩法验证", role: "快速原型搭建 / 核心玩法抽象", time: "Ongoing", caption: "▲ 图 5.1：机制验证阶段的多构型白模归档" },
-      aboutme: { title: "关于我 / 教育背景与设计哲学", tag: "About Me / Resume & Design Philosophy", type: "个人档案", role: "关卡策划 / 游戏设计师", time: "Full-Time", caption: "▲ 致力于打磨极致的心流曲线与黑箱关卡艺术" }
+      project1: { title: "星空关卡设计 - 开放宇宙资源站探索", tag: "Level Design Case Study", type: "3D 开放世界 RPG 关卡", role: "动线流线设计 / 资源点规划", time: "3 Weeks", imageCount: 3, caption: "▲ 低重力纵向探索动线物理资产包推演" },
+      project2: { title: "半条命2关卡设计 - 17号城工业区突围", tag: "Source Engine Philosophy", type: "线性第一人称射击", role: "物理机关解谜 / 战斗节奏把控", time: "2 Weeks", imageCount: 2, caption: "▲ 基于物理杠杆与浮力装置的解谜闭环" },
+      project3: { title: "UE5 3D多人竞速游戏 - HamsterBallin‘", tag: "Unreal Engine 5", type: "3D 多人联机竞速", role: "高动态曲面设计 / 碰撞优化", time: "4 Weeks", imageCount: 3, caption: "▲ 高流速曲面赛道与触发边界拓扑分析" },
+      project4: { title: "Unity 2D平台跳跃游戏 - FLING", tag: "Unity 2D Platformer", type: "硬核精密跳跃", role: "关卡配置 / 动态判定校准", time: "3 Weeks", imageCount: 2, caption: "▲ 抛物线轨迹判定与关卡挫败感峰值控制图" },
+      moreprojects: { title: "更多项目组件与独立原型沉淀", tag: "Prototypes & Sandboxes", type: "多类型玩法验证", role: "快速原型搭建 / 玩法抽象", time: "Ongoing", imageCount: 4, caption: "▲ 机制验证阶段的多构型白模归档" },
+      aboutme: { title: "关于我 / 教育背景与设计哲学", tag: "Resume & Design Philosophy", type: "个人档案", role: "关卡策划 / 游戏设计师", time: "Full-Time", imageCount: 1, caption: "▲ 致力于打磨极致的心流曲线与黑箱关卡艺术" }
     };
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -452,148 +262,82 @@
       const rightPanel = document.getElementById('rightPanel');
       const wrapper = document.getElementById('detailContentWrapper');
 
-      /* ===================================================
-         1. 高度拟真 3D 悬停扭曲与物理按压点击引擎
-         =================================================== */
-      function applyDynamicPhysicsEngine(itemElement, cardElement, maxRotate = 48, defaultScale = 1.08) {
-        let isPressed = false;
-        let lastRotateX = 0;
-        let lastRotateY = 0;
-
-        itemElement.addEventListener('mousemove', (e) => {
-          const rect = itemElement.getBoundingClientRect();
-          const x = e.clientX - rect.left;
-          const y = e.clientY - rect.top;
-          const xc = x / rect.width - 0.5;
-          const yc = y / rect.height - 0.5;
-          lastRotateX = yc * -maxRotate; 
-          lastRotateY = xc * maxRotate;
-          const currentScale = isPressed ? 0.94 : defaultScale;
-          
-          requestAnimationFrame(() => {
-            cardElement.style.transform = `scale(${currentScale}) rotateX(${lastRotateX}deg) rotateY(${lastRotateY}deg)`;
-          });
+      // 3D 物理悬停引擎
+      function applyPhysics(item, card) {
+        item.addEventListener('mousemove', (e) => {
+          const rect = item.getBoundingClientRect();
+          const xc = (e.clientX - rect.left) / rect.width - 0.5;
+          const yc = (e.clientY - rect.top) / rect.height - 0.5;
+          card.style.transform = `scale(1.08) rotateX(${yc * -48}deg) rotateY(${xc * 48}deg)`;
         });
-        
-        itemElement.addEventListener('mousedown', () => {
-          isPressed = true;
-          requestAnimationFrame(() => {
-            cardElement.style.transform = `scale(0.94) rotateX(${lastRotateX}deg) rotateY(${lastRotateY}deg)`;
-          });
-        });
-
-        const releaseCard = () => {
-          if (!isPressed) return;
-          isPressed = false;
-          requestAnimationFrame(() => {
-            cardElement.style.transform = `scale(${defaultScale}) rotateX(${lastRotateX}deg) rotateY(${lastRotateY}deg)`;
-          });
-        };
-
-        itemElement.addEventListener('mouseup', releaseCard);
-        itemElement.addEventListener('mouseleave', () => {
-          isPressed = false;
-          requestAnimationFrame(() => {
-            cardElement.style.transform = 'scale(1) rotateX(0deg) rotateY(0deg)';
-          });
-        });
+        item.addEventListener('mouseleave', () => card.style.transform = 'scale(1) rotateX(0) rotateY(0)');
       }
-      
-      items.forEach(item => {
-        const card = item.querySelector('.project-item-card');
-        applyDynamicPhysicsEngine(item, card, 48, 1.08); 
-      });
+      items.forEach(item => applyPhysics(item, item.querySelector('.project-item-card')));
 
-      /* ===================================================
-         2. 长轴内容构造异步组装器 (增加关于我页面PDF处理)
-         =================================================== */
-      async function renderLongProjectPage(projectId) {
+      // 渲染页面函数
+      async function renderPage(projectId) {
         const data = projectDatabase[projectId];
         if (!data) return;
 
         wrapper.classList.add('content-fade');
-
-        let loadedText = "";
+        let text = "正在加载...";
         try {
-          const response = await fetch(`${projectId}/text.txt`);
-          if (response.ok) {
-            loadedText = await response.text();
-            loadedText = loadedText.replace(/\n/g, '<br>');
-          } else {
-            loadedText = "未检测到本地介绍文本文件 (text.txt)，请检查工程路径。";
-          }
-        } catch (error) {
-          loadedText = "读取本地文本失败，请确保在 Local Server（本地服务器）环境下运行此项目。";
-        }
+          const res = await fetch(`${projectId}/text.txt`);
+          text = res.ok ? (await res.text()).replace(/\n/g, '<br>') : "未找到描述文本";
+        } catch(e) { text = "文本读取失败"; }
 
-        // 基础媒体展示 HTML
-        let mediaHtml = `
-          <div class="showcase-block">
-            <img src="${projectId}/images/main.jpg" onerror="this.onerror=null; this.src='${projectId}/gifs/main.gif'; this.alt='展示';" alt="作品细节展示">
-          </div>
-        `;
-        
-        // 如果是“关于我”页面，生成PDF简历按钮结构
-        let resumeBtnHtml = "";
-        if (projectId === 'aboutme') {
-          resumeBtnHtml = `
-            <div class="resume-btn-container">
-              <a href="resume.pdf" target="_blank" class="resume-btn">
-                📄 浏览完整 PDF 简历
-              </a>
-            </div>
-          `;
-        }
+        // 1. 生成简历按钮（仅关于我页面）
+        let resumeHtml = projectId === 'aboutme' ? `<div class="resume-btn-container"><a href="resume.pdf" target="_blank" class="resume-btn">📄 浏览完整 PDF 简历</a></div>` : "";
 
-        // 组装最终渲染的页面 HTML
-        let htmlContent = `
+        // 2. 循环生成图片列表
+        // 规则：projectId/images/image_projectId_index.jpg
+        let galleryHtml = '<div class="image-gallery">';
+        for (let i = 1; i <= data.imageCount; i++) {
+          galleryHtml += `
+            <div class="showcase-block">
+              <img src="${projectId}/images/image_${projectId}_${i}.jpg" alt="展示图 ${i}" loading="lazy">
+            </div>`;
+        }
+        galleryHtml += '</div>';
+
+        const html = `
           <div class="project-title-area">
             <h2>${data.title}</h2>
             <div class="sub-tag">${data.tag}</div>
           </div>
-          
           <div class="spec-table-mini">
             <div class="spec-cell"><h3>项目类型</h3><p>${data.type}</p></div>
             <div class="spec-cell"><h3>负责模块</h3><p>${data.role}</p></div>
-            <div class="spec-cell"><h3>研发测试周期</h3><p>${data.time}</p></div>
+            <div class="spec-cell"><h3>测试周期</h3><p>${data.time}</p></div>
           </div>
-
           <div class="detail-section">
             <h4>Overview / 核心内容解构</h4>
-            <p>${loadedText}</p>
-            ${resumeBtnHtml}
-            ${mediaHtml}
+            <p>${text}</p>
+            ${resumeHtml}
+            ${galleryHtml}
             <div class="showcase-caption">${data.caption}</div>
           </div>
         `;
 
         setTimeout(() => {
-          wrapper.innerHTML = htmlContent;
+          wrapper.innerHTML = html;
           wrapper.classList.remove('content-fade');
-          rightPanel.scrollTop = 0; 
-        }, 120);
+          rightPanel.scrollTop = 0;
+        }, 150);
       }
 
-      /* ===================================================
-         3. 选项卡联动切换点击监听
-         =================================================== */
+      // 点击监听
       items.forEach(item => {
         item.addEventListener('click', () => {
           if (item.classList.contains('active')) return;
-
           items.forEach(i => i.classList.remove('active'));
           item.classList.add('active');
-
-          const projectId = item.getAttribute('data-id');
-          renderLongProjectPage(projectId);
+          renderPage(item.getAttribute('data-id'));
         });
       });
 
-      // 初始化启动：默认加载初始高亮页
-      const activeItem = document.querySelector('.project-item.active');
-      if (activeItem) {
-        renderLongProjectPage(activeItem.getAttribute('data-id'));
-      }
+      // 默认加载
+      renderPage('project1');
     });
   </script>
 </body>
