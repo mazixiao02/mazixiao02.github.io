@@ -63,9 +63,7 @@
       border-bottom: 1px solid #000000;
       transition: opacity 0.3s ease;
     }
-    .contact-info a:hover {
-      opacity: 0.6;
-    }
+    .contact-info a:hover { opacity: 0.6; }
 
     /* 主体布局 */
     .main-container {
@@ -78,36 +76,19 @@
 
     /* --- 3. 左侧选项卡栏 --- */
     .left-panel {
-      width: 25%;
-      height: 100%;
-      display: flex;
-      flex-direction: column; 
-      overflow: visible; 
-      border-right: 1px solid #1a1a1a;
-      background-color: #1a1a1a; 
-      z-index: 50;
-      perspective: 800px; 
-      box-shadow: 5px 0 25px rgba(0, 0, 0, 0.3); 
+      width: 25%; height: 100%; display: flex; flex-direction: column; 
+      overflow: visible; border-right: 1px solid #1a1a1a; background-color: #1a1a1a; 
+      z-index: 50; perspective: 800px; box-shadow: 5px 0 25px rgba(0, 0, 0, 0.3); 
     }
     
     .project-item {
-      height: 16.66%; 
-      width: 108%; 
-      cursor: pointer;
-      position: relative;
-      border-bottom: 1px solid #1a1a1a;
-      background-color: #222222;
-      overflow: visible;
-      opacity: 1; 
+      height: 16.66%; width: 108%; cursor: pointer; position: relative;
+      border-bottom: 1px solid #1a1a1a; background-color: #222222; overflow: visible;
       transform: translateX(-7.4%);
       transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.2), box-shadow 0.3s ease;
     }
     
-    .project-item:hover {
-      transform: translateX(0);
-      z-index: 60; 
-      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5); 
-    }
+    .project-item:hover { transform: translateX(0); z-index: 60; box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5); }
     .project-item.active { z-index: 55; }
     
     .project-item-card {
@@ -115,9 +96,7 @@
       transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), border 0.25s ease;
     }
     
-    .project-item:hover .project-item-card, 
-    .project-item.active .project-item-card { border: 2px solid #ff5500; }
-
+    .project-item:hover .project-item-card, .project-item.active .project-item-card { border: 2px solid #ff5500; }
     .project-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
     .item-hover-overlay {
@@ -158,7 +137,7 @@
     .detail-section p { font-size: 14.5px; line-height: 1.8; color: #cccccc; margin-bottom: 30px; text-align: justify; }
 
     /* 图片展示列表样式 */
-    .image-gallery { display: flex; flex-direction: column; gap: 20px; }
+    .image-gallery { display: flex; flex-direction: column; gap: 20px; min-height: 50px; }
     .showcase-block {
       width: 100%; border: 1px solid #444444; background: #222222;
       overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.2);
@@ -244,17 +223,14 @@
   </div>
 
   <script>
-    /* 
-      核心数据库 
-      请在 imageCount 中填入每个文件夹下 images 目录内的图片张数
-    */
+    /* 核心数据库 (已完全移除 imageCount 配置，实现全自动探测) */
     const projectDatabase = {
-      project1: { title: "星空关卡设计 - 开放宇宙资源站探索", tag: "Level Design Case Study", type: "3D 开放世界 RPG 关卡", role: "动线流线设计 / 资源点规划", time: "3 Weeks", imageCount: 3, caption: "▲ 低重力纵向探索动线物理资产包推演" },
-      project2: { title: "半条命2关卡设计 - 17号城工业区突围", tag: "Source Engine Philosophy", type: "线性第一人称射击", role: "物理机关解谜 / 战斗节奏把控", time: "2 Weeks", imageCount: 2, caption: "▲ 基于物理杠杆与浮力装置的解谜闭环" },
-      project3: { title: "UE5 3D多人竞速游戏 - HamsterBallin‘", tag: "Unreal Engine 5", type: "3D 多人联机竞速", role: "高动态曲面设计 / 碰撞优化", time: "4 Weeks", imageCount: 3, caption: "▲ 高流速曲面赛道与触发边界拓扑分析" },
-      project4: { title: "Unity 2D平台跳跃游戏 - FLING", tag: "Unity 2D Platformer", type: "硬核精密跳跃", role: "关卡配置 / 动态判定校准", time: "3 Weeks", imageCount: 2, caption: "▲ 抛物线轨迹判定与关卡挫败感峰值控制图" },
-      moreprojects: { title: "更多项目组件与独立原型沉淀", tag: "Prototypes & Sandboxes", type: "多类型玩法验证", role: "快速原型搭建 / 玩法抽象", time: "Ongoing", imageCount: 4, caption: "▲ 机制验证阶段的多构型白模归档" },
-      aboutme: { title: "关于我 / 教育背景与设计哲学", tag: "Resume & Design Philosophy", type: "个人档案", role: "关卡策划 / 游戏设计师", time: "Full-Time", imageCount: 1, caption: "▲ 致力于打磨极致的心流曲线与黑箱关卡艺术" }
+      project1: { title: "星空关卡设计 - 开放宇宙资源站探索", tag: "Level Design Case Study", type: "3D 开放世界 RPG 关卡", role: "动线流线设计 / 资源点规划", time: "3 Weeks", caption: "▲ 低重力纵向探索动线物理资产包推演" },
+      project2: { title: "半条命2关卡设计 - 17号城工业区突围", tag: "Source Engine Philosophy", type: "线性第一人称射击", role: "物理机关解谜 / 战斗节奏把控", time: "2 Weeks", caption: "▲ 基于物理杠杆与浮力装置的解谜闭环" },
+      project3: { title: "UE5 3D多人竞速游戏 - HamsterBallin‘", tag: "Unreal Engine 5", type: "3D 多人联机竞速", role: "高动态曲面设计 / 碰撞优化", time: "4 Weeks", caption: "▲ 高流速曲面赛道与触发边界拓扑分析" },
+      project4: { title: "Unity 2D平台跳跃游戏 - FLING", tag: "Unity 2D Platformer", type: "硬核精密跳跃", role: "关卡配置 / 动态判定校准", time: "3 Weeks", caption: "▲ 抛物线轨迹判定与关卡挫败感峰值控制图" },
+      moreprojects: { title: "更多项目组件与独立原型沉淀", tag: "Prototypes & Sandboxes", type: "多类型玩法验证", role: "快速原型搭建 / 玩法抽象", time: "Ongoing", caption: "▲ 机制验证阶段的多构型白模归档" },
+      aboutme: { title: "关于我 / 教育背景与设计哲学", tag: "Resume & Design Philosophy", type: "个人档案", role: "关卡策划 / 游戏设计师", time: "Full-Time", caption: "▲ 致力于打磨极致的心流曲线与黑箱关卡艺术" }
     };
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -262,7 +238,6 @@
       const rightPanel = document.getElementById('rightPanel');
       const wrapper = document.getElementById('detailContentWrapper');
 
-      // 3D 物理悬停引擎
       function applyPhysics(item, card) {
         item.addEventListener('mousemove', (e) => {
           const rect = item.getBoundingClientRect();
@@ -274,7 +249,30 @@
       }
       items.forEach(item => applyPhysics(item, item.querySelector('.project-item-card')));
 
-      // 渲染页面函数
+      // 核心改动：用异步递归试探图片是否存在
+      function tryLoadImages(projectId, index, containerElement) {
+        const imgUrl = `${projectId}/images/image_${projectId}_${index}.jpg`;
+        const img = new Image();
+        
+        img.onload = function() {
+          // 图片存在，渲染并挂载到画廊中
+          const block = document.createElement('div');
+          block.className = 'showcase-block';
+          block.innerHTML = `<img src="${imgUrl}" alt="展示图 ${index}" loading="lazy">`;
+          containerElement.appendChild(block);
+          
+          // 递归探测下一张图
+          tryLoadImages(projectId, index + 1, containerElement);
+        };
+        
+        img.onerror = function() {
+          // 遇到不存在的图片编号，试探自然终止
+          console.log(`项目 ${projectId} 共自动加载了 ${index - 1} 张图片。`);
+        };
+        
+        img.src = imgUrl;
+      }
+
       async function renderPage(projectId) {
         const data = projectDatabase[projectId];
         if (!data) return;
@@ -286,19 +284,7 @@
           text = res.ok ? (await res.text()).replace(/\n/g, '<br>') : "未找到描述文本";
         } catch(e) { text = "文本读取失败"; }
 
-        // 1. 生成简历按钮（仅关于我页面）
         let resumeHtml = projectId === 'aboutme' ? `<div class="resume-btn-container"><a href="resume.pdf" target="_blank" class="resume-btn">📄 浏览完整 PDF 简历</a></div>` : "";
-
-        // 2. 循环生成图片列表
-        // 规则：projectId/images/image_projectId_index.jpg
-        let galleryHtml = '<div class="image-gallery">';
-        for (let i = 1; i <= data.imageCount; i++) {
-          galleryHtml += `
-            <div class="showcase-block">
-              <img src="${projectId}/images/image_${projectId}_${i}.jpg" alt="展示图 ${i}" loading="lazy">
-            </div>`;
-        }
-        galleryHtml += '</div>';
 
         const html = `
           <div class="project-title-area">
@@ -314,7 +300,7 @@
             <h4>Overview / 核心内容解构</h4>
             <p>${text}</p>
             ${resumeHtml}
-            ${galleryHtml}
+            <div class="image-gallery" id="gallery_${projectId}"></div>
             <div class="showcase-caption">${data.caption}</div>
           </div>
         `;
@@ -323,10 +309,15 @@
           wrapper.innerHTML = html;
           wrapper.classList.remove('content-fade');
           rightPanel.scrollTop = 0;
+          
+          // 动态开始跑图测试逻辑，传入容器 ID 
+          const galleryContainer = document.getElementById(`gallery_${projectId}`);
+          if (galleryContainer) {
+            tryLoadImages(projectId, 1, galleryContainer);
+          }
         }, 150);
       }
 
-      // 点击监听
       items.forEach(item => {
         item.addEventListener('click', () => {
           if (item.classList.contains('active')) return;
@@ -336,7 +327,6 @@
         });
       });
 
-      // 默认加载
       renderPage('project1');
     });
   </script>
