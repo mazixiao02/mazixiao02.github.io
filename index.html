@@ -56,60 +56,6 @@
       gap: 30px;
     }
 
-    /* --- 双语滑块按键样式 --- */
-    .lang-switch-wrapper {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .lang-label {
-      font-size: 11px;
-      font-weight: 800;
-      color: #000000;
-      letter-spacing: 1px;
-    }
-    .toggle-switch {
-      position: relative;
-      display: inline-block;
-      width: 50px;
-      height: 24px;
-    }
-    .toggle-switch input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
-    .slider-knob {
-      position: absolute;
-      cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #222222;
-      transition: .3s cubic-bezier(0.25, 1, 0.5, 1);
-      border-radius: 24px;
-      border: 1px solid rgba(0,0,0,0.2);
-    }
-    .slider-knob:before {
-      position: absolute;
-      content: "";
-      height: 16px;
-      width: 16px;
-      left: 3px;
-      bottom: 3px;
-      background-color: #ff5500;
-      transition: .3s cubic-bezier(0.25, 1, 0.5, 1);
-      border-radius: 50%;
-    }
-    input:checked + .slider-knob {
-      background-color: #ffffff;
-    }
-    input:checked + .slider-knob:before {
-      transform: translateX(26px);
-      background-color: #ff5500;
-    }
-
     .contact-info {
       text-align: right;
       font-size: 11px;
@@ -363,6 +309,37 @@
       text-align: center;
       margin-bottom: 30px;
     }
+
+    /* PDF简历专属按钮样式 */
+    .resume-btn-container {
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+    .resume-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #ff5500;
+      color: #000000;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 14px 28px;
+      border: 2px solid #ff5500;
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+      box-shadow: 0 4px 15px rgba(255, 85, 0, 0.2);
+    }
+    .resume-btn:hover {
+      background-color: transparent;
+      color: #ff5500;
+      box-shadow: 0 6px 20px rgba(255, 85, 0, 0.4);
+      transform: translateY(-2px);
+    }
+    .resume-btn:active {
+      transform: translateY(1px);
+    }
   
 @media (max-width: 768px){
   body{overflow:auto;height:auto;}
@@ -395,7 +372,6 @@
   h1{font-size:20px;}
   img,video{max-width:100%;height:auto;}
 }
-
 </style>
 </head>
 <body>
@@ -406,14 +382,6 @@
       <p id="headerTitle">关卡策划 / 游戏设计</p>
     </div>
     <div class="header-actions">
-      <div class="lang-switch-wrapper">
-        <span class="lang-label">ZH</span>
-        <label class="toggle-switch">
-          <input type="checkbox" id="langToggle">
-          <span class="slider-knob"></span>
-        </label>
-        <span class="lang-label">EN</span>
-      </div>
       <div class="contact-info">
         <p>📧 <a href="mailto:marsshow2000@outlook.com">marsshow2000@outlook.com</a></p>
         <p>📱 (+1) 945-949-6840</p>
@@ -427,37 +395,37 @@
       <div class="project-item active" data-id="project1">
         <div class="project-item-card">
           <img src="project1/cover.jpg" alt="项目1封面图">
-          <div class="item-hover-overlay"><span data-key="nav1">星空关卡设计</span></div>
+          <div class="item-hover-overlay"><span>星空关卡设计</span></div>
         </div>
       </div>
       <div class="project-item" data-id="project2">
         <div class="project-item-card">
           <img src="project2/cover.jpg" alt="项目2封面图">
-          <div class="item-hover-overlay"><span data-key="nav2">半条命2关卡设计</span></div>
+          <div class="item-hover-overlay"><span>半条命2关卡设计</span></div>
         </div>
       </div>
       <div class="project-item" data-id="project3">
         <div class="project-item-card">
           <img src="project3/cover.jpg" alt="项目3封面图">
-          <div class="item-hover-overlay"><span data-key="nav3">UE5 3D多人竞速<br>HamsterBallin‘</span></div>
+          <div class="item-hover-overlay"><span>UE5 3D多人竞速<br>HamsterBallin‘</span></div>
         </div>
       </div>
       <div class="project-item" data-id="project4">
         <div class="project-item-card">
           <img src="project4/cover.jpg" alt="项目4封面图">
-          <div class="item-hover-overlay"><span data-key="nav4">Unity 2D平台跳跃<br>FLING</span></div>
+          <div class="item-hover-overlay"><span>Unity 2D平台跳跃<br>FLING</span></div>
         </div>
       </div>
       <div class="project-item" data-id="moreprojects">
         <div class="project-item-card">
           <img src="moreprojects/cover.jpg" alt="项目5封面图">
-          <div class="item-hover-overlay"><span data-key="nav5">更多项目</span></div>
+          <div class="item-hover-overlay"><span>更多项目</span></div>
         </div>
       </div>
       <div class="project-item" data-id="aboutme">
         <div class="project-item-card">
           <img src="aboutme/cover.jpg" alt="项目6封面图">
-          <div class="item-hover-overlay"><span data-key="nav6">关于我</span></div>
+          <div class="item-hover-overlay"><span>关于我</span></div>
         </div>
       </div>
     </div>
@@ -469,57 +437,20 @@
   </div>
 
   <script>
-    /* 多语言本地化核心注册中心 (元数据信息保持精简，具体长文本将从本地 txt 异步加载) */
-    const localizationData = {
-      ZH: {
-        header: { name: "马子潇", title: "关卡策划 / 游戏设计" },
-        nav: {
-          nav1: "星空关卡设计",
-          nav2: "半条命2关卡设计",
-          nav3: "UE5 3D多人竞速<br>HamsterBallin‘",
-          nav4: "Unity 2D平台跳跃<br>FLING",
-          nav5: "更多项目",
-          nav6: "关于我"
-        },
-        uiLabels: { type: "项目类型", role: "负责模块", time: "研发测试周期" },
-        database: {
-          project1: { title: "星空关卡设计 - 开放宇宙资源站探索", tag: "Level Design Case Study / Starfield Theme", type: "3D 开放世界 RPG 关卡", role: "动线流线设计 / 资源点规划 / 氛围营造", time: "3 Weeks", caption: "▲ 图 1.1：低重力纵向探索动线物理资产包推演" },
-          project2: { title: "半条命2关卡设计 - 17号城工业区突围", tag: "Classic Level Design / Source Engine Philosophy", type: "线性第一人称射击", role: "物理机关解谜 / 战斗节奏把控", time: "2 Weeks", caption: "▲ 图 2.1：基于物理杠杆与浮力装置的解谜闭环" },
-          project3: { title: "UE5 3D多人竞速游戏 - HamsterBallin‘", tag: "Gameplay & Level Mechanics / Unreal Engine 5", type: "3D 多人联机竞速", role: "高动态曲面设计 / 碰撞体边界优化 / 速度感调校", time: "4 Weeks", caption: "▲ 图 3.1：高流速曲面赛道与触发边界拓扑分析" },
-          project4: { title: "Unity 2D平台跳跃游戏 - FLING", tag: "2D Precision Platformer / Unity 2D", type: "硬核精密跳跃", role: "关卡配置 / 动态判定校准", time: "3 Weeks", caption: "▲ 图 4.1：抛物线轨迹判定与关卡挫败感峰值控制图" },
-          moreprojects: { title: "更多项目组件与独立原型沉淀", tag: "Prototypes & Game Jam Works", type: "多类型玩法验证", role: "快速原型搭建 / 核心玩法抽象", time: "Ongoing", caption: "▲ 图 5.1：机制验证阶段的多构型白模归档" },
-          aboutme: { title: "关于我 / 教育背景与设计哲学", tag: "About Me / Resume & Design Philosophy", type: "个人档案", role: "关卡策划 / 游戏设计师", time: "Full-Time", caption: "▲ 致力于打磨极致的心流曲线与黑箱关卡艺术" }
-        }
-      },
-      EN: {
-        header: { name: "Zixiao Ma", title: "Level Designer / Game Designer" },
-        nav: {
-          nav1: "Starfield Level Design",
-          nav2: "Half-Life 2 Level Design",
-          nav3: "UE5 3D Multiplayer Racing<br>HamsterBallin‘",
-          nav4: "Unity 2D Platformer<br>FLING",
-          nav5: "More Projects",
-          nav6: "About Me"
-        },
-        uiLabels: { type: "Project Type", role: "Responsibilities", time: "Timeline" },
-        database: {
-          project1: { title: "Starfield Level Design - Resource Outpost Exploration", tag: "Level Design Case Study / Starfield Theme", type: "3D Open World RPG Level", role: "Layout Design / Point of Interest Placement / Atmosphere", time: "3 Weeks", caption: "▲ Fig 1.1: Multi-tier blockout composition testing vertical movement limits." },
-          project2: { title: "Half-Life 2 Level Design - City 17 Industrial Breach", tag: "Classic Level Design / Source Engine Philosophy", type: "Linear First-Person Shooter", role: "Physics-Based Puzzles / Pacing & Combat Encounters", time: "2 Weeks", caption: "▲ Fig 2.1: Logic loop diagram mapping physics leverage and liquid buoyancy mechanics." },
-          project3: { title: "UE5 3D Multiplayer Racing - HamsterBallin‘", tag: "Gameplay & Level Mechanics / Unreal Engine 5", type: "3D Multiplayer Arcade Racing", role: "Curved Tracking / Collision Mesh Optimization / Handling Calibration", time: "4 Weeks", caption: "▲ Fig 3.1: High-velocity structural sweep showcasing geometry boundaries and trigger volume layout." },
-          project4: { title: "Unity 2D Platformer - FLING", tag: "2D Precision Platformer / Unity 2D", type: "Hardcore Precision Platformer", role: "Level Layout Configuration / Frame-Perfect Collision Tuning", time: "3 Weeks", caption: "▲ Fig 4.1: Vector mapping for launch variables contrasted against player telemetry models." },
-          moreprojects: { title: "More Projects - Prototypes & System Sandboxes", tag: "Prototypes & Game Jam Works", type: "Multi-genre Gameplay Validation", role: "Rapid Prototyping / Core Mechanic Abstraction", time: "Ongoing", caption: "▲ Fig 5.1: Blockout structural inventory detailing spatial logic validation testing." },
-          aboutme: { title: "About Me / Profile & Design Philosophy", tag: "About Me / Resume & Core Credentials", type: "Personal Profile", role: "Level Designer", time: "Full-Time", caption: "▲ Committed to refining pristine pacing frameworks and advanced space design." }
-        }
-      }
+    /* 核心数据中心 (移除了多语言包，统一合并为精简的单语言数据库) */
+    const projectDatabase = {
+      project1: { title: "星空关卡设计 - 开放宇宙资源站探索", tag: "Level Design Case Study / Starfield Theme", type: "3D 开放世界 RPG 关卡", role: "动线流线设计 / 资源点规划 / 氛围营造", time: "3 Weeks", caption: "▲ 图 1.1：低重力纵向探索动线物理资产包推演" },
+      project2: { title: "半条命2关卡设计 - 17号城工业区突围", tag: "Classic Level Design / Source Engine Philosophy", type: "线性第一人称射击", role: "物理机关解谜 / 战斗节奏把控", time: "2 Weeks", caption: "▲ 图 2.1：基于物理杠杆与浮力装置的解谜闭环" },
+      project3: { title: "UE5 3D多人竞速游戏 - HamsterBallin‘", tag: "Gameplay & Level Mechanics / Unreal Engine 5", type: "3D 多人联机竞速", role: "高动态曲面设计 / 碰撞体边界优化 / 速度感调校", time: "4 Weeks", caption: "▲ 图 3.1：高流速曲面赛道与触发边界拓扑分析" },
+      project4: { title: "Unity 2D平台跳跃游戏 - FLING", tag: "2D Precision Platformer / Unity 2D", type: "硬核精密跳跃", role: "关卡配置 / 动态判定校准", time: "3 Weeks", caption: "▲ 图 4.1：抛物线轨迹判定与关卡挫败感峰值控制图" },
+      moreprojects: { title: "更多项目组件与独立原型沉淀", tag: "Prototypes & Game Jam Works", type: "多类型玩法验证", role: "快速原型搭建 / 核心玩法抽象", time: "Ongoing", caption: "▲ 图 5.1：机制验证阶段的多构型白模归档" },
+      aboutme: { title: "关于我 / 教育背景与设计哲学", tag: "About Me / Resume & Design Philosophy", type: "个人档案", role: "关卡策划 / 游戏设计师", time: "Full-Time", caption: "▲ 致力于打磨极致的心流曲线与黑箱关卡艺术" }
     };
-
-    let currentLanguage = "ZH";
 
     document.addEventListener('DOMContentLoaded', () => {
       const items = document.querySelectorAll('.project-item');
       const rightPanel = document.getElementById('rightPanel');
       const wrapper = document.getElementById('detailContentWrapper');
-      const langToggle = document.getElementById('langToggle');
 
       /* ===================================================
          1. 高度拟真 3D 悬停扭曲与物理按压点击引擎
@@ -574,23 +505,19 @@
       });
 
       /* ===================================================
-         2. 长轴内容构造异步组装器 (通过 fetch 读取工程文件)
+         2. 长轴内容构造异步组装器 (增加关于我页面PDF处理)
          =================================================== */
       async function renderLongProjectPage(projectId) {
-        const currentPack = localizationData[currentLanguage];
-        const data = currentPack.database[projectId];
+        const data = projectDatabase[projectId];
         if (!data) return;
 
-        // 默认显示淡出效果
         wrapper.classList.add('content-fade');
 
         let loadedText = "";
         try {
-          // 核心逻辑：根据 data-id 异步抓取该文件夹下的 text.txt 
           const response = await fetch(`${projectId}/text.txt`);
           if (response.ok) {
             loadedText = await response.text();
-            // 将文本文件里的换行符转换为网页的 <br> 标签
             loadedText = loadedText.replace(/\n/g, '<br>');
           } else {
             loadedText = "未检测到本地介绍文本文件 (text.txt)，请检查工程路径。";
@@ -599,14 +526,25 @@
           loadedText = "读取本地文本失败，请确保在 Local Server（本地服务器）环境下运行此项目。";
         }
 
-        // 判断本地媒体资源的展示逻辑优先级：1. 有视频播视频 -> 2. 有图播图
-        // 建议你把最想主展示的文件，分别命名为：main.mp4 或 main.jpg
+        // 基础媒体展示 HTML
         let mediaHtml = `
           <div class="showcase-block">
-            <img src="${projectId}/images/main.jpg" onerror="this.onerror=null; this.src='${projectId}/gifs/main.gif'; this.alt='GIF演示';" alt="作品细节展示">
+            <img src="${projectId}/images/main.jpg" onerror="this.onerror=null; this.src='${projectId}/gifs/main.gif'; this.alt='展示';" alt="作品细节展示">
           </div>
         `;
         
+        // 如果是“关于我”页面，生成PDF简历按钮结构
+        let resumeBtnHtml = "";
+        if (projectId === 'aboutme') {
+          resumeBtnHtml = `
+            <div class="resume-btn-container">
+              <a href="resume.pdf" target="_blank" class="resume-btn">
+                📄 浏览完整 PDF 简历
+              </a>
+            </div>
+          `;
+        }
+
         // 组装最终渲染的页面 HTML
         let htmlContent = `
           <div class="project-title-area">
@@ -615,14 +553,15 @@
           </div>
           
           <div class="spec-table-mini">
-            <div class="spec-cell"><h3>${currentPack.uiLabels.type}</h3><p>${data.type}</p></div>
-            <div class="spec-cell"><h3>${currentPack.uiLabels.role}</h3><p>${data.role}</p></div>
-            <div class="spec-cell"><h3>${currentPack.uiLabels.time}</h3><p>${data.time}</p></div>
+            <div class="spec-cell"><h3>项目类型</h3><p>${data.type}</p></div>
+            <div class="spec-cell"><h3>负责模块</h3><p>${data.role}</p></div>
+            <div class="spec-cell"><h3>研发测试周期</h3><p>${data.time}</p></div>
           </div>
 
           <div class="detail-section">
             <h4>Overview / 核心内容解构</h4>
             <p>${loadedText}</p>
+            ${resumeBtnHtml}
             ${mediaHtml}
             <div class="showcase-caption">${data.caption}</div>
           </div>
@@ -636,35 +575,7 @@
       }
 
       /* ===================================================
-         3. 动态热插拔多语言 运行时切换控制单元
-         =================================================== */
-      function executeLanguageSwap(targetLanguage) {
-        currentLanguage = targetLanguage;
-        const currentPack = localizationData[currentLanguage];
-
-        document.getElementById('headerName').textContent = currentPack.header.name;
-        document.getElementById('headerTitle').textContent = currentPack.header.title;
-
-        const navSpans = document.querySelectorAll('.item-hover-overlay span');
-        navSpans.forEach(span => {
-          const key = span.getAttribute('data-key');
-          if (key && currentPack.nav[key]) {
-            span.innerHTML = currentPack.nav[key];
-          }
-        });
-
-        const activeItem = document.querySelector('.project-item.active');
-        if (activeItem) {
-          renderLongProjectPage(activeItem.getAttribute('data-id'));
-        }
-      }
-
-      langToggle.addEventListener('change', (e) => {
-        executeLanguageSwap(e.target.checked ? "EN" : "ZH");
-      });
-
-      /* ===================================================
-         4. 选项卡联动切换点击监听
+         3. 选项卡联动切换点击监听
          =================================================== */
       items.forEach(item => {
         item.addEventListener('click', () => {
@@ -678,8 +589,11 @@
         });
       });
 
-      // 初始化启动：默认加载中文状态下页面视图
-      executeLanguageSwap("ZH");
+      // 初始化启动：默认加载初始高亮页
+      const activeItem = document.querySelector('.project-item.active');
+      if (activeItem) {
+        renderLongProjectPage(activeItem.getAttribute('data-id'));
+      }
     });
   </script>
 </body>
