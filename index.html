@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>马子潇 - 个人作品集</title>
   <style>
     /* --- 1. 全局极致主义重置 & 中度冷工业灰调体系 --- */
@@ -64,6 +65,50 @@
       transition: opacity 0.3s ease;
     }
     .contact-info a:hover { opacity: 0.6; }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+    .language-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: #000000;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .language-switch input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .language-slider {
+      width: 42px;
+      height: 22px;
+      position: relative;
+      border: 1px solid #000000;
+      border-radius: 999px;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+    .language-slider::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 2px;
+      top: 2px;
+      border-radius: 50%;
+      background: #000000;
+      transition: transform 0.25s ease;
+    }
+    .language-switch input:checked + .language-slider::after { transform: translateX(20px); }
+    .language-switch input:focus-visible + .language-slider { outline: 2px solid #000000; outline-offset: 3px; }
 
     /* 主体布局 */
     .main-container {
@@ -161,6 +206,8 @@
   .project-item{width:180px;min-width:180px;height:110px;transform:none !important;}
   .right-panel{width:100% !important;}
   .detail-content-wrapper{padding:20px 16px !important;}
+  .header-actions{width:100%;justify-content:space-between;gap:14px;}
+  .contact-info{text-align:right;}
 }
 </style>
 </head>
@@ -171,36 +218,44 @@
       <h1 id="headerName">马子潇</h1>
       <p id="headerTitle">关卡策划 / 游戏设计</p>
     </div>
-    <div class="contact-info">
-      <p>📧 <a href="mailto:marsshow2000@outlook.com">marsshow2000@outlook.com</a></p>
-      <p>📱 (+1) 945-949-6840</p>
+    <div class="header-actions">
+      <label class="language-switch" for="languageToggle" aria-label="切换中文和英文 / Switch language">
+        <span>中</span>
+        <input type="checkbox" id="languageToggle" role="switch" aria-label="English">
+        <span class="language-slider" aria-hidden="true"></span>
+        <span>EN</span>
+      </label>
+      <div class="contact-info">
+        <p>📧 <a href="mailto:marsshow2000@outlook.com">marsshow2000@outlook.com</a></p>
+        <p>📱 (+1) 945-949-6840</p>
+      </div>
     </div>
   </header>
 
   <div class="main-container">
     <div class="left-panel" id="leftPanel">
-      <div class="project-item active" data-id="project1">
+      <div class="project-item" data-id="project1">
         <div class="project-item-card">
           <img src="project1/cover.jpg" alt="项目1">
-          <div class="item-hover-overlay"><span>星空关卡设计</span></div>
+          <div class="item-hover-overlay"><span>星空支线关卡设计：底卡伦：变人。</span></div>
         </div>
       </div>
       <div class="project-item" data-id="project2">
         <div class="project-item-card">
           <img src="project2/cover.jpg" alt="项目2">
-          <div class="item-hover-overlay"><span>半条命2关卡设计</span></div>
+          <div class="item-hover-overlay"><span>星空支线关卡设计：幽灵船</span></div>
         </div>
       </div>
       <div class="project-item" data-id="project3">
         <div class="project-item-card">
           <img src="project3/cover.jpg" alt="项目3">
-          <div class="item-hover-overlay"><span>UE5 3D多人竞速</span></div>
+          <div class="item-hover-overlay"><span>UE5 3D多人竞速项目：仓鼠球</span></div>
         </div>
       </div>
       <div class="project-item" data-id="project4">
         <div class="project-item-card">
           <img src="project4/cover.jpg" alt="项目4">
-          <div class="item-hover-overlay"><span>Unity 2D平台跳跃</span></div>
+          <div class="item-hover-overlay"><span>Unity 2d 平台跳跃项目： FLING</span></div>
         </div>
       </div>
       <div class="project-item" data-id="moreprojects">
@@ -209,7 +264,7 @@
           <div class="item-hover-overlay"><span>更多项目</span></div>
         </div>
       </div>
-      <div class="project-item" data-id="aboutme">
+      <div class="project-item active" data-id="aboutme">
         <div class="project-item-card">
           <img src="aboutme/cover.jpg" alt="项目6">
           <div class="item-hover-overlay"><span>关于我</span></div>
@@ -222,21 +277,95 @@
     </div>
   </div>
 
+  <script src="content.generated.js"></script>
+  <script src="content-loader.js"></script>
   <script>
-    /* 核心数据库 (已完全移除 imageCount 配置，实现全自动探测) */
-    const projectDatabase = {
-      project1: { title: "星空关卡设计 - 开放宇宙资源站探索", tag: "Level Design Case Study", type: "3D 开放世界 RPG 关卡", role: "动线流线设计 / 资源点规划", time: "3 Weeks", caption: "▲ 低重力纵向探索动线物理资产包推演" },
-      project2: { title: "半条命2关卡设计 - 17号城工业区突围", tag: "Source Engine Philosophy", type: "线性第一人称射击", role: "物理机关解谜 / 战斗节奏把控", time: "2 Weeks", caption: "▲ 基于物理杠杆与浮力装置的解谜闭环" },
-      project3: { title: "UE5 3D多人竞速游戏 - HamsterBallin‘", tag: "Unreal Engine 5", type: "3D 多人联机竞速", role: "高动态曲面设计 / 碰撞优化", time: "4 Weeks", caption: "▲ 高流速曲面赛道与触发边界拓扑分析" },
-      project4: { title: "Unity 2D平台跳跃游戏 - FLING", tag: "Unity 2D Platformer", type: "硬核精密跳跃", role: "关卡配置 / 动态判定校准", time: "3 Weeks", caption: "▲ 抛物线轨迹判定与关卡挫败感峰值控制图" },
-      moreprojects: { title: "更多项目组件与独立原型沉淀", tag: "Prototypes & Sandboxes", type: "多类型玩法验证", role: "快速原型搭建 / 玩法抽象", time: "Ongoing", caption: "▲ 机制验证阶段的多构型白模归档" },
-      aboutme: { title: "关于我 / 教育背景与设计哲学", tag: "Resume & Design Philosophy", type: "个人档案", role: "关卡策划 / 游戏设计师", time: "Full-Time", caption: "▲ 致力于打磨极致的心流曲线与黑箱关卡艺术" }
-    };
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[char]));
+    }
 
-    document.addEventListener('DOMContentLoaded', () => {
+    function safeHeroWidth(value) {
+      return /^(?:(?:100|[1-9]?\d)%|\d{2,4}px)$/.test(String(value || '')) ? String(value) : '';
+    }
+
+    function paragraphHtml(text) {
+      return `<p>${escapeHtml(text).replace(/\n/g, '<br>')}</p>`;
+    }
+
+    function headingBlock(text) {
+      return `<p><strong>${escapeHtml(text)}</strong></p>`;
+    }
+
+    function imageBlock(image, isHero = false) {
+      const width = isHero ? safeHeroWidth(image.width) : '';
+      const style = width ? ` style="max-width:${width}; margin-left:auto; margin-right:auto;"` : '';
+      const loading = isHero ? 'eager' : 'lazy';
+      return `<div class="showcase-block"${style}><img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.caption)}" loading="${loading}"></div><div class="showcase-caption"${style}>${escapeHtml(image.caption)}</div>`;
+    }
+
+    function videoBlock(video) {
+      const params = new URLSearchParams({ rel: '0', playsinline: '1', modestbranding: '1' });
+      if (location.protocol === 'http:' || location.protocol === 'https:') params.set('origin', location.origin);
+      const source = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(video.id)}?${params.toString()}`;
+      return `<div class="showcase-block"><iframe src="${source}" width="100%" height="450" title="${escapeHtml(video.caption)}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="showcase-caption">▶ ${escapeHtml(video.caption)}</div>`;
+    }
+
+    function buttonsBlock(block) {
+      const links = (block.links || []).map(link => `<a href="${escapeHtml(link.href)}" target="_blank" rel="noopener noreferrer" class="resume-btn">${escapeHtml(link.label)}</a>`).join(' ');
+      return `<div class="resume-btn-container">${links}</div>`;
+    }
+
+    function renderBlock(block) {
+      if (!block || !block.kind) return '';
+      if (block.kind === 'heading') return headingBlock(block.text || '');
+      if (block.kind === 'paragraph') return paragraphHtml(block.text || '');
+      if (block.kind === 'image') return imageBlock(block);
+      if (block.kind === 'youtube') return videoBlock(block);
+      if (block.kind === 'buttons') return buttonsBlock(block);
+      return '';
+    }
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const projectIds = ['project1', 'project2', 'project3', 'project4', 'moreprojects', 'aboutme'];
+      const interfaceText = {
+        zh: {
+          name: '马子潇',
+          title: '关卡策划 / 游戏设计',
+          projectType: '项目类型',
+          responsibilities: '负责模块',
+          period: '测试周期',
+          overview: 'Overview / 核心内容解构',
+          pageTitle: '马子潇 - 个人作品集',
+        },
+        en: {
+          name: 'Zixiao Ma',
+          title: 'Level Designer / Game Designer',
+          projectType: 'Project Type',
+          responsibilities: 'Responsibilities',
+          period: 'Development Period',
+          overview: 'Overview / Design Breakdown',
+          pageTitle: 'Zixiao Ma - Game Design Portfolio',
+        },
+      };
+
       const items = document.querySelectorAll('.project-item');
       const rightPanel = document.getElementById('rightPanel');
       const wrapper = document.getElementById('detailContentWrapper');
+      const languageToggle = document.getElementById('languageToggle');
+      const headerName = document.getElementById('headerName');
+      const headerTitle = document.getElementById('headerTitle');
+      function readSavedLanguage() {
+        try { return localStorage.getItem('portfolioLanguage') === 'en' ? 'en' : 'zh'; }
+        catch (error) { return 'zh'; }
+      }
+      function saveLanguage(language) {
+        try { localStorage.setItem('portfolioLanguage', language); }
+        catch (error) { /* Local file privacy settings may disable storage. */ }
+      }
+      let currentLanguage = readSavedLanguage();
+      let currentProjectId = 'aboutme';
+      let projectDatabase = {};
+      let projectContent = {};
 
       function applyPhysics(item, card) {
         item.addEventListener('mousemove', (e) => {
@@ -249,85 +378,86 @@
       }
       items.forEach(item => applyPhysics(item, item.querySelector('.project-item-card')));
 
-      // 核心改动：用异步递归试探图片是否存在
-      function tryLoadImages(projectId, index, containerElement) {
-        const imgUrl = `${projectId}/images/image_${projectId}_${index}.jpg`;
-        const img = new Image();
-        
-        img.onload = function() {
-          // 图片存在，渲染并挂载到画廊中
-          const block = document.createElement('div');
-          block.className = 'showcase-block';
-          block.innerHTML = `<img src="${imgUrl}" alt="展示图 ${index}" loading="lazy">`;
-          containerElement.appendChild(block);
-          
-          // 递归探测下一张图
-          tryLoadImages(projectId, index + 1, containerElement);
-        };
-        
-        img.onerror = function() {
-          // 遇到不存在的图片编号，试探自然终止
-          console.log(`项目 ${projectId} 共自动加载了 ${index - 1} 张图片。`);
-        };
-        
-        img.src = imgUrl;
+      function updateInterface() {
+        const labels = interfaceText[currentLanguage];
+        document.documentElement.lang = currentLanguage === 'en' ? 'en' : 'zh-CN';
+        document.title = labels.pageTitle;
+        headerName.textContent = labels.name;
+        headerTitle.textContent = labels.title;
+        languageToggle.checked = currentLanguage === 'en';
+
+        items.forEach(item => {
+          const projectId = item.getAttribute('data-id');
+          const data = projectDatabase[projectId];
+          if (!data) return;
+          const label = item.querySelector('.item-hover-overlay span');
+          const image = item.querySelector('img');
+          if (label) label.textContent = data.tabTitle || data.title;
+          if (image) image.alt = data.tabTitle || data.title;
+        });
       }
 
-      async function renderPage(projectId) {
+      function renderPage(projectId) {
         const data = projectDatabase[projectId];
+        const content = projectContent[projectId] || {};
+        const labels = interfaceText[currentLanguage];
         if (!data) return;
-
+        currentProjectId = projectId;
         wrapper.classList.add('content-fade');
-        let text = "正在加载...";
-        try {
-          const res = await fetch(`${projectId}/text.txt`);
-          text = res.ok ? (await res.text()).replace(/\n/g, '<br>') : "未找到描述文本";
-        } catch(e) { text = "文本读取失败"; }
 
-        let resumeHtml = projectId === 'aboutme' ? `<div class="resume-btn-container"><a href="resume.pdf" target="_blank" class="resume-btn">📄 浏览完整 PDF 简历</a></div>` : "";
+        const heroHtml = content.hero ? imageBlock(content.hero, true) : '';
+        const bodyHtml = (content.blocks || []).map(renderBlock).join('');
 
         const html = `
           <div class="project-title-area">
-            <h2>${data.title}</h2>
-            <div class="sub-tag">${data.tag}</div>
+            <h2>${escapeHtml(data.title)}</h2>
+            <div class="sub-tag">${escapeHtml(data.tag)}</div>
           </div>
+          ${heroHtml}
           <div class="spec-table-mini">
-            <div class="spec-cell"><h3>项目类型</h3><p>${data.type}</p></div>
-            <div class="spec-cell"><h3>负责模块</h3><p>${data.role}</p></div>
-            <div class="spec-cell"><h3>测试周期</h3><p>${data.time}</p></div>
+            <div class="spec-cell"><h3>${escapeHtml(labels.projectType)}</h3><p>${escapeHtml(data.type)}</p></div>
+            <div class="spec-cell"><h3>${escapeHtml(labels.responsibilities)}</h3><p>${escapeHtml(data.role)}</p></div>
+            <div class="spec-cell"><h3>${escapeHtml(labels.period)}</h3><p>${escapeHtml(data.time)}</p></div>
           </div>
           <div class="detail-section">
-            <h4>Overview / 核心内容解构</h4>
-            <p>${text}</p>
-            ${resumeHtml}
-            <div class="image-gallery" id="gallery_${projectId}"></div>
-            <div class="showcase-caption">${data.caption}</div>
-          </div>
-        `;
+            <h4>${escapeHtml(labels.overview)}</h4>
+            ${bodyHtml}
+            <div class="showcase-caption">${escapeHtml(data.caption)}</div>
+          </div>`;
 
         setTimeout(() => {
           wrapper.innerHTML = html;
           wrapper.classList.remove('content-fade');
           rightPanel.scrollTop = 0;
-          
-          // 动态开始跑图测试逻辑，传入容器 ID 
-          const galleryContainer = document.getElementById(`gallery_${projectId}`);
-          if (galleryContainer) {
-            tryLoadImages(projectId, 1, galleryContainer);
-          }
         }, 150);
       }
 
-      items.forEach(item => {
-        item.addEventListener('click', () => {
-          if (item.classList.contains('active')) return;
-          items.forEach(i => i.classList.remove('active'));
-          item.classList.add('active');
-          renderPage(item.getAttribute('data-id'));
-        });
+      async function activateLanguage(language, preserveScroll = false) {
+        currentLanguage = language === 'en' ? 'en' : 'zh';
+        saveLanguage(currentLanguage);
+        const scrollPosition = rightPanel.scrollTop;
+        const siteContent = await window.loadSiteContent(projectIds, currentLanguage);
+        projectDatabase = siteContent.database || {};
+        projectContent = siteContent.content || {};
+        updateInterface();
+        renderPage(currentProjectId);
+        if (preserveScroll) {
+          setTimeout(() => { rightPanel.scrollTop = scrollPosition; }, 170);
+        }
+      }
+
+      items.forEach(item => item.addEventListener('click', () => {
+        if (item.classList.contains('active')) return;
+        items.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+        renderPage(item.getAttribute('data-id'));
+      }));
+
+      languageToggle.addEventListener('change', () => {
+        activateLanguage(languageToggle.checked ? 'en' : 'zh', true);
       });
 
-      renderPage('project1');
+      await activateLanguage(currentLanguage);
     });
   </script>
 </body>
