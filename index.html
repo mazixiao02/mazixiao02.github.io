@@ -219,7 +219,7 @@
     .detail-section { margin-bottom: 65px; }
     .content-intro { margin-bottom: 42px; }
     .content-heading {
-      scroll-margin-top: 28px; font-size: 24px; line-height: 1.35; font-weight: 720;
+      scroll-margin-top: 92px; font-size: 24px; line-height: 1.35; font-weight: 720;
       letter-spacing: -.25px; margin: 66px 0 23px; padding: 0 0 14px 16px;
       border-left: 4px solid #ff5500; border-bottom: 1px solid #4a4a4a; color: #ffffff;
     }
@@ -238,32 +238,35 @@
     }
     .detail-section strong { color: #ffffff; font-weight: 700; }
 
-    .project-reading-layout {
-      display: grid; grid-template-columns: 184px minmax(0, 1fr); gap: 34px;
-      align-items: start;
-    }
+    .project-reading-layout { display: block; }
     .quick-nav {
-      position: sticky; top: 50%; transform: translateY(-50%); z-index: 10;
-      max-height: 72vh; margin: 0; padding: 18px 15px 16px; overflow-y: auto;
-      background: rgba(37,37,37,.96); border: 1px solid #494949; border-top: 2px solid #ff5500;
-      box-shadow: 0 10px 28px rgba(0,0,0,.22);
+      position: sticky; top: 0; z-index: 20;
+      display: flex; align-items: center; gap: 18px;
+      width: 100%; margin: 0 0 44px; padding: 12px 15px;
+      overflow: hidden; background: rgba(37,37,37,.97);
+      border: 1px solid #494949; border-top: 2px solid #ff5500;
+      box-shadow: 0 10px 28px rgba(0,0,0,.28); backdrop-filter: blur(10px);
     }
     .quick-nav-title {
-      display: flex; align-items: center; gap: 9px; margin-bottom: 13px;
+      display: flex; align-items: center; flex: 0 0 auto; gap: 9px; margin: 0;
       color: #ffffff; font-size: 11px; font-weight: 750; letter-spacing: 1.2px; text-transform: uppercase;
     }
     .quick-nav-title::before { content: ""; width: 18px; height: 1px; background: #ff5500; }
-    .quick-nav-links { display: flex; flex-direction: column; gap: 3px; }
+    .quick-nav-links {
+      display: flex; flex: 1 1 auto; align-items: center; gap: 5px;
+      min-width: 0; overflow-x: auto; overflow-y: hidden; scrollbar-width: none;
+    }
+    .quick-nav-links::-webkit-scrollbar { display: none; }
     .quick-nav a {
-      display: block; padding: 7px 8px 7px 10px; color: #bdbdbd;
-      background: transparent; border: 0; border-left: 1px solid #494949;
-      text-decoration: none; font-size: 11.5px; line-height: 1.35; transition: .2s ease;
+      display: block; flex: 0 0 auto; padding: 7px 10px; color: #bdbdbd;
+      background: transparent; border: 1px solid transparent;
+      text-decoration: none; white-space: nowrap; font-size: 11.5px; line-height: 1.35; transition: .2s ease;
     }
     .quick-nav a:hover, .quick-nav a.active {
-      color: #ff6b24; border-left-color: #ff5500; background: rgba(255,85,0,.06);
+      color: #ff6b24; border-color: rgba(255,85,0,.48); background: rgba(255,85,0,.08);
     }
-    .quick-nav a.toc-depth-3 { margin-left: 9px; color: #a6a6a6; font-size: 10.8px; }
-    .quick-nav a.toc-depth-4 { margin-left: 19px; color: #8f8f8f; font-size: 10.2px; }
+    .quick-nav a.toc-depth-3 { color: #a6a6a6; font-size: 10.8px; }
+    .quick-nav a.toc-depth-4 { color: #8f8f8f; font-size: 10.2px; }
 
     .rich-list, .numbered-list {
       max-width: 780px; margin: -8px 0 28px; padding: 0; list-style: none;
@@ -347,6 +350,10 @@
     }
     .about-copy p { max-width: none; margin-bottom: 17px; font-size: 15px; line-height: 1.85; }
     .about-copy p:last-child { margin-bottom: 0; color: #fff; font-weight: 650; }
+    .about-copy .resume-btn-container {
+      margin: 24px 0 0; padding-top: 22px; border-top: 1px solid #474747;
+    }
+    .about-copy .resume-btn { padding: 12px 18px; font-size: 12.5px; }
     .about-page .content-heading { margin-top: 54px; }
 
     /* 简历按钮 */
@@ -372,10 +379,9 @@
   .project-lede p{font-size:15.5px;line-height:1.72;}
   .spec-table-mini{grid-template-columns:1fr 1fr;gap:8px;}
   .spec-cell{min-height:0;padding:16px 18px;}
-  .project-reading-layout{display:block;}
-  .quick-nav{position:static;transform:none;max-height:none;margin:0 0 38px;padding:17px 16px;overflow:visible;}
-  .quick-nav-links{flex-direction:row;flex-wrap:wrap;gap:7px 8px;}
-  .quick-nav a,.quick-nav a.toc-depth-3,.quick-nav a.toc-depth-4{margin-left:0;padding:7px 9px;border:1px solid #414141;font-size:11px;}
+  .quick-nav{top:0;gap:12px;margin-bottom:38px;padding:11px 12px;}
+  .quick-nav-title::before{display:none;}
+  .quick-nav a,.quick-nav a.toc-depth-3,.quick-nav a.toc-depth-4{padding:7px 9px;font-size:11px;}
   .content-heading{font-size:21px;margin-top:52px;}
   .detail-section p{font-size:15px;line-height:1.82;}
   .timeline-item{grid-template-columns:1fr;gap:7px;padding-bottom:24px;}
@@ -387,8 +393,6 @@
 
 @media (min-width: 769px) and (max-width: 1120px){
   .detail-content-wrapper{padding-left:34px;padding-right:34px;}
-  .project-reading-layout{grid-template-columns:152px minmax(0,1fr);gap:22px;}
-  .quick-nav{padding-left:11px;padding-right:11px;}
   .spec-table-mini{grid-template-columns:repeat(2,minmax(0,1fr));}
 }
 </style>
@@ -733,14 +737,27 @@
         if (projectId === 'aboutme') {
           const blocks = content.blocks || [];
           const firstHeadingIndex = blocks.findIndex(block => block.kind === 'heading');
-          const introBlocks = firstHeadingIndex < 0 ? blocks : blocks.slice(0, firstHeadingIndex);
-          const remainingBlocks = firstHeadingIndex < 0 ? [] : blocks.slice(firstHeadingIndex);
+          const resumeHeadingIndex = blocks.findIndex(block =>
+            block.kind === 'heading' && /^(?:简历|Resume)$/i.test((block.text || '').trim())
+          );
+          const resumeEndIndex = resumeHeadingIndex < 0
+            ? -1
+            : blocks.findIndex((block, index) => index > resumeHeadingIndex && block.kind === 'heading');
+          const introEndIndex = resumeHeadingIndex >= 0 ? resumeHeadingIndex : firstHeadingIndex;
+          const introBlocks = introEndIndex < 0 ? blocks : blocks.slice(0, introEndIndex);
+          const resumeBlocks = resumeHeadingIndex < 0
+            ? []
+            : blocks.slice(resumeHeadingIndex + 1, resumeEndIndex < 0 ? blocks.length : resumeEndIndex);
+          const remainingBlocks = resumeHeadingIndex >= 0
+            ? (resumeEndIndex < 0 ? [] : blocks.slice(resumeEndIndex))
+            : (firstHeadingIndex < 0 ? [] : blocks.slice(firstHeadingIndex));
           const introHtml = introBlocks.map(block => renderBlock(block, { sectionTitle: '' })).join('');
+          const resumeHtml = resumeBlocks.map(block => renderBlock(block, { sectionTitle: '' })).join('');
           const rendered = renderContentBlocks(remainingBlocks);
           const photoHtml = content.hero
             ? `<div class="showcase-block about-photo"><img src="${escapeHtml(content.hero.src)}" alt="${escapeHtml(content.hero.caption)}" loading="eager"></div>`
             : '';
-          html = `<div class="about-page">${titleHtml}<div class="about-intro">${photoHtml}<div class="about-copy">${introHtml}</div></div><div class="detail-section">${rendered.html}<div class="showcase-caption">${escapeHtml(data.caption)}</div></div></div>`;
+          html = `<div class="about-page">${titleHtml}<div class="about-intro">${photoHtml}<div class="about-copy">${introHtml}${resumeHtml}</div></div><div class="detail-section">${rendered.html}<div class="showcase-caption">${escapeHtml(data.caption)}</div></div></div>`;
         } else {
           const heroHtml = content.hero ? imageBlock(content.hero, true) : '';
           const lead = extractLead(content.blocks || []);
