@@ -1,13 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="112" fill="#ff5500"/>
-  <text
-    x="256"
-    y="276"
-    fill="#111111"
-    font-family="Segoe UI Symbol, Noto Sans Symbols 2, Georgia, serif"
-    font-size="372"
-    font-weight="700"
-    text-anchor="middle"
-    dominant-baseline="middle"
-  >♞</text>
+  <path
+    fill="#ff5500"
+    d="M244 34
+       C251 43 263 60 278 81
+       C285 91 294 97 306 101
+       C365 119 409 159 431 214
+       C452 266 444 319 430 375
+       L402 492
+       L167 492
+       C157 446 165 402 187 359
+       C205 325 227 296 261 262
+       C236 267 214 269 198 261
+       C181 252 170 254 157 268
+       C140 286 115 293 92 285
+       C70 278 58 260 59 242
+       C60 233 65 227 73 222
+       C70 215 72 207 78 201
+       L154 136
+       C170 123 187 115 207 111
+       L207 94
+       C207 88 211 84 217 83
+       L235 80
+       L233 48
+       C232 37 238 27 244 34
+       Z"
+  />
 </svg>
