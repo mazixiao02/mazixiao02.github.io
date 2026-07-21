@@ -247,19 +247,17 @@
       display: flex; flex-direction: column; align-items: stretch; gap: 13px;
       width: clamp(180px, 14vw, 230px); max-height: calc(100vh - 150px);
       margin: 0; padding: 17px 14px 15px;
-      overflow: hidden; background: rgba(37,37,37,.96);
+      overflow: hidden; background: #252525;
       border: 1px solid #494949; border-left: 2px solid #ff5500;
-      box-shadow: 0 12px 32px rgba(0,0,0,.30); backdrop-filter: blur(10px);
-      transform: translateY(-50%);
-      transition: opacity .22s ease, background-color .22s ease, border-color .22s ease, box-shadow .22s ease;
+      box-shadow: 0 12px 32px rgba(0,0,0,.30);
+      opacity: 0; visibility: hidden; pointer-events: none;
+      transform: translateY(-50%) translateX(12px);
+      transition: opacity .22s ease, transform .22s ease, visibility 0s linear .22s;
     }
-    .quick-nav.is-overlapping {
-      opacity: .16; background: rgba(37,37,37,.28); border-color: rgba(255,85,0,.18);
-      box-shadow: none; backdrop-filter: blur(2px);
-    }
-    .quick-nav.is-overlapping:hover, .quick-nav.is-overlapping:focus-within {
-      opacity: .98; background: rgba(37,37,37,.97); border-color: #ff5500;
-      box-shadow: 0 12px 32px rgba(0,0,0,.30); backdrop-filter: blur(10px);
+    .quick-nav.is-visible {
+      opacity: 1; visibility: visible; pointer-events: auto;
+      transform: translateY(-50%) translateX(0);
+      transition-delay: 0s;
     }
     .quick-nav-title {
       display: flex; align-items: center; flex: 0 0 auto; gap: 9px; margin: 0 2px;
@@ -350,6 +348,11 @@
     }
     .showcase-block img { width: 100%; display: block; height: auto; }
     .showcase-caption { font-size: 11.5px; color: #999999; text-align: center; margin-top: 10px; margin-bottom: 42px; }
+    .detail-section .showcase-block,
+    .detail-section .showcase-caption { width: 100%; max-width: 780px; }
+    .detail-section .showcase-block iframe {
+      display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 16 / 9;
+    }
 
     .about-page .project-title-area { margin-bottom: 30px; }
     .about-intro {
@@ -393,7 +396,7 @@
   .project-lede p{font-size:15.5px;line-height:1.72;}
   .spec-table-mini{grid-template-columns:1fr 1fr;gap:8px;}
   .spec-cell{min-height:0;padding:16px 18px;}
-  .quick-nav{position:sticky;top:0;right:auto;z-index:20;transform:none;flex-direction:row;align-items:center;width:100%;max-height:none;gap:12px;margin:0 0 38px;padding:11px 12px;border:1px solid #494949;border-top:2px solid #ff5500;opacity:1 !important;}
+  .quick-nav{position:sticky;top:0;right:auto;z-index:20;transform:none;flex-direction:row;align-items:center;width:100%;max-height:none;gap:12px;margin:0 0 38px;padding:11px 12px;border:1px solid #494949;border-top:2px solid #ff5500;opacity:1;visibility:visible;pointer-events:auto;}
   .quick-nav-title::before{display:none;}
   .quick-nav-links{flex-direction:row;align-items:center;overflow-x:auto;overflow-y:hidden;}
   .quick-nav a,.quick-nav a.toc-depth-3,.quick-nav a.toc-depth-4{padding:7px 9px;font-size:11px;}
@@ -403,11 +406,11 @@
   .about-intro{grid-template-columns:1fr;gap:0;}
   .about-photo{min-height:0;aspect-ratio:4/5;}
   .about-copy{padding:24px 20px;}
-  .showcase-block iframe{height:220px;}
+  .showcase-block iframe{height:auto;aspect-ratio:16 / 9;}
 }
 
 @media (min-width: 769px) and (max-width: 1280px){
-  .quick-nav{position:sticky;top:0;right:auto;z-index:20;transform:none;flex-direction:row;align-items:center;width:100%;max-height:none;gap:14px;margin:0 0 42px;padding:11px 13px;border:1px solid #494949;border-top:2px solid #ff5500;opacity:1 !important;}
+  .quick-nav{position:sticky;top:0;right:auto;z-index:20;transform:none;flex-direction:row;align-items:center;width:100%;max-height:none;gap:14px;margin:0 0 42px;padding:11px 13px;border:1px solid #494949;border-top:2px solid #ff5500;opacity:1;visibility:visible;pointer-events:auto;}
   .quick-nav-links{flex-direction:row;align-items:center;overflow-x:auto;overflow-y:hidden;}
   .quick-nav a,.quick-nav a.toc-depth-3,.quick-nav a.toc-depth-4{padding:7px 9px;font-size:11px;white-space:nowrap;}
 }
@@ -710,7 +713,7 @@
       let projectDatabase = {};
       let projectContent = {};
       let tocObserver = null;
-      let tocCollisionCleanup = null;
+      let tocVisibilityCleanup = null;
 
       function applyPhysics(item, card) {
         item.addEventListener('mousemove', (e) => {
@@ -808,45 +811,40 @@
 
       function bindTableOfContents() {
         if (tocObserver) tocObserver.disconnect();
-        if (tocCollisionCleanup) {
-          tocCollisionCleanup();
-          tocCollisionCleanup = null;
+        if (tocVisibilityCleanup) {
+          tocVisibilityCleanup();
+          tocVisibilityCleanup = null;
         }
         const links = Array.from(wrapper.querySelectorAll('.quick-nav a[data-section]'));
         if (!links.length) return;
 
         const quickNav = wrapper.querySelector('.quick-nav');
-        let collisionFrame = 0;
-        const updateTocCollision = () => {
-          collisionFrame = 0;
-          if (!quickNav || window.matchMedia('(max-width: 1280px)').matches) {
-            if (quickNav) quickNav.classList.remove('is-overlapping');
+        const detailSection = wrapper.querySelector('.detail-section');
+        let visibilityFrame = 0;
+        const updateTocVisibility = () => {
+          visibilityFrame = 0;
+          if (!quickNav || !detailSection) return;
+          if (window.matchMedia('(max-width: 1280px)').matches) {
+            quickNav.classList.add('is-visible');
             return;
           }
-          const navRect = quickNav.getBoundingClientRect();
-          const targets = wrapper.querySelectorAll('.project-title-area, .project-lede, .spec-table-mini, .detail-section > *');
-          const inset = 10;
-          const overlaps = Array.from(targets).some(target => {
-            if (target === quickNav || target.offsetParent === null) return false;
-            const rect = target.getBoundingClientRect();
-            return rect.left < navRect.right - inset &&
-              rect.right > navRect.left + inset &&
-              rect.top < navRect.bottom - inset &&
-              rect.bottom > navRect.top + inset;
-          });
-          quickNav.classList.toggle('is-overlapping', overlaps);
+          const panelRect = rightPanel.getBoundingClientRect();
+          const detailRect = detailSection.getBoundingClientRect();
+          const revealLine = panelRect.top + panelRect.height * 0.36;
+          const isReadingBody = detailRect.top <= revealLine && detailRect.bottom > panelRect.top + 96;
+          quickNav.classList.toggle('is-visible', isReadingBody);
         };
-        const scheduleTocCollision = () => {
-          if (!collisionFrame) collisionFrame = requestAnimationFrame(updateTocCollision);
+        const scheduleTocVisibility = () => {
+          if (!visibilityFrame) visibilityFrame = requestAnimationFrame(updateTocVisibility);
         };
-        rightPanel.addEventListener('scroll', scheduleTocCollision, { passive: true });
-        window.addEventListener('resize', scheduleTocCollision);
-        tocCollisionCleanup = () => {
-          rightPanel.removeEventListener('scroll', scheduleTocCollision);
-          window.removeEventListener('resize', scheduleTocCollision);
-          if (collisionFrame) cancelAnimationFrame(collisionFrame);
+        rightPanel.addEventListener('scroll', scheduleTocVisibility, { passive: true });
+        window.addEventListener('resize', scheduleTocVisibility);
+        tocVisibilityCleanup = () => {
+          rightPanel.removeEventListener('scroll', scheduleTocVisibility);
+          window.removeEventListener('resize', scheduleTocVisibility);
+          if (visibilityFrame) cancelAnimationFrame(visibilityFrame);
         };
-        scheduleTocCollision();
+        scheduleTocVisibility();
 
         links.forEach(link => link.addEventListener('click', event => {
           event.preventDefault();
