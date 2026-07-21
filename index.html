@@ -226,8 +226,8 @@
         <span>EN</span>
       </label>
       <div class="contact-info">
-        <p>📧 <a href="mailto:mazixiao2000@outlook.com">mazixiao2000@outlook.com</a></p>
-        <p>📱 (+86) 135-0669-2801</p>
+        <p>📧 <a id="contactEmail" href="mailto:mazixiao2000@outlook.com">mazixiao2000@outlook.com</a></p>
+        <p id="contactPhone">📱 +8613506692801</p>
       </div>
     </div>
   </header>
@@ -336,6 +336,8 @@
           period: '测试周期',
           overview: 'Overview / 核心内容解构',
           pageTitle: '马子潇 - 个人作品集',
+          email: 'mazixiao2000@outlook.com',
+          phone: '+8613506692801',
         },
         en: {
           name: 'Zixiao Ma',
@@ -345,6 +347,8 @@
           period: 'Development Period',
           overview: 'Overview / Design Breakdown',
           pageTitle: 'Zixiao Ma - Game Design Portfolio',
+          email: 'mazixiao2000@outlook.com',
+          phone: '+19459496840',
         },
       };
 
@@ -354,6 +358,8 @@
       const languageToggle = document.getElementById('languageToggle');
       const headerName = document.getElementById('headerName');
       const headerTitle = document.getElementById('headerTitle');
+      const contactEmail = document.getElementById('contactEmail');
+      const contactPhone = document.getElementById('contactPhone');
       function readSavedLanguage() {
         try { return localStorage.getItem('portfolioLanguage') === 'en' ? 'en' : 'zh'; }
         catch (error) { return 'zh'; }
@@ -384,6 +390,9 @@
         document.title = labels.pageTitle;
         headerName.textContent = labels.name;
         headerTitle.textContent = labels.title;
+        contactEmail.textContent = labels.email;
+        contactEmail.href = `mailto:${labels.email}`;
+        contactPhone.textContent = `📱 ${labels.phone}`;
         languageToggle.checked = currentLanguage === 'en';
 
         items.forEach(item => {

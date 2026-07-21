@@ -3,40 +3,40 @@ window.SITE_CONTENT_BY_LANGUAGE = {
   "zh": {
     "database": {
       "project1": {
-        "title": "星空支线关卡设计：底卡伦：变人。",
-        "tabTitle": "星空支线关卡设计：底卡伦：变人。",
+        "title": "Decaran: Become Human",
+        "tabTitle": "星空支线关卡：底卡伦：变人",
         "tag": "Starfield Side Quest Level Design",
-        "type": "3D 叙事驱动型 RPG 支线关卡",
-        "role": "任务叙事 / 关卡流程 / 战斗与空间设计",
-        "time": "独立开发项目",
-        "caption": "▲ 在探索、战斗与道德抉择之间构建完整支线任务体验"
+        "type": "星空单人支线任务关卡设计",
+        "role": "关卡设计 / 任务设计 / 剧情设计 / Gameplay 实现",
+        "time": "10 周 / 单人",
+        "caption": "▲ 通过空间布局、战斗设计与环境叙事构建具有道德抉择的双结局任务体验"
       },
       "project2": {
-        "title": "星空支线关卡设计：幽灵船",
-        "tabTitle": "星空支线关卡设计：幽灵船",
+        "title": "Ghost Ship",
+        "tabTitle": "星空支线关卡：幽灵船",
         "tag": "Starfield Side Quest Level Design",
-        "type": "3D 科幻 RPG 支线关卡",
-        "role": "任务流程 / 探索体验 / 环境叙事",
-        "time": "独立开发项目",
-        "caption": "▲ 以封闭太空场景承载悬疑探索与叙事推进"
+        "type": "星空单人支线任务关卡设计",
+        "role": "关卡设计 / 剧情设计 / 环境叙事 / Gameplay 实现",
+        "time": "8 周 / 单人",
+        "caption": "▲ 通过环境叙事、多区域探索与解谜战斗营造废弃豪华星际邮轮的沉浸式冒险体验"
       },
       "project3": {
-        "title": "UE5 3D多人竞速项目：仓鼠球",
-        "tabTitle": "UE5 3D多人竞速项目：仓鼠球",
+        "title": "Hamsterballin’",
+        "tabTitle": "UE5 多人竞速：Hamsterballin’",
         "tag": "Unreal Engine 5",
-        "type": "3D 本地多人竞速",
+        "type": "3D / 本地多人 / 竞速 / 类马里奥赛车",
         "role": "最终关卡 / 索道系统 / 镜头设计",
-        "time": "12 Weeks / 42人团队",
-        "caption": "▲ 高速竞速赛道、捷径系统与动态镜头的协同设计"
+        "time": "12 周 / 42人团队",
+        "caption": "▲ 通过持续迭代优化高速竞速中的导航、路线选择与观赏体验"
       },
       "project4": {
-        "title": "Unity 2d 平台跳跃项目： FLING",
-        "tabTitle": "Unity 2d 平台跳跃项目： FLING",
+        "title": "FLING",
+        "tabTitle": "Unity 2D 平台跳跃：FLING",
         "tag": "Unity 2D Platformer",
-        "type": "2D 平台跳跃",
-        "role": "核心玩法 / 关卡设计 / 测试迭代",
-        "time": "团队项目",
-        "caption": "▲ 围绕移动机制构建渐进式挑战与操作节奏"
+        "type": "2D / 横板 / 平台跳跃 / 类《蔚蓝》",
+        "role": "游戏设计 / 关卡设计",
+        "time": "6 周 / 4人团队",
+        "caption": "▲ 负责核心玩法设计与大部分关卡设计，并完成从教学到高难挑战的完整难度曲线设计"
       },
       "moreprojects": {
         "title": "更多项目",
@@ -54,7 +54,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "个人档案",
         "role": "关卡设计师 / 游戏设计师",
         "time": "Portfolio",
-        "caption": "▲ 以玩家体验、空间组织与可玩性迭代为核心的游戏设计实践"
+        "caption": "▲ 我喜欢从一个简单但有趣的机制开始，搭建整套玩法设计"
       }
     },
     "content": {
@@ -62,15 +62,27 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
-            "text": "项目概述"
+            "text": "一句话简介"
           },
           {
             "kind": "paragraph",
-            "text": "《底卡伦：变人》是使用《Starfield》Creation Kit 独立开发的原创叙事驱动型支线任务。玩家受企业委托，前往底卡伦三号星上一座失控的自动化工厂调查机器人叛乱。任务最初被包装成一次常规的设施清理行动，但随着探索深入，玩家逐渐发现机器人已经形成自我意识，并正在争取自主权；一路协助玩家的机器人 R6D7，最终也被揭示为叛乱的真正组织者与最终首领。"
+            "text": "基于《星空》Creation Kit 独立设计并开发包含室内外场景的单人任务关卡，通过空间布局、战斗设计与环境叙事构建具有道德抉择的双结局任务体验。"
+          },
+          {
+            "kind": "heading",
+            "text": "游戏介绍"
           },
           {
             "kind": "paragraph",
-            "text": "我负责完整的任务概念、叙事结构、关卡流程、战斗遭遇、空间布局、谜题机制与最终选择设计，并在 Creation Kit 中完成任务搭建、触发逻辑、终端交互和关卡迭代。项目目标是在一条可控的单人任务流程中，将探索、战斗、环境叙事与道德抉择整合为统一体验。"
+            "text": "《星空（Starfield）》是 Bethesda Game Studios 开发的开放世界科幻 RPG。本项目基于官方 Creation Kit 制作，为游戏新增了一条可独立游玩的原创支线任务。"
+          },
+          {
+            "kind": "heading",
+            "text": "关卡介绍"
+          },
+          {
+            "kind": "paragraph",
+            "text": "《Decaran: Become Human（底卡伦：变人）》是星空支线任务关卡。玩家受雇调查 Decaran III 自动化工厂发生的异常事件，并在探索过程中逐步发现机器人觉醒的真相。随着剧情推进，玩家需要在恢复工厂生产与帮助机器人获得自由之间做出最终抉择，不同选择将导向两种截然不同的结局。"
           },
           {
             "kind": "youtube",
@@ -79,35 +91,59 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "text": "叙事与任务结构"
+            "text": "我的工作"
           },
           {
             "kind": "paragraph",
-            "text": "任务采用双重反转。第一层反转改变玩家对冲突双方的理解：机器人并非单纯失控，而是具备自主意识的群体；第二层反转重新定义玩家与同伴的关系：R6D7 从任务向导转化为叛乱领袖和最终 Boss。玩家最终需要在恢复企业生产与释放机器人之间作出选择，不同结果会影响工厂、雇佣兵、机器人以及相关 NPC 的命运。"
+            "text": "1. 剧情设计（Narrative Design）\n• 设计完整支线剧情、任务目标及双结局结构。\n• 编写 NPC 对话、任务文本与环境叙事内容。\n• 通过道德两难抉择推动玩家思考机器人与人类的关系。"
           },
           {
             "kind": "paragraph",
-            "text": "关卡流程围绕中央大厅组织。玩家从大厅进入不同功能区域，收集三把生物钥匙并逐步解锁垂直交通与秘密服务器区域，再返回核心空间推进任务。重复返回中央大厅能够帮助玩家建立空间认知，同时让场景状态、NPC 信息和目标变化形成阶段性反馈。"
+            "text": "2. 关卡设计（Level Design）\n• 设计工厂整体空间布局、玩家路线与探索流程。\n• 构建战斗、探索、解谜交替推进的关卡节奏。\n• 通过主题分区强化空间导航与环境可读性。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "3. Gameplay 设计（Gameplay Design）\n• 配置敌人与战斗遭遇。\n• 设计 EMP 武器、激光机关、终端谜题等核心玩法。\n• 使用 Papyrus Script 实现任务逻辑与事件触发。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "4. Playtest 与迭代（Iteration）\n• 根据多轮 Playtest 持续优化 Flow、战斗难度、导航体验与环境叙事。\n• 修复脚本问题并完善最终版本。"
           },
           {
             "kind": "heading",
-            "text": "战斗与空间设计"
+            "text": "时间线"
           },
           {
             "kind": "paragraph",
-            "text": "敌人组合同时包含近战突击机器人与远程火力单位，迫使玩家持续调整位置、掩体和攻击优先级。EMP 步枪 Novablast 既能造成伤害，也能暂时瘫痪机械敌人，为玩家提供控制战场节奏的手段。战斗空间覆盖紧凑室内、开放场地、走廊猫道与垂直区域，使不同遭遇在射程、移动路线和视线压力上形成差异。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "导航方面，我利用电缆、灯光、门禁、终端和功能性环境资产传达目标方向，并通过办公室、生产车间、服务器区域和屋顶等明确功能分区帮助玩家理解工厂结构。最终屋顶场景以开阔视野和日落氛围完成节奏释放，同时承载剧情高潮。"
+            "text": "Level Design Pitch｜2026.02.20｜完成关卡 Pitch，确定主题、核心玩法、剧情框架与整体开发方向。\nLevel Design Document｜2026.02.26｜完成 LDD文档，明确关卡流程、空间布局、任务结构及战斗设计。\nWhitebox｜2026.03.09｜完成白盒搭建，验证空间布局、玩家流程与关卡节奏。\nInitial Gameplay｜2026.03.29｜完成核心玩法、任务脚本与战斗系统，实现可完整游玩的关卡。\nGameplay Complete｜2026.04.18｜完成全部关卡内容，并根据 Playtest 持续优化流程、导航与体验。\nAesthetics｜2026.04.26｜完成场景美术、灯光与环境表现，提升整体视觉品质。\nRTM｜2026.05.03｜完成最终优化、Bug 修复与项目交付。"
           },
           {
             "kind": "heading",
-            "text": "项目文档"
+            "text": "测试迭代"
           },
           {
             "kind": "paragraph",
-            "text": "LDD（Level Design Document）系统记录关卡目标、故事背景、流程结构、空间规划、战斗遭遇、任务机制与制作需求，可用于理解项目从概念到实现的完整设计依据。"
+            "text": "反馈｜分析｜解决方案"
+          },
+          {
+            "kind": "heading",
+            "text": "项目总结"
+          },
+          {
+            "kind": "paragraph",
+            "text": "项目亮点（What Went Well）\n• 整体美术表现较好。\n• 尝试并实现了一些新的设计思路。\n• 关卡垂直空间结构设计较为出色。\n• 能够根据 Milestone 节点和 Playtest 反馈持续优化关卡流程。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "优化方向（Even Better If）\n• 与 Stakeholder（导师、制作人等）的沟通还可以做得更好。\n• 激光平台跳跃玩法表现不够理想，如果有时间还应该继续打磨。\n• 叙事内容仍然不够充分。\n• 战斗难度偏低，缺乏挑战性。\n• 部分流程节奏仍有待优化。\n• 激光机制没有得到充分利用。\n• 室外区域内容较为薄弱。\n• 整体关卡品质距离预期仍有差距。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "项目收获（What I Learned）\n• 学会主动与 Stakeholder 沟通，并及时根据反馈进行调整。\n• 学会更加合理地安排开发时间。\n• 在项目初期，应尽快从整体层面掌握引擎和工具的使用。\n• 提高适应复杂、陌生开发工具的能力。\n• 认识到商业游戏引擎和公司内部工具并非完美，需要学会与工具限制共存。\n• 学会按照专业游戏开发流程完成一个完整的关卡项目。\n• 时间与精力管理是项目成功的关键因素。\n• 学会设计和优化关卡流程（Flow）。\n• 学会在游戏性与真实建筑逻辑之间寻找平衡。\n• 学会构建更加完整、结构清晰且服务于玩法的游戏叙事。"
+          },
+          {
+            "kind": "heading",
+            "text": "附件"
           },
           {
             "kind": "buttons",
@@ -119,10 +155,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             ]
           },
           {
-            "kind": "paragraph",
-            "text": "ReadMe 提供项目运行方式、安装与测试说明、必要依赖及操作信息，方便评审者快速进入关卡并体验主要内容。"
-          },
-          {
             "kind": "buttons",
             "links": [
               {
@@ -130,10 +162,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
                 "href": "project1/pdfs/MaZ_DecaranBecomeHuman_ReadMe.pdf"
               }
             ]
-          },
-          {
-            "kind": "paragraph",
-            "text": "项目 Portfolio 是面向作品集展示整理的设计总结，集中呈现核心设计问题、解决方案、迭代过程和最终成果。"
           },
           {
             "kind": "buttons",
@@ -147,23 +175,111 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         ],
         "hero": {
           "src": "project1/images/hero.jpg",
-          "caption": "《底卡伦：变人》项目主视觉"
+          "caption": "《Decaran: Become Human》项目主视觉"
         }
       },
       "project2": {
         "blocks": [
           {
             "kind": "heading",
-            "text": "项目概述"
+            "text": "一句话介绍"
           },
           {
             "kind": "paragraph",
-            "text": "这是我的 DFS2 项目。后续可以直接在本文件中补充任务背景、关卡流程、空间设计、核心机制和迭代说明。"
+            "text": "基于《Starfield》Creation Kit 独立设计并开发恐怖探索向单人任务关卡，通过环境叙事、多区域探索与解谜战斗，营造废弃豪华星际邮轮的沉浸式冒险体验。"
+          },
+          {
+            "kind": "heading",
+            "text": "游戏介绍"
+          },
+          {
+            "kind": "paragraph",
+            "text": "《星空（Starfield）》是 Bethesda Game Studios 开发的开放世界科幻 RPG。本项目基于官方 Creation Kit 制作，为游戏新增了一条可独立游玩的原创支线任务。"
+          },
+          {
+            "kind": "heading",
+            "text": "关卡介绍"
+          },
+          {
+            "kind": "paragraph",
+            "text": "《Ghost Ship（幽灵船）》是基于《星空（Starfield）》设计的一张单人支线任务关卡。玩家因飞船燃料耗尽登上一艘失联的豪华星际邮轮，在探索过程中逐步恢复飞船供电、破解封锁区域、收集关键物资，并通过环境叙事揭开整艘飞船覆灭的真相，最终在货舱与未知生物展开决战。关卡融合探索、战斗、潜行、解谜与环境叙事，营造出类似《异形（Alien）》的悬疑恐怖体验。"
+          },
+          {
+            "kind": "heading",
+            "text": "我的工作"
+          },
+          {
+            "kind": "paragraph",
+            "text": "1. 整体关卡设计（Level Layout & Progression）"
+          },
+          {
+            "kind": "paragraph",
+            "text": "负责整体关卡流程设计，将舰桥、客舱、船员区、活动区、货舱等多个功能区域串联为完整探索路线，通过供电恢复、钥匙收集、电池解谜等机制逐步解锁新区域，构建层层递进的探索节奏。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "2. 环境叙事与氛围设计（Environmental Storytelling）"
+          },
+          {
+            "kind": "paragraph",
+            "text": "围绕废弃豪华星际邮轮设计整体世界观，通过尸体摆放、终端日志、场景细节、光照变化及空间破坏等环境叙事元素，引导玩家逐步推理事件真相，并营造《Alien》式悬疑恐怖氛围。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "3. 探索、解谜与战斗设计（Gameplay Design）"
+          },
+          {
+            "kind": "paragraph",
+            "text": "设计恢复供电、钥匙探索、电池收集、通风管潜入、秘密房间等探索与解谜玩法，并配置 Xenogrub、Terrormorph 等敌人，使探索、解谜与战斗交替推进，持续提升关卡张力。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "4. 关卡节奏设计（Pacing Design）"
+          },
+          {
+            "kind": "paragraph",
+            "text": "通过黑暗失重开场、供电恢复、自由探索、狭窄追逐、资源管理及最终 Boss 战等阶段，构建由探索逐步升级至高潮战斗的完整体验节奏。"
           },
           {
             "kind": "image",
             "caption": "《幽灵船》关卡设计展示图",
             "src": "project2/images/image_project2_1.jpg"
+          },
+          {
+            "kind": "heading",
+            "text": "时间线"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Level Design Pitch｜2026.05.26｜完成关卡 Pitch，确定主题、美术风格、核心玩法、剧情框架与整体关卡流程。\nLevel Design Document｜2026.06.01｜完成 LDD，明确空间布局、探索流程、解谜机制、战斗配置及环境叙事设计。\nWhitebox｜2026.06.08｜完成白盒搭建，验证空间布局、玩家流程、探索节奏与导航设计。\nInitial Gameplay｜2026.06.22｜完成核心 Gameplay，实现探索、解谜、战斗、环境叙事及任务流程，并开展 Playtest。\nGameplay Complete｜2026.07.06｜完成全部关卡内容开发，持续根据测试反馈优化 Flow、战斗体验、恐怖氛围与环境叙事。\nAesthetics｜2026.07.13｜完成场景美术、灯光、材质与环境布置，强化豪华邮轮废墟的视觉表现与沉浸感。\nRTM｜2026.07.19｜完成 Bug 修复、最终优化与项目交付。"
+          },
+          {
+            "kind": "heading",
+            "text": "测试迭代"
+          },
+          {
+            "kind": "paragraph",
+            "text": "反馈｜分析｜解决方案\n存档点设置在最终Boss战房间内部，导致无限死亡。｜｜最终Boss战房间外放置安全屋。"
+          },
+          {
+            "kind": "heading",
+            "text": "项目总结"
+          },
+          {
+            "kind": "paragraph",
+            "text": "项目亮点（What Went Well）\n• 完成最终关卡「扭蛋机星系」的设计、制作与迭代。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "优化方向（Even Better If）\n• 部分捷径路线在早期版本存在风险与收益不平衡的问题，需要多轮 Playtest 调整。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "项目收获（What I Learned）\n• 总结赛车项目流线经验。"
+          },
+          {
+            "kind": "heading",
+            "text": "附件"
           }
         ]
       },
@@ -171,37 +287,149 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
-            "text": "游戏简介"
+            "text": "一句话简介"
           },
           {
             "kind": "paragraph",
-            "text": "《Hamsterballin’》是一款本地多人竞速游戏。玩家操控会滚动与弹跳的仓鼠球，在多条充满捷径、机关和高低差的赛道上竞争。项目由 SMU Guildhall 第35届学生在 Team Game Project II 课程中完成，开发周期为12周，团队规模为42人。"
-          },
-          {
-            "kind": "youtube",
-            "id": "HZVYPpXkfO8",
-            "caption": "《Hamsterballin’》宣传片"
+            "text": "《Hamsterballin'》是一款 UE5 本地多人竞速游戏。在 42 人团队中负责最终赛道、索道捷径系统与镜头设计，通过持续迭代优化高速竞速中的导航、路线选择与观赏体验。"
           },
           {
             "kind": "heading",
-            "text": "最终关卡：扭蛋机星系（Gacha Galaxy）"
+            "text": "项目状况"
           },
           {
             "kind": "paragraph",
-            "text": "作为关卡主要负责人，我主导最终关卡的主题构思、空间布局、玩法节奏与落地协作，并与美术、程序和其他设计成员持续迭代，确保赛道可读性、竞速节奏与视觉表现保持一致。"
+            "text": "即将上线steam。"
+          },
+          {
+            "kind": "buttons",
+            "links": [
+              {
+                "label": "🎮 Steam 商店页",
+                "href": "https://store.steampowered.com/app/4319370/Hamsterballin/"
+              }
+            ]
           },
           {
             "kind": "heading",
-            "text": "索道系统与镜头设计"
+            "text": "项目介绍"
           },
           {
             "kind": "paragraph",
-            "text": "我设计并实现贯穿关卡的索道系统，负责捷径规划、交互逻辑以及与主赛道的衔接。索道移动期间的镜头用于展示景观、预告后续路线和强化方向感，使该系统同时承担捷径、导航和演出功能。"
+            "text": "《Hamsterballin’》是一款本地多人竞速游戏，玩家操控可滚动弹跳的仓鼠球，在充满机关、捷径与立体地形的赛道中竞争。项目由 SMU Guildhall Team Game Project II 课程开发，42人团队历时12周完成，即将登陆 Steam。"
+          },
+          {
+            "kind": "heading",
+            "text": "我的工作"
+          },
+          {
+            "kind": "heading",
+            "text": "1. 最终关卡：扭蛋机星系（Gacha Galaxy）"
+          },
+          {
+            "kind": "paragraph",
+            "text": "我认为，一条优秀的竞速赛道，应当由一个个强烈的“记忆点”串联而成。例如马里奥赛车，玩家并不会记住每一个弯道，每一个细节，却会记住沙漠地图的流沙漩涡，海底地图的巨型鳗鱼。所以在设计赛道时，我会先设想好这样的“记忆点”，安排他们出场的节奏，并用普通路段将这些高潮体验自然连接起来。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "作为最终关卡主要负责人，我主导关卡的主题构思、赛道布局设计，以及与程序、美术团队的跨部门协作，推动关卡从概念设计到最终落地。"
+          },
+          {
+            "kind": "heading",
+            "text": "1. 确立关卡核心概念"
+          },
+          {
+            "kind": "paragraph",
+            "text": "项目进入关卡开发阶段后，我们需要在较短周期内完成一张完整赛道。于是我很快确立了我们的设计目标——一个巨大中心地标来作为本关卡的导航标识与记忆锚点。我提出了“赛道围绕巨大机器人”搭建的设想。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "但是考虑到开发周期短与美术团队人手不足的情况，在与团队Leader讨论后，我们很快将方案调整为了扭蛋机，这一修改既保留了中心地标的设计理念，也显著降低了美术制作成本，最终形成了\"围绕扭蛋机—穿越扭蛋机—进入扭蛋机内部返回起点\"的整体空间结构。"
+          },
+          {
+            "kind": "heading",
+            "text": "2. 主导核心区域设计"
+          },
+          {
+            "kind": "paragraph",
+            "text": "确定整体布局后，我负责赛道起点、终点，以及作为关卡核心的扭蛋机区域设计。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "为了使赛道穿越扭蛋机，我们将扭蛋机上方球星部分套上“土星环”，这样一来，赛道在这里一分为二。关卡名“扭蛋机星系”也因此而来。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "由于扭蛋机承担导航、视觉焦点和关卡主题表达等多重职责，我与美术团队进行了大量跨部门沟通，持续调整模型尺寸、赛道连接方式与玩家视线，确保美术表现能够服务于玩家导航与竞速体验。"
+          },
+          {
+            "kind": "heading",
+            "text": "3. 推动核心玩法迭代"
+          },
+          {
+            "kind": "paragraph",
+            "text": "在多轮 Playtest 中，我们发现玩家进入扭蛋机内部后，需要连续通过三层螺旋管道返回高处。这一设计存在三个问题：\n• 重复度高，缺乏操作空间。\n• 玩家容易失去方向感。\n• 长时间旋转造成部分玩家出现 3D 眩晕。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "团队最初计划仅缩减为一层螺旋管道。我认为这一修改并未解决根本问题，因为玩家进入管道后几乎没有任何决策或操作，只是持续向前驾驶。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "因此，我提出将整段路线改为索道（Cableway）系统。这一方案不仅彻底消除了重复路段，还创造了新的体验价值：\n• 利用固定镜头强化玩家空间定位。\n• 将高速竞速转换为短暂的观赏节奏。\n• 近距离展示作为关卡核心的巨型扭蛋机，进一步强化玩家记忆点。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "最终团队采纳该方案，并完成实现。"
+          },
+          {
+            "kind": "heading",
+            "text": "4. 项目成果"
+          },
+          {
+            "kind": "paragraph",
+            "text": "关卡顺利完成开发并随游戏上线，并成为整款游戏的最终关卡。"
+          },
+          {
+            "kind": "heading",
+            "text": "2. 索道系统及其镜头设计（Cableway System）"
+          },
+          {
+            "kind": "paragraph",
+            "text": "我从项目POCT阶段开始独立提出设想、设计并实现作为关卡捷径的索道系统，负责捷径规划、交互逻辑以及玩家的镜头演出。索道移动期间的镜头用于展示景观、预告后续路线和强化方向感，使该系统同时承担捷径、导航和演出功能。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "早在POCT阶段，我便由《Balance》，《Splatoon》等游戏获得灵感，在早期的玩法探索中试图搭建这样的高速索道系统。但是由于我们的竞速游戏完全基于物理模拟，所以索道难以约束玩家，只能作罢。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "但是在POCG阶段中，我仍然不愿放弃这个方向。在继续探索后发现可以由3到4根索道将玩家仓鼠球夹在其中，仅靠物理便完美约束玩家，并且有着很强的趣味性和演出潜力，自此，该玩法便确立为项目主要玩法之一，预期作为赛道捷径来使用。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "在正式开发周期中，理所当然的，我负责与美术、程序组交流，继续开发索道系统。并且负责最终关卡中所有索道设计。我最引以为傲的索道是在赛道开始处，玩家即将通过扭蛋机上方“土星环”区域的索道，在这里，我将索道大幅延申出去，并且绕了一个反向的弯，形成优美弧度，让玩家先远离赛道，再高速切回中心。并使得摄像机大幅拉远、使用变焦镜头，让玩家感受疾速的同时欣赏以扭蛋机为中心的整个赛道。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "在开发后期，我被要求优化所有关卡的所有的索道镜头，即使时间紧迫，团队表示如果你觉得任务过重可以拒绝，我依然接下这个任务。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "不得不说，索道镜头背后的系统实际上十分简陋。在索道上，索道摄像机接管了玩家背后的第三人称相机，他始终遵循两条规则：\n1. 方向始终朝向玩家。\n2. 摄像机在摄像机轨道的运动百分比始终等于玩家在索道上的运动百分比。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "这也导致了配置相机任务十分困难，没有任何精确控制能力，只能按照经验由人工手配。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "我迅速安插到另外两组关卡设计团队中去，和他们沟通需求，磨合工作，最终完成了三个关卡总计11条索道镜头的配置与优化。"
           },
           {
             "kind": "youtube",
-            "id": "gYKeiV7x5rg",
-            "caption": "索道系统与镜头演示"
+            "id": "NM2TgDevFbo",
+            "caption": "索道系统及其镜头设计演示"
           },
           {
             "kind": "image",
@@ -242,27 +470,167 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "kind": "image",
             "caption": "关卡三索道 5：索道终点与赛道重新汇合",
             "src": "project3/images/level3cableway5.jpg"
+          },
+          {
+            "kind": "heading",
+            "text": "时间线"
+          },
+          {
+            "kind": "paragraph",
+            "text": "阶段｜时间｜目标｜工作内容\nPOCT｜｜｜\nPOCG｜｜｜\nPrototype｜｜｜\nVertical Slice｜｜｜\nAlpha｜｜｜\nBeta｜｜｜\nLaunch｜｜｜"
+          },
+          {
+            "kind": "heading",
+            "text": "测试迭代"
+          },
+          {
+            "kind": "paragraph",
+            "text": "反馈｜分析｜解决方案"
+          },
+          {
+            "kind": "heading",
+            "text": "项目总结"
+          },
+          {
+            "kind": "paragraph",
+            "text": "项目亮点（What Went Well）\n• 完成最终关卡「扭蛋机星系」的设计、制作与迭代。\n• 完成全部索道镜头配置，提升了高速移动过程中的导航与演出效果。\n• 与程序、美术及设计团队高效协作，项目最终顺利上线 Steam。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "优化方向（Even Better If）\n• 索道的镜头系统过于简陋，实际上我应该继续跟进程序团队，在这方面提更多需求来完善这一重要系统。\n• 部分捷径路线在早期版本存在风险与收益不平衡的问题，需要多轮 Playtest 调整。\n• 高速竞速下部分镜头切换影响玩家对前方路线的观察，需要不断优化镜头角度与时机。\n• 由于多人竞速玩法高度依赖玩家行为，部分设计问题仅能通过大量多人测试发现。\n• 更早开展多人 Playtest，在灰盒阶段验证路线设计。\n• 增加更多具有策略差异的路线，提高比赛的重复可玩性。\n• 丰富最终圈的动态事件与视觉反馈，进一步强化终局高潮体验潮。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "项目收获（What I Learned）\n• 总结赛车项目流线经验\n• 总结演出经验\n• 总结关卡设计哲学\n• 测试与迭代\n• 大型团队跨部门协作管线"
+          },
+          {
+            "kind": "heading",
+            "text": "附件"
           }
         ],
         "hero": {
           "src": "project3/images/hero.jpg",
-          "caption": "《仓鼠球》最终关卡“扭蛋机星系”主视觉"
+          "caption": "《Hamsterballin’》最终关卡“扭蛋机星系”主视觉"
         }
       },
       "project4": {
         "blocks": [
           {
             "kind": "heading",
-            "text": "项目概述"
+            "text": "一句话介绍"
           },
           {
             "kind": "paragraph",
-            "text": "《FLING》是一个以移动机制和关卡节奏为核心的 Unity 2D 平台跳跃项目。我参与核心玩法与关卡设计，并通过公开测试持续调整挑战强度、教学顺序和操作反馈。"
+            "text": "一款以钓竿摆荡与精准操作为核心的 2D 平台跳跃游戏，负责核心玩法设计与大部分关卡设计，通过重新定义核心机制挽救 Prototype，并完成从教学到高难挑战的完整难度曲线设计。"
+          },
+          {
+            "kind": "heading",
+            "text": "项目状况"
+          },
+          {
+            "kind": "paragraph",
+            "text": "即将上线steam"
+          },
+          {
+            "kind": "heading",
+            "text": "项目介绍"
+          },
+          {
+            "kind": "paragraph",
+            "text": "《FLING》是一款以精准操作为核心的 2D 平台跳跃游戏。玩家扮演一只狐狸，利用钓竿摆荡、抓取与位移，在幽暗神秘的洞穴中不断挑战高难度平台关卡。"
           },
           {
             "kind": "image",
             "caption": "FLING 关卡与核心玩法展示",
             "src": "project4/images/image_project4_1.jpg"
+          },
+          {
+            "kind": "heading",
+            "text": "我的工作"
+          },
+          {
+            "kind": "heading",
+            "text": "1. 游戏设计"
+          },
+          {
+            "kind": "paragraph",
+            "text": "这是一个自立项开始便命途多舛的项目。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "最早，我们在头脑风暴中提出游戏初始概念，即让玩家使用钓竿作为钩锁来实现平台跳跃、战斗、钓鱼等玩法，并在一个类银世界中探索。这非常符合我的“从单一有趣玩法延申设计”的理念。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "但在考虑开发周期之后，我们决定聚焦平台跳跃玩法集中开发，并采用类蔚蓝的线性关卡。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "于是我们游戏的原型基本确立。但是，在早期的测试中，我们发现纯粹的高速钩锁平台跳跃并不有趣，对于玩家操作的精确性要求过高。学院院长在测试后表达了失望，项目在被砍的边缘，团队也正面临重组。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "但就在那一周末，我在怀旧游戏掌机上体验了马里奥大陆2这款来自1992年的GBA老游戏，其中的耀西拥有可以朝2D平面任意方向投掷蛋的能力。但是在只有十字键、AB键的老游戏机上，这么复杂的操作该怎么完成呢？该游戏的解决方案是，在按下投掷键后，关卡内所有的机关和敌人停止行动，待玩家使用十字键慢慢选择方向并投掷出蛋后，时间才开始流动。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "如此，我心目中便有了我们项目难题的解决方案。在新一周的开始，我提出了“时间停止”的机制，当玩家在空中并使用右摇杆发射钩锁时，时间停止，玩家可以有足够时间来精确操作钩锁方向，待释放右摇杆时，钩锁发出，时间恢复流动。程序只用了一分钟便实现了这一简单机制，但是这样的小改动却完全改变了游戏。对玩家操作精确性要求过高的问题迎刃而解，玩家拥有了更大的空间和容错来操作，投掷钩锁一收一放间也优化了游戏节奏，获得了更高的策略性与操作深度，成为了项目的核心玩法。（类似《塞尔达传说旷野之息》中，林克空中射箭会触发时间停止的机制）"
+          },
+          {
+            "kind": "heading",
+            "text": "2. 关卡设计"
+          },
+          {
+            "kind": "paragraph",
+            "text": "项目采用类蔚蓝的无缝关卡设计，总计16个关卡房间，最终版本删去了第4、第10关。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "我负责设计了1到8，12，14到16等大部分关卡。覆盖教学、成长与高难挑战等不同阶段。重点负责于游戏最后部分设计高难度关卡，同时兼顾难度曲线。在开发的进程中，也随着多轮公开玩家测试反馈对关卡进行重构、删减与节奏调整。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "其中，我最满意的关卡是第16关，作为最后一关，我最初对该关卡的设想是：\n1. 包含游戏所有机制。\n2. 在玩家完成高难关卡的最后，亦即全游戏结局的最后，释放整个游戏积累的压力。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "我很好的完成了这两项任务。前者串联使用所有游戏机制，组合搭建全新关卡，并且在最后另类地使用了游戏中的“泡泡”机关，利用超出玩家思维定式的方式为结局创造最后一次惊喜。后者，在关卡的最后，我放置了一连串的“泡泡”，让玩家得以连续被弹射到地表，创造爽快体验，完成情绪释放。"
+          },
+          {
+            "kind": "heading",
+            "text": "时间线"
+          },
+          {
+            "kind": "paragraph",
+            "text": "阶段｜时间｜目标｜工作内容\nPOCT｜｜｜\nPOCG｜｜｜\nPrototype｜｜｜\nVertical Slice｜｜｜\nAlpha｜｜｜\nBeta｜｜｜\nLaunch｜｜｜"
+          },
+          {
+            "kind": "heading",
+            "text": "测试迭代"
+          },
+          {
+            "kind": "paragraph",
+            "text": "问题｜迭代方案｜结果\n难度曲线存在局部跃升｜调整房间顺序，删除两个冗余关卡，增加机制过渡｜玩家认为整体难度递增自然，仅最终关卡保持挑战性。\n新机制学习成本较高｜重构教学关卡，将复杂机制拆分教学，再组合运用｜玩家能够基本独立掌握所有核心机制，仅少数玩家需要额外提示。\n结局体验不够完整｜重做最终关卡，完成机制总结与情绪释放｜最终关卡成为全游戏高潮，为玩家提供完整的收尾体验。"
+          },
+          {
+            "kind": "heading",
+            "text": "项目总结"
+          },
+          {
+            "kind": "paragraph",
+            "text": "项目亮点（What Went Well）\n• 重新定义核心玩法，成功挽救 Prototype。 将原本高操作门槛的钩锁玩法重构为“发射自己”的核心机制，大幅提升了玩法趣味性与可控性。\n• 完成完整的难度曲线设计。 从基础教学、机制组合到最终挑战，构建了循序渐进的学习体验，并通过多轮 Playtest 持续优化节奏。\n• 形成具有记忆点的最终关卡。 最终关卡不仅整合全部游戏机制，还通过情绪释放设计，为玩家提供完整且富有成就感的收尾体验。。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "优化方向（Even Better If）\n• 更早进行玩家测试。 若能在 Prototype 阶段获得更多真实玩家反馈，可以更早发现核心玩法的问题，减少后期大规模重构成本。\n• 增加更多机制过渡关卡。 部分机制之间仍存在学习跨度，可进一步细化能力培养过程，使难度曲线更加平滑。\n• 继续丰富关卡变化。 在保持核心机制一致性的基础上，引入更多机关组合与情境变化，进一步提升游戏的新鲜感。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "项目收获（What I Learned）\n• Playtest 比设计假设更重要。 玩家反馈远比设计者自己的判断更能揭示真正的问题，优秀的关卡需要通过不断迭代完成。\n• 最终关卡承担的不只是难度。 它更应该总结整个游戏的机制、验证玩家成长，并完成情绪上的收束与释放。\n• 关卡设计服务于玩家体验。 玩家真正记住的不是某个机关，而是挑战、成长与情绪变化共同构成的完整游戏体验。"
+          },
+          {
+            "kind": "heading",
+            "text": "附件"
           }
         ]
       },
@@ -270,11 +638,59 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
-            "text": "更多项目"
+            "text": "海错大爆钓"
           },
           {
             "kind": "paragraph",
-            "text": "这里展示我的其他游戏项目、玩法原型与独立创作。后续可以直接在本文件中继续添加项目文字、图片、视频与链接。"
+            "text": "原创卡牌桌游设计，于上海 SHM 桌游展及“中国好桌游”展出，目前正与出版社推进出版合作。"
+          },
+          {
+            "kind": "heading",
+            "text": "The Holy Grail"
+          },
+          {
+            "kind": "paragraph",
+            "text": "失败的Quake 3 竞技场多人地图。在制作此图之前，我对PVP游戏认知仅停留在Splatoon上，"
+          },
+          {
+            "kind": "heading",
+            "text": "The Way of Water"
+          },
+          {
+            "kind": "paragraph",
+            "text": "使用 Hammer Editor 制作的《半条命2》FPS单人关卡。围绕水体物理与电力机制设计战斗及解谜流程，控制玩家引导、战斗节奏与空间视线。"
+          },
+          {
+            "kind": "heading",
+            "text": "A study on the influence of thematic affordances on players’ cognitive map construction"
+          },
+          {
+            "kind": "paragraph",
+            "text": "毕设题目，正在开发中。"
+          },
+          {
+            "kind": "heading",
+            "text": "Box Shot"
+          },
+          {
+            "kind": "paragraph",
+            "text": "42人团队UE5高速FPS项目，正在研发中。"
+          },
+          {
+            "kind": "heading",
+            "text": "Escape from the Circus"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Global Game jam项目，基于面部识别交互的 Unity2D 平台跳跃游戏，担任程序开发，在48小时内开发完成。"
+          },
+          {
+            "kind": "heading",
+            "text": "OGO"
+          },
+          {
+            "kind": "paragraph",
+            "text": "BOOOM Game jam项目，Unreal Engine制作的2D平台跳跃游戏。"
           }
         ]
       },
@@ -282,11 +698,19 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "paragraph",
-            "text": "我是马子潇，SMU Guildhall 数字游戏开发（关卡设计方向）硕士在读，本科毕业于浙江理工大学计算机科学与技术专业。曾在网易雷火担任系统策划实习生，参与系统设计与玩法开发工作。拥有多个 Unreal Engine 与 Unity 团队项目开发经验，具备关卡设计、系统设计、原型制作与跨职能团队协作能力。独立设计并出版原创桌游《海错大爆钓》，熟悉 Unreal Engine、Unity、Creation Kit、Hammer Editor 等开发工具。"
+            "text": "我是马子潇，SMU Guildhall 数字游戏开发（关卡设计方向）硕士在读，本科毕业于浙江理工大学计算机科学与技术专业。曾在网易雷火担任系统策划实习生，参与系统设计与玩法开发工作。"
           },
           {
             "kind": "paragraph",
-            "text": "这里是我的简历。"
+            "text": "拥有多个 Unreal Engine 与 Unity 团队项目开发经验，具备关卡设计、系统设计、原型制作与跨职能团队协作能力。独立设计并出版原创桌游，熟悉 Unreal Engine、Unity、Creation Kit、Hammer Editor 等开发工具。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "我喜欢从一个简单但有趣的机制开始，搭建整套玩法设计。"
+          },
+          {
+            "kind": "heading",
+            "text": "简历"
           },
           {
             "kind": "buttons",
@@ -302,14 +726,46 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             ]
           },
           {
+            "kind": "heading",
+            "text": "游戏经历"
+          },
+          {
             "kind": "paragraph",
-            "text": "左侧是我的近期项目。"
+            "text": "经常玩的游戏品类：\n• 角色扮演类\n• 卡牌类\n• 射击类\n• 平台跳跃\n• 独立游戏\n• 任天堂游戏"
+          },
+          {
+            "kind": "paragraph",
+            "text": "三款本命游戏及游戏时长：\n• Splatoon，1000+小时\n• 任天堂全明星大乱斗，1000+小时\n• 蔚蓝（Celeste），20+小时"
+          },
+          {
+            "kind": "paragraph",
+            "text": "本命游戏的原因及游玩体验："
+          },
+          {
+            "kind": "paragraph",
+            "text": "首先，Splatoon除了网络不稳定，运营极其落后，匹配机制及其不公平，是一款完美的游戏。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "泛游戏经历："
+          },
+          {
+            "kind": "paragraph",
+            "text": "爷爷曾经常对我说，我在学会走路之前就学玩Ballance了。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "那个时候，我还住在爷爷的厂里，那里有一间大的办公室，全部是员工的隔间以及电脑，就在角落，有一台装满了游戏的大屁股电脑。我的童年就从这里开始。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Ballance，祖玛，宝石迷阵，贪食鱼，刺猬索尼克，明星三缺一。"
           }
         ],
         "hero": {
           "src": "aboutme/images/hero.jpg",
           "caption": "马子潇——关卡设计师 / 游戏设计师",
-          "width": "68%"
+          "width": "38%"
         }
       }
     }
@@ -317,40 +773,40 @@ window.SITE_CONTENT_BY_LANGUAGE = {
   "en": {
     "database": {
       "project1": {
-        "title": "Starfield Side Quest Level Design: Decaran: Become Human",
-        "tabTitle": "Starfield Side Quest Level Design: Decaran: Become Human",
+        "title": "Decaran: Become Human",
+        "tabTitle": "Starfield Side Quest: Decaran: Become Human",
         "tag": "Starfield Side Quest Level Design",
-        "type": "3D Narrative-Driven RPG Side Quest",
-        "role": "Quest Narrative / Level Flow / Combat & Spatial Design",
-        "time": "Solo Development Project",
-        "caption": "▲ Building a complete side-quest experience through exploration, combat, and moral choice"
+        "type": "Starfield Single-Player Side-Quest Level",
+        "role": "Level Design / Quest Design / Narrative Design / Gameplay Implementation",
+        "time": "10 Weeks / Solo",
+        "caption": "▲ A two-ending quest experience built through spatial layout, combat design, and environmental storytelling"
       },
       "project2": {
-        "title": "Starfield Side Quest Level Design: Ghost Ship",
-        "tabTitle": "Starfield Side Quest Level Design: Ghost Ship",
+        "title": "Ghost Ship",
+        "tabTitle": "Starfield Side Quest: Ghost Ship",
         "tag": "Starfield Side Quest Level Design",
-        "type": "3D Sci-Fi RPG Side Quest",
-        "role": "Quest Flow / Exploration / Environmental Storytelling",
-        "time": "Solo Development Project",
-        "caption": "▲ Using a contained spacecraft environment to support mystery, exploration, and narrative progression"
+        "type": "Starfield Single-Player Side-Quest Level",
+        "role": "Level Design / Narrative Design / Environmental Storytelling / Gameplay Implementation",
+        "time": "8 Weeks / Solo",
+        "caption": "▲ An immersive adventure aboard an abandoned luxury space liner, built through environmental storytelling, multi-zone exploration, puzzles, and combat"
       },
       "project3": {
-        "title": "UE5 3D Multiplayer Racing Project: Hamsterballin",
-        "tabTitle": "UE5 3D Multiplayer Racing Project: Hamsterballin",
+        "title": "Hamsterballin’",
+        "tabTitle": "UE5 Multiplayer Racing: Hamsterballin’",
         "tag": "Unreal Engine 5",
-        "type": "3D Local Multiplayer Racing Game",
-        "role": "Final Track / Cableway System / Camera Design",
+        "type": "3D / Local Multiplayer / Racing / Mario Kart-like",
+        "role": "Final Level / Cableway System / Camera Design",
         "time": "12 Weeks / 42-Person Team",
-        "caption": "▲ Coordinating high-speed track design, shortcuts, and dynamic camera presentation"
+        "caption": "▲ Iterating on navigation, route choice, and spectacle within a high-speed racing experience"
       },
       "project4": {
-        "title": "Unity 2D Platformer Project: FLING",
-        "tabTitle": "Unity 2D Platformer Project: FLING",
+        "title": "FLING",
+        "tabTitle": "Unity 2D Platformer: FLING",
         "tag": "Unity 2D Platformer",
-        "type": "2D Platformer",
-        "role": "Core Gameplay / Level Design / Playtest Iteration",
-        "time": "Team Project",
-        "caption": "▲ Building progressive challenges and movement rhythm around the core traversal mechanic"
+        "type": "2D / Side-Scrolling / Platformer / Celeste-like",
+        "role": "Game Design / Level Design",
+        "time": "6 Weeks / 4-Person Team",
+        "caption": "▲ Core gameplay and level design spanning a complete difficulty curve from tutorial to advanced challenge"
       },
       "moreprojects": {
         "title": "More Projects",
@@ -359,7 +815,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "Multi-Genre Projects and Gameplay Prototypes",
         "role": "Design / Prototyping / Collaborative Development",
         "time": "Ongoing",
-        "caption": "▲ An archive of additional game-design work, interaction prototypes, and independent projects"
+        "caption": "▲ An archive of additional game designs, interactive prototypes, and independent work"
       },
       "aboutme": {
         "title": "About Me",
@@ -368,7 +824,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "Personal Profile",
         "role": "Level Designer / Game Designer",
         "time": "Portfolio",
-        "caption": "▲ A game-design practice centered on player experience, spatial organization, and iterative playability"
+        "caption": "▲ I like to start with one simple but interesting mechanic and build a complete gameplay system around it"
       }
     },
     "content": {
@@ -376,15 +832,27 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
-            "text": "Project Overview"
+            "text": "One-Sentence Overview"
           },
           {
             "kind": "paragraph",
-            "text": "Decaran: Become Human is an original narrative-driven side quest developed independently with the Starfield Creation Kit. The player is hired by a corporation to investigate a robot uprising at an automated factory on Decaran III. The mission initially appears to be a routine facility-clearing operation, but deeper exploration reveals that the robots have developed self-awareness and are fighting for autonomy. R6D7, the companion robot who assists the player throughout the mission, is ultimately revealed as the true organizer of the rebellion and the final boss."
+            "text": "A single-player quest level with both interior and exterior spaces, independently designed and developed in the Starfield Creation Kit, using spatial layout, combat design, and environmental storytelling to create a two-ending mission built around a moral choice."
+          },
+          {
+            "kind": "heading",
+            "text": "Game Overview"
           },
           {
             "kind": "paragraph",
-            "text": "I was responsible for the complete quest concept, narrative structure, level flow, combat encounters, spatial layout, puzzle mechanics, and final choice. I also implemented the quest setup, trigger logic, terminal interactions, and iterative level development in the Creation Kit. The goal was to integrate exploration, combat, environmental storytelling, and moral decision-making into a cohesive single-player mission."
+            "text": "Starfield is an open-world science-fiction RPG developed by Bethesda Game Studios. Built with the official Creation Kit, this project adds an original, independently playable side quest to the game."
+          },
+          {
+            "kind": "heading",
+            "text": "Level Overview"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Decaran: Become Human is a Starfield side-quest level. The player is hired to investigate an abnormal incident at the automated Decaran III factory and gradually uncovers the truth behind the robots' awakening. As the story unfolds, the player must ultimately choose between restoring factory production and helping the robots gain their freedom. The two choices lead to dramatically different endings."
           },
           {
             "kind": "youtube",
@@ -393,67 +861,83 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "text": "Narrative and Quest Structure"
+            "text": "My Work"
           },
           {
             "kind": "paragraph",
-            "text": "The mission uses two major twists. The first reframes the conflict: the robots are not simply malfunctioning machines, but a self-aware group seeking independence. The second redefines the player's relationship with their companion, as R6D7 shifts from guide to rebellion leader and final boss. At the conclusion, the player must choose between restoring corporate production and freeing the robots, with each outcome affecting the factory, the mercenaries, the robots, and several related NPCs."
+            "text": "1. Narrative Design\n• Designed the complete side-quest narrative, mission objectives, and two-ending structure.\n• Wrote NPC dialogue, quest text, and environmental storytelling content.\n• Used a moral dilemma to encourage players to reflect on the relationship between robots and humans."
           },
           {
             "kind": "paragraph",
-            "text": "The level flow is organized around a central hall. From this hub, the player enters different functional zones, collects three biometric keys, gradually unlocks vertical circulation and the hidden server area, and then returns to the core space to advance the quest. Repeated returns to the central hall reinforce the player's mental map while allowing environmental states, NPC information, and objectives to update between phases."
+            "text": "2. Level Design\n• Designed the factory's overall spatial layout, player routes, and exploration flow.\n• Built a level rhythm that alternates among combat, exploration, and puzzle-solving.\n• Used thematic zoning to strengthen spatial navigation and environmental readability."
+          },
+          {
+            "kind": "paragraph",
+            "text": "3. Gameplay Design\n• Configured enemies and combat encounters.\n• Designed core gameplay elements including EMP weapons, laser obstacles, and terminal puzzles.\n• Used Papyrus Script to implement quest logic and event triggers."
+          },
+          {
+            "kind": "paragraph",
+            "text": "4. Playtesting and Iteration\n• Continuously refined flow, combat difficulty, navigation, and environmental storytelling through multiple rounds of playtesting.\n• Fixed scripting issues and completed the final build."
           },
           {
             "kind": "heading",
-            "text": "Combat and Spatial Design"
+            "text": "Timeline"
           },
           {
             "kind": "paragraph",
-            "text": "Enemy groups combine melee assault robots with ranged fire-support units, requiring the player to continuously adjust positioning, cover use, and target priority. The Novablast EMP rifle can both deal damage and temporarily disable mechanical enemies, giving the player a tool for controlling the pace of combat. Encounter spaces range from tight interiors and open arenas to catwalk corridors and vertical environments, creating meaningful variation in range, movement routes, and sightline pressure."
-          },
-          {
-            "kind": "paragraph",
-            "text": "For navigation, I used cables, lighting, access-control doors, terminals, and functional environmental assets to communicate objective direction. Clear functional zoning—offices, production floors, server areas, and rooftops—helps the player understand the factory's overall structure. The final rooftop sequence opens the view and uses a sunset atmosphere to release tension while supporting the narrative climax."
+            "text": "Level Design Pitch｜2026.02.20｜Completed the level pitch and established the theme, core gameplay, narrative framework, and overall development direction.\nLevel Design Document｜2026.02.26｜Completed the LDD and defined the level flow, spatial layout, quest structure, and combat design.\nWhitebox｜2026.03.09｜Completed the whitebox and validated the spatial layout, player flow, and level pacing.\nInitial Gameplay｜2026.03.29｜Implemented the core gameplay, quest scripts, and combat systems, producing a fully playable level.\nGameplay Complete｜2026.04.18｜Completed all level content and continued refining flow, navigation, and the overall experience based on playtesting.\nAesthetics｜2026.04.26｜Completed environment art, lighting, and environmental presentation to improve the overall visual quality.\nRTM｜2026.05.03｜Completed final polish, bug fixing, and project delivery."
           },
           {
             "kind": "heading",
-            "text": "Project Documentation"
+            "text": "Playtesting and Iteration"
           },
           {
             "kind": "paragraph",
-            "text": "The LDD (Level Design Document) records the level goals, narrative background, flow structure, spatial planning, combat encounters, quest mechanics, and production requirements. It provides the complete design rationale from concept through implementation."
+            "text": "Feedback｜Analysis｜Solution"
+          },
+          {
+            "kind": "heading",
+            "text": "Project Retrospective"
+          },
+          {
+            "kind": "paragraph",
+            "text": "What Went Well\n• The overall visual presentation was strong.\n• I attempted and implemented several new design ideas.\n• The level's vertical spatial structure was well designed.\n• I continuously refined the level flow based on milestone reviews and playtest feedback."
+          },
+          {
+            "kind": "paragraph",
+            "text": "Even Better If\n• Communication with stakeholders, including instructors and producers, could have been stronger.\n• The laser-platforming gameplay did not perform as well as intended and should have received further polish if time allowed.\n• The narrative content was still insufficient.\n• Combat difficulty was too low and lacked challenge.\n• Parts of the flow still needed improvement.\n• The laser mechanic was not used to its full potential.\n• The exterior area was relatively underdeveloped.\n• The overall level quality still fell short of my expectations."
+          },
+          {
+            "kind": "paragraph",
+            "text": "What I Learned\n• Proactively communicate with stakeholders and respond to feedback promptly.\n• Plan development time more effectively.\n• Gain a holistic command of the engine and tools as early as possible in a project.\n• Improve my ability to adapt to complex and unfamiliar development tools.\n• Commercial game engines and internal company tools are imperfect, and designers must learn to work with their limitations.\n• Complete a full level project according to a professional game-development pipeline.\n• Time and energy management are crucial to a project's success.\n• Design and refine level flow.\n• Find a balance between gameplay and believable architectural logic.\n• Build game narratives that are more complete, clearly structured, and supportive of gameplay."
+          },
+          {
+            "kind": "heading",
+            "text": "Attachments"
           },
           {
             "kind": "buttons",
             "links": [
               {
-                "label": "📄 View LDD | Complete Level Design Document",
+                "label": "📄 View LDD｜Complete Level Design Document",
                 "href": "project1/pdfs/MaZ_DecaranBecomeHuman_LDD.pdf"
               }
             ]
           },
           {
-            "kind": "paragraph",
-            "text": "The ReadMe provides installation, launch, and testing instructions, required dependencies, and essential controls so reviewers can quickly enter the level and experience its core content."
-          },
-          {
             "kind": "buttons",
             "links": [
               {
-                "label": "📄 View ReadMe | Setup and Play Instructions",
+                "label": "📄 View ReadMe｜Setup and Play Instructions",
                 "href": "project1/pdfs/MaZ_DecaranBecomeHuman_ReadMe.pdf"
               }
             ]
           },
           {
-            "kind": "paragraph",
-            "text": "The Project Portfolio is a presentation-focused design summary that highlights the project's core design problems, solutions, iteration process, and final results."
-          },
-          {
             "kind": "buttons",
             "links": [
               {
-                "label": "📄 View Portfolio | Project Design Summary",
+                "label": "📄 View Portfolio｜Project Design Summary",
                 "href": "project1/pdfs/MaZ_SF_DecaranBecomeHuman_Portfolio.pdf"
               }
             ]
@@ -461,23 +945,111 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         ],
         "hero": {
           "src": "project1/images/hero.jpg",
-          "caption": "Key visual for Decaran: Become Human"
+          "caption": "Decaran: Become Human — Project Key Visual"
         }
       },
       "project2": {
         "blocks": [
           {
             "kind": "heading",
-            "text": "Project Overview"
+            "text": "One-Sentence Overview"
           },
           {
             "kind": "paragraph",
-            "text": "This is my DFS2 project. The mission background, level flow, spatial design, core mechanics, and iteration notes can be expanded directly in this Markdown file as development continues."
+            "text": "A horror-exploration single-player quest level independently designed and developed in the Starfield Creation Kit, using environmental storytelling, multi-zone exploration, puzzles, and combat to create an immersive adventure aboard an abandoned luxury space liner."
+          },
+          {
+            "kind": "heading",
+            "text": "Game Overview"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Starfield is an open-world science-fiction RPG developed by Bethesda Game Studios. Built with the official Creation Kit, this project adds an original, independently playable side quest to the game."
+          },
+          {
+            "kind": "heading",
+            "text": "Level Overview"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Ghost Ship is a single-player Starfield side-quest level. After running out of fuel, the player boards a missing luxury space liner. While exploring, the player gradually restores power, unlocks sealed areas, and gathers key supplies. Environmental storytelling reveals the truth behind the ship's destruction, leading to a final confrontation with an unknown creature in the cargo hold. The level combines exploration, combat, stealth, puzzles, and environmental storytelling to create an Alien-like suspense-horror experience."
+          },
+          {
+            "kind": "heading",
+            "text": "My Work"
+          },
+          {
+            "kind": "paragraph",
+            "text": "1. Overall Level Design — Level Layout and Progression"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Designed the complete level flow, connecting the bridge, passenger cabins, crew quarters, activity areas, cargo hold, and other functional zones into a coherent exploration route. Power restoration, key collection, battery puzzles, and related mechanics progressively unlock new areas and create an increasingly layered exploration rhythm."
+          },
+          {
+            "kind": "paragraph",
+            "text": "2. Environmental Storytelling and Atmosphere Design"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Built the world of an abandoned luxury space liner. The placement of bodies, terminal logs, scene details, lighting changes, and environmental damage allows players to gradually infer what happened while establishing an Alien-like suspense-horror atmosphere."
+          },
+          {
+            "kind": "paragraph",
+            "text": "3. Exploration, Puzzle, and Combat Design — Gameplay Design"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Designed power-restoration tasks, key searches, battery collection, ventilation-shaft infiltration, secret rooms, and other exploration and puzzle mechanics. Xenogrubs, Terrormorphs, and other enemies make exploration, puzzle-solving, and combat alternate throughout the experience, steadily increasing tension."
+          },
+          {
+            "kind": "paragraph",
+            "text": "4. Pacing Design"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Built a complete experiential arc through a dark zero-gravity opening, power restoration, free exploration, confined pursuit sequences, resource management, and a final boss battle, gradually escalating from exploration to climactic combat."
           },
           {
             "kind": "image",
-            "caption": "Ghost Ship level design showcase",
+            "caption": "Ghost Ship level-design showcase",
             "src": "project2/images/image_project2_1.jpg"
+          },
+          {
+            "kind": "heading",
+            "text": "Timeline"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Level Design Pitch｜2026.05.26｜Completed the level pitch and established the theme, art direction, core gameplay, narrative framework, and overall level flow.\nLevel Design Document｜2026.06.01｜Completed the LDD and defined the spatial layout, exploration flow, puzzle mechanics, combat setup, and environmental storytelling design.\nWhitebox｜2026.06.08｜Completed the whitebox and validated the spatial layout, player flow, exploration pacing, and navigation design.\nInitial Gameplay｜2026.06.22｜Implemented the core gameplay, exploration, puzzles, combat, environmental storytelling, and quest flow, and began playtesting.\nGameplay Complete｜2026.07.06｜Completed all level content and continued refining flow, combat, horror atmosphere, and environmental storytelling based on test feedback.\nAesthetics｜2026.07.13｜Completed environment art, lighting, materials, and set dressing to strengthen the visual presentation and immersion of the ruined luxury liner.\nRTM｜2026.07.19｜Completed bug fixing, final polish, and project delivery."
+          },
+          {
+            "kind": "heading",
+            "text": "Playtesting and Iteration"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Feedback｜Analysis｜Solution\nThe save point was located inside the final boss room, creating an endless death loop.｜｜Placed a safe room outside the final boss arena."
+          },
+          {
+            "kind": "heading",
+            "text": "Project Retrospective"
+          },
+          {
+            "kind": "paragraph",
+            "text": "What Went Well\n• Completed the design, production, and iteration of the final level, Gacha Galaxy."
+          },
+          {
+            "kind": "paragraph",
+            "text": "Even Better If\n• Some shortcut routes had poorly balanced risk and reward in early versions and required multiple rounds of playtesting to adjust."
+          },
+          {
+            "kind": "paragraph",
+            "text": "What I Learned\n• Summarize flow-design experience from the racing project."
+          },
+          {
+            "kind": "heading",
+            "text": "Attachments"
           }
         ]
       },
@@ -485,37 +1057,149 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
-            "text": "Game Overview"
+            "text": "One-Sentence Overview"
           },
           {
             "kind": "paragraph",
-            "text": "Hamsterballin' is a local multiplayer racing game in which players control rolling and bouncing hamster balls across tracks filled with shortcuts, obstacles, and elevation changes. The project was created by SMU Guildhall Cohort 35 for Team Game Project II over a 12-week development cycle with a 42-person team."
-          },
-          {
-            "kind": "youtube",
-            "id": "HZVYPpXkfO8",
-            "caption": "Hamsterballin' — Official Trailer"
+            "text": "Hamsterballin' is a UE5 local multiplayer racing game. On a 42-person team, I worked on the final track, the cableway shortcut system, and camera design, continuously iterating on navigation, route choice, and spectacle during high-speed racing."
           },
           {
             "kind": "heading",
-            "text": "Final Track: Gacha Galaxy"
+            "text": "Project Status"
           },
           {
             "kind": "paragraph",
-            "text": "As the primary level designer for the final track, I led its thematic concept, spatial layout, gameplay pacing, and implementation coordination. I worked continuously with artists, programmers, and other designers to keep track readability, racing rhythm, and visual presentation aligned throughout production."
+            "text": "Coming soon to Steam."
+          },
+          {
+            "kind": "buttons",
+            "links": [
+              {
+                "label": "🎮 Steam Store Page",
+                "href": "https://store.steampowered.com/app/4319370/Hamsterballin/"
+              }
+            ]
           },
           {
             "kind": "heading",
-            "text": "Cableway System and Camera Design"
+            "text": "Project Overview"
           },
           {
             "kind": "paragraph",
-            "text": "I designed and implemented the cableway system that runs throughout the track, including shortcut placement, interaction logic, and transitions back into the main route. During cableway travel, the camera showcases the environment, previews upcoming routes, and reinforces orientation. This allows the system to function simultaneously as a shortcut, a navigation tool, and a cinematic presentation device."
+            "text": "Hamsterballin’ is a local multiplayer racing game in which players control rolling and bouncing hamster balls and compete across tracks filled with obstacles, shortcuts, and three-dimensional terrain. The project was developed in SMU Guildhall's Team Game Project II course by a 42-person team over 12 weeks and is coming soon to Steam."
+          },
+          {
+            "kind": "heading",
+            "text": "My Work"
+          },
+          {
+            "kind": "heading",
+            "text": "1. Final Level: Gacha Galaxy"
+          },
+          {
+            "kind": "paragraph",
+            "text": "I believe that a great racing track should be linked together by a series of powerful “memorable moments.” In Mario Kart, for example, players may not remember every turn or every detail, but they remember the whirlpool of quicksand on a desert track or the giant eel on an underwater track. When designing a track, I first imagine these memorable moments, plan the rhythm of their appearances, and use ordinary sections to connect those peak experiences naturally."
+          },
+          {
+            "kind": "paragraph",
+            "text": "As the primary owner of the final level, I led its thematic concept, track-layout design, and cross-disciplinary collaboration with programmers and artists, moving the level from concept to final implementation."
+          },
+          {
+            "kind": "heading",
+            "text": "1. Establishing the Level's Core Concept"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Once the project entered level production, we needed to complete a full track within a short schedule. I quickly established our design goal: a massive central landmark that would serve as both a navigation marker and a memory anchor. I proposed building the track around a giant robot."
+          },
+          {
+            "kind": "paragraph",
+            "text": "However, because the development schedule was short and the art team had limited bandwidth, I discussed the idea with the team leader and quickly changed the central object to a gacha machine. The revision preserved the central-landmark concept while significantly reducing art-production costs. It ultimately created the spatial structure of “racing around the gacha machine—passing through the gacha machine—entering its interior and returning to the start.”"
+          },
+          {
+            "kind": "heading",
+            "text": "2. Leading the Design of the Core Area"
+          },
+          {
+            "kind": "paragraph",
+            "text": "After defining the overall layout, I designed the track's start, finish, and the gacha-machine area at the center of the level."
+          },
+          {
+            "kind": "paragraph",
+            "text": "To let the track pass through the gacha machine, we wrapped a “Saturn ring” around the spherical section at its top, allowing the track to split into two paths there. This is also where the name Gacha Galaxy came from."
+          },
+          {
+            "kind": "paragraph",
+            "text": "Because the gacha machine simultaneously served as a navigation aid, visual focal point, and expression of the level's theme, I worked extensively with the art team. We continuously adjusted model scale, track connections, and player sightlines so that the visual presentation would support navigation and the racing experience."
+          },
+          {
+            "kind": "heading",
+            "text": "3. Driving Iteration on the Core Gameplay"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Across multiple playtests, we found that after entering the gacha machine, players had to travel through three consecutive spiral tubes to return to the upper level. This design had three problems:\n• It was repetitive and offered little room for player input.\n• Players easily lost their sense of direction.\n• Prolonged rotation caused 3D motion sickness for some players."
+          },
+          {
+            "kind": "paragraph",
+            "text": "The team's initial plan was simply to reduce the sequence to one spiral tube. I believed that this did not address the core issue, because players still had almost no decisions or meaningful input after entering the tube and would simply keep driving forward."
+          },
+          {
+            "kind": "paragraph",
+            "text": "I therefore proposed replacing the entire section with the Cableway system. This solution eliminated the repetitive route and created new experiential value:\n• Fixed cameras strengthened players' spatial orientation.\n• High-speed racing briefly shifted into a moment of spectacle.\n• A close-up view of the giant gacha machine further reinforced the level's central memory point."
+          },
+          {
+            "kind": "paragraph",
+            "text": "The team adopted the proposal and completed its implementation."
+          },
+          {
+            "kind": "heading",
+            "text": "4. Project Outcome"
+          },
+          {
+            "kind": "paragraph",
+            "text": "The level was successfully completed, shipped with the game, and became the game's final level."
+          },
+          {
+            "kind": "heading",
+            "text": "2. Cableway System and Camera Design"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Beginning in the project's POCT phase, I independently proposed, designed, and implemented the Cableway system as a level shortcut. I was responsible for shortcut planning, interaction logic, and the player's camera presentation. During Cableway travel, the camera showcases scenery, previews upcoming routes, and reinforces orientation, allowing the system to function simultaneously as a shortcut, navigation tool, and cinematic sequence."
+          },
+          {
+            "kind": "paragraph",
+            "text": "As early as the POCT phase, I drew inspiration from games including Balance and Splatoon and experimented with a high-speed Cableway system during early gameplay exploration. Because our racing game was built entirely around physics simulation, however, the Cableway could not constrain the player and the idea had to be set aside."
+          },
+          {
+            "kind": "paragraph",
+            "text": "During the POCG phase, I still did not want to abandon the direction. Further experimentation showed that three or four cables could enclose the player's hamster ball and constrain it perfectly through physics alone. The result was highly enjoyable and had strong presentation potential. From then on, the mechanic became one of the project's primary gameplay systems and was intended for use as a track shortcut."
+          },
+          {
+            "kind": "paragraph",
+            "text": "During full production, I naturally continued working with the art and programming teams to develop the Cableway system, and I designed every Cableway in the final level. The one I am proudest of appears near the beginning of the track, as the player is about to cross the “Saturn ring” above the gacha machine. I extended the Cableway far out from the track and curved it back in the opposite direction, forming a graceful arc. The player first moves away from the track and then cuts back toward its center at high speed. The camera pulls far back and uses a zoom lens, allowing the player to feel the speed while taking in the entire track organized around the gacha machine."
+          },
+          {
+            "kind": "paragraph",
+            "text": "Late in development, I was asked to optimize every Cableway camera across every level. Even with little time remaining, and even though the team told me I could decline if the workload was too heavy, I accepted the task."
+          },
+          {
+            "kind": "paragraph",
+            "text": "The camera system behind the Cableways was, frankly, extremely rudimentary. On a Cableway, a dedicated camera takes control from the player's third-person follow camera and always obeys two rules:\n1. It always faces the player.\n2. Its movement percentage along the camera track always equals the player's movement percentage along the Cableway."
+          },
+          {
+            "kind": "paragraph",
+            "text": "This made camera configuration extremely difficult. There was no precise control, so each camera had to be placed manually through experience and repeated adjustment."
+          },
+          {
+            "kind": "paragraph",
+            "text": "I quickly embedded myself with the other two level-design teams, communicated with them about their needs, adapted to their workflows, and ultimately completed the configuration and optimization of 11 Cableway cameras across three levels."
           },
           {
             "kind": "youtube",
-            "id": "gYKeiV7x5rg",
-            "caption": "Cableway System and Camera Demonstration"
+            "id": "NM2TgDevFbo",
+            "caption": "Cableway System and Camera Design Showcase"
           },
           {
             "kind": "image",
@@ -534,49 +1218,189 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "image",
-            "caption": "Level 2 Cableway 2: environmental preview during transport",
+            "caption": "Level 2 Cableway 2: previewing scenery during transport",
             "src": "project3/images/level2cableway2.jpg"
           },
           {
             "kind": "image",
-            "caption": "Level 3 Cableway 1: elevated route and spatial orientation",
+            "caption": "Level 3 Cableway 1: elevated route and spatial guidance",
             "src": "project3/images/level3cableway1.jpg"
           },
           {
             "kind": "image",
-            "caption": "Level 3 Cableway 2: camera composition and key target presentation",
+            "caption": "Level 3 Cableway 2: camera composition and presentation of key targets",
             "src": "project3/images/level3cableway2.jpg"
           },
           {
             "kind": "image",
-            "caption": "Level 3 Cableways 3–4: route pacing and environmental spectacle",
+            "caption": "Level 3 Cableways 3–4: continuous route pacing and environmental presentation",
             "src": "project3/images/level3cableway3&4.jpg"
           },
           {
             "kind": "image",
-            "caption": "Level 3 Cableway 5: cableway exit and reconnection with the main track",
+            "caption": "Level 3 Cableway 5: Cableway exit and reconnection with the main track",
             "src": "project3/images/level3cableway5.jpg"
+          },
+          {
+            "kind": "heading",
+            "text": "Timeline"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Phase｜Date｜Goal｜Work\nPOCT｜｜｜\nPOCG｜｜｜\nPrototype｜｜｜\nVertical Slice｜｜｜\nAlpha｜｜｜\nBeta｜｜｜\nLaunch｜｜｜"
+          },
+          {
+            "kind": "heading",
+            "text": "Playtesting and Iteration"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Feedback｜Analysis｜Solution"
+          },
+          {
+            "kind": "heading",
+            "text": "Project Retrospective"
+          },
+          {
+            "kind": "paragraph",
+            "text": "What Went Well\n• Completed the design, production, and iteration of the final level, Gacha Galaxy.\n• Configured all Cableway cameras, improving navigation and presentation during high-speed movement.\n• Collaborated effectively with the programming, art, and design teams, and the project successfully launched on Steam."
+          },
+          {
+            "kind": "paragraph",
+            "text": "Even Better If\n• The Cableway camera system was too rudimentary. I should have continued following up with the programming team and requested further improvements to this important system.\n• Some shortcut routes had poorly balanced risk and reward in early versions and required multiple rounds of playtesting to adjust.\n• During high-speed racing, some camera transitions interfered with the player's ability to read the route ahead, requiring continued refinement of camera angle and timing.\n• Because multiplayer racing depends heavily on player behavior, some design problems could only be identified through extensive multiplayer testing.\n• Begin multiplayer playtesting earlier and validate route design during the graybox stage.\n• Add more routes with meaningful strategic differences to improve replayability.\n• Enrich the final lap with more dynamic events and visual feedback to further strengthen the climax of the ending."
+          },
+          {
+            "kind": "paragraph",
+            "text": "What I Learned\n• Summarize flow-design experience from a racing project\n• Summarize experience in cinematic presentation\n• Summarize my level-design philosophy\n• Testing and iteration\n• A large-team, cross-disciplinary collaboration pipeline"
+          },
+          {
+            "kind": "heading",
+            "text": "Attachments"
           }
         ],
         "hero": {
           "src": "project3/images/hero.jpg",
-          "caption": "Key visual for the final track, Gacha Galaxy"
+          "caption": "Hamsterballin’ — Gacha Galaxy Final Level Key Visual"
         }
       },
       "project4": {
         "blocks": [
           {
             "kind": "heading",
+            "text": "One-Sentence Overview"
+          },
+          {
+            "kind": "paragraph",
+            "text": "A 2D platformer centered on fishing-rod swinging and precision input. I was responsible for the core gameplay and most of the level design, rescued the prototype by redefining its core mechanic, and created a complete difficulty curve from tutorial to high-level challenges."
+          },
+          {
+            "kind": "heading",
+            "text": "Project Status"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Coming soon to Steam."
+          },
+          {
+            "kind": "heading",
             "text": "Project Overview"
           },
           {
             "kind": "paragraph",
-            "text": "FLING is a Unity 2D platformer centered on movement mechanics and level pacing. I contributed to the core gameplay and level design, then used public playtesting to continuously refine challenge difficulty, teaching order, and control feedback."
+            "text": "FLING is a 2D platformer centered on precision input. The player controls a fox who uses a fishing rod to swing, grab, and reposition while overcoming increasingly difficult platforming challenges in a dark and mysterious cave."
           },
           {
             "kind": "image",
-            "caption": "FLING level and core gameplay showcase",
+            "caption": "FLING level and core-gameplay showcase",
             "src": "project4/images/image_project4_1.jpg"
+          },
+          {
+            "kind": "heading",
+            "text": "My Work"
+          },
+          {
+            "kind": "heading",
+            "text": "1. Game Design"
+          },
+          {
+            "kind": "paragraph",
+            "text": "This was a troubled project from the moment it began."
+          },
+          {
+            "kind": "paragraph",
+            "text": "During our initial brainstorming, we proposed a game in which the player would use a fishing rod as a grappling hook for platforming, combat, fishing, and other actions while exploring a Metroidvania-like world. This closely matched my design philosophy of “extending an entire design from one simple, interesting mechanic.”"
+          },
+          {
+            "kind": "paragraph",
+            "text": "After considering the development schedule, however, we decided to focus entirely on platforming and adopt a linear structure similar to Celeste."
+          },
+          {
+            "kind": "paragraph",
+            "text": "Our prototype was then largely established. Early testing, however, showed that pure, high-speed grappling-hook platforming was not fun and demanded too much precision from the player. The director of the school expressed disappointment after testing it. The project was close to cancellation, and the team was close to being reorganized."
+          },
+          {
+            "kind": "paragraph",
+            "text": "That weekend, I played the 1992 GBA game Super Mario Land 2 on a retro handheld. In it, Yoshi could throw eggs in any direction across a 2D plane. But how could such a complex action be performed on an old handheld with only a directional pad and A and B buttons? The game's solution was that after the throw button was pressed, every obstacle and enemy in the level stopped moving. Time resumed only after the player slowly selected a direction with the directional pad and threw the egg."
+          },
+          {
+            "kind": "paragraph",
+            "text": "This gave me a solution to our project's problem. At the beginning of the next week, I proposed a “time-stop” mechanic. When the player is airborne and uses the right stick to fire the grappling hook, time stops, giving the player enough time to aim precisely. When the right stick is released, the hook fires and time resumes. The programmer implemented this simple mechanic in only one minute, but that small change completely transformed the game. It resolved the excessive precision requirement, gave players more time and tolerance to act, improved the rhythm through the pull-and-release cadence of throwing the hook, and added strategic depth and mechanical complexity. It became the project's core mechanic. This is similar to the time slowdown triggered when Link fires an arrow in midair in The Legend of Zelda: Breath of the Wild."
+          },
+          {
+            "kind": "heading",
+            "text": "2. Level Design"
+          },
+          {
+            "kind": "paragraph",
+            "text": "The project uses seamless level design similar to Celeste. It contained 16 level rooms in total, with Rooms 4 and 10 removed from the final version."
+          },
+          {
+            "kind": "paragraph",
+            "text": "I designed most of the levels: Rooms 1 through 8, Room 12, and Rooms 14 through 16. These covered the tutorial, progression, and high-difficulty challenge stages. I focused especially on difficult levels near the end of the game while maintaining the overall difficulty curve. Throughout development, I also restructured, cut, and repaced levels based on feedback from multiple rounds of public playtesting."
+          },
+          {
+            "kind": "paragraph",
+            "text": "The level I am most satisfied with is Room 16, the final level. I began with two goals:\n1. Include every mechanic in the game.\n2. At the end of a difficult level—and at the end of the entire game—release all of the pressure accumulated throughout the experience."
+          },
+          {
+            "kind": "paragraph",
+            "text": "I achieved both goals well. For the first, I linked all of the game's mechanics together and recombined them into a new level. At the very end, I used the game's “bubble” obstacle in an unconventional way that broke the player's established assumptions and created one final surprise. For the second, I placed a chain of bubbles at the end, repeatedly launching the player toward the surface to create an exhilarating experience and provide emotional release."
+          },
+          {
+            "kind": "heading",
+            "text": "Timeline"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Phase｜Date｜Goal｜Work\nPOCT｜｜｜\nPOCG｜｜｜\nPrototype｜｜｜\nVertical Slice｜｜｜\nAlpha｜｜｜\nBeta｜｜｜\nLaunch｜｜｜"
+          },
+          {
+            "kind": "heading",
+            "text": "Playtesting and Iteration"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Problem｜Iteration｜Result\nLocal spikes in the difficulty curve｜Reordered rooms, removed two redundant levels, and added transitions between mechanics｜Players found the overall difficulty progression natural, with only the final level remaining highly challenging.\nNew mechanics had a high learning cost｜Rebuilt tutorial levels, teaching complex mechanics in separate steps before combining them｜Players could generally master every core mechanic independently, with only a few requiring additional guidance.\nThe ending felt incomplete｜Redesigned the final level to summarize the mechanics and provide emotional release｜The final level became the game's climax and gave players a complete closing experience."
+          },
+          {
+            "kind": "heading",
+            "text": "Project Retrospective"
+          },
+          {
+            "kind": "paragraph",
+            "text": "What Went Well\n• Redefined the core gameplay and successfully rescued the prototype. Reframed the grappling mechanic, which originally demanded extremely precise input, into the core action of “launching yourself,” greatly improving both enjoyment and controllability.\n• Built a complete difficulty curve. Created a gradual learning experience from foundational teaching through mechanic combinations to the final challenge, and continuously refined the pacing through multiple playtests.\n• Created a memorable final level. The final level not only integrates every game mechanic but also uses emotional-release design to give players a complete and rewarding conclusion."
+          },
+          {
+            "kind": "paragraph",
+            "text": "Even Better If\n• Test with players earlier. More feedback from real players during the prototype phase could have exposed core-gameplay problems sooner and reduced the cost of large late-stage revisions.\n• Add more levels that bridge mechanics. Some mechanics still have significant learning gaps between them. Further breaking down the player's skill progression could make the difficulty curve smoother.\n• Continue expanding level variety. Introduce more combinations of obstacles and situations while preserving the consistency of the core mechanic, further improving freshness."
+          },
+          {
+            "kind": "paragraph",
+            "text": "What I Learned\n• Playtesting is more important than design assumptions. Player feedback reveals real problems more effectively than a designer's own judgment, and great levels emerge through constant iteration.\n• A final level carries more than difficulty. It should summarize the game's mechanics, validate the player's growth, and deliver emotional closure and release.\n• Level design serves the player experience. What players truly remember is not one obstacle, but the complete experience created by challenge, growth, and emotional change."
+          },
+          {
+            "kind": "heading",
+            "text": "Attachments"
           }
         ]
       },
@@ -584,11 +1408,59 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
-            "text": "More Projects"
+            "text": "Big Fishing Boom"
           },
           {
             "kind": "paragraph",
-            "text": "This page presents additional game projects, gameplay prototypes, and independent work. New project descriptions, images, videos, and links can be added directly to this Markdown file."
+            "text": "An original card-based tabletop game exhibited at the Shanghai SHM Board Game Expo and the China Good Board Game showcase. I am currently working with a publisher toward publication."
+          },
+          {
+            "kind": "heading",
+            "text": "The Holy Grail"
+          },
+          {
+            "kind": "paragraph",
+            "text": "A failed Quake 3 Arena multiplayer map. Before making it, my understanding of PvP games was limited to Splatoon,"
+          },
+          {
+            "kind": "heading",
+            "text": "The Way of Water"
+          },
+          {
+            "kind": "paragraph",
+            "text": "A Half-Life 2 single-player FPS level created in Hammer Editor. Combat and puzzle flow are built around water physics and electrical systems, with deliberate control of player guidance, combat pacing, and spatial sightlines."
+          },
+          {
+            "kind": "heading",
+            "text": "A Study on the Influence of Thematic Affordances on Players’ Cognitive Map Construction"
+          },
+          {
+            "kind": "paragraph",
+            "text": "My thesis project, currently in development."
+          },
+          {
+            "kind": "heading",
+            "text": "Box Shot"
+          },
+          {
+            "kind": "paragraph",
+            "text": "A high-speed UE5 FPS project developed by a 42-person team, currently in production."
+          },
+          {
+            "kind": "heading",
+            "text": "Escape from the Circus"
+          },
+          {
+            "kind": "paragraph",
+            "text": "A Global Game Jam Unity 2D platformer built around facial-recognition interaction. I served as a programmer and completed the project within 48 hours."
+          },
+          {
+            "kind": "heading",
+            "text": "OGO"
+          },
+          {
+            "kind": "paragraph",
+            "text": "A 2D platformer created in Unreal Engine for the BOOOM Game Jam."
           }
         ]
       },
@@ -596,11 +1468,19 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "paragraph",
-            "text": "I am Zixiao Ma, a master's student in Digital Game Development with a specialization in Level Design at SMU Guildhall. I earned my bachelor's degree in Computer Science and Technology from Zhejiang Sci-Tech University. I previously worked as a Systems Design Intern at NetEase Leihuo, contributing to system design and gameplay development. My experience includes multiple Unreal Engine and Unity team projects, with strengths in level design, systems design, rapid prototyping, and cross-disciplinary collaboration. I also independently designed and published the original tabletop game Big Fishing Boom. My primary development tools include Unreal Engine, Unity, the Starfield Creation Kit, and Hammer Editor."
+            "text": "I am Zixiao Ma, a master's student in Digital Game Development with a specialization in Level Design at SMU Guildhall. I earned my bachelor's degree in Computer Science and Technology from Zhejiang Sci-Tech University. I previously worked as a Systems Design Intern at NetEase Leihuo, contributing to system design and gameplay development."
           },
           {
             "kind": "paragraph",
-            "text": "Here are my resumes."
+            "text": "I have experience working on multiple Unreal Engine and Unity team projects, with skills in level design, systems design, prototyping, and cross-disciplinary collaboration. I independently designed and published an original tabletop game, and I am proficient with Unreal Engine, Unity, Creation Kit, Hammer Editor, and other development tools."
+          },
+          {
+            "kind": "paragraph",
+            "text": "I like to start with one simple but interesting mechanic and build a complete gameplay system around it."
+          },
+          {
+            "kind": "heading",
+            "text": "Resumes"
           },
           {
             "kind": "buttons",
@@ -616,14 +1496,46 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             ]
           },
           {
+            "kind": "heading",
+            "text": "Gaming Experience"
+          },
+          {
             "kind": "paragraph",
-            "text": "My recent projects are listed on the left."
+            "text": "Genres I frequently play:\n• Role-playing games\n• Card games\n• Shooters\n• Platformers\n• Indie games\n• Nintendo games"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Three games closest to my heart and my playtime:\n• Splatoon, 1,000+ hours\n• Super Smash Bros., 1,000+ hours\n• Celeste, 20+ hours"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Why these games matter to me and what it feels like to play them:"
+          },
+          {
+            "kind": "paragraph",
+            "text": "First, aside from its unstable online connection, extremely outdated live operations, and profoundly unfair matchmaking, Splatoon is a perfect game."
+          },
+          {
+            "kind": "paragraph",
+            "text": "My broader gaming experience:"
+          },
+          {
+            "kind": "paragraph",
+            "text": "My grandfather often told me that I learned to play Ballance before I learned to walk."
+          },
+          {
+            "kind": "paragraph",
+            "text": "At the time, I still lived at my grandfather's factory. There was a large office filled with employee cubicles and computers. In one corner sat an old CRT computer loaded with games. That was where my childhood began."
+          },
+          {
+            "kind": "paragraph",
+            "text": "Ballance, Zuma, Bejeweled, Feeding Frenzy, Sonic the Hedgehog, and 明星三缺一."
           }
         ],
         "hero": {
           "src": "aboutme/images/hero.jpg",
           "caption": "Zixiao Ma — Level Designer / Game Designer",
-          "width": "68%"
+          "width": "38%"
         }
       }
     }
