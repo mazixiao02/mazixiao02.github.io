@@ -82,9 +82,10 @@
         return;
       }
 
-      if (stripped.startsWith('## ')) {
+      const headingMatch = stripped.match(/^(#{2,4})\s+(.+)$/);
+      if (headingMatch) {
         flushParagraph();
-        blocks.push({ kind: 'heading', text: stripped.slice(3).trim() });
+        blocks.push({ kind: 'heading', level: headingMatch[1].length, text: headingMatch[2].trim() });
         return;
       }
 
@@ -122,6 +123,9 @@
       type: meta.type || '',
       role: meta.role || '',
       time: meta.time || '',
+      status: meta.status || '',
+      statusUrl: meta.status_url ? resolvePath(projectId, meta.status_url) : '',
+      statusLink: meta.status_link || '',
       caption: meta.caption || '',
     };
     const content = { blocks: parseBlocks(body, projectId, language) };

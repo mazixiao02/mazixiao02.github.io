@@ -5,6 +5,7 @@ tag: Starfield Side Quest Level Design
 type: Starfield Single-Player Side-Quest Level
 role: Level Design / Quest Design / Narrative Design / Gameplay Implementation
 time: 10 Weeks / Solo
+status: Completed
 caption: ▲ A two-ending quest experience built through spatial layout, combat design, and environmental storytelling
 hero: images/hero.jpg
 hero_caption: Decaran: Become Human — Project Key Visual

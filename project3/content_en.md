@@ -5,6 +5,9 @@ tag: Unreal Engine 5
 type: 3D / Local Multiplayer / Racing / Mario Kart-like
 role: Final Level / Cableway System / Camera Design
 time: 12 Weeks / 42-Person Team
+status: Steam Store Page Live
+status_url: https://store.steampowered.com/app/4319370/Hamsterballin/
+status_link: View Steam Store Page
 caption: ▲ Iterating on navigation, route choice, and spectacle within a high-speed racing experience
 hero: images/hero.jpg
 hero_caption: Hamsterballin’ — Gacha Galaxy Final Level Key Visual
@@ -14,31 +17,25 @@ hero_caption: Hamsterballin’ — Gacha Galaxy Final Level Key Visual
 
 Hamsterballin' is a UE5 local multiplayer racing game. On a 42-person team, I worked on the final track, the cableway shortcut system, and camera design, continuously iterating on navigation, route choice, and spectacle during high-speed racing.
 
-## Project Status
-
-Coming soon to Steam.
-
-[🎮 Steam Store Page](https://store.steampowered.com/app/4319370/Hamsterballin/)
-
 ## Project Overview
 
 Hamsterballin’ is a local multiplayer racing game in which players control rolling and bouncing hamster balls and compete across tracks filled with obstacles, shortcuts, and three-dimensional terrain. The project was developed in SMU Guildhall's Team Game Project II course by a 42-person team over 12 weeks and is coming soon to Steam.
 
 ## My Work
 
-## 1. Final Level: Gacha Galaxy
+### 1. Final Level: Gacha Galaxy
 
 I believe that a great racing track should be linked together by a series of powerful “memorable moments.” In Mario Kart, for example, players may not remember every turn or every detail, but they remember the whirlpool of quicksand on a desert track or the giant eel on an underwater track. When designing a track, I first imagine these memorable moments, plan the rhythm of their appearances, and use ordinary sections to connect those peak experiences naturally.
 
 As the primary owner of the final level, I led its thematic concept, track-layout design, and cross-disciplinary collaboration with programmers and artists, moving the level from concept to final implementation.
 
-## 1. Establishing the Level's Core Concept
+#### 1. Establishing the Level's Core Concept
 
 Once the project entered level production, we needed to complete a full track within a short schedule. I quickly established our design goal: a massive central landmark that would serve as both a navigation marker and a memory anchor. I proposed building the track around a giant robot.
 
 However, because the development schedule was short and the art team had limited bandwidth, I discussed the idea with the team leader and quickly changed the central object to a gacha machine. The revision preserved the central-landmark concept while significantly reducing art-production costs. It ultimately created the spatial structure of “racing around the gacha machine—passing through the gacha machine—entering its interior and returning to the start.”
 
-## 2. Leading the Design of the Core Area
+#### 2. Leading the Design of the Core Area
 
 After defining the overall layout, I designed the track's start, finish, and the gacha-machine area at the center of the level.
 
@@ -46,7 +43,7 @@ To let the track pass through the gacha machine, we wrapped a “Saturn ring” 
 
 Because the gacha machine simultaneously served as a navigation aid, visual focal point, and expression of the level's theme, I worked extensively with the art team. We continuously adjusted model scale, track connections, and player sightlines so that the visual presentation would support navigation and the racing experience.
 
-## 3. Driving Iteration on the Core Gameplay
+#### 3. Driving Iteration on the Core Gameplay
 
 Across multiple playtests, we found that after entering the gacha machine, players had to travel through three consecutive spiral tubes to return to the upper level. This design had three problems:
 • It was repetitive and offered little room for player input.
@@ -62,11 +59,11 @@ I therefore proposed replacing the entire section with the Cableway system. This
 
 The team adopted the proposal and completed its implementation.
 
-## 4. Project Outcome
+#### 4. Project Outcome
 
 The level was successfully completed, shipped with the game, and became the game's final level.
 
-## 2. Cableway System and Camera Design
+### 2. Cableway System and Camera Design
 
 Beginning in the project's POCT phase, I independently proposed, designed, and implemented the Cableway system as a level shortcut. I was responsible for shortcut planning, interaction logic, and the player's camera presentation. During Cableway travel, the camera showcases scenery, previews upcoming routes, and reinforces orientation, allowing the system to function simultaneously as a shortcut, navigation tool, and cinematic sequence.
 

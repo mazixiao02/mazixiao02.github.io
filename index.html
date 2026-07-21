@@ -162,7 +162,7 @@
     .right-panel::-webkit-scrollbar { width: 0px; }
 
     .detail-content-wrapper {
-      max-width: 1040px; margin: 0 auto; padding: 58px 52px 120px;
+      max-width: 1180px; margin: 0 auto; padding: 58px 52px 120px;
       opacity: 1; transition: opacity 0.25s ease;
     }
     .content-fade { opacity: 0; }
@@ -178,12 +178,21 @@
       font-size: 10.5px; font-weight: 750; letter-spacing: 1.25px; text-transform: uppercase;
     }
 
+    .project-lede {
+      max-width: 860px; margin: -4px 0 30px; padding-left: 18px;
+      border-left: 3px solid #ff5500;
+    }
+    .project-lede p {
+      color: #f1f1f1; font-size: 17px; line-height: 1.72; font-weight: 560;
+      letter-spacing: .02px; margin: 0;
+    }
+
     .spec-table-mini {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+      display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px;
       margin: 14px 0 34px; background: transparent; padding: 0; border: 0;
     }
     .spec-cell {
-      position: relative; min-height: 116px; padding: 19px 20px 18px;
+      position: relative; min-height: 124px; padding: 19px 18px 18px;
       background: linear-gradient(145deg, #262626, #222222); border: 1px solid #484848;
       overflow: hidden; transition: border-color .25s ease, transform .25s ease;
     }
@@ -200,6 +209,12 @@
       position: relative; z-index: 1; max-width: 92%; font-size: 13.5px;
       line-height: 1.55; color: #f0f0f0; font-weight: 560;
     }
+    .spec-cell a {
+      position: relative; z-index: 1; display: inline-block; margin-top: 9px;
+      color: #ff7b3a; font-size: 10.5px; font-weight: 700; text-decoration: none;
+      border-bottom: 1px solid rgba(255,85,0,.55);
+    }
+    .spec-cell a:hover { color: #ff9a69; border-bottom-color: #ff9a69; }
 
     .detail-section { margin-bottom: 65px; }
     .content-intro { margin-bottom: 42px; }
@@ -212,6 +227,10 @@
       font-size: 19px; margin-top: 42px; padding-bottom: 0; border-bottom: 0;
       border-left-width: 2px; color: #f1f1f1;
     }
+    .content-heading.content-tertiary-heading {
+      font-size: 16.5px; margin: 34px 0 17px; padding: 0 0 0 14px;
+      border-left: 1px solid #ff6a21; border-bottom: 0; color: #ededed;
+    }
     .detail-section > .content-heading:first-child { margin-top: 0; }
     .detail-section p {
       max-width: 780px; font-size: 15.5px; line-height: 1.92; letter-spacing: .05px;
@@ -219,24 +238,32 @@
     }
     .detail-section strong { color: #ffffff; font-weight: 700; }
 
+    .project-reading-layout {
+      display: grid; grid-template-columns: 184px minmax(0, 1fr); gap: 34px;
+      align-items: start;
+    }
     .quick-nav {
-      margin: 0 0 48px; padding: 21px 22px 18px; background: #292929;
-      border: 1px solid #494949; border-top: 2px solid #ff5500;
+      position: sticky; top: 50%; transform: translateY(-50%); z-index: 10;
+      max-height: 72vh; margin: 0; padding: 18px 15px 16px; overflow-y: auto;
+      background: rgba(37,37,37,.96); border: 1px solid #494949; border-top: 2px solid #ff5500;
+      box-shadow: 0 10px 28px rgba(0,0,0,.22);
     }
     .quick-nav-title {
       display: flex; align-items: center; gap: 9px; margin-bottom: 13px;
       color: #ffffff; font-size: 11px; font-weight: 750; letter-spacing: 1.2px; text-transform: uppercase;
     }
     .quick-nav-title::before { content: ""; width: 18px; height: 1px; background: #ff5500; }
-    .quick-nav-links { display: flex; flex-wrap: wrap; gap: 7px 8px; }
+    .quick-nav-links { display: flex; flex-direction: column; gap: 3px; }
     .quick-nav a {
-      padding: 7px 10px; color: #bdbdbd; background: #222222; border: 1px solid #414141;
-      text-decoration: none; font-size: 11.5px; line-height: 1.25; transition: .2s ease;
+      display: block; padding: 7px 8px 7px 10px; color: #bdbdbd;
+      background: transparent; border: 0; border-left: 1px solid #494949;
+      text-decoration: none; font-size: 11.5px; line-height: 1.35; transition: .2s ease;
     }
     .quick-nav a:hover, .quick-nav a.active {
-      color: #ff6b24; border-color: rgba(255,85,0,.7); background: rgba(255,85,0,.06);
+      color: #ff6b24; border-left-color: #ff5500; background: rgba(255,85,0,.06);
     }
-    .quick-nav a.toc-sub { color: #999; }
+    .quick-nav a.toc-depth-3 { margin-left: 9px; color: #a6a6a6; font-size: 10.8px; }
+    .quick-nav a.toc-depth-4 { margin-left: 19px; color: #8f8f8f; font-size: 10.2px; }
 
     .rich-list, .numbered-list {
       max-width: 780px; margin: -8px 0 28px; padding: 0; list-style: none;
@@ -261,6 +288,12 @@
     .insight-card-title { margin-bottom: 12px; color: #ffffff; font-size: 15px; font-weight: 720; }
     .insight-card .rich-list { margin: 0; }
     .insight-card .rich-list li:last-child { border-bottom: 0; }
+    .bullet-card {
+      max-width: 820px; margin: -7px 0 30px; padding: 8px 18px 5px;
+      background: #292929; border: 1px solid #474747; border-left: 3px solid #ff5500;
+    }
+    .bullet-card .rich-list { margin: 0; }
+    .bullet-card .rich-list li:last-child { border-bottom: 0; }
 
     .content-table-wrap { width: 100%; margin: 4px 0 36px; overflow-x: auto; border: 1px solid #484848; }
     .content-table { width: 100%; min-width: 620px; border-collapse: collapse; background: #292929; }
@@ -335,9 +368,14 @@
   .header-actions{width:100%;justify-content:space-between;gap:14px;}
   .contact-info{text-align:right;}
   .project-title-area h2{font-size:34px;}
-  .spec-table-mini{grid-template-columns:1fr;gap:8px;}
+  .project-lede{margin-bottom:24px;padding-left:14px;}
+  .project-lede p{font-size:15.5px;line-height:1.72;}
+  .spec-table-mini{grid-template-columns:1fr 1fr;gap:8px;}
   .spec-cell{min-height:0;padding:16px 18px;}
-  .quick-nav{padding:17px 16px;}
+  .project-reading-layout{display:block;}
+  .quick-nav{position:static;transform:none;max-height:none;margin:0 0 38px;padding:17px 16px;overflow:visible;}
+  .quick-nav-links{flex-direction:row;flex-wrap:wrap;gap:7px 8px;}
+  .quick-nav a,.quick-nav a.toc-depth-3,.quick-nav a.toc-depth-4{margin-left:0;padding:7px 9px;border:1px solid #414141;font-size:11px;}
   .content-heading{font-size:21px;margin-top:52px;}
   .detail-section p{font-size:15px;line-height:1.82;}
   .timeline-item{grid-template-columns:1fr;gap:7px;padding-bottom:24px;}
@@ -345,6 +383,13 @@
   .about-photo{min-height:0;aspect-ratio:4/5;}
   .about-copy{padding:24px 20px;}
   .showcase-block iframe{height:220px;}
+}
+
+@media (min-width: 769px) and (max-width: 1120px){
+  .detail-content-wrapper{padding-left:34px;padding-right:34px;}
+  .project-reading-layout{grid-template-columns:152px minmax(0,1fr);gap:22px;}
+  .quick-nav{padding-left:11px;padding-right:11px;}
+  .spec-table-mini{grid-template-columns:repeat(2,minmax(0,1fr));}
 }
 </style>
 </head>
@@ -433,13 +478,18 @@
       return String(text || '').split('\n').map(line => line.trim()).filter(Boolean);
     }
 
-    function isSubheading(text) {
-      return /^(?:\d+[.、]|[一二三四五六七八九十]+[.、])\s*/.test(String(text || ''));
+    function headingDepth(block) {
+      const explicitLevel = Number(block && block.level);
+      if (explicitLevel >= 3) return Math.min(explicitLevel, 4);
+      return /^(?:\d+[.、]|[一二三四五六七八九十]+[.、])\s*/.test(String(block && block.text || '')) ? 3 : 2;
     }
 
-    function headingBlock(text, id, subheading) {
-      const className = subheading ? 'content-heading content-subheading' : 'content-heading';
-      return `<h3 class="${className}" id="${escapeHtml(id)}">${escapeHtml(text)}</h3>`;
+    function headingBlock(text, id, depth) {
+      const className = depth >= 4
+        ? 'content-heading content-tertiary-heading'
+        : depth === 3 ? 'content-heading content-subheading' : 'content-heading';
+      const tagName = depth >= 4 ? 'h5' : depth === 3 ? 'h4' : 'h3';
+      return `<${tagName} class="${className}" id="${escapeHtml(id)}">${escapeHtml(text)}</${tagName}>`;
     }
 
     function listHtml(lines, ordered = false) {
@@ -495,6 +545,10 @@
       if (lines.every(line => /^•\s*/.test(line))) return listHtml(lines);
       if (lines.every(line => /^\d+[.、]\s*/.test(line))) return listHtml(lines, true);
 
+      if (lines.length > 1 && !/^•\s*/.test(lines[0]) && lines.slice(1).every(line => /^•\s*/.test(line)) && /推动核心玩法迭代|Driving Iteration on the Core Gameplay/i.test(sectionTitle)) {
+        return `${plainParagraph(lines[0])}<div class="bullet-card">${listHtml(lines.slice(1))}</div>`;
+      }
+
       if (lines.length > 1 && !/^•\s*/.test(lines[0]) && lines.slice(1).every(line => /^•\s*/.test(line))) {
         return `<div class="insight-card"><div class="insight-card-title">${escapeHtml(lines[0])}</div>${listHtml(lines.slice(1))}</div>`;
       }
@@ -527,7 +581,7 @@
 
     function renderBlock(block, context) {
       if (!block || !block.kind) return '';
-      if (block.kind === 'heading') return headingBlock(block.text || '', context.id, context.subheading);
+      if (block.kind === 'heading') return headingBlock(block.text || '', context.id, context.depth || 2);
       if (block.kind === 'paragraph') return richParagraphHtml(block.text || '', context.sectionTitle || '');
       if (block.kind === 'image') return imageBlock(block);
       if (block.kind === 'youtube') return videoBlock(block);
@@ -543,9 +597,9 @@
         if (block.kind === 'heading') {
           sectionTitle = block.text || '';
           const id = `section-${++headingIndex}`;
-          const subheading = isSubheading(sectionTitle);
-          toc.push({ id, text: sectionTitle, subheading });
-          return renderBlock(block, { id, subheading, sectionTitle });
+          const depth = headingDepth(block);
+          toc.push({ id, text: sectionTitle, depth });
+          return renderBlock(block, { id, depth, sectionTitle });
         }
         return renderBlock(block, { sectionTitle });
       }).join('');
@@ -554,8 +608,27 @@
 
     function quickNavHtml(toc, label) {
       if (!toc.length) return '';
-      const links = toc.map(item => `<a href="#${escapeHtml(item.id)}" class="${item.subheading ? 'toc-sub' : ''}" data-section="${escapeHtml(item.id)}">${escapeHtml(item.text)}</a>`).join('');
+      const links = toc.map(item => `<a href="#${escapeHtml(item.id)}" class="toc-depth-${item.depth || 2}" data-section="${escapeHtml(item.id)}">${escapeHtml(item.text)}</a>`).join('');
       return `<nav class="quick-nav" aria-label="${escapeHtml(label)}"><div class="quick-nav-title">${escapeHtml(label)}</div><div class="quick-nav-links">${links}</div></nav>`;
+    }
+
+    function extractLead(blocks) {
+      const source = Array.from(blocks || []);
+      const headingIndex = source.findIndex(block => block.kind === 'heading' && /^(?:一句话(?:简介|介绍)|One-Sentence (?:Overview|Introduction))$/i.test(block.text || ''));
+      if (headingIndex < 0) return { blocks: source, html: '' };
+      let endIndex = headingIndex + 1;
+      while (endIndex < source.length && source[endIndex].kind !== 'heading') endIndex += 1;
+      const leadBlocks = source.slice(headingIndex + 1, endIndex);
+      const html = leadBlocks.map(block => renderBlock(block, { sectionTitle: '' })).join('');
+      return { blocks: source.slice(0, headingIndex).concat(source.slice(endIndex)), html };
+    }
+
+    function statusCardHtml(data, labels) {
+      const status = data.status || labels.statusUnavailable;
+      const link = data.statusUrl
+        ? `<a href="${escapeHtml(data.statusUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(data.statusLink || labels.statusLink)} ↗</a>`
+        : '';
+      return `<div class="spec-cell" data-index="04"><h3>${escapeHtml(labels.status)}</h3><p>${escapeHtml(status)}</p>${link}</div>`;
     }
 
     document.addEventListener('DOMContentLoaded', async () => {
@@ -566,7 +639,10 @@
           title: '关卡策划 / 游戏设计',
           projectType: '项目类型',
           responsibilities: '负责模块',
-          period: '测试周期',
+          period: '开发周期',
+          status: '项目状况',
+          statusLink: '查看项目页面',
+          statusUnavailable: '—',
           toc: '直达目录',
           pageTitle: '马子潇 - 个人作品集',
           email: 'mazixiao2000@outlook.com',
@@ -578,6 +654,9 @@
           projectType: 'Project Type',
           responsibilities: 'Responsibilities',
           period: 'Development Period',
+          status: 'Project Status',
+          statusLink: 'View Project Page',
+          statusUnavailable: '—',
           toc: 'On This Page',
           pageTitle: 'Zixiao Ma - Game Design Portfolio',
           email: 'mazixiao2000@outlook.com',
@@ -664,15 +743,20 @@
           html = `<div class="about-page">${titleHtml}<div class="about-intro">${photoHtml}<div class="about-copy">${introHtml}</div></div><div class="detail-section">${rendered.html}<div class="showcase-caption">${escapeHtml(data.caption)}</div></div></div>`;
         } else {
           const heroHtml = content.hero ? imageBlock(content.hero, true) : '';
-          const rendered = renderContentBlocks(content.blocks || []);
-          html = `${titleHtml}${heroHtml}
+          const lead = extractLead(content.blocks || []);
+          const rendered = renderContentBlocks(lead.blocks);
+          const leadHtml = lead.html ? `<div class="project-lede">${lead.html}</div>` : '';
+          html = `${titleHtml}${leadHtml}${heroHtml}
             <div class="spec-table-mini">
               <div class="spec-cell" data-index="01"><h3>${escapeHtml(labels.projectType)}</h3><p>${escapeHtml(data.type)}</p></div>
               <div class="spec-cell" data-index="02"><h3>${escapeHtml(labels.responsibilities)}</h3><p>${escapeHtml(data.role)}</p></div>
               <div class="spec-cell" data-index="03"><h3>${escapeHtml(labels.period)}</h3><p>${escapeHtml(data.time)}</p></div>
+              ${statusCardHtml(data, labels)}
             </div>
-            ${quickNavHtml(rendered.toc, labels.toc)}
-            <div class="detail-section">${rendered.html}<div class="showcase-caption">${escapeHtml(data.caption)}</div></div>`;
+            <div class="project-reading-layout">
+              ${quickNavHtml(rendered.toc, labels.toc)}
+              <div class="detail-section">${rendered.html}<div class="showcase-caption">${escapeHtml(data.caption)}</div></div>
+            </div>`;
         }
 
         setTimeout(() => {

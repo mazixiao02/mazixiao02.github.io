@@ -5,6 +5,7 @@ tag: Starfield Side Quest Level Design
 type: 星空单人支线任务关卡设计
 role: 关卡设计 / 剧情设计 / 环境叙事 / Gameplay 实现
 time: 8 周 / 单人
+status: 已完成
 caption: ▲ 通过环境叙事、多区域探索与解谜战斗营造废弃豪华星际邮轮的沉浸式冒险体验
 hero: cover.jpg
 hero_caption: 《Ghost Ship（幽灵船）》项目封面

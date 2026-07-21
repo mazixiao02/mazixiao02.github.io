@@ -9,6 +9,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "星空单人支线任务关卡设计",
         "role": "关卡设计 / 任务设计 / 剧情设计 / Gameplay 实现",
         "time": "10 周 / 单人",
+        "status": "已完成",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ 通过空间布局、战斗设计与环境叙事构建具有道德抉择的双结局任务体验"
       },
       "project2": {
@@ -18,6 +21,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "星空单人支线任务关卡设计",
         "role": "关卡设计 / 剧情设计 / 环境叙事 / Gameplay 实现",
         "time": "8 周 / 单人",
+        "status": "已完成",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ 通过环境叙事、多区域探索与解谜战斗营造废弃豪华星际邮轮的沉浸式冒险体验"
       },
       "project3": {
@@ -27,6 +33,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "3D / 本地多人 / 竞速 / 类马里奥赛车",
         "role": "最终关卡 / 索道系统 / 镜头设计",
         "time": "12 周 / 42人团队",
+        "status": "Steam 商店页已公开",
+        "statusUrl": "https://store.steampowered.com/app/4319370/Hamsterballin/",
+        "statusLink": "前往 Steam 商店页",
         "caption": "▲ 通过持续迭代优化高速竞速中的导航、路线选择与观赏体验"
       },
       "project4": {
@@ -36,6 +45,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "2D / 横板 / 平台跳跃 / 类《蔚蓝》",
         "role": "游戏设计 / 关卡设计",
         "time": "6 周 / 4人团队",
+        "status": "即将上线 Steam",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ 负责核心玩法设计与大部分关卡设计，并完成从教学到高难挑战的完整难度曲线设计"
       },
       "moreprojects": {
@@ -45,6 +57,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "多类型项目与玩法原型",
         "role": "设计 / 原型 / 协作开发",
         "time": "Ongoing",
+        "status": "",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ 其他游戏设计、交互原型与独立创作归档"
       },
       "aboutme": {
@@ -54,6 +69,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "个人档案",
         "role": "关卡设计师 / 游戏设计师",
         "time": "Portfolio",
+        "status": "",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ 我喜欢从一个简单但有趣的机制开始，搭建整套玩法设计"
       }
     },
@@ -62,6 +80,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
+            "level": 2,
             "text": "一句话简介"
           },
           {
@@ -70,6 +89,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "游戏介绍"
           },
           {
@@ -78,6 +98,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "关卡介绍"
           },
           {
@@ -91,6 +112,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "我的工作"
           },
           {
@@ -111,6 +133,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "时间线"
           },
           {
@@ -119,6 +142,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "测试迭代"
           },
           {
@@ -127,6 +151,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "项目总结"
           },
           {
@@ -143,6 +168,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "附件"
           },
           {
@@ -182,6 +208,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
+            "level": 2,
             "text": "一句话介绍"
           },
           {
@@ -190,6 +217,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "游戏介绍"
           },
           {
@@ -198,6 +226,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "关卡介绍"
           },
           {
@@ -206,6 +235,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "我的工作"
           },
           {
@@ -247,6 +277,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "时间线"
           },
           {
@@ -255,6 +286,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "测试迭代"
           },
           {
@@ -263,6 +295,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "项目总结"
           },
           {
@@ -279,6 +312,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "附件"
           }
         ],
@@ -291,6 +325,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
+            "level": 2,
             "text": "一句话简介"
           },
           {
@@ -299,23 +334,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "text": "项目状况"
-          },
-          {
-            "kind": "paragraph",
-            "text": "即将上线steam。"
-          },
-          {
-            "kind": "buttons",
-            "links": [
-              {
-                "label": "🎮 Steam 商店页",
-                "href": "https://store.steampowered.com/app/4319370/Hamsterballin/"
-              }
-            ]
-          },
-          {
-            "kind": "heading",
+            "level": 2,
             "text": "项目介绍"
           },
           {
@@ -324,10 +343,12 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "我的工作"
           },
           {
             "kind": "heading",
+            "level": 3,
             "text": "1. 最终关卡：扭蛋机星系（Gacha Galaxy）"
           },
           {
@@ -340,6 +361,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 4,
             "text": "1. 确立关卡核心概念"
           },
           {
@@ -352,6 +374,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 4,
             "text": "2. 主导核心区域设计"
           },
           {
@@ -368,6 +391,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 4,
             "text": "3. 推动核心玩法迭代"
           },
           {
@@ -388,6 +412,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 4,
             "text": "4. 项目成果"
           },
           {
@@ -396,6 +421,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 3,
             "text": "2. 索道系统及其镜头设计（Cableway System）"
           },
           {
@@ -477,6 +503,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "时间线"
           },
           {
@@ -485,6 +512,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "测试迭代"
           },
           {
@@ -493,6 +521,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "项目总结"
           },
           {
@@ -509,6 +538,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "附件"
           }
         ],
@@ -521,6 +551,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
+            "level": 2,
             "text": "一句话介绍"
           },
           {
@@ -529,14 +560,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "text": "项目状况"
-          },
-          {
-            "kind": "paragraph",
-            "text": "即将上线steam"
-          },
-          {
-            "kind": "heading",
+            "level": 2,
             "text": "项目介绍"
           },
           {
@@ -550,10 +574,12 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "我的工作"
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "1. 游戏设计"
           },
           {
@@ -582,6 +608,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "2. 关卡设计"
           },
           {
@@ -602,6 +629,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "时间线"
           },
           {
@@ -610,6 +638,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "测试迭代"
           },
           {
@@ -618,6 +647,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "项目总结"
           },
           {
@@ -634,6 +664,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "附件"
           }
         ],
@@ -646,6 +677,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
+            "level": 2,
             "text": "海错大爆钓"
           },
           {
@@ -654,6 +686,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "The Holy Grail"
           },
           {
@@ -662,6 +695,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "The Way of Water"
           },
           {
@@ -670,6 +704,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "A study on the influence of thematic affordances on players’ cognitive map construction"
           },
           {
@@ -678,6 +713,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Box Shot"
           },
           {
@@ -686,6 +722,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Escape from the Circus"
           },
           {
@@ -694,6 +731,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "OGO"
           },
           {
@@ -722,6 +760,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "简历"
           },
           {
@@ -739,6 +778,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "学习与实习经历"
           },
           {
@@ -747,6 +787,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "游戏经历"
           },
           {
@@ -799,6 +840,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "Starfield Single-Player Side-Quest Level",
         "role": "Level Design / Quest Design / Narrative Design / Gameplay Implementation",
         "time": "10 Weeks / Solo",
+        "status": "Completed",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ A two-ending quest experience built through spatial layout, combat design, and environmental storytelling"
       },
       "project2": {
@@ -808,6 +852,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "Starfield Single-Player Side-Quest Level",
         "role": "Level Design / Narrative Design / Environmental Storytelling / Gameplay Implementation",
         "time": "8 Weeks / Solo",
+        "status": "Completed",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ An immersive adventure aboard an abandoned luxury space liner, built through environmental storytelling, multi-zone exploration, puzzles, and combat"
       },
       "project3": {
@@ -817,6 +864,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "3D / Local Multiplayer / Racing / Mario Kart-like",
         "role": "Final Level / Cableway System / Camera Design",
         "time": "12 Weeks / 42-Person Team",
+        "status": "Steam Store Page Live",
+        "statusUrl": "https://store.steampowered.com/app/4319370/Hamsterballin/",
+        "statusLink": "View Steam Store Page",
         "caption": "▲ Iterating on navigation, route choice, and spectacle within a high-speed racing experience"
       },
       "project4": {
@@ -826,6 +876,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "2D / Side-Scrolling / Platformer / Celeste-like",
         "role": "Game Design / Level Design",
         "time": "6 Weeks / 4-Person Team",
+        "status": "Coming Soon on Steam",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ Core gameplay and level design spanning a complete difficulty curve from tutorial to advanced challenge"
       },
       "moreprojects": {
@@ -835,6 +888,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "Multi-Genre Projects and Gameplay Prototypes",
         "role": "Design / Prototyping / Collaborative Development",
         "time": "Ongoing",
+        "status": "",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ An archive of additional game designs, interactive prototypes, and independent work"
       },
       "aboutme": {
@@ -844,6 +900,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "Personal Profile",
         "role": "Level Designer / Game Designer",
         "time": "Portfolio",
+        "status": "",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ I like to start with one simple but interesting mechanic and build a complete gameplay system around it"
       }
     },
@@ -852,6 +911,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
+            "level": 2,
             "text": "One-Sentence Overview"
           },
           {
@@ -860,6 +920,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Game Overview"
           },
           {
@@ -868,6 +929,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Level Overview"
           },
           {
@@ -881,6 +943,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "My Work"
           },
           {
@@ -901,6 +964,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Timeline"
           },
           {
@@ -909,6 +973,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Playtesting and Iteration"
           },
           {
@@ -917,6 +982,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Project Retrospective"
           },
           {
@@ -933,6 +999,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Attachments"
           },
           {
@@ -972,6 +1039,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
+            "level": 2,
             "text": "One-Sentence Overview"
           },
           {
@@ -980,6 +1048,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Game Overview"
           },
           {
@@ -988,6 +1057,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Level Overview"
           },
           {
@@ -996,6 +1066,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "My Work"
           },
           {
@@ -1037,6 +1108,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Timeline"
           },
           {
@@ -1045,6 +1117,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Playtesting and Iteration"
           },
           {
@@ -1053,6 +1126,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Project Retrospective"
           },
           {
@@ -1069,6 +1143,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Attachments"
           }
         ],
@@ -1081,6 +1156,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
+            "level": 2,
             "text": "One-Sentence Overview"
           },
           {
@@ -1089,23 +1165,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "text": "Project Status"
-          },
-          {
-            "kind": "paragraph",
-            "text": "Coming soon to Steam."
-          },
-          {
-            "kind": "buttons",
-            "links": [
-              {
-                "label": "🎮 Steam Store Page",
-                "href": "https://store.steampowered.com/app/4319370/Hamsterballin/"
-              }
-            ]
-          },
-          {
-            "kind": "heading",
+            "level": 2,
             "text": "Project Overview"
           },
           {
@@ -1114,10 +1174,12 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "My Work"
           },
           {
             "kind": "heading",
+            "level": 3,
             "text": "1. Final Level: Gacha Galaxy"
           },
           {
@@ -1130,6 +1192,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 4,
             "text": "1. Establishing the Level's Core Concept"
           },
           {
@@ -1142,6 +1205,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 4,
             "text": "2. Leading the Design of the Core Area"
           },
           {
@@ -1158,6 +1222,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 4,
             "text": "3. Driving Iteration on the Core Gameplay"
           },
           {
@@ -1178,6 +1243,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 4,
             "text": "4. Project Outcome"
           },
           {
@@ -1186,6 +1252,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 3,
             "text": "2. Cableway System and Camera Design"
           },
           {
@@ -1267,6 +1334,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Timeline"
           },
           {
@@ -1275,6 +1343,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Playtesting and Iteration"
           },
           {
@@ -1283,6 +1352,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Project Retrospective"
           },
           {
@@ -1299,6 +1369,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Attachments"
           }
         ],
@@ -1311,6 +1382,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
+            "level": 2,
             "text": "One-Sentence Overview"
           },
           {
@@ -1319,14 +1391,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "text": "Project Status"
-          },
-          {
-            "kind": "paragraph",
-            "text": "Coming soon to Steam."
-          },
-          {
-            "kind": "heading",
+            "level": 2,
             "text": "Project Overview"
           },
           {
@@ -1340,10 +1405,12 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "My Work"
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "1. Game Design"
           },
           {
@@ -1372,6 +1439,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "2. Level Design"
           },
           {
@@ -1392,6 +1460,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Timeline"
           },
           {
@@ -1400,6 +1469,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Playtesting and Iteration"
           },
           {
@@ -1408,6 +1478,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Project Retrospective"
           },
           {
@@ -1424,6 +1495,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Attachments"
           }
         ],
@@ -1436,6 +1508,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
+            "level": 2,
             "text": "Big Fishing Boom"
           },
           {
@@ -1444,6 +1517,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "The Holy Grail"
           },
           {
@@ -1452,6 +1526,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "The Way of Water"
           },
           {
@@ -1460,6 +1535,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "A Study on the Influence of Thematic Affordances on Players’ Cognitive Map Construction"
           },
           {
@@ -1468,6 +1544,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Box Shot"
           },
           {
@@ -1476,6 +1553,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Escape from the Circus"
           },
           {
@@ -1484,6 +1562,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "OGO"
           },
           {
@@ -1512,6 +1591,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Resumes"
           },
           {
@@ -1529,6 +1609,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Education & Experience"
           },
           {
@@ -1537,6 +1618,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Gaming Experience"
           },
           {

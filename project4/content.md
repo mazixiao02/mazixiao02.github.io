@@ -5,6 +5,7 @@ tag: Unity 2D Platformer
 type: 2D / 横板 / 平台跳跃 / 类《蔚蓝》
 role: 游戏设计 / 关卡设计
 time: 6 周 / 4人团队
+status: 即将上线 Steam
 caption: ▲ 负责核心玩法设计与大部分关卡设计，并完成从教学到高难挑战的完整难度曲线设计
 hero: cover.jpg
 hero_caption: 《FLING》项目封面
@@ -13,10 +14,6 @@ hero_caption: 《FLING》项目封面
 ## 一句话介绍
 
 一款以钓竿摆荡与精准操作为核心的 2D 平台跳跃游戏，负责核心玩法设计与大部分关卡设计，通过重新定义核心机制挽救 Prototype，并完成从教学到高难挑战的完整难度曲线设计。
-
-## 项目状况
-
-即将上线steam
 
 ## 项目介绍
 

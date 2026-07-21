@@ -5,6 +5,7 @@ tag: Starfield Side Quest Level Design
 type: 星空单人支线任务关卡设计
 role: 关卡设计 / 任务设计 / 剧情设计 / Gameplay 实现
 time: 10 周 / 单人
+status: 已完成
 caption: ▲ 通过空间布局、战斗设计与环境叙事构建具有道德抉择的双结局任务体验
 hero: images/hero.jpg
 hero_caption: 《Decaran: Become Human》项目主视觉

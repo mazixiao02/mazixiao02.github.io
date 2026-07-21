@@ -5,6 +5,7 @@ tag: Unity 2D Platformer
 type: 2D / Side-Scrolling / Platformer / Celeste-like
 role: Game Design / Level Design
 time: 6 Weeks / 4-Person Team
+status: Coming Soon on Steam
 caption: ▲ Core gameplay and level design spanning a complete difficulty curve from tutorial to advanced challenge
 hero: cover.jpg
 hero_caption: FLING — Project Cover
@@ -13,10 +14,6 @@ hero_caption: FLING — Project Cover
 ## One-Sentence Overview
 
 A 2D platformer centered on fishing-rod swinging and precision input. I was responsible for the core gameplay and most of the level design, rescued the prototype by redefining its core mechanic, and created a complete difficulty curve from tutorial to high-level challenges.
-
-## Project Status
-
-Coming soon to Steam.
 
 ## Project Overview
 

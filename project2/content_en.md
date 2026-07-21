@@ -5,6 +5,7 @@ tag: Starfield Side Quest Level Design
 type: Starfield Single-Player Side-Quest Level
 role: Level Design / Narrative Design / Environmental Storytelling / Gameplay Implementation
 time: 8 Weeks / Solo
+status: Completed
 caption: ▲ An immersive adventure aboard an abandoned luxury space liner, built through environmental storytelling, multi-zone exploration, puzzles, and combat
 hero: cover.jpg
 hero_caption: Ghost Ship — Project Cover
