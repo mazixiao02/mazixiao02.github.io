@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#ff5500"/>
+  <text
+    x="256"
+    y="276"
+    fill="#111111"
+    font-family="Segoe UI Symbol, Noto Sans Symbols 2, Georgia, serif"
+    font-size="372"
+    font-weight="700"
+    text-anchor="middle"
+    dominant-baseline="middle"
+  >♞</text>
+</svg>
