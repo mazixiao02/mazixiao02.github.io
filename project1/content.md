@@ -1,6 +1,6 @@
 ---
 title: Decaran: Become Human
-tab_title: 星空支线关卡：底卡伦：变人
+tab_title: 星空支线关卡：Decaran: Become Human
 tag: Starfield Side Quest Level Design
 type: 星空单人支线任务关卡设计
 role: 关卡设计 / 任务设计 / 剧情设计 / Gameplay 实现

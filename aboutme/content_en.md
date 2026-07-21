@@ -21,6 +21,12 @@ I like to start with one simple but interesting mechanic and build a complete ga
 
 [📄 Chinese Resume](../resume.pdf) [📄 English Resume](../resume_en.pdf)
 
+## Education & Experience
+
+Aug 2025 – May 2027｜SMU Guildhall｜Master's in Digital Game Development, Level Design specialization｜Dallas, United States
+Jun 2024 – Aug 2024｜NetEase Leihuo｜Systems Design Intern｜Contributed to system design and gameplay development
+Sep 2021 – Jun 2025｜Zhejiang Sci-Tech University｜B.S. in Computer Science and Technology, English-taught program｜Hangzhou, China
+
 ## Gaming Experience
 
 Genres I frequently play:

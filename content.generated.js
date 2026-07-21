@@ -4,7 +4,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
     "database": {
       "project1": {
         "title": "Decaran: Become Human",
-        "tabTitle": "星空支线关卡：底卡伦：变人",
+        "tabTitle": "星空支线关卡：Decaran: Become Human",
         "tag": "Starfield Side Quest Level Design",
         "type": "星空单人支线任务关卡设计",
         "role": "关卡设计 / 任务设计 / 剧情设计 / Gameplay 实现",
@@ -281,7 +281,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "kind": "heading",
             "text": "附件"
           }
-        ]
+        ],
+        "hero": {
+          "src": "project2/cover.jpg",
+          "caption": "《Ghost Ship（幽灵船）》项目封面"
+        }
       },
       "project3": {
         "blocks": [
@@ -632,7 +636,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "kind": "heading",
             "text": "附件"
           }
-        ]
+        ],
+        "hero": {
+          "src": "project4/cover.jpg",
+          "caption": "《FLING》项目封面"
+        }
       },
       "moreprojects": {
         "blocks": [
@@ -692,7 +700,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "kind": "paragraph",
             "text": "BOOOM Game jam项目，Unreal Engine制作的2D平台跳跃游戏。"
           }
-        ]
+        ],
+        "hero": {
+          "src": "moreprojects/cover.jpg",
+          "caption": "更多项目封面"
+        }
       },
       "aboutme": {
         "blocks": [
@@ -724,6 +736,14 @@ window.SITE_CONTENT_BY_LANGUAGE = {
                 "href": "resume_en.pdf"
               }
             ]
+          },
+          {
+            "kind": "heading",
+            "text": "学习与实习经历"
+          },
+          {
+            "kind": "paragraph",
+            "text": "2025.08 – 2027.05｜南卫理公会大学 SMU Guildhall｜数字游戏开发（关卡设计方向）硕士｜美国·达拉斯\n2024.06 – 2024.08｜网易雷火｜系统策划实习生｜参与系统设计与玩法开发工作\n2021.09 – 2025.06｜浙江理工大学｜计算机科学与技术（全英）学士｜中国·杭州"
           },
           {
             "kind": "heading",
@@ -1051,7 +1071,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "kind": "heading",
             "text": "Attachments"
           }
-        ]
+        ],
+        "hero": {
+          "src": "project2/cover.jpg",
+          "caption": "Ghost Ship — Project Cover"
+        }
       },
       "project3": {
         "blocks": [
@@ -1402,7 +1426,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "kind": "heading",
             "text": "Attachments"
           }
-        ]
+        ],
+        "hero": {
+          "src": "project4/cover.jpg",
+          "caption": "FLING — Project Cover"
+        }
       },
       "moreprojects": {
         "blocks": [
@@ -1462,7 +1490,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "kind": "paragraph",
             "text": "A 2D platformer created in Unreal Engine for the BOOOM Game Jam."
           }
-        ]
+        ],
+        "hero": {
+          "src": "moreprojects/cover.jpg",
+          "caption": "More Projects — Cover"
+        }
       },
       "aboutme": {
         "blocks": [
@@ -1494,6 +1526,14 @@ window.SITE_CONTENT_BY_LANGUAGE = {
                 "href": "resume_en.pdf"
               }
             ]
+          },
+          {
+            "kind": "heading",
+            "text": "Education & Experience"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Aug 2025 – May 2027｜SMU Guildhall｜Master's in Digital Game Development, Level Design specialization｜Dallas, United States\nJun 2024 – Aug 2024｜NetEase Leihuo｜Systems Design Intern｜Contributed to system design and gameplay development\nSep 2021 – Jun 2025｜Zhejiang Sci-Tech University｜B.S. in Computer Science and Technology, English-taught program｜Hangzhou, China"
           },
           {
             "kind": "heading",

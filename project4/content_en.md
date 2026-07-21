@@ -6,6 +6,8 @@ type: 2D / Side-Scrolling / Platformer / Celeste-like
 role: Game Design / Level Design
 time: 6 Weeks / 4-Person Team
 caption: ▲ Core gameplay and level design spanning a complete difficulty curve from tutorial to advanced challenge
+hero: cover.jpg
+hero_caption: FLING — Project Cover
 ---
 
 ## One-Sentence Overview

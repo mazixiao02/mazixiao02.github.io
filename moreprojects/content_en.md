@@ -6,6 +6,8 @@ type: Multi-Genre Projects and Gameplay Prototypes
 role: Design / Prototyping / Collaborative Development
 time: Ongoing
 caption: ▲ An archive of additional game designs, interactive prototypes, and independent work
+hero: cover.jpg
+hero_caption: More Projects — Cover
 ---
 
 ## Big Fishing Boom
