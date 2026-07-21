@@ -240,33 +240,47 @@
 
     .project-reading-layout { display: block; }
     .quick-nav {
-      position: sticky; top: 0; z-index: 20;
-      display: flex; align-items: center; gap: 18px;
-      width: 100%; margin: 0 0 44px; padding: 12px 15px;
-      overflow: hidden; background: rgba(37,37,37,.97);
-      border: 1px solid #494949; border-top: 2px solid #ff5500;
-      box-shadow: 0 10px 28px rgba(0,0,0,.28); backdrop-filter: blur(10px);
+      position: fixed;
+      top: calc(50vh + 45px);
+      right: max(52px, calc((75vw - 1180px) / 2 + 52px));
+      z-index: 40;
+      display: flex; flex-direction: column; align-items: stretch; gap: 13px;
+      width: clamp(180px, 14vw, 230px); max-height: calc(100vh - 150px);
+      margin: 0; padding: 17px 14px 15px;
+      overflow: hidden; background: rgba(37,37,37,.96);
+      border: 1px solid #494949; border-left: 2px solid #ff5500;
+      box-shadow: 0 12px 32px rgba(0,0,0,.30); backdrop-filter: blur(10px);
+      transform: translateY(-50%);
+      transition: opacity .22s ease, background-color .22s ease, border-color .22s ease, box-shadow .22s ease;
+    }
+    .quick-nav.is-overlapping {
+      opacity: .16; background: rgba(37,37,37,.28); border-color: rgba(255,85,0,.18);
+      box-shadow: none; backdrop-filter: blur(2px);
+    }
+    .quick-nav.is-overlapping:hover, .quick-nav.is-overlapping:focus-within {
+      opacity: .98; background: rgba(37,37,37,.97); border-color: #ff5500;
+      box-shadow: 0 12px 32px rgba(0,0,0,.30); backdrop-filter: blur(10px);
     }
     .quick-nav-title {
-      display: flex; align-items: center; flex: 0 0 auto; gap: 9px; margin: 0;
+      display: flex; align-items: center; flex: 0 0 auto; gap: 9px; margin: 0 2px;
       color: #ffffff; font-size: 11px; font-weight: 750; letter-spacing: 1.2px; text-transform: uppercase;
     }
-    .quick-nav-title::before { content: ""; width: 18px; height: 1px; background: #ff5500; }
+    .quick-nav-title::before { content: ""; width: 16px; height: 1px; background: #ff5500; }
     .quick-nav-links {
-      display: flex; flex: 1 1 auto; align-items: center; gap: 5px;
-      min-width: 0; overflow-x: auto; overflow-y: hidden; scrollbar-width: none;
+      display: flex; flex: 1 1 auto; flex-direction: column; align-items: stretch; gap: 3px;
+      min-width: 0; overflow-x: hidden; overflow-y: auto; scrollbar-width: none;
     }
     .quick-nav-links::-webkit-scrollbar { display: none; }
     .quick-nav a {
-      display: block; flex: 0 0 auto; padding: 7px 10px; color: #bdbdbd;
+      display: block; flex: 0 0 auto; padding: 7px 9px; color: #bdbdbd;
       background: transparent; border: 1px solid transparent;
-      text-decoration: none; white-space: nowrap; font-size: 11.5px; line-height: 1.35; transition: .2s ease;
+      text-decoration: none; white-space: normal; font-size: 11.5px; line-height: 1.45; transition: .2s ease;
     }
     .quick-nav a:hover, .quick-nav a.active {
       color: #ff6b24; border-color: rgba(255,85,0,.48); background: rgba(255,85,0,.08);
     }
-    .quick-nav a.toc-depth-3 { color: #a6a6a6; font-size: 10.8px; }
-    .quick-nav a.toc-depth-4 { color: #8f8f8f; font-size: 10.2px; }
+    .quick-nav a.toc-depth-3 { padding-left: 18px; color: #a6a6a6; font-size: 10.8px; }
+    .quick-nav a.toc-depth-4 { padding-left: 27px; color: #8f8f8f; font-size: 10.2px; }
 
     .rich-list, .numbered-list {
       max-width: 780px; margin: -8px 0 28px; padding: 0; list-style: none;
@@ -379,8 +393,9 @@
   .project-lede p{font-size:15.5px;line-height:1.72;}
   .spec-table-mini{grid-template-columns:1fr 1fr;gap:8px;}
   .spec-cell{min-height:0;padding:16px 18px;}
-  .quick-nav{top:0;gap:12px;margin-bottom:38px;padding:11px 12px;}
+  .quick-nav{position:sticky;top:0;right:auto;z-index:20;transform:none;flex-direction:row;align-items:center;width:100%;max-height:none;gap:12px;margin:0 0 38px;padding:11px 12px;border:1px solid #494949;border-top:2px solid #ff5500;opacity:1 !important;}
   .quick-nav-title::before{display:none;}
+  .quick-nav-links{flex-direction:row;align-items:center;overflow-x:auto;overflow-y:hidden;}
   .quick-nav a,.quick-nav a.toc-depth-3,.quick-nav a.toc-depth-4{padding:7px 9px;font-size:11px;}
   .content-heading{font-size:21px;margin-top:52px;}
   .detail-section p{font-size:15px;line-height:1.82;}
@@ -389,6 +404,12 @@
   .about-photo{min-height:0;aspect-ratio:4/5;}
   .about-copy{padding:24px 20px;}
   .showcase-block iframe{height:220px;}
+}
+
+@media (min-width: 769px) and (max-width: 1280px){
+  .quick-nav{position:sticky;top:0;right:auto;z-index:20;transform:none;flex-direction:row;align-items:center;width:100%;max-height:none;gap:14px;margin:0 0 42px;padding:11px 13px;border:1px solid #494949;border-top:2px solid #ff5500;opacity:1 !important;}
+  .quick-nav-links{flex-direction:row;align-items:center;overflow-x:auto;overflow-y:hidden;}
+  .quick-nav a,.quick-nav a.toc-depth-3,.quick-nav a.toc-depth-4{padding:7px 9px;font-size:11px;white-space:nowrap;}
 }
 
 @media (min-width: 769px) and (max-width: 1120px){
@@ -689,6 +710,7 @@
       let projectDatabase = {};
       let projectContent = {};
       let tocObserver = null;
+      let tocCollisionCleanup = null;
 
       function applyPhysics(item, card) {
         item.addEventListener('mousemove', (e) => {
@@ -786,8 +808,45 @@
 
       function bindTableOfContents() {
         if (tocObserver) tocObserver.disconnect();
+        if (tocCollisionCleanup) {
+          tocCollisionCleanup();
+          tocCollisionCleanup = null;
+        }
         const links = Array.from(wrapper.querySelectorAll('.quick-nav a[data-section]'));
         if (!links.length) return;
+
+        const quickNav = wrapper.querySelector('.quick-nav');
+        let collisionFrame = 0;
+        const updateTocCollision = () => {
+          collisionFrame = 0;
+          if (!quickNav || window.matchMedia('(max-width: 1280px)').matches) {
+            if (quickNav) quickNav.classList.remove('is-overlapping');
+            return;
+          }
+          const navRect = quickNav.getBoundingClientRect();
+          const targets = wrapper.querySelectorAll('.project-title-area, .project-lede, .spec-table-mini, .detail-section > *');
+          const inset = 10;
+          const overlaps = Array.from(targets).some(target => {
+            if (target === quickNav || target.offsetParent === null) return false;
+            const rect = target.getBoundingClientRect();
+            return rect.left < navRect.right - inset &&
+              rect.right > navRect.left + inset &&
+              rect.top < navRect.bottom - inset &&
+              rect.bottom > navRect.top + inset;
+          });
+          quickNav.classList.toggle('is-overlapping', overlaps);
+        };
+        const scheduleTocCollision = () => {
+          if (!collisionFrame) collisionFrame = requestAnimationFrame(updateTocCollision);
+        };
+        rightPanel.addEventListener('scroll', scheduleTocCollision, { passive: true });
+        window.addEventListener('resize', scheduleTocCollision);
+        tocCollisionCleanup = () => {
+          rightPanel.removeEventListener('scroll', scheduleTocCollision);
+          window.removeEventListener('resize', scheduleTocCollision);
+          if (collisionFrame) cancelAnimationFrame(collisionFrame);
+        };
+        scheduleTocCollision();
 
         links.forEach(link => link.addEventListener('click', event => {
           event.preventDefault();
