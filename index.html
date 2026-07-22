@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>马子潇 - 个人作品集</title>
-  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="icon" type="image/svg+xml" sizes="any" href="./favicon.svg?v=2" />
   <meta name="theme-color" content="#ff5500" />
   <style>
     /* --- 1. 全局极致主义重置 & 中度冷工业灰调体系 --- */
@@ -36,6 +36,19 @@
       flex-shrink: 0;
       z-index: 100;
       box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+    .header-identity {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+    .brand-mark {
+      display: block;
+      width: 54px;
+      height: 54px;
+      flex: 0 0 54px;
+      object-fit: contain;
     }
     .profile-info h1 {
       font-size: 22px;
@@ -359,8 +372,68 @@
     .showcase-caption { font-size: 11.5px; color: #999999; text-align: center; margin-top: 10px; margin-bottom: 42px; }
     .detail-section .showcase-block,
     .detail-section .showcase-caption { width: 100%; max-width: 780px; }
+    .detail-section .showcase-image,
+    .detail-section .showcase-image-caption {
+      width: 66.6667%; max-width: 520px; margin-left: auto; margin-right: auto;
+    }
     .detail-section .showcase-block iframe {
       display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 16 / 9;
+    }
+
+    /* Figure 12–19：单图切换画廊 */
+    .media-carousel {
+      width: 66.6667%; max-width: 520px; margin: 8px auto 46px;
+    }
+    .media-carousel-stage {
+      position: relative; overflow: hidden; background: #222222;
+      border: 1px solid #444444; box-shadow: 0 8px 30px rgba(0,0,0,0.22);
+    }
+    .media-carousel-stage img {
+      display: block; width: 100%; height: auto; min-height: 1px;
+    }
+    .media-carousel-arrow {
+      position: absolute; top: 50%; z-index: 2; width: 42px; height: 58px;
+      display: grid; place-items: center; border: 1px solid rgba(255,255,255,.35);
+      background: rgba(20,20,20,.74); color: #ffffff; font-size: 25px; line-height: 1;
+      cursor: pointer; transform: translateY(-50%); transition: .2s ease;
+    }
+    .media-carousel-arrow:hover,
+    .media-carousel-arrow:focus-visible {
+      color: #ff6b24; border-color: #ff6b24; background: rgba(20,20,20,.92); outline: 0;
+    }
+    .media-carousel-prev { left: 12px; }
+    .media-carousel-next { right: 12px; }
+    .media-carousel-caption {
+      min-height: 18px; margin: 10px 0 12px; color: #999999;
+      font-size: 11.5px; line-height: 1.5; text-align: center;
+    }
+    .media-carousel-thumbs {
+      display: flex; gap: 8px; width: 100%; padding: 2px 0 5px;
+      overflow-x: auto; scrollbar-width: thin; scrollbar-color: #666 #292929;
+    }
+    .media-carousel-thumb {
+      flex: 0 0 72px; padding: 0; overflow: hidden; aspect-ratio: 16 / 9;
+      border: 1px solid #4c4c4c; background: #222222; cursor: pointer;
+      opacity: .58; transition: opacity .2s ease, border-color .2s ease, transform .2s ease;
+    }
+    .media-carousel-thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .media-carousel-thumb:hover { opacity: .9; }
+    .media-carousel-thumb.is-active {
+      opacity: 1; border-color: #ff5500; transform: translateY(-2px);
+    }
+    .media-carousel-thumb:focus-visible { outline: 2px solid #ff5500; outline-offset: 2px; }
+
+    /* Figure 20–25：两列 GIF 展示 */
+    .media-pair-grid {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 18px;
+      width: 100%; max-width: 780px; margin: 8px 0 46px;
+    }
+    .media-pair-item { min-width: 0; }
+    .media-pair-grid .showcase-block {
+      width: 100%; max-width: none; margin: 0; box-shadow: 0 8px 30px rgba(0,0,0,0.22);
+    }
+    .media-pair-grid .showcase-caption {
+      width: 100%; max-width: none; margin: 9px 0 0; line-height: 1.5;
     }
 
     .about-page .project-title-area { margin-bottom: 30px; }
@@ -393,6 +466,8 @@
   
 @media (max-width: 768px){
   header{padding:16px; flex-direction: column; height: auto; align-items: flex-start;}
+  .header-identity{gap:11px;}
+  .brand-mark{width:48px;height:48px;flex-basis:48px;}
   .main-container{flex-direction:column;height:auto;}
   .left-panel{width:100%;height:auto;flex-direction:row;overflow-x:auto;perspective:none;border-right:none;border-bottom:1px solid #1a1a1a;}
   .project-item{width:180px;min-width:180px;height:110px;transform:none !important;}
@@ -416,6 +491,11 @@
   .about-photo{min-height:0;aspect-ratio:4/5;}
   .about-copy{padding:24px 20px;}
   .showcase-block iframe{height:auto;aspect-ratio:16 / 9;}
+  .detail-section .showcase-image,
+  .detail-section .showcase-image-caption,
+  .media-carousel{width:100%;max-width:520px;}
+  .media-pair-grid{grid-template-columns:1fr;gap:24px;}
+  .media-carousel-arrow{width:38px;height:52px;}
 }
 
 @media (min-width: 769px) and (max-width: 1280px){
@@ -443,15 +523,26 @@
   .project-reading-layout .detail-section .showcase-caption{
     max-width:min(780px, calc(75vw - clamp(176px, 13vw, 218px) - 94px));
   }
+  .project-reading-layout .detail-section .showcase-image,
+  .project-reading-layout .detail-section .showcase-image-caption,
+  .project-reading-layout .media-carousel{
+    max-width:min(520px, calc(75vw - clamp(176px, 13vw, 218px) - 94px));
+  }
+  .project-reading-layout .media-pair-grid{
+    max-width:min(780px, calc(75vw - clamp(176px, 13vw, 218px) - 94px));
+  }
 }
 </style>
 </head>
 <body>
 
   <header>
-    <div class="profile-info">
-      <h1 id="headerName">马子潇</h1>
-      <p id="headerTitle">关卡策划 / 游戏设计</p>
+    <div class="header-identity">
+      <img class="brand-mark" src="./favicon.svg?v=2" alt="" aria-hidden="true" />
+      <div class="profile-info">
+        <h1 id="headerName">马子潇</h1>
+        <p id="headerTitle">关卡策划 / 游戏设计</p>
+      </div>
     </div>
     <div class="header-actions">
       <label class="language-switch" for="languageToggle" aria-label="切换中文和英文 / Switch language">
@@ -617,14 +708,51 @@
       const width = isHero ? safeHeroWidth(image.width) : '';
       const style = width ? ` style="max-width:${width}; margin-left:auto; margin-right:auto;"` : '';
       const loading = isHero ? 'eager' : 'lazy';
-      return `<div class="showcase-block"${style}><img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.caption)}" loading="${loading}"></div><div class="showcase-caption"${style}>${escapeHtml(image.caption)}</div>`;
+      const heroClass = isHero ? ' showcase-hero' : '';
+      return `<div class="showcase-block showcase-image${heroClass}"${style}><img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.caption)}" loading="${loading}"></div><div class="showcase-caption showcase-image-caption${heroClass}"${style}>${escapeHtml(image.caption)}</div>`;
     }
 
     function videoBlock(video) {
       const params = new URLSearchParams({ rel: '0', playsinline: '1', modestbranding: '1' });
       if (location.protocol === 'http:' || location.protocol === 'https:') params.set('origin', location.origin);
       const source = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(video.id)}?${params.toString()}`;
-      return `<div class="showcase-block"><iframe src="${source}" width="100%" height="450" title="${escapeHtml(video.caption)}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="showcase-caption">▶ ${escapeHtml(video.caption)}</div>`;
+      return `<div class="showcase-block showcase-video"><iframe src="${source}" width="100%" height="450" title="${escapeHtml(video.caption)}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="showcase-caption showcase-video-caption">▶ ${escapeHtml(video.caption)}</div>`;
+    }
+
+    function figureNumber(block) {
+      if (!block || block.kind !== 'image') return 0;
+      const match = String(block.caption || '').match(/^Figure\s+(\d+)\s*[:：]/i);
+      return match ? Number(match[1]) : 0;
+    }
+
+    function collectFigureRange(blocks, startIndex, firstFigure, lastFigure) {
+      const images = [];
+      for (let number = firstFigure; number <= lastFigure; number += 1) {
+        const block = blocks[startIndex + number - firstFigure];
+        if (figureNumber(block) !== number) return [];
+        images.push(block);
+      }
+      return images;
+    }
+
+    function mediaCarouselBlock(images) {
+      if (!images.length) return '';
+      const first = images[0];
+      const thumbs = images.map((image, index) => `<button class="media-carousel-thumb${index === 0 ? ' is-active' : ''}" type="button" data-gallery-index="${index}" data-gallery-src="${escapeHtml(image.src)}" data-gallery-caption="${escapeHtml(image.caption)}" aria-label="${escapeHtml(image.caption)}" aria-selected="${index === 0 ? 'true' : 'false'}"><img src="${escapeHtml(image.src)}" alt="" loading="lazy"></button>`).join('');
+      return `<div class="media-carousel" data-media-carousel tabindex="0">
+        <div class="media-carousel-stage">
+          <img src="${escapeHtml(first.src)}" alt="${escapeHtml(first.caption)}" loading="lazy" data-gallery-image>
+          <button class="media-carousel-arrow media-carousel-prev" type="button" data-gallery-prev aria-label="Previous image">‹</button>
+          <button class="media-carousel-arrow media-carousel-next" type="button" data-gallery-next aria-label="Next image">›</button>
+        </div>
+        <div class="media-carousel-caption" data-gallery-caption>${escapeHtml(first.caption)}</div>
+        <div class="media-carousel-thumbs" role="tablist" aria-label="Figure thumbnails">${thumbs}</div>
+      </div>`;
+    }
+
+    function mediaPairGridBlock(images) {
+      const items = images.map(image => `<div class="media-pair-item">${imageBlock(image)}</div>`).join('');
+      return `<div class="media-pair-grid">${items}</div>`;
     }
 
     function buttonsBlock(block) {
@@ -642,21 +770,74 @@
       return '';
     }
 
-    function renderContentBlocks(blocks) {
+    function renderContentBlocks(blocks, projectId = '') {
       let headingIndex = 0;
       let sectionTitle = '';
       const toc = [];
-      const html = (blocks || []).map(block => {
+      const source = blocks || [];
+      let html = '';
+      for (let index = 0; index < source.length; index += 1) {
+        const block = source[index];
+        if (projectId === 'project3' && figureNumber(block) === 12) {
+          const galleryImages = collectFigureRange(source, index, 12, 19);
+          if (galleryImages.length) {
+            html += mediaCarouselBlock(galleryImages);
+            index += galleryImages.length - 1;
+            continue;
+          }
+        }
+        if (projectId === 'project3' && figureNumber(block) === 20) {
+          const pairedImages = collectFigureRange(source, index, 20, 25);
+          if (pairedImages.length) {
+            html += mediaPairGridBlock(pairedImages);
+            index += pairedImages.length - 1;
+            continue;
+          }
+        }
         if (block.kind === 'heading') {
           sectionTitle = block.text || '';
           const id = `section-${++headingIndex}`;
           const depth = headingDepth(block);
           toc.push({ id, text: sectionTitle, depth });
-          return renderBlock(block, { id, depth, sectionTitle });
+          html += renderBlock(block, { id, depth, sectionTitle });
+        } else {
+          html += renderBlock(block, { sectionTitle });
         }
-        return renderBlock(block, { sectionTitle });
-      }).join('');
+      }
       return { html, toc };
+    }
+
+    function bindMediaCarousels(root) {
+      root.querySelectorAll('[data-media-carousel]').forEach(gallery => {
+        const image = gallery.querySelector('[data-gallery-image]');
+        const caption = gallery.querySelector('[data-gallery-caption]');
+        const thumbs = Array.from(gallery.querySelectorAll('[data-gallery-index]'));
+        if (!image || !caption || !thumbs.length) return;
+        let activeIndex = 0;
+
+        const showImage = requestedIndex => {
+          activeIndex = (requestedIndex + thumbs.length) % thumbs.length;
+          const activeThumb = thumbs[activeIndex];
+          image.src = activeThumb.dataset.gallerySrc;
+          image.alt = activeThumb.dataset.galleryCaption;
+          caption.textContent = activeThumb.dataset.galleryCaption;
+          thumbs.forEach((thumb, index) => {
+            const isActive = index === activeIndex;
+            thumb.classList.toggle('is-active', isActive);
+            thumb.setAttribute('aria-selected', isActive ? 'true' : 'false');
+          });
+          activeThumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+        };
+
+        thumbs.forEach((thumb, index) => thumb.addEventListener('click', () => showImage(index)));
+        gallery.querySelector('[data-gallery-prev]')?.addEventListener('click', () => showImage(activeIndex - 1));
+        gallery.querySelector('[data-gallery-next]')?.addEventListener('click', () => showImage(activeIndex + 1));
+        gallery.addEventListener('keydown', event => {
+          if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+          event.preventDefault();
+          showImage(activeIndex + (event.key === 'ArrowRight' ? 1 : -1));
+        });
+      });
     }
 
     function quickNavHtml(toc, label) {
@@ -803,7 +984,7 @@
             : (firstHeadingIndex < 0 ? [] : blocks.slice(firstHeadingIndex));
           const introHtml = introBlocks.map(block => renderBlock(block, { sectionTitle: '' })).join('');
           const resumeHtml = resumeBlocks.map(block => renderBlock(block, { sectionTitle: '' })).join('');
-          const rendered = renderContentBlocks(remainingBlocks);
+          const rendered = renderContentBlocks(remainingBlocks, projectId);
           const photoHtml = content.hero
             ? `<div class="showcase-block about-photo"><img src="${escapeHtml(content.hero.src)}" alt="${escapeHtml(content.hero.caption)}" loading="eager"></div>`
             : '';
@@ -811,7 +992,7 @@
         } else {
           const heroHtml = content.hero ? imageBlock(content.hero, true) : '';
           const lead = extractLead(content.blocks || []);
-          const rendered = renderContentBlocks(lead.blocks);
+          const rendered = renderContentBlocks(lead.blocks, projectId);
           const leadHtml = lead.html ? `<div class="project-lede">${lead.html}</div>` : '';
           html = `${titleHtml}${leadHtml}${heroHtml}
             <div class="spec-table-mini">
@@ -830,6 +1011,7 @@
           wrapper.innerHTML = html;
           wrapper.classList.remove('content-fade');
           rightPanel.scrollTop = 0;
+          bindMediaCarousels(wrapper);
           bindTableOfContents();
         }, 150);
       }

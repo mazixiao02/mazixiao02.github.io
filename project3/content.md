@@ -132,8 +132,6 @@ hero_caption: 《Hamsterballin’》最终关卡“扭蛋机星系”主视觉
 
 ![Figure 25：索道演出动画6](images/figure-25-cableway-animation-06.gif)
 
-@[youtube](NM2TgDevFbo "索道系统及其镜头设计演示")
-
 ## 时间线
 
 阶段｜时间｜工作内容

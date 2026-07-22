@@ -132,8 +132,6 @@ I quickly embedded myself with the other two level-design groups, communicated t
 
 ![Figure 25: Cableway presentation animation 6](images/figure-25-cableway-animation-06.gif)
 
-@[youtube](NM2TgDevFbo "Cableway System and Camera Design Demonstration")
-
 ## Timeline
 
 Stage｜Date｜Work

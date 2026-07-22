@@ -582,11 +582,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project3/images/figure-25-cableway-animation-06.gif"
           },
           {
-            "kind": "youtube",
-            "id": "NM2TgDevFbo",
-            "caption": "索道系统及其镜头设计演示"
-          },
-          {
             "kind": "heading",
             "level": 2,
             "text": "时间线"
@@ -1500,11 +1495,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "kind": "image",
             "caption": "Figure 25: Cableway presentation animation 6",
             "src": "project3/images/figure-25-cableway-animation-06.gif"
-          },
-          {
-            "kind": "youtube",
-            "id": "NM2TgDevFbo",
-            "caption": "Cableway System and Camera Design Demonstration"
           },
           {
             "kind": "heading",
