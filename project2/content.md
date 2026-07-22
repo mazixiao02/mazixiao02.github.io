@@ -87,8 +87,8 @@ RTM｜2026.07.19｜完成 Bug 修复、最终优化与项目交付。
 
 ## 附录
 
-[查看 Ghost Ship 关卡设计文档（DOCX）](pdfs/Ma _DFSI_LDD_01.docx)
-[查看 Ghost Ship RTM ReadMe（DOCX）](pdfs/Ma_DFSI_ReadMe_ RTM.docx)
+[查看 Ghost Ship 关卡设计文档（PDF）](pdfs/Ma _DFSI_LDD_01.pdf)
+[查看 Ghost Ship RTM ReadMe（PDF）](pdfs/Ma_DFSI_ReadMe_ RTM.pdf)
 
 ![Figure 49：舰桥区域](images/bridgearea.jpg)
 

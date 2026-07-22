@@ -87,8 +87,8 @@ The key lessons were:
 
 ## Appendix
 
-[View the Ghost Ship Level Design Document (DOCX)](pdfs/Ma _DFSI_LDD_01.docx)
-[View the Ghost Ship RTM ReadMe (DOCX)](pdfs/Ma_DFSI_ReadMe_ RTM.docx)
+[View the Ghost Ship Level Design Document (PDF)](pdfs/Ma _DFSI_LDD_01.pdf)
+[View the Ghost Ship RTM ReadMe (PDF)](pdfs/Ma_DFSI_ReadMe_ RTM.pdf)
 
 ![Figure 49: Bridge Area](images/bridgearea.jpg)
 

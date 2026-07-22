@@ -341,12 +341,12 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "kind": "buttons",
             "links": [
               {
-                "label": "查看 Ghost Ship 关卡设计文档（DOCX）",
-                "href": "project2/pdfs/Ma _DFSI_LDD_01.docx"
+                "label": "查看 Ghost Ship 关卡设计文档（PDF）",
+                "href": "project2/pdfs/Ma _DFSI_LDD_01.pdf"
               },
               {
-                "label": "查看 Ghost Ship RTM ReadMe（DOCX）",
-                "href": "project2/pdfs/Ma_DFSI_ReadMe_ RTM.docx"
+                "label": "查看 Ghost Ship RTM ReadMe（PDF）",
+                "href": "project2/pdfs/Ma_DFSI_ReadMe_ RTM.pdf"
               }
             ]
           },
@@ -1595,12 +1595,12 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "kind": "buttons",
             "links": [
               {
-                "label": "View the Ghost Ship Level Design Document (DOCX)",
-                "href": "project2/pdfs/Ma _DFSI_LDD_01.docx"
+                "label": "View the Ghost Ship Level Design Document (PDF)",
+                "href": "project2/pdfs/Ma _DFSI_LDD_01.pdf"
               },
               {
-                "label": "View the Ghost Ship RTM ReadMe (DOCX)",
-                "href": "project2/pdfs/Ma_DFSI_ReadMe_ RTM.docx"
+                "label": "View the Ghost Ship RTM ReadMe (PDF)",
+                "href": "project2/pdfs/Ma_DFSI_ReadMe_ RTM.pdf"
               }
             ]
           },
