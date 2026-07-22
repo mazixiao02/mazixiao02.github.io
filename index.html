@@ -363,6 +363,44 @@
     .timeline-copy { color: #cfcfcf; font-size: 13.5px; line-height: 1.72; }
     .timeline-extra { display: block; margin-top: 5px; color: #9d9d9d; font-size: 12px; }
 
+    /* About Me：游戏时长分布图 */
+    .playtime-chart {
+      width: 100%; max-width: 780px; margin: 8px 0 42px;
+      background: #292929; border: 1px solid #484848; border-top: 2px solid #ff5500;
+    }
+    .playtime-chart-header {
+      display: flex; align-items: baseline; justify-content: space-between; gap: 18px;
+      padding: 17px 19px 15px; border-bottom: 1px solid #454545;
+    }
+    .playtime-chart-title { color: #ffffff; font-size: 13.5px; font-weight: 720; }
+    .playtime-chart-note { color: #909090; font-size: 10px; letter-spacing: .35px; }
+    .playtime-chart-row {
+      display: grid; grid-template-columns: 82px minmax(0, 1fr); gap: 17px;
+      padding: 13px 18px; border-bottom: 1px solid rgba(255,255,255,.065);
+    }
+    .playtime-chart-row:last-child { border-bottom: 0; }
+    .playtime-chart-metric {
+      display: flex; align-items: baseline; justify-content: flex-end; gap: 4px;
+      padding-top: 1px; white-space: nowrap;
+    }
+    .playtime-chart-metric strong {
+      color: #ff6b24; font-size: 15px; line-height: 1; font-weight: 780; letter-spacing: -.15px;
+    }
+    .playtime-chart-metric span { color: #8e8e8e; font-size: 9.5px; text-transform: uppercase; }
+    .playtime-chart-body { min-width: 0; }
+    .playtime-chart-bar {
+      width: 100%; height: 4px; margin: 4px 0 10px; overflow: hidden; background: #414141;
+    }
+    .playtime-chart-bar span {
+      display: block; width: var(--playtime-width); height: 100%; background: #ff5500;
+    }
+    .playtime-chart-games { display: flex; flex-wrap: wrap; gap: 6px; }
+    .playtime-chart-game {
+      display: inline-flex; align-items: center; min-height: 25px; padding: 5px 8px;
+      color: #d8d8d8; background: #242424; border: 1px solid #454545;
+      font-size: 11px; line-height: 1.35;
+    }
+
     /* 图片展示列表样式 */
     .image-gallery {
       display: flex; flex-direction: column; gap: 20px;
@@ -502,6 +540,10 @@
   .media-carousel{width:100%;max-width:520px;}
   .media-pair-grid{grid-template-columns:1fr;gap:24px;}
   .media-carousel-arrow{width:38px;height:52px;}
+  .playtime-chart-header{align-items:flex-start;flex-direction:column;gap:5px;padding:15px 14px 13px;}
+  .playtime-chart-row{grid-template-columns:62px minmax(0,1fr);gap:12px;padding:12px 13px;}
+  .playtime-chart-metric strong{font-size:13.5px;}
+  .playtime-chart-game{font-size:10.5px;}
 }
 
 @media (min-width: 769px) and (max-width: 1280px){
@@ -684,6 +726,9 @@
       const lines = splitNonEmptyLines(text);
       if (!lines.length) return '';
 
+      const chartDirective = lines[0].match(/^@\[playtime-chart\]\((zh|en)\)$/i);
+      if (chartDirective) return playtimeChartHtml(lines.slice(1), chartDirective[1].toLowerCase());
+
       if (lines.every(line => line.includes('｜'))) {
         const rows = lines.map(line => line.split('｜').map(cell => cell.trim()));
         if (/时间线|Timeline|学习与实习经历|Education & Experience/i.test(sectionTitle)) {
@@ -708,6 +753,39 @@
       }
 
       return plainParagraph(text);
+    }
+
+    function playtimeChartHtml(lines, language) {
+      const isEnglish = language === 'en';
+      const rows = lines.map(line => {
+        const divider = line.indexOf('｜');
+        if (divider < 1) return null;
+        const tier = line.slice(0, divider).trim();
+        const games = line.slice(divider + 1).split('；').map(game => game.trim()).filter(Boolean);
+        const hours = Number.parseFloat(tier);
+        if (!Number.isFinite(hours) || !games.length) return null;
+        const width = Math.max(12, Math.log10(hours + 1) / Math.log10(1001) * 100);
+        return { tier, games, width };
+      }).filter(Boolean);
+
+      if (!rows.length) return '';
+      const title = isEnglish ? 'Playtime Distribution' : '游戏时长分布';
+      const note = isEnglish ? 'Logarithmic scale · “+” means at least' : '对数刻度 · “+”表示至少';
+      const hourLabel = isEnglish ? 'hrs' : '小时';
+      const rowHtml = rows.map(row => {
+        const games = row.games.map(game => `<span class="playtime-chart-game">${escapeHtml(game)}</span>`).join('');
+        return `<div class="playtime-chart-row">
+          <div class="playtime-chart-metric"><strong>${escapeHtml(row.tier)}</strong><span>${hourLabel}</span></div>
+          <div class="playtime-chart-body">
+            <div class="playtime-chart-bar" aria-hidden="true"><span style="--playtime-width:${row.width.toFixed(1)}%"></span></div>
+            <div class="playtime-chart-games">${games}</div>
+          </div>
+        </div>`;
+      }).join('');
+      return `<div class="playtime-chart" aria-label="${escapeHtml(title)}">
+        <div class="playtime-chart-header"><div class="playtime-chart-title">${escapeHtml(title)}</div><div class="playtime-chart-note">${escapeHtml(note)}</div></div>
+        ${rowHtml}
+      </div>`;
     }
 
     function imageBlock(image, isHero = false) {

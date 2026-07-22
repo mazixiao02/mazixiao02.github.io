@@ -968,36 +968,82 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "游戏经历"
           },
           {
-            "kind": "paragraph",
-            "text": "经常玩的游戏品类：\n• 角色扮演类\n• 卡牌类\n• 射击类\n• 平台跳跃\n• 独立游戏\n• 任天堂游戏"
+            "kind": "heading",
+            "level": 3,
+            "text": "常玩品类"
           },
           {
             "kind": "paragraph",
-            "text": "三款本命游戏及游戏时长：\n• Splatoon，1000+小时\n• 任天堂全明星大乱斗，1000+小时\n• 蔚蓝（Celeste），20+小时"
+            "text": "• 角色扮演类\n• 卡牌类\n• 射击类\n• 平台跳跃\n• 独立游戏\n• 任天堂游戏"
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "三款本命游戏"
+          },
+          {
+            "kind": "heading",
+            "level": 4,
+            "text": "《Splatoon》系列｜1000+ 小时"
           },
           {
             "kind": "paragraph",
-            "text": "本命游戏的原因及游玩体验："
+            "text": "首先，《Splatoon》除了网络连接极不稳定、运营体系落后、匹配机制极不公平之外，是一款完美的游戏。它以“鱿鱼”这一概念提纲挈领地统筹了玩法、美术、剧情乃至音乐：鱿鱼会喷墨，所以使用墨汁射击；会变色，所以用颜色区分阵营；有领地意识，所以围绕涂地展开对战；会游泳，所以能够潜入墨汁。"
           },
           {
             "kind": "paragraph",
-            "text": "首先，Splatoon除了网络不稳定，运营极其落后，匹配机制及其不公平，是一款完美的游戏。"
+            "text": "这些设定进一步构成了完整的游戏循环：玩家消耗墨水射击、击倒对手、积攒大招并扩大行动范围；再潜入墨水恢复墨量与生命、隐藏行踪、加速移动并攀上墙壁。“在墙面墨汁中游泳”更从根本上改变了 PvP 地图的垂直设计。"
           },
           {
             "kind": "paragraph",
-            "text": "泛游戏经历："
+            "text": "当我观看 GDC 开发演讲，得知团队是先完成玩法、再引入“鱿鱼”概念时，我非常震惊。它也成为我早期 FPS PvP 关卡设计中的一份“反面教材”：由于《Splatoon》大多数武器相比传统 FPS 射程很短，所以地图可以更加开放；我曾照搬这种开放性，导致早期 FPS 地图缺少对枪线的控制。而传统 FPS 的武器射程近乎无限，需要通过弯折动线、遮挡和掩体切割视线。经过不断学习与实践，我逐渐理解：即使核心交互同为射击，玩法模式与武器射程不同，关卡设计逻辑也会完全不同。"
+          },
+          {
+            "kind": "heading",
+            "level": 4,
+            "text": "《任天堂全明星大乱斗》系列｜1000+ 小时"
           },
           {
             "kind": "paragraph",
-            "text": "爷爷曾经常对我说，我在学会走路之前就学玩Ballance了。"
+            "text": "我最初因为它“游戏界百科全书”的名气而入坑，上手后发现，这款游戏完美体现了任天堂“易上手，难精通”的设计理念。它不同于传统格斗游戏，而是通过攻击为对手积累百分比；百分比越高，对手越容易被击飞出场。这一核心规则创造了传统血条制格斗游戏难以提供的可能性："
           },
           {
             "kind": "paragraph",
-            "text": "那个时候，我还住在爷爷的厂里，那里有一间大的办公室，全部是员工的隔间以及电脑，就在角落，有一台装满了游戏的大屁股电脑。我的童年就从这里开始。"
+            "text": "1. 胜负并不单纯由生命值决定。玩家可以在对手百分比较低时通过场外击杀取胜，让整局始终保持紧张，也让落后者一直拥有翻盘机会。\n2. 战斗不再只围绕起手与固定连段展开。每次击飞后的追击、回场与场外攻防，都要求玩家持续判断并操作。"
           },
           {
             "kind": "paragraph",
-            "text": "Ballance，祖玛，宝石迷阵，贪食鱼，刺猬索尼克，明星三缺一。"
+            "text": "本作最大的特殊之处，还在于汇集了游戏行业众多知名 IP 角色。不同世界观、不同类型的人物可以在同一舞台登场；每名角色都拥有鲜明的动作特征和独特玩法，却又能够平衡地共存于同一套系统之下，设计功力可见一斑。此外，其蓬勃的线下社群生态也进一步延长了游戏的生命力。"
+          },
+          {
+            "kind": "heading",
+            "level": 4,
+            "text": "《蔚蓝（Celeste）》｜40+ 小时"
+          },
+          {
+            "kind": "paragraph",
+            "text": "我认为《蔚蓝》是游戏难度曲线设计的教科书，也是 2D 平台跳跃游戏的顶点。它以高难度闻名，但凭借出色的教程、节奏控制和逐章引入机制的方式，不断完成“起承转合”。玩家从头到尾没有任何数值或等级加成，完全依靠自身技术成长通关；最终站在山顶时，能够清晰回望自己一路走来的成长。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "《蔚蓝》“分而治之”的关卡设计同样对难度曲线起到了关键作用："
+          },
+          {
+            "kind": "paragraph",
+            "text": "• 游戏将主要机制分散到不同章节，每章只要求玩家认识、学习并反复训练一个新机制。\n• 每章再拆分为多个单屏房间，便于玩家理解、学习和重复练习。\n• 每个房间由一连串机关构成，但会被安全落脚点划分为若干段落，让玩家一次只解决一个局部问题。\n• 最终再落实到单个机关，让玩家通过反复尝试掌握精确操作。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "这种类似计算机编程中自上而下、分而治之的设计思想，使游戏的难度曲线格外优雅。近乎零等待的快速重生机制，也让高难挑战始终保持低挫败、高反馈的节奏。"
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "泛游戏经历"
+          },
+          {
+            "kind": "paragraph",
+            "text": "@[playtime-chart](zh)\n1000+｜《Splatoon》系列；《任天堂全明星大乱斗》系列；《游戏王》\n500+｜《宝可梦》系列；《阴阳师》；《粉碎狂热》\n200+｜《塞尔达传说：王国之泪》\n100+｜《星空》（Creation Kit 900+ 小时）；《女神异闻录 5 皇家版》；《女神异闻录 4 黄金版》\n60+｜《怪物猎人》系列\n50+｜《半条命 2》（Hammer 400+ 小时）；《密特罗德 生存恐惧》；《鹅鸭杀》\n40+｜《蔚蓝》；《DOOM》\n30+｜《十三机兵防卫圈》；《超级马里奥 奥德赛》；《马里奥赛车 8》\n25+｜《卡比的驭天飞行者》\n20+｜《守望先锋》\n14｜《双人成行》；《双影奇境》\n6｜《再见狂野之心》\n5｜《短途旅行》；《历历在目》\n4｜《INSIDE》；《混音青春》\n3｜《奇妙逃亡》；《艾迪芬奇的回忆》\n1.5｜《画中世界》；《风之旅人》"
           }
         ],
         "hero": {
@@ -1976,36 +2022,82 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "Gaming Experience"
           },
           {
-            "kind": "paragraph",
-            "text": "Genres I frequently play:\n• Role-playing games\n• Card games\n• Shooters\n• Platformers\n• Indie games\n• Nintendo games"
+            "kind": "heading",
+            "level": 3,
+            "text": "Frequently Played Genres"
           },
           {
             "kind": "paragraph",
-            "text": "Three games closest to my heart and my playtime:\n• Splatoon, 1,000+ hours\n• Super Smash Bros., 1,000+ hours\n• Celeste, 20+ hours"
+            "text": "• Role-playing games\n• Card games\n• Shooters\n• Platformers\n• Indie games\n• Nintendo games"
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Three Games Closest to My Heart"
+          },
+          {
+            "kind": "heading",
+            "level": 4,
+            "text": "Splatoon Series｜1,000+ Hours"
           },
           {
             "kind": "paragraph",
-            "text": "Why these games matter to me and what it feels like to play them:"
+            "text": "First, aside from its extremely unstable online connection, outdated live operations, and profoundly unfair matchmaking, Splatoon is a perfect game. Its squid concept serves as a unifying idea across gameplay, art, narrative, and even music: squids spray ink, so the weapons fire ink; squids change color, so color identifies each team; squids are territorial, so teams battle by covering ground; and squids swim, so players can dive into their own ink."
           },
           {
             "kind": "paragraph",
-            "text": "First, aside from its unstable online connection, extremely outdated live operations, and profoundly unfair matchmaking, Splatoon is a perfect game."
+            "text": "These ideas form a complete gameplay loop. Players spend ink to shoot, splat opponents, charge special weapons, and expand their movement space; then they dive into ink to refill ammunition and health, hide, move faster, and climb walls. The ability to swim through ink painted on walls fundamentally changes the vertical design of PvP maps."
           },
           {
             "kind": "paragraph",
-            "text": "My broader gaming experience:"
+            "text": "When I watched the team's GDC talk and learned that the mechanics came first and the squid concept was added later, I was stunned. Splatoon also became a useful “counterexample” in my early FPS PvP level design. Because most of its weapons have much shorter ranges than those in traditional shooters, its maps can remain relatively open. I initially copied that openness, leaving my early FPS maps without enough control over sightlines. Traditional FPS weapons can threaten players across far greater distances, so curved routes, occluders, and cover are needed to break up lines of fire. Through continued practice, I learned that even when shooting is the shared core interaction, different modes and weapon ranges demand entirely different level-design logic."
+          },
+          {
+            "kind": "heading",
+            "level": 4,
+            "text": "Super Smash Bros. Series｜1,000+ Hours"
           },
           {
             "kind": "paragraph",
-            "text": "My grandfather often told me that I learned to play Ballance before I learned to walk."
+            "text": "I was initially drawn to the series by its reputation as an encyclopedia of video games. Once I started playing, I found that it perfectly embodies Nintendo's philosophy of being easy to learn and difficult to master. Instead of using a traditional health bar, attacks build an opponent's damage percentage; the higher that percentage becomes, the farther the opponent can be launched. This core rule creates possibilities that conventional health-based fighting games struggle to offer:"
           },
           {
             "kind": "paragraph",
-            "text": "At the time, I still lived at my grandfather's factory. There was a large office filled with employee cubicles and computers. In one corner sat an old CRT computer loaded with games. That was where my childhood began."
+            "text": "1. A match is not decided simply by remaining health. A player can secure an early offstage knockout while the opponent is still at a relatively low percentage, keeping every moment tense and preserving comeback opportunities.\n2. Combat is not limited to finding an opening and repeating a fixed combo. Every launch leads into another sequence of pursuit, recovery, edge-guarding, and immediate decision-making."
           },
           {
             "kind": "paragraph",
-            "text": "Ballance, Zuma, Bejeweled, Feeding Frenzy, Sonic the Hedgehog, and 明星三缺一."
+            "text": "The game's other defining strength is its roster of iconic characters from across the industry. Fighters with entirely different worlds, histories, and genres can share one stage. Each has a distinct movement language and play style, yet all remain legible and reasonably balanced within the same system. Its thriving offline community further extends the game's longevity."
+          },
+          {
+            "kind": "heading",
+            "level": 4,
+            "text": "Celeste｜40+ Hours"
+          },
+          {
+            "kind": "paragraph",
+            "text": "I consider Celeste a textbook in difficulty-curve design and the pinnacle of 2D platforming. It is famous for being difficult, yet its excellent tutorials, pacing, and chapter-by-chapter introduction of mechanics create a constant rhythm of setup, development, variation, and resolution. Players receive no numerical upgrades or level bonuses; they reach the summit entirely by improving their own skill. Standing at the top, they can look back and clearly recognize how far they have come."
+          },
+          {
+            "kind": "paragraph",
+            "text": "Celeste's divide-and-conquer approach to level design is equally important to that curve:"
+          },
+          {
+            "kind": "paragraph",
+            "text": "• Major mechanics are distributed across separate chapters, so each chapter asks the player to understand, learn, and repeatedly practice one new idea.\n• Each chapter is divided into single-screen rooms that are easy to read, learn, and retry.\n• Each room contains a chain of obstacles, but safe landing points break that chain into smaller segments, allowing the player to solve one local problem at a time.\n• Each segment ultimately resolves into individual obstacles that can be mastered through repetition."
+          },
+          {
+            "kind": "paragraph",
+            "text": "This top-down, divide-and-conquer structure—much like decomposition in programming—gives the game an exceptionally elegant difficulty curve. Its near-instant restart also keeps demanding challenges low in downtime and high in feedback."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Broader Gaming Experience"
+          },
+          {
+            "kind": "paragraph",
+            "text": "@[playtime-chart](en)\n1000+｜Splatoon series；Super Smash Bros. series；Yu-Gi-Oh!\n500+｜Pokémon series；Onmyoji；Crash Fever\n200+｜The Legend of Zelda: Tears of the Kingdom\n100+｜Starfield (Creation Kit: 900+ hours)；Persona 5 Royal；Persona 4 Golden\n60+｜Monster Hunter series\n50+｜Half-Life 2 (Hammer: 400+ hours)；Metroid Dread；Goose Goose Duck\n40+｜Celeste；DOOM\n30+｜13 Sentinels: Aegis Rim；Super Mario Odyssey；Mario Kart 8\n25+｜Kirby Air Riders\n20+｜Overwatch\n14｜It Takes Two；Split Fiction\n6｜Sayonara Wild Hearts\n5｜A Short Hike；Before Your Eyes\n4｜INSIDE；Mixtape\n3｜The Artful Escape；What Remains of Edith Finch\n1.5｜Gorogoa；Journey"
           }
         ],
         "hero": {
