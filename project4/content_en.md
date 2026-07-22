@@ -113,6 +113,9 @@ What I Learned
 
 ## Attachments
 
+[View the FLING Game Design Document (PDF)](pdfs/fling_gdd.pdf)
+[View the FLING ReadMe (PDF)](pdfs/GroundZero_FLING_Readme.pdf)
+
 Team Photos:
 
 ![Figure 35: Team photo](images/figure-35-team-photo.jpg)

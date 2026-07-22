@@ -338,6 +338,19 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "附录"
           },
           {
+            "kind": "buttons",
+            "links": [
+              {
+                "label": "查看 Ghost Ship 关卡设计文档（DOCX）",
+                "href": "project2/pdfs/Ma _DFSI_LDD_01.docx"
+              },
+              {
+                "label": "查看 Ghost Ship RTM ReadMe（DOCX）",
+                "href": "project2/pdfs/Ma_DFSI_ReadMe_ RTM.docx"
+              }
+            ]
+          },
+          {
             "kind": "image",
             "caption": "Figure 49：舰桥区域",
             "src": "project2/images/bridgearea.jpg"
@@ -894,6 +907,19 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "附件"
           },
           {
+            "kind": "buttons",
+            "links": [
+              {
+                "label": "查看 FLING 游戏设计文档（PDF）",
+                "href": "project4/pdfs/fling_gdd.pdf"
+              },
+              {
+                "label": "查看 FLING ReadMe（PDF）",
+                "href": "project4/pdfs/GroundZero_FLING_Readme.pdf"
+              }
+            ]
+          },
+          {
             "kind": "paragraph",
             "text": "团队照片："
           },
@@ -1012,6 +1038,19 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           {
             "kind": "paragraph",
             "text": "使用 Hammer Editor 制作的《半条命 2》FPS 单人关卡。围绕水体物理与电力机制设计战斗及解谜流程，控制玩家引导、战斗节奏与空间视线。"
+          },
+          {
+            "kind": "buttons",
+            "links": [
+              {
+                "label": "查看 The Way of Water 关卡设计文档（PDF）",
+                "href": "moreprojects/pdfs/MaZ_HL2_LDD.pdf"
+              },
+              {
+                "label": "查看 The Way of Water ReadMe（PDF）",
+                "href": "moreprojects/pdfs/MaZ_HL2_Readme_GC_Lite.pdf"
+              }
+            ]
           },
           {
             "kind": "heading",
@@ -1551,6 +1590,19 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "kind": "heading",
             "level": 2,
             "text": "Appendix"
+          },
+          {
+            "kind": "buttons",
+            "links": [
+              {
+                "label": "View the Ghost Ship Level Design Document (DOCX)",
+                "href": "project2/pdfs/Ma _DFSI_LDD_01.docx"
+              },
+              {
+                "label": "View the Ghost Ship RTM ReadMe (DOCX)",
+                "href": "project2/pdfs/Ma_DFSI_ReadMe_ RTM.docx"
+              }
+            ]
           },
           {
             "kind": "image",
@@ -2109,6 +2161,19 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "Attachments"
           },
           {
+            "kind": "buttons",
+            "links": [
+              {
+                "label": "View the FLING Game Design Document (PDF)",
+                "href": "project4/pdfs/fling_gdd.pdf"
+              },
+              {
+                "label": "View the FLING ReadMe (PDF)",
+                "href": "project4/pdfs/GroundZero_FLING_Readme.pdf"
+              }
+            ]
+          },
+          {
             "kind": "paragraph",
             "text": "Team Photos:"
           },
@@ -2227,6 +2292,19 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           {
             "kind": "paragraph",
             "text": "A Half-Life 2 single-player FPS level created in Hammer Editor. Combat and puzzle flow are built around water physics and electrical systems, with deliberate control of player guidance, combat pacing, and spatial sightlines."
+          },
+          {
+            "kind": "buttons",
+            "links": [
+              {
+                "label": "View The Way of Water Level Design Document (PDF)",
+                "href": "moreprojects/pdfs/MaZ_HL2_LDD.pdf"
+              },
+              {
+                "label": "View The Way of Water ReadMe (PDF)",
+                "href": "moreprojects/pdfs/MaZ_HL2_Readme_GC_Lite.pdf"
+              }
+            ]
           },
           {
             "kind": "heading",

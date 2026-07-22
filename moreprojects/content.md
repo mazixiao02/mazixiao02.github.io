@@ -47,6 +47,9 @@ hero_caption: 更多项目封面
 
 使用 Hammer Editor 制作的《半条命 2》FPS 单人关卡。围绕水体物理与电力机制设计战斗及解谜流程，控制玩家引导、战斗节奏与空间视线。
 
+[查看 The Way of Water 关卡设计文档（PDF）](pdfs/MaZ_HL2_LDD.pdf)
+[查看 The Way of Water ReadMe（PDF）](pdfs/MaZ_HL2_Readme_GC_Lite.pdf)
+
 ## A study on the influence of thematic affordances on players’ cognitive map construction
 
 毕设题目，从三层认知分层展开研究：

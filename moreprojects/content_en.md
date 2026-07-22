@@ -47,6 +47,9 @@ From this experience, I learned that FPS level design is shaped primarily by two
 
 A Half-Life 2 single-player FPS level created in Hammer Editor. Combat and puzzle flow are built around water physics and electrical systems, with deliberate control of player guidance, combat pacing, and spatial sightlines.
 
+[View The Way of Water Level Design Document (PDF)](pdfs/MaZ_HL2_LDD.pdf)
+[View The Way of Water ReadMe (PDF)](pdfs/MaZ_HL2_Readme_GC_Lite.pdf)
+
 ## A Study on the Influence of Thematic Affordances on Players’ Cognitive Map Construction
 
 My thesis investigates three layers of spatial cognition:
