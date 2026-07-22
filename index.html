@@ -435,6 +435,7 @@
       display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 18px;
       width: 100%; max-width: 780px; margin: 8px 0 46px;
     }
+    .media-triple-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .media-pair-item { min-width: 0; }
     .media-pair-grid .showcase-block {
       width: 100%; max-width: none; margin: 0; box-shadow: 0 8px 30px rgba(0,0,0,0.22);
@@ -761,6 +762,11 @@
       return `<div class="media-pair-grid">${items}</div>`;
     }
 
+    function mediaTripleGridBlock(images) {
+      const items = images.map(image => `<div class="media-pair-item">${imageBlock(image)}</div>`).join('');
+      return `<div class="media-pair-grid media-triple-grid">${items}</div>`;
+    }
+
     function buttonsBlock(block) {
       const links = (block.links || []).map(link => `<a href="${escapeHtml(link.href)}" target="_blank" rel="noopener noreferrer" class="resume-btn">${escapeHtml(link.label)}</a>`).join(' ');
       return `<div class="resume-btn-container">${links}</div>`;
@@ -797,6 +803,14 @@
           if (pairedImages.length) {
             html += mediaPairGridBlock(pairedImages);
             index += pairedImages.length - 1;
+            continue;
+          }
+        }
+        if (projectId === 'project4' && figureNumber(block) === 26) {
+          const groupedImages = collectFigureRange(source, index, 26, 28);
+          if (groupedImages.length) {
+            html += mediaTripleGridBlock(groupedImages);
+            index += groupedImages.length - 1;
             continue;
           }
         }

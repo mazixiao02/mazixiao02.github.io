@@ -652,9 +652,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "《FLING》是一款以精准操作为核心的 2D 平台跳跃游戏。玩家扮演一只狐狸，利用钓竿摆荡、抓取与位移，在幽暗神秘的洞穴中不断挑战高难度平台关卡。"
           },
           {
-            "kind": "image",
-            "caption": "FLING 关卡与核心玩法展示",
-            "src": "project4/images/image_project4_1.jpg"
+            "kind": "youtube",
+            "id": "l4qM7wSsPoo",
+            "caption": "《FLING》玩法演示"
           },
           {
             "kind": "heading",
@@ -663,7 +663,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
+            "level": 3,
             "text": "1. 游戏设计"
           },
           {
@@ -675,24 +675,54 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "最早，我们在头脑风暴中提出游戏初始概念，即让玩家使用钓竿作为钩锁来实现平台跳跃、战斗、钓鱼等玩法，并在一个类银世界中探索。这非常符合我的“从单一有趣玩法延申设计”的理念。"
           },
           {
+            "kind": "image",
+            "caption": "Figure 26：早期钓竿战斗演示",
+            "src": "project4/images/figure-26-early-combat-demo.gif"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 27：早期钓竿平台跳跃演示",
+            "src": "project4/images/figure-27-early-platforming-demo.gif"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 28：早期钓竿钓鱼演示",
+            "src": "project4/images/figure-28-early-fishing-demo.gif"
+          },
+          {
             "kind": "paragraph",
             "text": "但在考虑开发周期之后，我们决定聚焦平台跳跃玩法集中开发，并采用类蔚蓝的线性关卡。"
           },
           {
             "kind": "paragraph",
-            "text": "于是我们游戏的原型基本确立。但是，在早期的测试中，我们发现纯粹的高速钩锁平台跳跃并不有趣，对于玩家操作的精确性要求过高。学院院长在测试后表达了失望，项目在被砍的边缘，团队也正面临重组。"
+            "text": "于是我们游戏的原型基本确立。但是，在早期的测试中，我们发现纯粹的钩锁平台跳跃对于玩家操作的精确性要求过高，整体体验令人沮丧而不有趣。学院院长在测试后表达了失望，项目在被砍的边缘，团队也正面临重组。"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 29：院长对项目提出问题",
+            "src": "project4/images/figure-29-director-feedback.jpg"
           },
           {
             "kind": "paragraph",
-            "text": "但就在那一周末，我在怀旧游戏掌机上体验了马里奥大陆2这款来自1992年的GBA老游戏，其中的耀西拥有可以朝2D平面任意方向投掷蛋的能力。但是在只有十字键、AB键的老游戏机上，这么复杂的操作该怎么完成呢？该游戏的解决方案是，在按下投掷键后，关卡内所有的机关和敌人停止行动，待玩家使用十字键慢慢选择方向并投掷出蛋后，时间才开始流动。"
+            "text": "但就在那一周末，我在怀旧游戏掌机上体验了《超级马里奥世界2：耀西岛》这款来自1992年的GBA老游戏，其中的耀西拥有可以朝2D平面任意方向投掷蛋的能力。但是在只有十字键、AB键，连摇杆都没有的老游戏机上，这么复杂的操作该怎么完成呢？该游戏的解决方案是，在按下投掷键后，关卡内所有的机关和敌人停止行动，待玩家依靠准心慢慢选择方向并投掷出蛋后，时间才开始流动。"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 30：从耀西的瞄准中汲取灵感",
+            "src": "project4/images/figure-30-yoshi-aiming-inspiration.gif"
           },
           {
             "kind": "paragraph",
             "text": "如此，我心目中便有了我们项目难题的解决方案。在新一周的开始，我提出了“时间停止”的机制，当玩家在空中并使用右摇杆发射钩锁时，时间停止，玩家可以有足够时间来精确操作钩锁方向，待释放右摇杆时，钩锁发出，时间恢复流动。程序只用了一分钟便实现了这一简单机制，但是这样的小改动却完全改变了游戏。对玩家操作精确性要求过高的问题迎刃而解，玩家拥有了更大的空间和容错来操作，投掷钩锁一收一放间也优化了游戏节奏，获得了更高的策略性与操作深度，成为了项目的核心玩法。（类似《塞尔达传说旷野之息》中，林克空中射箭会触发时间停止的机制）"
           },
           {
+            "kind": "image",
+            "caption": "Figure 31：空中钩锁时间停止",
+            "src": "project4/images/figure-31-midair-grappling-time-stop.gif"
+          },
+          {
             "kind": "heading",
-            "level": 2,
+            "level": 3,
             "text": "2. 关卡设计"
           },
           {
@@ -704,12 +734,47 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "我负责设计了1到8，12，14到16等大部分关卡。覆盖教学、成长与高难挑战等不同阶段。重点负责于游戏最后部分设计高难度关卡，同时兼顾难度曲线。在开发的进程中，也随着多轮公开玩家测试反馈对关卡进行重构、删减与节奏调整。"
           },
           {
+            "kind": "image",
+            "caption": "Figure 32：关卡整体图",
+            "src": "project4/images/figure-32-full-level-layout.jpg"
+          },
+          {
             "kind": "paragraph",
-            "text": "其中，我最满意的关卡是第16关，作为最后一关，我最初对该关卡的设想是：\n1. 包含游戏所有机制。\n2. 在玩家完成高难关卡的最后，亦即全游戏结局的最后，释放整个游戏积累的压力。"
+            "text": "（此先，我必须介绍游戏内一重要机制——“泡泡”。该物体在玩家踩到的时候会给玩家提供一个向上的力，用作跳跃；在玩家使用钓竿抓钩钩取时，会将玩家沿钩取方向射出。在被使用后消失，一段时间后恢复。）"
+          },
+          {
+            "kind": "paragraph",
+            "text": "其中，我最满意的关卡有第16关，作为最后一关，我最初对该关卡的设想是：\n1. 包含游戏所有机制。\n2. 在玩家完成高难关卡的最后，亦即全游戏结局的最后，释放整个游戏积累的压力。"
           },
           {
             "kind": "paragraph",
             "text": "我很好的完成了这两项任务。前者串联使用所有游戏机制，组合搭建全新关卡，并且在最后另类地使用了游戏中的“泡泡”机关，利用超出玩家思维定式的方式为结局创造最后一次惊喜。后者，在关卡的最后，我放置了一连串的“泡泡”，让玩家得以连续被弹射到地表，创造爽快体验，完成情绪释放。"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 33：最终关卡",
+            "src": "project4/images/figure-33-final-level.jpg"
+          },
+          {
+            "kind": "paragraph",
+            "text": "（此先，我必须介绍游戏内另一重要机制——“弹跳怪兽”。怪兽会自主往返运动，当玩家使用钩索钩取怪兽时，会先飞向怪兽，然后踩着怪兽头部弹起。）"
+          },
+          {
+            "kind": "paragraph",
+            "text": "第12关，该关卡设置在一个高垂直房间，早期我参考蔚蓝房间设计了向上双道路的设计，左侧是尖刺陷阱，右侧是弹射“泡泡”。但是在大量测试中发现，这样分岔路的设计非但没有增加关卡丰富性，反而缩短了关卡，且玩家基本只会选择更简单友好的“泡泡”路线，于是需要重做。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "在多次迭代方案后，我作为玩家的熟练度不断上升，最终发现了一种特殊的操作。基于物理设定，玩家在空中依旧可以小幅度操纵下落方向，即使与初始跳跃、钩锁冲刺方向相反。于是我决定基于此高级技巧来设计关卡。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "基于此机制，我设计了使用钩锁抓取“弹跳怪兽”向右冲刺，但是在右侧放置死亡陷阱，玩家必须在冲刺后马上打反方向向左跳跃的机关结构，并重复多次。但是在多次测试后，发现部分玩家并不能够立刻理解这一特殊技巧，导致多次死亡。所以我在三次重复的该机关中，将第一层死亡陷阱改成无伤害的普通障碍，给予玩家无责试错的机会。至此，玩家大部分能够在不断的低成本试错中领会关卡意图，学会高级技巧并通过此关卡。"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 34：第12关",
+            "src": "project4/images/figure-34-room-12.jpg"
           },
           {
             "kind": "heading",
@@ -718,7 +783,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "阶段｜时间｜目标｜工作内容\nPOCT｜｜｜\nPOCG｜｜｜\nPrototype｜｜｜\nVertical Slice｜｜｜\nAlpha｜｜｜\nBeta｜｜｜\nLaunch｜｜｜"
+            "text": "阶段｜时间｜工作内容\nPOCT｜10/4/2026｜头脑风暴，提出项目方向并做公开讲演\nPOCG｜10/11/2026｜完成游戏Demo，玩家可以使用钓竿移动、攻击小怪以及钓鱼。\nPrototype & Vertical Slice｜10/24/2026｜基于POCG设计关卡，但测试反馈不佳，项目一度陷入瓶颈。\nAlpha｜11/7/2026｜得出“时间停止”方案，拯救游戏。\nBeta｜11/21/2026｜持续开发游戏关卡，并且开放公开测试。\nLaunch｜11/3/2025｜最终测试。"
           },
           {
             "kind": "heading",
@@ -736,7 +801,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "项目亮点（What Went Well）\n• 重新定义核心玩法，成功挽救 Prototype。 将原本高操作门槛的钩锁玩法重构为“发射自己”的核心机制，大幅提升了玩法趣味性与可控性。\n• 完成完整的难度曲线设计。 从基础教学、机制组合到最终挑战，构建了循序渐进的学习体验，并通过多轮 Playtest 持续优化节奏。\n• 形成具有记忆点的最终关卡。 最终关卡不仅整合全部游戏机制，还通过情绪释放设计，为玩家提供完整且富有成就感的收尾体验。。"
+            "text": "项目亮点（What Went Well）\n• 重新定义核心玩法，成功挽救 Prototype。 将原本高操作门槛的钩锁玩法重构为“发射自己”的核心机制，大幅提升了玩法趣味性与可控性。\n• 完成完整的难度曲线设计。 从基础教学、机制组合到最终挑战，构建了循序渐进的学习体验，并通过多轮 Playtest 持续优化节奏。\n• 形成具有记忆点的最终关卡。 最终关卡不仅整合全部游戏机制，还通过情绪释放设计，为玩家提供完整且富有成就感的收尾体验。"
           },
           {
             "kind": "paragraph",
@@ -750,6 +815,34 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "kind": "heading",
             "level": 2,
             "text": "附件"
+          },
+          {
+            "kind": "paragraph",
+            "text": "团队照片："
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 35：团队合照",
+            "src": "project4/images/figure-35-team-photo.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 36：团队工作照",
+            "src": "project4/images/figure-36-team-working.jpg"
+          },
+          {
+            "kind": "paragraph",
+            "text": "关卡图："
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 37：关卡设计草图",
+            "src": "project4/images/figure-37-level-design-sketch.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 38：Scrum to do板，Alpha阶段",
+            "src": "project4/images/figure-38-scrum-todo-alpha.jpg"
           }
         ],
         "hero": {
@@ -1567,9 +1660,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "FLING is a 2D platformer centered on precision input. The player controls a fox who uses a fishing rod to swing, grab, and reposition while overcoming increasingly difficult platforming challenges in a dark and mysterious cave."
           },
           {
-            "kind": "image",
-            "caption": "FLING level and core-gameplay showcase",
-            "src": "project4/images/image_project4_1.jpg"
+            "kind": "youtube",
+            "id": "l4qM7wSsPoo",
+            "caption": "FLING Gameplay Showcase"
           },
           {
             "kind": "heading",
@@ -1578,16 +1671,31 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
+            "level": 3,
             "text": "1. Game Design"
           },
           {
             "kind": "paragraph",
-            "text": "This was a troubled project from the moment it began."
+            "text": "This was a project beset by challenges from the moment it began."
           },
           {
             "kind": "paragraph",
             "text": "During our initial brainstorming, we proposed a game in which the player would use a fishing rod as a grappling hook for platforming, combat, fishing, and other actions while exploring a Metroidvania-like world. This closely matched my design philosophy of “extending an entire design from one simple, interesting mechanic.”"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 26: Early fishing-rod combat demonstration",
+            "src": "project4/images/figure-26-early-combat-demo.gif"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 27: Early fishing-rod platforming demonstration",
+            "src": "project4/images/figure-27-early-platforming-demo.gif"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 28: Early fishing demonstration",
+            "src": "project4/images/figure-28-early-fishing-demo.gif"
           },
           {
             "kind": "paragraph",
@@ -1595,19 +1703,34 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "Our prototype was then largely established. Early testing, however, showed that pure, high-speed grappling-hook platforming was not fun and demanded too much precision from the player. The director of the school expressed disappointment after testing it. The project was close to cancellation, and the team was close to being reorganized."
+            "text": "Our prototype was then largely established. Early testing, however, showed that pure grappling-hook platforming demanded excessive precision, making the overall experience frustrating rather than fun. The dean expressed disappointment after testing it. The project was close to cancellation, and the team was also facing reorganization."
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 29: The dean raising concerns about the project",
+            "src": "project4/images/figure-29-director-feedback.jpg"
           },
           {
             "kind": "paragraph",
-            "text": "That weekend, I played the 1992 GBA game Super Mario Land 2 on a retro handheld. In it, Yoshi could throw eggs in any direction across a 2D plane. But how could such a complex action be performed on an old handheld with only a directional pad and A and B buttons? The game's solution was that after the throw button was pressed, every obstacle and enemy in the level stopped moving. Time resumed only after the player slowly selected a direction with the directional pad and threw the egg."
+            "text": "That weekend, I played Super Mario World 2: Yoshi's Island, a 1992 GBA game, on a retro handheld. In it, Yoshi could throw eggs in any direction across a 2D plane. But how could such a complex action be performed on an old handheld with only a directional pad and A and B buttons—not even an analog stick? The game's solution was that after the throw button was pressed, every obstacle and enemy in the level stopped moving. Time resumed only after the player slowly selected a direction with the aiming reticle and threw the egg."
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 30: Drawing inspiration from Yoshi's aiming system",
+            "src": "project4/images/figure-30-yoshi-aiming-inspiration.gif"
           },
           {
             "kind": "paragraph",
-            "text": "This gave me a solution to our project's problem. At the beginning of the next week, I proposed a “time-stop” mechanic. When the player is airborne and uses the right stick to fire the grappling hook, time stops, giving the player enough time to aim precisely. When the right stick is released, the hook fires and time resumes. The programmer implemented this simple mechanic in only one minute, but that small change completely transformed the game. It resolved the excessive precision requirement, gave players more time and tolerance to act, improved the rhythm through the pull-and-release cadence of throwing the hook, and added strategic depth and mechanical complexity. It became the project's core mechanic. This is similar to the time slowdown triggered when Link fires an arrow in midair in The Legend of Zelda: Breath of the Wild."
+            "text": "This gave me a solution to our project's problem. At the beginning of the next week, I proposed a “time-stop” mechanic. When the player is airborne and uses the right stick to fire the grappling hook, time stops, giving the player enough time to aim precisely. When the right stick is released, the hook fires and time resumes. The programmer implemented this simple mechanic in only one minute, but that small change completely transformed the game. It resolved the excessive precision requirement, gave players more room and tolerance to act, improved the game's rhythm through the pull-and-release cadence of throwing the hook, and added strategic and mechanical depth. It became the project's core mechanic. This is similar to the time slowdown triggered when Link fires an arrow in midair in The Legend of Zelda: Breath of the Wild."
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 31: Midair grappling time-stop",
+            "src": "project4/images/figure-31-midair-grappling-time-stop.gif"
           },
           {
             "kind": "heading",
-            "level": 2,
+            "level": 3,
             "text": "2. Level Design"
           },
           {
@@ -1619,6 +1742,15 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "I designed most of the levels: Rooms 1 through 8, Room 12, and Rooms 14 through 16. These covered the tutorial, progression, and high-difficulty challenge stages. I focused especially on difficult levels near the end of the game while maintaining the overall difficulty curve. Throughout development, I also restructured, cut, and repaced levels based on feedback from multiple rounds of public playtesting."
           },
           {
+            "kind": "image",
+            "caption": "Figure 32: Full level layout",
+            "src": "project4/images/figure-32-full-level-layout.jpg"
+          },
+          {
+            "kind": "paragraph",
+            "text": "(Before continuing, I need to introduce an important game mechanic: the “bubble.” Stepping on a bubble applies upward force to the player for jumping. Grappling a bubble launches the player in the direction of the grapple. After use, the bubble disappears and respawns after a short delay.)"
+          },
+          {
             "kind": "paragraph",
             "text": "The level I am most satisfied with is Room 16, the final level. I began with two goals:\n1. Include every mechanic in the game.\n2. At the end of a difficult level—and at the end of the entire game—release all of the pressure accumulated throughout the experience."
           },
@@ -1627,13 +1759,39 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "I achieved both goals well. For the first, I linked all of the game's mechanics together and recombined them into a new level. At the very end, I used the game's “bubble” obstacle in an unconventional way that broke the player's established assumptions and created one final surprise. For the second, I placed a chain of bubbles at the end, repeatedly launching the player toward the surface to create an exhilarating experience and provide emotional release."
           },
           {
+            "kind": "image",
+            "caption": "Figure 33: Final level",
+            "src": "project4/images/figure-33-final-level.jpg"
+          },
+          {
+            "kind": "paragraph",
+            "text": "(Before continuing, I also need to introduce another important mechanic: the “bouncing monster.” The monster moves back and forth on its own. When the player grapples it, the player first flies toward it, then bounces upward by landing on its head.)"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Room 12 is set in a tall vertical chamber. In an early version, I drew inspiration from Celeste and created two upward routes: a spike route on the left and a route using launching “bubbles” on the right. Extensive testing showed that the split did not make the level richer; instead, it shortened the room, and players almost always chose the easier, friendlier bubble route. The room therefore needed to be redesigned."
+          },
+          {
+            "kind": "paragraph",
+            "text": "After several iterations, my own skill as a player continued to improve, and I eventually discovered a special maneuver. Because of the game's physics, the player can still make small adjustments to their falling direction while airborne, even against the direction of the initial jump or grappling dash. I decided to design the level around this advanced technique."
+          },
+          {
+            "kind": "paragraph",
+            "text": "Based on this mechanic, I designed a sequence in which the player grapples a “bouncing monster” and dashes to the right, but a death hazard is placed on that side. Immediately after the dash, the player must reverse direction and jump left. The sequence repeats several times. Repeated playtesting showed that some players could not immediately understand this unusual technique and died many times. Across the three repetitions, I therefore replaced the death hazard in the first layer with a normal, harmless obstacle, giving players a consequence-free opportunity to experiment. Most players could then infer the level's intent through repeated low-cost attempts, learn the advanced technique, and complete the room."
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 34: Room 12",
+            "src": "project4/images/figure-34-room-12.jpg"
+          },
+          {
             "kind": "heading",
             "level": 2,
             "text": "Timeline"
           },
           {
             "kind": "paragraph",
-            "text": "Phase｜Date｜Goal｜Work\nPOCT｜｜｜\nPOCG｜｜｜\nPrototype｜｜｜\nVertical Slice｜｜｜\nAlpha｜｜｜\nBeta｜｜｜\nLaunch｜｜｜"
+            "text": "Stage｜Date｜Work\nPOCT｜10/4/2026｜Brainstormed the project direction and presented it publicly.\nPOCG｜10/11/2026｜Completed a game demo in which players could move with the fishing rod, attack enemies, and fish.\nPrototype & Vertical Slice｜10/24/2026｜Designed levels based on the POCG, but poor playtest feedback left the project at an impasse.\nAlpha｜11/7/2026｜Developed the “time-stop” solution and rescued the game.\nBeta｜11/21/2026｜Continued developing levels and opened the project to public playtesting.\nLaunch｜11/3/2025｜Conducted final testing."
           },
           {
             "kind": "heading",
@@ -1665,6 +1823,34 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "kind": "heading",
             "level": 2,
             "text": "Attachments"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Team Photos:"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 35: Team photo",
+            "src": "project4/images/figure-35-team-photo.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 36: Team at work",
+            "src": "project4/images/figure-36-team-working.jpg"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Level Images:"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 37: Level-design sketch",
+            "src": "project4/images/figure-37-level-design-sketch.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 38: Scrum to-do board during Alpha",
+            "src": "project4/images/figure-38-scrum-todo-alpha.jpg"
           }
         ],
         "hero": {
