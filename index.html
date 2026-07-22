@@ -892,6 +892,14 @@
             continue;
           }
         }
+        if (projectId === 'project2' && figureNumber(block) === 49) {
+          const appendixImages = collectFigureRange(source, index, 49, 59);
+          if (appendixImages.length) {
+            html += mediaPairGridBlock(appendixImages);
+            index += appendixImages.length - 1;
+            continue;
+          }
+        }
         if (block.kind === 'heading') {
           sectionTitle = block.text || '';
           const id = `section-${++headingIndex}`;

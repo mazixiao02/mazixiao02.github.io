@@ -21,7 +21,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "星空单人支线任务关卡设计",
         "role": "关卡设计 / 剧情设计 / 环境叙事 / Gameplay 实现",
         "time": "8 周 / 单人",
-        "status": "已完成",
+        "status": "已完成 · Scrum 敏捷开发",
         "statusUrl": "",
         "statusLink": "",
         "caption": "▲ 通过环境叙事、多区域探索与解谜战斗营造废弃豪华星际邮轮的沉浸式冒险体验"
@@ -231,7 +231,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "《Ghost Ship（幽灵船）》是基于《星空（Starfield）》设计的一张单人支线任务关卡。玩家因飞船燃料耗尽登上一艘失联的豪华星际邮轮，在探索过程中逐步恢复飞船供电、破解封锁区域、收集关键物资，并通过环境叙事揭开整艘飞船覆灭的真相，最终在货舱与未知生物展开决战。关卡融合探索、战斗、潜行、解谜与环境叙事，营造出类似《异形（Alien）》的悬疑恐怖体验。"
+            "text": "《Ghost Ship（幽灵船）》是基于《星空（Starfield）》设计的一张单人支线任务关卡。玩家为调查失踪人员登上一艘失联的豪华星际邮轮，在探索过程中逐步恢复飞船供电、破解封锁区域、收集关键物资，并通过环境叙事揭开整艘飞船覆灭的真相，最终在货舱与未知生物展开决战。关卡融合探索、战斗、潜行、解谜与环境叙事，营造出类似《异形：隔离（Alien: Isolation）》的悬疑恐怖体验。"
           },
           {
             "kind": "heading",
@@ -239,7 +239,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "我的工作"
           },
           {
-            "kind": "paragraph",
+            "kind": "heading",
+            "level": 3,
             "text": "1. 整体关卡设计（Level Layout & Progression）"
           },
           {
@@ -247,7 +248,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "负责整体关卡流程设计，将舰桥、客舱、船员区、活动区、货舱等多个功能区域串联为完整探索路线，通过供电恢复、钥匙收集、电池解谜等机制逐步解锁新区域，构建层层递进的探索节奏。"
           },
           {
-            "kind": "paragraph",
+            "kind": "heading",
+            "level": 3,
             "text": "2. 环境叙事与氛围设计（Environmental Storytelling）"
           },
           {
@@ -255,7 +257,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "围绕废弃豪华星际邮轮设计整体世界观，通过尸体摆放、终端日志、场景细节、光照变化及空间破坏等环境叙事元素，引导玩家逐步推理事件真相，并营造《Alien》式悬疑恐怖氛围。"
           },
           {
-            "kind": "paragraph",
+            "kind": "heading",
+            "level": 3,
             "text": "3. 探索、解谜与战斗设计（Gameplay Design）"
           },
           {
@@ -263,17 +266,13 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "设计恢复供电、钥匙探索、电池收集、通风管潜入、秘密房间等探索与解谜玩法，并配置 Xenogrub、Terrormorph 等敌人，使探索、解谜与战斗交替推进，持续提升关卡张力。"
           },
           {
-            "kind": "paragraph",
+            "kind": "heading",
+            "level": 3,
             "text": "4. 关卡节奏设计（Pacing Design）"
           },
           {
             "kind": "paragraph",
             "text": "通过黑暗失重开场、供电恢复、自由探索、狭窄追逐、资源管理及最终 Boss 战等阶段，构建由探索逐步升级至高潮战斗的完整体验节奏。"
-          },
-          {
-            "kind": "image",
-            "caption": "《幽灵船》关卡设计展示图",
-            "src": "project2/images/image_project2_1.jpg"
           },
           {
             "kind": "heading",
@@ -282,7 +281,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "Level Design Pitch｜2026.05.26｜完成关卡 Pitch，确定主题、美术风格、核心玩法、剧情框架与整体关卡流程。\nLevel Design Document｜2026.06.01｜完成 LDD，明确空间布局、探索流程、解谜机制、战斗配置及环境叙事设计。\nWhitebox｜2026.06.08｜完成白盒搭建，验证空间布局、玩家流程、探索节奏与导航设计。\nInitial Gameplay｜2026.06.22｜完成核心 Gameplay，实现探索、解谜、战斗、环境叙事及任务流程，并开展 Playtest。\nGameplay Complete｜2026.07.06｜完成全部关卡内容开发，持续根据测试反馈优化 Flow、战斗体验、恐怖氛围与环境叙事。\nAesthetics｜2026.07.13｜完成场景美术、灯光、材质与环境布置，强化豪华邮轮废墟的视觉表现与沉浸感。\nRTM｜2026.07.19｜完成 Bug 修复、最终优化与项目交付。"
+            "text": "阶段｜时间｜工作内容\nLevel Design Pitch｜2026.05.26｜完成关卡 Pitch，确定主题、美术风格、核心玩法、剧情框架与整体关卡流程。\nLevel Design Document｜2026.06.01｜完成 LDD，明确空间布局、探索流程、解谜机制、战斗配置及环境叙事设计。\nWhitebox｜2026.06.08｜完成白盒搭建，验证空间布局、玩家流程、探索节奏与导航设计。\nInitial Gameplay｜2026.06.22｜完成核心 Gameplay，实现探索、解谜、战斗、环境叙事及任务流程，并开展 Playtest。\nGameplay Complete｜2026.07.06｜完成全部关卡内容开发，持续根据测试反馈优化 Flow、战斗体验、恐怖氛围与环境叙事。\nAesthetics｜2026.07.13｜完成场景美术、灯光、材质与环境布置，强化豪华邮轮废墟的视觉表现与沉浸感。\nRTM｜2026.07.19｜完成 Bug 修复、最终优化与项目交付。"
           },
           {
             "kind": "heading",
@@ -291,7 +290,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "反馈｜分析｜解决方案\n存档点设置在最终Boss战房间内部，导致无限死亡。｜｜最终Boss战房间外放置安全屋。"
+            "text": "问题｜解决方案｜结果\n即使是恐怖关卡，没有武器对玩家来说也很难受，尤其是在《星空》中。｜在早期给玩家配备“电磁枪”武器。｜玩家在游戏早期获得短暂麻痹敌人的能力，在拥有对抗手段的同时，依然无法完全杀死敌人，没有削弱恐惧感。\n船员区域过于空旷，动线不佳。｜对区域进行分割，在中心放置会议桌，周围设置一圈走廊，并在外层设置独立房间。｜形成复杂的回环结构，优化动线。\n存档点设置在最终 Boss 战房间内部，导致无限死亡。｜在最终 Boss 战房间外放置安全屋。｜解决死档问题。"
           },
           {
             "kind": "heading",
@@ -299,21 +298,99 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "项目总结"
           },
           {
-            "kind": "paragraph",
-            "text": "项目亮点（What Went Well）\n• 完成最终关卡「扭蛋机星系」的设计、制作与迭代。"
+            "kind": "heading",
+            "level": 3,
+            "text": "项目亮点（What Went Well）"
           },
           {
             "kind": "paragraph",
-            "text": "优化方向（Even Better If）\n• 部分捷径路线在早期版本存在风险与收益不平衡的问题，需要多轮 Playtest 调整。"
+            "text": "• 打造不同区域风格截然不同的星际邮轮关卡。\n• 创造独特的恐怖游戏体验。\n• 成功重用区域与路线。"
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "优化方向（Even Better If）"
           },
           {
             "kind": "paragraph",
-            "text": "项目收获（What I Learned）\n• 总结赛车项目流线经验。"
+            "text": "• 作为邮轮，关卡规模可以适当增大，结构适当复杂化。\n• 适当增加环境叙事内容。\n• 优化室内空间路线大小，以适应大型怪物的移动路径。\n• 增大 Boss 战区域，丰富单场战斗体验。"
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "项目收获（What I Learned）"
+          },
+          {
+            "kind": "paragraph",
+            "text": "• 总结“将现实建筑化作关卡设计”的经验。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "具体经验包括："
+          },
+          {
+            "kind": "paragraph",
+            "text": "1. 获取现实参考：例如，邮轮关卡参考迪士尼邮轮官网平面图。\n2. 适当简化结构：邮轮关卡不需要现实中的二十层大邮轮。\n3. 优化游戏尺寸：优化房间层高、走廊宽度，以适应游戏人物大小与镜头风格；例如，第三人称镜头往往需要更大的室内空间。\n4. 优化动线：现实建筑往往以安全、人流为准则设计动线，而关卡设计需要考虑心流、视线等因素。"
           },
           {
             "kind": "heading",
             "level": 2,
-            "text": "附件"
+            "text": "附录"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 49：舰桥区域",
+            "src": "project2/images/bridgearea.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 50：船员区域 1",
+            "src": "project2/images/crewarea1.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 51：船员区域 2",
+            "src": "project2/images/crewarea2.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 52：船员区域 3",
+            "src": "project2/images/crewarea3.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 53：餐厅区域",
+            "src": "project2/images/diningarea.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 54：大厅区域",
+            "src": "project2/images/hallarea.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 55：厨房区域",
+            "src": "project2/images/kitchenarea.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 56：乘客区域 1",
+            "src": "project2/images/passengerarea1.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 57：乘客区域 2",
+            "src": "project2/images/passengerarea2.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 58：乘客区域 3",
+            "src": "project2/images/passengerarea3.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 59：乘客区域 4",
+            "src": "project2/images/passengerarea4.jpg"
           }
         ],
         "hero": {
@@ -1156,10 +1233,10 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "title": "Ghost Ship",
         "tabTitle": "Starfield Side Quest: Ghost Ship",
         "tag": "Starfield Side Quest Level Design",
-        "type": "Starfield Single-Player Side-Quest Level",
+        "type": "Starfield Single-Player Side-Quest Level Design",
         "role": "Level Design / Narrative Design / Environmental Storytelling / Gameplay Implementation",
         "time": "8 Weeks / Solo",
-        "status": "Completed",
+        "status": "Completed · Scrum Development",
         "statusUrl": "",
         "statusLink": "",
         "caption": "▲ An immersive adventure aboard an abandoned luxury space liner, built through environmental storytelling, multi-zone exploration, puzzles, and combat"
@@ -1369,7 +1446,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "Ghost Ship is a single-player Starfield side-quest level. After running out of fuel, the player boards a missing luxury space liner. While exploring, the player gradually restores power, unlocks sealed areas, and gathers key supplies. Environmental storytelling reveals the truth behind the ship's destruction, leading to a final confrontation with an unknown creature in the cargo hold. The level combines exploration, combat, stealth, puzzles, and environmental storytelling to create an Alien-like suspense-horror experience."
+            "text": "Ghost Ship is a single-player side-quest level designed for Starfield. The player boards a missing luxury space liner to investigate a disappearance. During the exploration, the player gradually restores the ship's power, unlocks sealed areas, gathers key supplies, and uses environmental clues to uncover the truth behind the vessel's destruction, culminating in a final confrontation with an unknown creature in the cargo hold. The level combines exploration, combat, stealth, puzzles, and environmental storytelling to create a suspense-horror experience similar to Alien: Isolation."
           },
           {
             "kind": "heading",
@@ -1377,15 +1454,17 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "My Work"
           },
           {
-            "kind": "paragraph",
-            "text": "1. Overall Level Design — Level Layout and Progression"
+            "kind": "heading",
+            "level": 3,
+            "text": "1. Overall Level Design (Level Layout & Progression)"
           },
           {
             "kind": "paragraph",
             "text": "Designed the complete level flow, connecting the bridge, passenger cabins, crew quarters, activity areas, cargo hold, and other functional zones into a coherent exploration route. Power restoration, key collection, battery puzzles, and related mechanics progressively unlock new areas and create an increasingly layered exploration rhythm."
           },
           {
-            "kind": "paragraph",
+            "kind": "heading",
+            "level": 3,
             "text": "2. Environmental Storytelling and Atmosphere Design"
           },
           {
@@ -1393,25 +1472,22 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "Built the world of an abandoned luxury space liner. The placement of bodies, terminal logs, scene details, lighting changes, and environmental damage allows players to gradually infer what happened while establishing an Alien-like suspense-horror atmosphere."
           },
           {
-            "kind": "paragraph",
-            "text": "3. Exploration, Puzzle, and Combat Design — Gameplay Design"
+            "kind": "heading",
+            "level": 3,
+            "text": "3. Exploration, Puzzle, and Combat Design (Gameplay Design)"
           },
           {
             "kind": "paragraph",
             "text": "Designed power-restoration tasks, key searches, battery collection, ventilation-shaft infiltration, secret rooms, and other exploration and puzzle mechanics. Xenogrubs, Terrormorphs, and other enemies make exploration, puzzle-solving, and combat alternate throughout the experience, steadily increasing tension."
           },
           {
-            "kind": "paragraph",
+            "kind": "heading",
+            "level": 3,
             "text": "4. Pacing Design"
           },
           {
             "kind": "paragraph",
             "text": "Built a complete experiential arc through a dark zero-gravity opening, power restoration, free exploration, confined pursuit sequences, resource management, and a final boss battle, gradually escalating from exploration to climactic combat."
-          },
-          {
-            "kind": "image",
-            "caption": "Ghost Ship level-design showcase",
-            "src": "project2/images/image_project2_1.jpg"
           },
           {
             "kind": "heading",
@@ -1420,7 +1496,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "Level Design Pitch｜2026.05.26｜Completed the level pitch and established the theme, art direction, core gameplay, narrative framework, and overall level flow.\nLevel Design Document｜2026.06.01｜Completed the LDD and defined the spatial layout, exploration flow, puzzle mechanics, combat setup, and environmental storytelling design.\nWhitebox｜2026.06.08｜Completed the whitebox and validated the spatial layout, player flow, exploration pacing, and navigation design.\nInitial Gameplay｜2026.06.22｜Implemented the core gameplay, exploration, puzzles, combat, environmental storytelling, and quest flow, and began playtesting.\nGameplay Complete｜2026.07.06｜Completed all level content and continued refining flow, combat, horror atmosphere, and environmental storytelling based on test feedback.\nAesthetics｜2026.07.13｜Completed environment art, lighting, materials, and set dressing to strengthen the visual presentation and immersion of the ruined luxury liner.\nRTM｜2026.07.19｜Completed bug fixing, final polish, and project delivery."
+            "text": "Stage｜Date｜Work Completed\nLevel Design Pitch｜2026.05.26｜Completed the level pitch and established the theme, art direction, core gameplay, narrative framework, and overall level flow.\nLevel Design Document｜2026.06.01｜Completed the LDD and defined the spatial layout, exploration flow, puzzle mechanics, combat setup, and environmental storytelling design.\nWhitebox｜2026.06.08｜Completed the whitebox and validated the spatial layout, player flow, exploration pacing, and navigation design.\nInitial Gameplay｜2026.06.22｜Implemented the core gameplay, exploration, puzzles, combat, environmental storytelling, and quest flow, and began playtesting.\nGameplay Complete｜2026.07.06｜Completed all level content and continued refining flow, combat, horror atmosphere, and environmental storytelling based on test feedback.\nAesthetics｜2026.07.13｜Completed environment art, lighting, materials, and set dressing to strengthen the visual presentation and immersion of the ruined luxury liner.\nRTM｜2026.07.19｜Completed bug fixing, final polish, and project delivery."
           },
           {
             "kind": "heading",
@@ -1429,7 +1505,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "Feedback｜Analysis｜Solution\nThe save point was located inside the final boss room, creating an endless death loop.｜｜Placed a safe room outside the final boss arena."
+            "text": "Issue｜Solution｜Result\nEven in a horror level, having no weapon felt frustrating to players, especially within Starfield.｜Gave the player an electromagnetic weapon early in the level.｜The player can briefly stun enemies early in the experience. This provides a way to resist threats without allowing the player to kill them outright, preserving the sense of fear.\nThe crew area was too open and had poor circulation.｜Divided the area with a central conference table, a surrounding loop corridor, and separate rooms around the outer edge.｜Created a more complex looping structure and improved circulation.\nThe save point was located inside the final boss room, creating an endless death loop.｜Placed a safe room outside the final boss arena.｜Eliminated the risk of an unusable save."
           },
           {
             "kind": "heading",
@@ -1437,21 +1513,99 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "Project Retrospective"
           },
           {
-            "kind": "paragraph",
-            "text": "What Went Well\n• Completed the design, production, and iteration of the final level, Gacha Galaxy."
+            "kind": "heading",
+            "level": 3,
+            "text": "What Went Well"
           },
           {
             "kind": "paragraph",
-            "text": "Even Better If\n• Some shortcut routes had poorly balanced risk and reward in early versions and required multiple rounds of playtesting to adjust."
+            "text": "• Created a space-liner level with strongly differentiated visual and functional areas.\n• Created a distinctive horror-game experience.\n• Successfully reused spaces and routes."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Even Better If"
           },
           {
             "kind": "paragraph",
-            "text": "What I Learned\n• Summarize flow-design experience from the racing project."
+            "text": "• As a cruise liner, the level could be larger and structurally more complex.\n• Add more environmental storytelling content.\n• Adjust interior route dimensions to accommodate the movement paths of large creatures.\n• Enlarge the boss arena and enrich the single-encounter combat experience."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "What I Learned"
+          },
+          {
+            "kind": "paragraph",
+            "text": "• Developed a practical approach for transforming real-world architecture into level design."
+          },
+          {
+            "kind": "paragraph",
+            "text": "The key lessons were:"
+          },
+          {
+            "kind": "paragraph",
+            "text": "1. Gather real-world references: for example, the cruise-liner level used deck plans from the Disney Cruise Line website as a reference.\n2. Simplify the structure appropriately: the level does not need to reproduce a real twenty-deck cruise ship.\n3. Adapt dimensions for gameplay: room heights and corridor widths must suit character scale and camera style; for example, third-person cameras often require larger interior spaces.\n4. Redesign circulation: real architecture prioritizes safety and pedestrian flow, while level design must also account for flow state, sightlines, and other gameplay needs."
           },
           {
             "kind": "heading",
             "level": 2,
-            "text": "Attachments"
+            "text": "Appendix"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 49: Bridge Area",
+            "src": "project2/images/bridgearea.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 50: Crew Area 1",
+            "src": "project2/images/crewarea1.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 51: Crew Area 2",
+            "src": "project2/images/crewarea2.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 52: Crew Area 3",
+            "src": "project2/images/crewarea3.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 53: Dining Area",
+            "src": "project2/images/diningarea.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 54: Hall Area",
+            "src": "project2/images/hallarea.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 55: Kitchen Area",
+            "src": "project2/images/kitchenarea.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 56: Passenger Area 1",
+            "src": "project2/images/passengerarea1.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 57: Passenger Area 2",
+            "src": "project2/images/passengerarea2.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 58: Passenger Area 3",
+            "src": "project2/images/passengerarea3.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 59: Passenger Area 4",
+            "src": "project2/images/passengerarea4.jpg"
           }
         ],
         "hero": {
