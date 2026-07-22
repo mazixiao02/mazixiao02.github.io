@@ -19,7 +19,7 @@ hero_caption: 《Hamsterballin’》最终关卡“扭蛋机星系”主视觉
 
 ## 项目介绍
 
-《Hamsterballin’》是一款本地多人竞速游戏，玩家操控可滚动弹跳的仓鼠球，在充满机关、捷径与立体地形的赛道中竞争。项目由 SMU Guildhall Team Game Project II 课程开发，42人团队历时12周完成，即将登陆 Steam。
+《Hamsterballin’》是一款本地多人竞速游戏，玩家操控可滚动弹跳的仓鼠球，在充满机关、捷径与立体地形的赛道中竞争。项目由 SMU Guildhall Team Game Project II 课程开发，42人团队历时12周完成，Steam商店页已公开。
 
 ## 我的工作
 
