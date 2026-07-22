@@ -858,6 +858,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "海错大爆钓"
           },
           {
+            "kind": "image",
+            "caption": "Figure 39：《海错大爆钓》桌游",
+            "src": "moreprojects/images/figure-39-big-fishing-boom-board-game.jpg"
+          },
+          {
             "kind": "paragraph",
             "text": "原创卡牌桌游设计，于上海 SHM 桌游展及“中国好桌游”展出，目前正与出版社推进出版合作。"
           },
@@ -867,8 +872,25 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "The Holy Grail"
           },
           {
+            "kind": "image",
+            "caption": "Figure 40：《The Holy Grail》雷神之锤 3 CTF 关卡设计",
+            "src": "moreprojects/images/figure-40-the-holy-grail-quake3-ctf-level.jpg"
+          },
+          {
             "kind": "paragraph",
-            "text": "失败的Quake 3 竞技场多人地图。在制作此图之前，我对PVP游戏认知仅停留在Splatoon上，"
+            "text": "这是一张失败的《Quake III Arena》CTF 多人地图。在制作此图之前，我真正玩过的射击游戏只有《喷射战士》（Splatoon）。我曾以为那就是 FPS 游戏的标准形态，因此地图大多沿用了它的设计思路。《喷射战士》中几乎所有武器的射程都非常有限，这也导致我设计的地图过于开阔。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "然而，在我开始玩《守望先锋》（Overwatch）之后，我发现传统 FPS 游戏有着截然不同的设计逻辑。由于武器的有效射程远得多，其关卡设计往往并不符合直觉：入口通常紧挨着墙壁，几乎每个转角都设有掩体，从而在玩家交火时形成狭窄的射击角度。为了避免出现贯穿地图的长距离射击通道，视线也会被不断切割。结果，FPS 地图通常显得曲折复杂，仿佛置身于纽约街头。相比之下，《喷射战士》的地图更加开阔，更接近现实空间，布局也更符合自然的建筑结构。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "自此，我明白了，FPS 游戏的关卡设计主要取决于两点："
+          },
+          {
+            "kind": "paragraph",
+            "text": "• 引擎的选择：引擎技术决定了地图的开放程度。例如，与 Bungie 最新的引擎相比，id Tech 3 在几何体复杂度和渲染距离方面存在局限性。因此，使用 id Tech 3 制作的地图通常规模较小，并通过尽量减少长距离视线来确保高性能运行。\n• FPS 游戏的具体子类型：游戏子类型决定了地图体验的核心目标。例如，撤离类射击游戏（Extraction Shooter）强调致命性，会通过让玩家容易受到多角度攻击的场景体现这一点；竞技场射击游戏则截然不同，其体验经过精心设计，旨在营造一种平衡感。"
           },
           {
             "kind": "heading",
@@ -876,8 +898,43 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "The Way of Water"
           },
           {
+            "kind": "image",
+            "caption": "Figure 41：The Way of Water 地图设计",
+            "src": "moreprojects/images/figure-41-the-way-of-water-map.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 42：The Way of Water 截图 1",
+            "src": "moreprojects/images/figure-42-the-way-of-water-screenshot-1.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 43：The Way of Water 截图 2",
+            "src": "moreprojects/images/figure-43-the-way-of-water-screenshot-2.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 44：The Way of Water 截图 3",
+            "src": "moreprojects/images/figure-44-the-way-of-water-screenshot-3.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 45：The Way of Water 截图 4",
+            "src": "moreprojects/images/figure-45-the-way-of-water-screenshot-4.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 46：The Way of Water 截图 5",
+            "src": "moreprojects/images/figure-46-the-way-of-water-screenshot-5.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 47：The Way of Water 截图 6",
+            "src": "moreprojects/images/figure-47-the-way-of-water-screenshot-6.jpg"
+          },
+          {
             "kind": "paragraph",
-            "text": "使用 Hammer Editor 制作的《半条命2》FPS单人关卡。围绕水体物理与电力机制设计战斗及解谜流程，控制玩家引导、战斗节奏与空间视线。"
+            "text": "使用 Hammer Editor 制作的《半条命 2》FPS 单人关卡。围绕水体物理与电力机制设计战斗及解谜流程，控制玩家引导、战斗节奏与空间视线。"
           },
           {
             "kind": "heading",
@@ -886,7 +943,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "毕设题目，正在开发中。"
+            "text": "毕设题目，从三层认知分层展开研究："
+          },
+          {
+            "kind": "paragraph",
+            "text": "• 主题可供性（Thematic Affordance）：玩家能否通过具有主题特色的环境线索识别空间的功能。\n• 功能分区（Functional Zoning）：主题性的环境暗示（Affordances）是否有助于玩家区分功能区域，并感知区域间清晰的过渡。\n• 认知地图构建（Cognitive Map Construction）：玩家能否利用不同的区域构建出关于整体环境的认知地图。"
           },
           {
             "kind": "heading",
@@ -894,8 +955,13 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "Box Shot"
           },
           {
+            "kind": "image",
+            "caption": "Figure 48：Box Shot 关卡原型",
+            "src": "moreprojects/images/figure-48-box-shot-level-prototype.jpg"
+          },
+          {
             "kind": "paragraph",
-            "text": "42人团队UE5高速FPS项目，正在研发中。"
+            "text": "42 人团队 UE5 高速 FPS 项目，正在研发中。"
           },
           {
             "kind": "heading",
@@ -903,8 +969,22 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "Escape from the Circus"
           },
           {
+            "kind": "youtube",
+            "id": "zzoBhNJkYKk",
+            "caption": "《Escape from the Circus》演示"
+          },
+          {
             "kind": "paragraph",
-            "text": "Global Game jam项目，基于面部识别交互的 Unity2D 平台跳跃游戏，担任程序开发，在48小时内开发完成。"
+            "text": "Global Game Jam 项目，基于面部识别交互的 Unity 2D 平台跳跃游戏，担任程序开发，在 48 小时内开发完成。"
+          },
+          {
+            "kind": "buttons",
+            "links": [
+              {
+                "label": "Global Game Jam 项目页",
+                "href": "https://globalgamejam.org/games/2024/escape-circus-2"
+              }
+            ]
           },
           {
             "kind": "heading",
@@ -913,7 +993,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "BOOOM Game jam项目，Unreal Engine制作的2D平台跳跃游戏。"
+            "text": "BOOOM Game Jam 项目，也是我第一次参加 Game Jam。使用 Unreal Engine 制作的 2D 平台跳跃游戏。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "机核链接：OGO | 机核 GCORES"
           }
         ],
         "hero": {
@@ -1912,6 +1996,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "Big Fishing Boom"
           },
           {
+            "kind": "image",
+            "caption": "Figure 39: Big Fishing Boom tabletop game",
+            "src": "moreprojects/images/figure-39-big-fishing-boom-board-game.jpg"
+          },
+          {
             "kind": "paragraph",
             "text": "An original card-based tabletop game exhibited at the Shanghai SHM Board Game Expo and the China Good Board Game showcase. I am currently working with a publisher toward publication."
           },
@@ -1921,13 +2010,65 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "The Holy Grail"
           },
           {
+            "kind": "image",
+            "caption": "Figure 40: The Holy Grail — Quake III Arena CTF level design",
+            "src": "moreprojects/images/figure-40-the-holy-grail-quake3-ctf-level.jpg"
+          },
+          {
             "kind": "paragraph",
-            "text": "A failed Quake 3 Arena multiplayer map. Before making it, my understanding of PvP games was limited to Splatoon,"
+            "text": "This was a failed Quake III Arena CTF multiplayer map. Before creating it, the only shooter I had seriously played was Splatoon. I assumed it represented the standard form of FPS design, so I carried many of its design principles into my own map. Because nearly every weapon in Splatoon has a very limited effective range, the resulting map was far too open."
+          },
+          {
+            "kind": "paragraph",
+            "text": "After I began playing Overwatch, however, I discovered that traditional FPS games follow a very different design logic. Because their weapons are effective across much longer distances, their level design often feels counterintuitive: entrances are commonly placed directly beside walls, nearly every corner provides cover, and combat is shaped around narrow firing angles. Sightlines are repeatedly interrupted to prevent long firing lanes from spanning the map. As a result, FPS maps often feel winding and complex, almost like the streets of New York. Splatoon maps, by contrast, are generally more open, closer to real-world spaces, and more consistent with natural architectural layouts."
+          },
+          {
+            "kind": "paragraph",
+            "text": "From this experience, I learned that FPS level design is shaped primarily by two factors:"
+          },
+          {
+            "kind": "paragraph",
+            "text": "• Engine choice: Engine technology determines how open a map can be. Compared with Bungie's latest engine, id Tech 3 is limited in geometric complexity and rendering distance. Maps built with id Tech 3 are therefore usually smaller and use techniques that minimize long sightlines to maintain high performance.\n• FPS subgenre: The subgenre defines the experience a map must support. Extraction shooters, for example, emphasize lethality and often place players in spaces where they can be attacked from multiple angles. Arena shooters are fundamentally different: their encounters are carefully structured to create a sense of balance."
           },
           {
             "kind": "heading",
             "level": 2,
             "text": "The Way of Water"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 41: The Way of Water map design",
+            "src": "moreprojects/images/figure-41-the-way-of-water-map.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 42: The Way of Water — Screenshot 1",
+            "src": "moreprojects/images/figure-42-the-way-of-water-screenshot-1.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 43: The Way of Water — Screenshot 2",
+            "src": "moreprojects/images/figure-43-the-way-of-water-screenshot-2.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 44: The Way of Water — Screenshot 3",
+            "src": "moreprojects/images/figure-44-the-way-of-water-screenshot-3.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 45: The Way of Water — Screenshot 4",
+            "src": "moreprojects/images/figure-45-the-way-of-water-screenshot-4.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 46: The Way of Water — Screenshot 5",
+            "src": "moreprojects/images/figure-46-the-way-of-water-screenshot-5.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 47: The Way of Water — Screenshot 6",
+            "src": "moreprojects/images/figure-47-the-way-of-water-screenshot-6.jpg"
           },
           {
             "kind": "paragraph",
@@ -1940,12 +2081,21 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "My thesis project, currently in development."
+            "text": "My thesis investigates three layers of spatial cognition:"
+          },
+          {
+            "kind": "paragraph",
+            "text": "• Thematic Affordance: Whether players can recognize the function of a space through thematically distinctive environmental cues.\n• Functional Zoning: Whether thematic environmental affordances help players distinguish functional areas and perceive clear transitions between them.\n• Cognitive Map Construction: Whether players can use differentiated regions to construct a cognitive map of the overall environment."
           },
           {
             "kind": "heading",
             "level": 2,
             "text": "Box Shot"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 48: Box Shot level prototype",
+            "src": "moreprojects/images/figure-48-box-shot-level-prototype.jpg"
           },
           {
             "kind": "paragraph",
@@ -1957,8 +2107,22 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "Escape from the Circus"
           },
           {
+            "kind": "youtube",
+            "id": "zzoBhNJkYKk",
+            "caption": "Escape from the Circus Showcase"
+          },
+          {
             "kind": "paragraph",
-            "text": "A Global Game Jam Unity 2D platformer built around facial-recognition interaction. I served as a programmer and completed the project within 48 hours."
+            "text": "A Global Game Jam Unity 2D platformer built around facial-recognition interaction. I served as a programmer, and the project was completed within 48 hours."
+          },
+          {
+            "kind": "buttons",
+            "links": [
+              {
+                "label": "Global Game Jam Project Page",
+                "href": "https://globalgamejam.org/games/2024/escape-circus-2"
+              }
+            ]
           },
           {
             "kind": "heading",
@@ -1967,7 +2131,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "A 2D platformer created in Unreal Engine for the BOOOM Game Jam."
+            "text": "A 2D platformer created in Unreal Engine for the BOOOM Game Jam. This was my first Game Jam project."
+          },
+          {
+            "kind": "paragraph",
+            "text": "GCORES Link: OGO | GCORES"
           }
         ],
         "hero": {
