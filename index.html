@@ -40,14 +40,18 @@
     .header-identity {
       display: flex;
       align-items: center;
-      gap: 14px;
       min-width: 0;
     }
-    .brand-mark {
-      display: block;
-      width: 54px;
-      height: 54px;
-      flex: 0 0 54px;
+    .profile-info h1 {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+    .profile-info h1 .brand-mark {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      flex: 0 0 1em;
       object-fit: contain;
     }
     .profile-info h1 {
@@ -469,8 +473,6 @@
   
 @media (max-width: 768px){
   header{padding:16px; flex-direction: column; height: auto; align-items: flex-start;}
-  .header-identity{gap:11px;}
-  .brand-mark{width:48px;height:48px;flex-basis:48px;}
   .main-container{flex-direction:column;height:auto;}
   .left-panel{width:100%;height:auto;flex-direction:row;overflow-x:auto;perspective:none;border-right:none;border-bottom:1px solid #1a1a1a;}
   .project-item{width:180px;min-width:180px;height:110px;transform:none !important;}
@@ -542,9 +544,8 @@
 
   <header>
     <div class="header-identity">
-      <img class="brand-mark" src="./favicon.svg?v=2" alt="" aria-hidden="true" />
       <div class="profile-info">
-        <h1 id="headerName">马子潇</h1>
+        <h1><img class="brand-mark" src="./favicon.svg?v=2" alt="" aria-hidden="true" /><span id="headerName">马子潇</span></h1>
         <p id="headerTitle">关卡策划 / 游戏设计</p>
       </div>
     </div>
