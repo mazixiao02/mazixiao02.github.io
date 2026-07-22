@@ -370,6 +370,9 @@
     }
     .showcase-block img { width: 100%; display: block; height: auto; }
     .showcase-caption { font-size: 11.5px; color: #999999; text-align: center; margin-top: 10px; margin-bottom: 42px; }
+    .reading-media-slot {
+      width: 100%; max-width: 780px;
+    }
     .detail-section .showcase-block,
     .detail-section .showcase-caption { width: 100%; max-width: 780px; }
     .detail-section .showcase-image,
@@ -519,6 +522,7 @@
   .project-reading-layout .content-table-wrap,
   .project-reading-layout .timeline,
   .project-reading-layout .image-gallery,
+  .project-reading-layout .reading-media-slot,
   .project-reading-layout .detail-section .showcase-block,
   .project-reading-layout .detail-section .showcase-caption{
     max-width:min(780px, calc(75vw - clamp(176px, 13vw, 218px) - 94px));
@@ -709,7 +713,8 @@
       const style = width ? ` style="max-width:${width}; margin-left:auto; margin-right:auto;"` : '';
       const loading = isHero ? 'eager' : 'lazy';
       const heroClass = isHero ? ' showcase-hero' : '';
-      return `<div class="showcase-block showcase-image${heroClass}"${style}><img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.caption)}" loading="${loading}"></div><div class="showcase-caption showcase-image-caption${heroClass}"${style}>${escapeHtml(image.caption)}</div>`;
+      const media = `<div class="showcase-block showcase-image${heroClass}"${style}><img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.caption)}" loading="${loading}"></div><div class="showcase-caption showcase-image-caption${heroClass}"${style}>${escapeHtml(image.caption)}</div>`;
+      return isHero ? media : `<div class="reading-media-slot">${media}</div>`;
     }
 
     function videoBlock(video) {
@@ -739,7 +744,7 @@
       if (!images.length) return '';
       const first = images[0];
       const thumbs = images.map((image, index) => `<button class="media-carousel-thumb${index === 0 ? ' is-active' : ''}" type="button" data-gallery-index="${index}" data-gallery-src="${escapeHtml(image.src)}" data-gallery-caption="${escapeHtml(image.caption)}" aria-label="${escapeHtml(image.caption)}" aria-selected="${index === 0 ? 'true' : 'false'}"><img src="${escapeHtml(image.src)}" alt="" loading="lazy"></button>`).join('');
-      return `<div class="media-carousel" data-media-carousel tabindex="0">
+      return `<div class="reading-media-slot"><div class="media-carousel" data-media-carousel tabindex="0">
         <div class="media-carousel-stage">
           <img src="${escapeHtml(first.src)}" alt="${escapeHtml(first.caption)}" loading="lazy" data-gallery-image>
           <button class="media-carousel-arrow media-carousel-prev" type="button" data-gallery-prev aria-label="Previous image">‹</button>
@@ -747,7 +752,7 @@
         </div>
         <div class="media-carousel-caption" data-gallery-caption>${escapeHtml(first.caption)}</div>
         <div class="media-carousel-thumbs" role="tablist" aria-label="Figure thumbnails">${thumbs}</div>
-      </div>`;
+      </div></div>`;
     }
 
     function mediaPairGridBlock(images) {
