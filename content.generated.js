@@ -356,26 +356,41 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "我认为，一条优秀的竞速赛道，应当由一个个强烈的“记忆点”串联而成。例如马里奥赛车，玩家并不会记住每一个弯道，每一个细节，却会记住沙漠地图的流沙漩涡，海底地图的巨型鳗鱼。所以在设计赛道时，我会先设想好这样的“记忆点”，安排他们出场的节奏，并用普通路段将这些高潮体验自然连接起来。"
           },
           {
+            "kind": "image",
+            "caption": "Figure 1：在课程上讲解“记忆点”设计方法的PPT",
+            "src": "project3/images/figure-01-memory-point-ppt.jpg"
+          },
+          {
             "kind": "paragraph",
             "text": "作为最终关卡主要负责人，我主导关卡的主题构思、赛道布局设计，以及与程序、美术团队的跨部门协作，推动关卡从概念设计到最终落地。"
           },
           {
             "kind": "heading",
             "level": 4,
-            "text": "1. 确立关卡核心概念"
+            "text": "1.1 确立关卡核心概念"
           },
           {
             "kind": "paragraph",
             "text": "项目进入关卡开发阶段后，我们需要在较短周期内完成一张完整赛道。于是我很快确立了我们的设计目标——一个巨大中心地标来作为本关卡的导航标识与记忆锚点。我提出了“赛道围绕巨大机器人”搭建的设想。"
           },
           {
+            "kind": "image",
+            "caption": "Figure 2：关卡初始设计",
+            "src": "project3/images/figure-02-initial-level-design.jpg"
+          },
+          {
             "kind": "paragraph",
-            "text": "但是考虑到开发周期短与美术团队人手不足的情况，在与团队Leader讨论后，我们很快将方案调整为了扭蛋机，这一修改既保留了中心地标的设计理念，也显著降低了美术制作成本，最终形成了\"围绕扭蛋机—穿越扭蛋机—进入扭蛋机内部返回起点\"的整体空间结构。"
+            "text": "但是考虑到开发周期短与美术团队人手不足的情况，在与团队Leader讨论后，我们很快将方案调整为了扭蛋机，这一修改既保留了中心地标的设计理念，也显著降低了美术制作成本，最终形成了“围绕扭蛋机—穿越扭蛋机—进入扭蛋机内部返回起点”的整体空间结构。"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 3：赛道开始部分",
+            "src": "project3/images/figure-03-track-start.jpg"
           },
           {
             "kind": "heading",
             "level": 4,
-            "text": "2. 主导核心区域设计"
+            "text": "1.2 主导核心区域设计"
           },
           {
             "kind": "paragraph",
@@ -386,13 +401,18 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "为了使赛道穿越扭蛋机，我们将扭蛋机上方球星部分套上“土星环”，这样一来，赛道在这里一分为二。关卡名“扭蛋机星系”也因此而来。"
           },
           {
+            "kind": "image",
+            "caption": "Figure 4：穿越扭蛋机",
+            "src": "project3/images/figure-04-through-gacha-machine.jpg"
+          },
+          {
             "kind": "paragraph",
-            "text": "由于扭蛋机承担导航、视觉焦点和关卡主题表达等多重职责，我与美术团队进行了大量跨部门沟通，持续调整模型尺寸、赛道连接方式与玩家视线，确保美术表现能够服务于玩家导航与竞速体验。"
+            "text": "扭蛋机作为关卡主体，承担导航、视觉焦点和关卡主题表达等多重职责，我与美术团队进行了大量跨部门沟通，持续调整模型尺寸、风格、赛道连接方式与玩家视线，确保美术表现能够服务于玩家导航与竞速体验。"
           },
           {
             "kind": "heading",
             "level": 4,
-            "text": "3. 推动核心玩法迭代"
+            "text": "1.3 推动核心玩法迭代"
           },
           {
             "kind": "paragraph",
@@ -404,20 +424,35 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "因此，我提出将整段路线改为索道（Cableway）系统。这一方案不仅彻底消除了重复路段，还创造了新的体验价值：\n• 利用固定镜头强化玩家空间定位。\n• 将高速竞速转换为短暂的观赏节奏。\n• 近距离展示作为关卡核心的巨型扭蛋机，进一步强化玩家记忆点。"
+            "text": "因此，我提出将整段路线改为索道（Cableway）系统。这一方案不仅彻底消除了重复路段，还创造了新的体验价值：\n• 将高速竞速转换为短暂的观赏节奏。\n• 近距离展示作为关卡核心的巨型扭蛋机，进一步强化玩家记忆点。"
           },
           {
             "kind": "paragraph",
             "text": "最终团队采纳该方案，并完成实现。"
           },
           {
+            "kind": "image",
+            "caption": "Figure 5：扭蛋机内部索道",
+            "src": "project3/images/figure-05-interior-cableway.jpg"
+          },
+          {
             "kind": "heading",
             "level": 4,
-            "text": "4. 项目成果"
+            "text": "1.4 项目成果"
           },
           {
             "kind": "paragraph",
             "text": "关卡顺利完成开发并随游戏上线，并成为整款游戏的最终关卡。"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 6：最终关卡图1",
+            "src": "project3/images/figure-06-final-level-01.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 7：最终关卡图2",
+            "src": "project3/images/figure-07-final-level-02.jpg"
           },
           {
             "kind": "heading",
@@ -430,15 +465,35 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "早在POCT阶段，我便由《Balance》，《Splatoon》等游戏获得灵感，在早期的玩法探索中试图搭建这样的高速索道系统。但是由于我们的竞速游戏完全基于物理模拟，所以索道难以约束玩家，只能作罢。"
+            "text": "早在POCT技术验证阶段，我便由《Balance》，《Splatoon》等游戏获得灵感，在早期的玩法探索中试图搭建这样的高速索道系统。但是由于我们的竞速游戏完全基于物理模拟，所以索道难以约束玩家，只能作罢。"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 8：Splatoon中的索道",
+            "src": "project3/images/figure-08-splatoon-cableway.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 9：POCT索道演示",
+            "src": "project3/images/figure-09-poct-cableway-demo.gif"
           },
           {
             "kind": "paragraph",
-            "text": "但是在POCG阶段中，我仍然不愿放弃这个方向。在继续探索后发现可以由3到4根索道将玩家仓鼠球夹在其中，仅靠物理便完美约束玩家，并且有着很强的趣味性和演出潜力，自此，该玩法便确立为项目主要玩法之一，预期作为赛道捷径来使用。"
+            "text": "但是在POCG玩法验证阶段中，我仍然不愿放弃这个方向。在继续探索后发现可以由3到4根索道将玩家仓鼠球夹在其中，仅靠物理便完美约束玩家，并且有着很强的趣味性和演出潜力，自此，该玩法便确立为项目主要玩法之一，预期作为赛道捷径来使用。"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 10：POCG索道演示",
+            "src": "project3/images/figure-10-pocg-cableway-demo.gif"
           },
           {
             "kind": "paragraph",
             "text": "在正式开发周期中，理所当然的，我负责与美术、程序组交流，继续开发索道系统。并且负责最终关卡中所有索道设计。我最引以为傲的索道是在赛道开始处，玩家即将通过扭蛋机上方“土星环”区域的索道，在这里，我将索道大幅延申出去，并且绕了一个反向的弯，形成优美弧度，让玩家先远离赛道，再高速切回中心。并使得摄像机大幅拉远、使用变焦镜头，让玩家感受疾速的同时欣赏以扭蛋机为中心的整个赛道。"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 11：扭蛋机变焦索道演出",
+            "src": "project3/images/figure-11-gacha-zoom-cableway-showcase.gif"
           },
           {
             "kind": "paragraph",
@@ -457,49 +512,79 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "我迅速安插到另外两组关卡设计团队中去，和他们沟通需求，磨合工作，最终完成了三个关卡总计11条索道镜头的配置与优化。"
           },
           {
-            "kind": "youtube",
-            "id": "NM2TgDevFbo",
-            "caption": "索道系统及其镜头设计演示"
-          },
-          {
             "kind": "image",
-            "caption": "关卡一索道 1–2：路线布局与视线引导",
+            "caption": "Figure 12：关卡1索道1、2",
             "src": "project3/images/level1cableway1&2.jpg"
           },
           {
             "kind": "image",
-            "caption": "关卡一索道 3–4：连续运镜与场景展示",
+            "caption": "Figure 13：关卡1索道2、3",
             "src": "project3/images/level1cableway3&4.jpg"
           },
           {
             "kind": "image",
-            "caption": "关卡二索道 1：捷径入口与路线衔接",
+            "caption": "Figure 14：关卡2索道1",
             "src": "project3/images/level2cableway1.jpg"
           },
           {
             "kind": "image",
-            "caption": "关卡二索道 2：运输过程中的景观预告",
+            "caption": "Figure 15：关卡2索道2",
             "src": "project3/images/level2cableway2.jpg"
           },
           {
             "kind": "image",
-            "caption": "关卡三索道 1：高处路线与空间导向",
+            "caption": "Figure 16：关卡3索道1",
             "src": "project3/images/level3cableway1.jpg"
           },
           {
             "kind": "image",
-            "caption": "关卡三索道 2：镜头构图与关键目标展示",
+            "caption": "Figure 17：关卡3索道2",
             "src": "project3/images/level3cableway2.jpg"
           },
           {
             "kind": "image",
-            "caption": "关卡三索道 3–4：连续路线节奏与环境演出",
+            "caption": "Figure 18：关卡3索道3、4",
             "src": "project3/images/level3cableway3&4.jpg"
           },
           {
             "kind": "image",
-            "caption": "关卡三索道 5：索道终点与赛道重新汇合",
+            "caption": "Figure 19：关卡3索道5",
             "src": "project3/images/level3cableway5.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 20：索道演出动画1",
+            "src": "project3/images/figure-20-cableway-animation-01.gif"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 21：索道演出动画2",
+            "src": "project3/images/figure-21-cableway-animation-02.gif"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 22：索道演出动画3",
+            "src": "project3/images/figure-22-cableway-animation-03.gif"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 23：索道演出动画4",
+            "src": "project3/images/figure-23-cableway-animation-04.gif"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 24：索道演出动画5",
+            "src": "project3/images/figure-24-cableway-animation-05.gif"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 25：索道演出动画6",
+            "src": "project3/images/figure-25-cableway-animation-06.gif"
+          },
+          {
+            "kind": "youtube",
+            "id": "NM2TgDevFbo",
+            "caption": "索道系统及其镜头设计演示"
           },
           {
             "kind": "heading",
@@ -508,7 +593,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "阶段｜时间｜目标｜工作内容\nPOCT｜｜｜\nPOCG｜｜｜\nPrototype｜｜｜\nVertical Slice｜｜｜\nAlpha｜｜｜\nBeta｜｜｜\nLaunch｜｜｜"
+            "text": "阶段｜时间｜工作内容\nPOCT｜2/20/2026｜探索索道早期玩法，曲折的道路。\nPOCG｜3/6/2026｜进一步探索索道系统，并有内容产出。\nPrototype & Vertical Slice｜3/27/2026｜搭建试验关卡，学习使用PCG工具并且应用索道到赛道。\nAlpha｜4/10/2026｜设计最终关卡并搭建。\nBeta｜5/1/2026｜优化配置所有索道演出。\nLaunch｜5/10/2026｜最终测试，修复赛道PCG以及重生点。"
           },
           {
             "kind": "heading",
@@ -517,7 +602,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "反馈｜分析｜解决方案"
+            "text": "问题｜迭代方案｜结果\n扭蛋机内部管道过于重复，旋转导致3D眩晕｜使用索道代替｜独特螺旋演出效果，消除玩家迷失方向、毫无操作的部分，消除3D眩晕。\n最终赛道结尾部分过短导致玩家在最后很难反超，比赛在最后没有悬念｜适当延长，并且使用大U型弯道，让技巧型玩家可以使用完成空中反超｜为结尾段创造捷径，添加竞技性与刺激感。\n演出镜头多条反馈｜持续磨合修改｜完成三个关卡总计11条索道镜头的配置与优化"
           },
           {
             "kind": "heading",
@@ -530,7 +615,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "优化方向（Even Better If）\n• 索道的镜头系统过于简陋，实际上我应该继续跟进程序团队，在这方面提更多需求来完善这一重要系统。\n• 部分捷径路线在早期版本存在风险与收益不平衡的问题，需要多轮 Playtest 调整。\n• 高速竞速下部分镜头切换影响玩家对前方路线的观察，需要不断优化镜头角度与时机。\n• 由于多人竞速玩法高度依赖玩家行为，部分设计问题仅能通过大量多人测试发现。\n• 更早开展多人 Playtest，在灰盒阶段验证路线设计。\n• 增加更多具有策略差异的路线，提高比赛的重复可玩性。\n• 丰富最终圈的动态事件与视觉反馈，进一步强化终局高潮体验潮。"
+            "text": "优化方向（Even Better If）\n• 索道的镜头系统过于简陋，实际上我应该继续跟进程序团队，在这方面提更多需求来完善这一重要系统。如此可以避免陷入只能人工慢慢手调的情况。\n• 部分捷径路线在早期版本存在风险与收益不平衡的问题，尤其是一些索道为了演出效果牺牲长度，需要多轮 Playtest 调整。\n• 高速竞速下部分镜头切换影响玩家对前方路线的观察，需要不断优化镜头角度与时机。\n• 由于多人竞速玩法高度依赖玩家行为，部分设计问题仅能通过大量多人测试发现。\n• 更早开展多人 Playtest，在灰盒阶段验证路线设计。\n• 丰富最终圈的动态事件与视觉反馈，使用不同演出，进一步强化终局高潮体验潮。"
           },
           {
             "kind": "paragraph",
@@ -540,6 +625,10 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "kind": "heading",
             "level": 2,
             "text": "附件"
+          },
+          {
+            "kind": "paragraph",
+            "text": "• 无"
           }
         ],
         "hero": {
@@ -861,13 +950,13 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "title": "Hamsterballin’",
         "tabTitle": "UE5 Multiplayer Racing: Hamsterballin’",
         "tag": "Unreal Engine 5",
-        "type": "3D / Local Multiplayer / Racing / Mario Kart-like",
+        "type": "3D / Local Multiplayer / Racing / Mario Kart–Like",
         "role": "Final Level / Cableway System / Camera Design",
         "time": "12 Weeks / 42-Person Team",
-        "status": "Steam Store Page Live",
+        "status": "Steam Store Page Public",
         "statusUrl": "https://store.steampowered.com/app/4319370/Hamsterballin/",
-        "statusLink": "View Steam Store Page",
-        "caption": "▲ Iterating on navigation, route choice, and spectacle within a high-speed racing experience"
+        "statusLink": "View on Steam",
+        "caption": "▲ Iterative improvements to navigation, route choice, and spectacle during high-speed racing"
       },
       "project4": {
         "title": "FLING",
@@ -1161,7 +1250,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "Hamsterballin' is a UE5 local multiplayer racing game. On a 42-person team, I worked on the final track, the cableway shortcut system, and camera design, continuously iterating on navigation, route choice, and spectacle during high-speed racing."
+            "text": "Hamsterballin’ is a UE5 local multiplayer racing game. On a 42-person team, I designed the final track, the cableway shortcut system, and its camera work, iterating continuously to improve navigation, route choice, and spectacle during high-speed racing."
           },
           {
             "kind": "heading",
@@ -1170,7 +1259,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "Hamsterballin’ is a local multiplayer racing game in which players control rolling and bouncing hamster balls and compete across tracks filled with obstacles, shortcuts, and three-dimensional terrain. The project was developed in SMU Guildhall's Team Game Project II course by a 42-person team over 12 weeks and is coming soon to Steam."
+            "text": "Hamsterballin’ is a local multiplayer racing game in which players control rolling, bouncing hamster balls and compete across tracks filled with obstacles, shortcuts, and layered terrain. Developed for SMU Guildhall’s Team Game Project II course, the game was completed by a 42-person team over 12 weeks and is scheduled for release on Steam."
           },
           {
             "kind": "heading",
@@ -1184,71 +1273,106 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "I believe that a great racing track should be linked together by a series of powerful “memorable moments.” In Mario Kart, for example, players may not remember every turn or every detail, but they remember the whirlpool of quicksand on a desert track or the giant eel on an underwater track. When designing a track, I first imagine these memorable moments, plan the rhythm of their appearances, and use ordinary sections to connect those peak experiences naturally."
+            "text": "I believe a great racing track should be connected by a sequence of powerful “memorable moments.” In Mario Kart, for example, players may not remember every corner or detail, but they remember the quicksand vortex in the desert track or the giant eel in the underwater track. When designing a course, I first envision moments like these, establish the rhythm at which they appear, and use standard track sections to connect those peaks naturally."
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 1: Presentation slide explaining my “memorable moments” design approach",
+            "src": "project3/images/figure-01-memory-point-ppt.jpg"
           },
           {
             "kind": "paragraph",
-            "text": "As the primary owner of the final level, I led its thematic concept, track-layout design, and cross-disciplinary collaboration with programmers and artists, moving the level from concept to final implementation."
+            "text": "As the primary designer responsible for the final level, I led its thematic concept, track-layout design, and cross-disciplinary collaboration with programming and art, carrying the level from concept through final implementation."
           },
           {
             "kind": "heading",
             "level": 4,
-            "text": "1. Establishing the Level's Core Concept"
+            "text": "1.1 Establishing the Core Level Concept"
           },
           {
             "kind": "paragraph",
-            "text": "Once the project entered level production, we needed to complete a full track within a short schedule. I quickly established our design goal: a massive central landmark that would serve as both a navigation marker and a memory anchor. I proposed building the track around a giant robot."
+            "text": "When the project entered level production, we needed to complete an entire track within a short development window. I quickly established the design goal: a massive central landmark that could act as both a navigation cue and a memorable spatial anchor. My initial proposal was to build the track around a giant robot."
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 2: Initial level design",
+            "src": "project3/images/figure-02-initial-level-design.jpg"
           },
           {
             "kind": "paragraph",
-            "text": "However, because the development schedule was short and the art team had limited bandwidth, I discussed the idea with the team leader and quickly changed the central object to a gacha machine. The revision preserved the central-landmark concept while significantly reducing art-production costs. It ultimately created the spatial structure of “racing around the gacha machine—passing through the gacha machine—entering its interior and returning to the start.”"
+            "text": "However, given the short schedule and limited art resources, I discussed the concept with the team lead and quickly revised the centerpiece into a gacha machine. This change preserved the central-landmark concept while significantly reducing the art-production cost. It ultimately produced the level’s overall spatial structure: race around the gacha machine, pass through it, then enter its interior to return to the starting point."
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 3: Opening section of the track",
+            "src": "project3/images/figure-03-track-start.jpg"
           },
           {
             "kind": "heading",
             "level": 4,
-            "text": "2. Leading the Design of the Core Area"
+            "text": "1.2 Leading the Design of the Core Areas"
           },
           {
             "kind": "paragraph",
-            "text": "After defining the overall layout, I designed the track's start, finish, and the gacha-machine area at the center of the level."
+            "text": "After establishing the overall layout, I designed the starting area, finish line, and the gacha-machine zone at the center of the level."
           },
           {
             "kind": "paragraph",
-            "text": "To let the track pass through the gacha machine, we wrapped a “Saturn ring” around the spherical section at its top, allowing the track to split into two paths there. This is also where the name Gacha Galaxy came from."
+            "text": "To route the track through the gacha machine, we wrapped a “Saturn ring” around the spherical section at its top, allowing the track to split into two routes at this location. This idea also gave the level its name, Gacha Galaxy."
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 4: Racing through the gacha machine",
+            "src": "project3/images/figure-04-through-gacha-machine.jpg"
           },
           {
             "kind": "paragraph",
-            "text": "Because the gacha machine simultaneously served as a navigation aid, visual focal point, and expression of the level's theme, I worked extensively with the art team. We continuously adjusted model scale, track connections, and player sightlines so that the visual presentation would support navigation and the racing experience."
+            "text": "As the central structure of the level, the gacha machine had to serve navigation, visual focus, and thematic communication simultaneously. I collaborated extensively with the art team, continually adjusting the model’s scale, style, track connections, and player sightlines so the visual presentation would support navigation and the racing experience."
           },
           {
             "kind": "heading",
             "level": 4,
-            "text": "3. Driving Iteration on the Core Gameplay"
+            "text": "1.3 Driving Iteration on the Core Gameplay"
           },
           {
             "kind": "paragraph",
-            "text": "Across multiple playtests, we found that after entering the gacha machine, players had to travel through three consecutive spiral tubes to return to the upper level. This design had three problems:\n• It was repetitive and offered little room for player input.\n• Players easily lost their sense of direction.\n• Prolonged rotation caused 3D motion sickness for some players."
+            "text": "Across multiple playtests, we found that after entering the gacha machine, players had to climb back upward through three consecutive spiral tubes. This design created three problems:\n• The route was repetitive and offered little room for player input.\n• Players easily lost their sense of direction.\n• Sustained rotation caused 3D motion sickness for some players."
           },
           {
             "kind": "paragraph",
-            "text": "The team's initial plan was simply to reduce the sequence to one spiral tube. I believed that this did not address the core issue, because players still had almost no decisions or meaningful input after entering the tube and would simply keep driving forward."
+            "text": "The team initially planned to reduce the sequence to a single spiral tube. I believed this did not address the underlying issue: once inside the tube, players had almost no decisions or meaningful actions and simply continued driving forward."
           },
           {
             "kind": "paragraph",
-            "text": "I therefore proposed replacing the entire section with the Cableway system. This solution eliminated the repetitive route and created new experiential value:\n• Fixed cameras strengthened players' spatial orientation.\n• High-speed racing briefly shifted into a moment of spectacle.\n• A close-up view of the giant gacha machine further reinforced the level's central memory point."
+            "text": "I therefore proposed replacing the entire section with the Cableway system. The solution eliminated the repetitive route and introduced new experiential value:\n• It briefly shifted the pace from high-speed racing to scenic spectacle.\n• It brought players close to the giant gacha machine, further reinforcing the level’s central memorable moment."
           },
           {
             "kind": "paragraph",
             "text": "The team adopted the proposal and completed its implementation."
           },
           {
+            "kind": "image",
+            "caption": "Figure 5: Cableway inside the gacha machine",
+            "src": "project3/images/figure-05-interior-cableway.jpg"
+          },
+          {
             "kind": "heading",
             "level": 4,
-            "text": "4. Project Outcome"
+            "text": "1.4 Project Outcome"
           },
           {
             "kind": "paragraph",
-            "text": "The level was successfully completed, shipped with the game, and became the game's final level."
+            "text": "The level was completed successfully, shipped with the game, and became the game’s final track."
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 6: Final level view 1",
+            "src": "project3/images/figure-06-final-level-01.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 7: Final level view 2",
+            "src": "project3/images/figure-07-final-level-02.jpg"
           },
           {
             "kind": "heading",
@@ -1257,80 +1381,130 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "Beginning in the project's POCT phase, I independently proposed, designed, and implemented the Cableway system as a level shortcut. I was responsible for shortcut planning, interaction logic, and the player's camera presentation. During Cableway travel, the camera showcases scenery, previews upcoming routes, and reinforces orientation, allowing the system to function simultaneously as a shortcut, navigation tool, and cinematic sequence."
+            "text": "Beginning in the project’s POCT phase, I independently proposed, designed, and implemented the Cableway system as a track shortcut. I was responsible for shortcut planning, interaction logic, and the player-camera sequences. While the player travels along a cableway, the camera presents the environment, previews upcoming routes, and reinforces orientation, allowing the system to function simultaneously as a shortcut, navigation tool, and cinematic presentation device."
           },
           {
             "kind": "paragraph",
-            "text": "As early as the POCT phase, I drew inspiration from games including Balance and Splatoon and experimented with a high-speed Cableway system during early gameplay exploration. Because our racing game was built entirely around physics simulation, however, the Cableway could not constrain the player and the idea had to be set aside."
-          },
-          {
-            "kind": "paragraph",
-            "text": "During the POCG phase, I still did not want to abandon the direction. Further experimentation showed that three or four cables could enclose the player's hamster ball and constrain it perfectly through physics alone. The result was highly enjoyable and had strong presentation potential. From then on, the mechanic became one of the project's primary gameplay systems and was intended for use as a track shortcut."
-          },
-          {
-            "kind": "paragraph",
-            "text": "During full production, I naturally continued working with the art and programming teams to develop the Cableway system, and I designed every Cableway in the final level. The one I am proudest of appears near the beginning of the track, as the player is about to cross the “Saturn ring” above the gacha machine. I extended the Cableway far out from the track and curved it back in the opposite direction, forming a graceful arc. The player first moves away from the track and then cuts back toward its center at high speed. The camera pulls far back and uses a zoom lens, allowing the player to feel the speed while taking in the entire track organized around the gacha machine."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Late in development, I was asked to optimize every Cableway camera across every level. Even with little time remaining, and even though the team told me I could decline if the workload was too heavy, I accepted the task."
-          },
-          {
-            "kind": "paragraph",
-            "text": "The camera system behind the Cableways was, frankly, extremely rudimentary. On a Cableway, a dedicated camera takes control from the player's third-person follow camera and always obeys two rules:\n1. It always faces the player.\n2. Its movement percentage along the camera track always equals the player's movement percentage along the Cableway."
-          },
-          {
-            "kind": "paragraph",
-            "text": "This made camera configuration extremely difficult. There was no precise control, so each camera had to be placed manually through experience and repeated adjustment."
-          },
-          {
-            "kind": "paragraph",
-            "text": "I quickly embedded myself with the other two level-design teams, communicated with them about their needs, adapted to their workflows, and ultimately completed the configuration and optimization of 11 Cableway cameras across three levels."
-          },
-          {
-            "kind": "youtube",
-            "id": "NM2TgDevFbo",
-            "caption": "Cableway System and Camera Design Showcase"
+            "text": "During the POCT technical-validation phase, I drew inspiration from games such as Ballance and Splatoon and attempted to prototype a high-speed cableway system. Because our racing game was built entirely around physics simulation, however, the cableway could not reliably constrain the player, so I had to abandon the first version."
           },
           {
             "kind": "image",
-            "caption": "Level 1 Cableways 1–2: route layout and sightline guidance",
+            "caption": "Figure 8: Cableway in Splatoon",
+            "src": "project3/images/figure-08-splatoon-cableway.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 9: POCT cableway demonstration",
+            "src": "project3/images/figure-09-poct-cableway-demo.gif"
+          },
+          {
+            "kind": "paragraph",
+            "text": "During the POCG gameplay-validation phase, I was still unwilling to give up on the direction. Through further experimentation, I discovered that three to four cableways could hold the player’s hamster ball between them using physics alone. The result constrained the player perfectly while providing strong gameplay appeal and presentation potential. From that point onward, the Cableway became one of the project’s major mechanics and was intended for use as a track shortcut."
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 10: POCG cableway demonstration",
+            "src": "project3/images/figure-10-pocg-cableway-demo.gif"
+          },
+          {
+            "kind": "paragraph",
+            "text": "During full production, I naturally continued developing the Cableway system in collaboration with the art and programming teams, while also designing every cableway in the final level. The cableway I am most proud of appears near the beginning of the track as players approach the “Saturn ring” above the gacha machine. I extended the route far outward and added a reverse curve to create a graceful arc, sending players away from the track before cutting back toward the center at high speed. I also pulled the camera far back and used a zoom shot, allowing players to feel the speed while taking in the entire course centered on the gacha machine."
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 11: Gacha-machine zoom cableway sequence",
+            "src": "project3/images/figure-11-gacha-zoom-cableway-showcase.gif"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Late in development, I was asked to optimize every cableway camera across all levels. Although time was limited and the team told me I could decline if the workload felt too heavy, I chose to take on the task."
+          },
+          {
+            "kind": "paragraph",
+            "text": "The camera system behind the cableways was, admittedly, very limited. On a cableway, a dedicated cableway camera takes control from the standard third-person camera and always follows two rules:\n1. It always faces the player.\n2. Its progress percentage along the camera rail always equals the player’s progress percentage along the cableway."
+          },
+          {
+            "kind": "paragraph",
+            "text": "These constraints made camera setup extremely difficult. The system offered no precise control, so every sequence had to be tuned manually through experience and repeated adjustment."
+          },
+          {
+            "kind": "paragraph",
+            "text": "I quickly embedded myself with the other two level-design groups, communicated their needs, adapted to their workflows, and ultimately configured and polished 11 cableway camera sequences across three levels."
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 12: Level 1 cableways 1 and 2",
             "src": "project3/images/level1cableway1&2.jpg"
           },
           {
             "kind": "image",
-            "caption": "Level 1 Cableways 3–4: continuous camera movement and environment presentation",
+            "caption": "Figure 13: Level 1 cableways 2 and 3",
             "src": "project3/images/level1cableway3&4.jpg"
           },
           {
             "kind": "image",
-            "caption": "Level 2 Cableway 1: shortcut entrance and route connection",
+            "caption": "Figure 14: Level 2 cableway 1",
             "src": "project3/images/level2cableway1.jpg"
           },
           {
             "kind": "image",
-            "caption": "Level 2 Cableway 2: previewing scenery during transport",
+            "caption": "Figure 15: Level 2 cableway 2",
             "src": "project3/images/level2cableway2.jpg"
           },
           {
             "kind": "image",
-            "caption": "Level 3 Cableway 1: elevated route and spatial guidance",
+            "caption": "Figure 16: Level 3 cableway 1",
             "src": "project3/images/level3cableway1.jpg"
           },
           {
             "kind": "image",
-            "caption": "Level 3 Cableway 2: camera composition and presentation of key targets",
+            "caption": "Figure 17: Level 3 cableway 2",
             "src": "project3/images/level3cableway2.jpg"
           },
           {
             "kind": "image",
-            "caption": "Level 3 Cableways 3–4: continuous route pacing and environmental presentation",
+            "caption": "Figure 18: Level 3 cableways 3 and 4",
             "src": "project3/images/level3cableway3&4.jpg"
           },
           {
             "kind": "image",
-            "caption": "Level 3 Cableway 5: Cableway exit and reconnection with the main track",
+            "caption": "Figure 19: Level 3 cableway 5",
             "src": "project3/images/level3cableway5.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 20: Cableway presentation animation 1",
+            "src": "project3/images/figure-20-cableway-animation-01.gif"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 21: Cableway presentation animation 2",
+            "src": "project3/images/figure-21-cableway-animation-02.gif"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 22: Cableway presentation animation 3",
+            "src": "project3/images/figure-22-cableway-animation-03.gif"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 23: Cableway presentation animation 4",
+            "src": "project3/images/figure-23-cableway-animation-04.gif"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 24: Cableway presentation animation 5",
+            "src": "project3/images/figure-24-cableway-animation-05.gif"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 25: Cableway presentation animation 6",
+            "src": "project3/images/figure-25-cableway-animation-06.gif"
+          },
+          {
+            "kind": "youtube",
+            "id": "NM2TgDevFbo",
+            "caption": "Cableway System and Camera Design Demonstration"
           },
           {
             "kind": "heading",
@@ -1339,7 +1513,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "Phase｜Date｜Goal｜Work\nPOCT｜｜｜\nPOCG｜｜｜\nPrototype｜｜｜\nVertical Slice｜｜｜\nAlpha｜｜｜\nBeta｜｜｜\nLaunch｜｜｜"
+            "text": "Stage｜Date｜Work\nPOCT｜2/20/2026｜Explored early Cableway gameplay and experimented with winding routes.\nPOCG｜3/6/2026｜Continued exploring the Cableway system and produced playable content.\nPrototype & Vertical Slice｜3/27/2026｜Built a test level, learned the PCG tools, and integrated cableways into the track.\nAlpha｜4/10/2026｜Designed and built the final level.\nBeta｜5/1/2026｜Configured and polished all cableway camera sequences.\nLaunch｜5/10/2026｜Conducted final testing and fixed track PCG and respawn points."
           },
           {
             "kind": "heading",
@@ -1348,7 +1522,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "Feedback｜Analysis｜Solution"
+            "text": "Problem｜Iteration｜Result\nThe tubes inside the gacha machine were too repetitive, and their rotation caused 3D motion sickness.｜Replaced the tubes with cableways.｜Created a distinctive spiraling presentation, removed the directionless section with no meaningful player input, and eliminated the source of 3D motion sickness.\nThe final stretch of the track was too short, leaving little opportunity for a late overtake and removing suspense from the ending.｜Extended the route and added a large U-shaped turn so skilled players could complete an aerial overtake.｜Created a shortcut opportunity in the final stretch and added competitiveness and excitement.\nThe presentation cameras received many rounds of feedback.｜Continued coordinating, tuning, and revising them.｜Completed the configuration and optimization of 11 cableway camera sequences across three levels."
           },
           {
             "kind": "heading",
@@ -1357,25 +1531,29 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "What Went Well\n• Completed the design, production, and iteration of the final level, Gacha Galaxy.\n• Configured all Cableway cameras, improving navigation and presentation during high-speed movement.\n• Collaborated effectively with the programming, art, and design teams, and the project successfully launched on Steam."
+            "text": "What Went Well\n• Completed the design, production, and iteration of the final level, Gacha Galaxy.\n• Configured every cableway camera, improving navigation and presentation during high-speed movement.\n• Collaborated effectively with programming, art, and design, helping the project launch successfully on Steam."
           },
           {
             "kind": "paragraph",
-            "text": "Even Better If\n• The Cableway camera system was too rudimentary. I should have continued following up with the programming team and requested further improvements to this important system.\n• Some shortcut routes had poorly balanced risk and reward in early versions and required multiple rounds of playtesting to adjust.\n• During high-speed racing, some camera transitions interfered with the player's ability to read the route ahead, requiring continued refinement of camera angle and timing.\n• Because multiplayer racing depends heavily on player behavior, some design problems could only be identified through extensive multiplayer testing.\n• Begin multiplayer playtesting earlier and validate route design during the graybox stage.\n• Add more routes with meaningful strategic differences to improve replayability.\n• Enrich the final lap with more dynamic events and visual feedback to further strengthen the climax of the ending."
+            "text": "Even Better If\n• The cableway camera system was too limited. I should have continued following up with the programming team and requested stronger tools for this important system, which would have avoided a workflow dependent on slow manual tuning.\n• Some shortcut routes in early versions had imbalanced risk and reward. In particular, several cableways sacrificed route length for presentation value and required multiple rounds of playtesting.\n• At racing speed, some camera transitions interfered with the player’s ability to read the route ahead, requiring continued refinement of camera angles and timing.\n• Because multiplayer racing depends heavily on player behavior, some design issues could only be discovered through extensive multiplayer testing.\n• Multiplayer playtests should have begun earlier so the route design could be validated during the graybox stage.\n• The final lap could have used richer dynamic events, visual feedback, and varied presentation to create a stronger climactic finish."
           },
           {
             "kind": "paragraph",
-            "text": "What I Learned\n• Summarize flow-design experience from a racing project\n• Summarize experience in cinematic presentation\n• Summarize my level-design philosophy\n• Testing and iteration\n• A large-team, cross-disciplinary collaboration pipeline"
+            "text": "What I Learned\n• Racing-line and flow design\n• Camera presentation and staging\n• A clearer personal philosophy of level design\n• Playtesting and iteration\n• Cross-disciplinary production pipelines on a large team"
           },
           {
             "kind": "heading",
             "level": 2,
             "text": "Attachments"
+          },
+          {
+            "kind": "paragraph",
+            "text": "• None"
           }
         ],
         "hero": {
           "src": "project3/images/hero.jpg",
-          "caption": "Hamsterballin’ — Gacha Galaxy Final Level Key Visual"
+          "caption": "Key art for Gacha Galaxy, the final level of Hamsterballin’"
         }
       },
       "project4": {
