@@ -84,15 +84,15 @@ hero_caption: 《Hamsterballin’》最终关卡“扭蛋机星系”主视觉
 
 ![Figure 8：Splatoon中的索道](images/figure-08-splatoon-cableway.jpg)
 
-![Figure 9：POCT索道演示](images/figure-09-poct-cableway-demo.mp4)
+![Figure 9：POCT索道演示](images/figure-09-poct-cableway-demo.gif)
 
 但是在POCG玩法验证阶段中，我仍然不愿放弃这个方向。在继续探索后发现可以由3到4根索道将玩家仓鼠球夹在其中，仅靠物理便完美约束玩家，并且有着很强的趣味性和演出潜力，自此，该玩法便确立为项目主要玩法之一，预期作为赛道捷径来使用。
 
-![Figure 10：POCG索道演示](images/figure-10-pocg-cableway-demo.mp4)
+![Figure 10：POCG索道演示](images/figure-10-pocg-cableway-demo.gif)
 
 在正式开发周期中，理所当然的，我负责与美术、程序组交流，继续开发索道系统。并且负责最终关卡中所有索道设计。我最引以为傲的索道是在赛道开始处，玩家即将通过扭蛋机上方“土星环”区域的索道，在这里，我将索道大幅延申出去，并且绕了一个反向的弯，形成优美弧度，让玩家先远离赛道，再高速切回中心。并使得摄像机大幅拉远、使用变焦镜头，让玩家感受疾速的同时欣赏以扭蛋机为中心的整个赛道。
 
-![Figure 11：扭蛋机变焦索道演出](images/figure-11-gacha-zoom-cableway-showcase.mp4)
+![Figure 11：扭蛋机变焦索道演出](images/figure-11-gacha-zoom-cableway-showcase.gif)
 
 在开发后期，我被要求优化所有关卡的所有的索道镜头，即使时间紧迫，团队表示如果你觉得任务过重可以拒绝，我依然接下这个任务。
 
@@ -120,17 +120,17 @@ hero_caption: 《Hamsterballin’》最终关卡“扭蛋机星系”主视觉
 
 ![Figure 19：关卡3索道5](images/level3cableway5.jpg)
 
-![Figure 20：索道演出动画1](images/figure-20-cableway-animation-01.mp4)
+![Figure 20：索道演出动画1](images/figure-20-cableway-animation-01.gif)
 
-![Figure 21：索道演出动画2](images/figure-21-cableway-animation-02.mp4)
+![Figure 21：索道演出动画2](images/figure-21-cableway-animation-02.gif)
 
-![Figure 22：索道演出动画3](images/figure-22-cableway-animation-03.mp4)
+![Figure 22：索道演出动画3](images/figure-22-cableway-animation-03.gif)
 
-![Figure 23：索道演出动画4](images/figure-23-cableway-animation-04.mp4)
+![Figure 23：索道演出动画4](images/figure-23-cableway-animation-04.gif)
 
-![Figure 24：索道演出动画5](images/figure-24-cableway-animation-05.mp4)
+![Figure 24：索道演出动画5](images/figure-24-cableway-animation-05.gif)
 
-![Figure 25：索道演出动画6](images/figure-25-cableway-animation-06.mp4)
+![Figure 25：索道演出动画6](images/figure-25-cableway-animation-06.gif)
 
 ## 时间线
 

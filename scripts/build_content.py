@@ -14,7 +14,6 @@ LANGUAGES = {"zh": "content.md", "en": "content_en.md"}
 
 FRONT_MATTER_RE = re.compile(r"^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)$")
 IMAGE_RE = re.compile(r"^!\[(.*?)\]\((.*?)\)\s*$")
-ANIMATION_RE = re.compile(r"\.mp4$", re.I)
 YOUTUBE_RE = re.compile(r'^@\[youtube\]\((\S+?)(?:\s+["“](.*?)["”])?\)\s*$')
 BILIBILI_RE = re.compile(r'^@\[bilibili\]\((\S+?)(?:\s+["“](.*?)["”])?\)\s*$')
 LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
@@ -103,19 +102,10 @@ def parse_blocks(body: str, project_id: str, language: str) -> list[dict[str, An
         image_match = IMAGE_RE.fullmatch(stripped)
         if image_match:
             flush_paragraph(paragraph_lines, blocks, project_id)
-            src = resolve_path(project_id, image_match.group(2).strip())
-            if ANIMATION_RE.search(src):
-                blocks.append({
-                    "kind": "animation",
-                    "caption": image_match.group(1).strip(),
-                    "src": src,
-                    "poster": re.sub(r"\.mp4$", "-poster.jpg", src, flags=re.I),
-                })
-                continue
             blocks.append({
                 "kind": "image",
                 "caption": image_match.group(1).strip(),
-                "src": src,
+                "src": resolve_path(project_id, image_match.group(2).strip()),
             })
             continue
 
@@ -191,9 +181,6 @@ def parse_project(project_id: str, language: str, filename: str) -> tuple[dict[s
     for block in content["blocks"]:
         if block["kind"] == "image":
             validate_local_file(block["src"], source)
-        elif block["kind"] == "animation":
-            validate_local_file(block["src"], source)
-            validate_local_file(block["poster"], source)
         elif block["kind"] == "buttons":
             for link in block["links"]:
                 validate_local_file(link["href"], source)

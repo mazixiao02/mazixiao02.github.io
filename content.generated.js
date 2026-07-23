@@ -6,19 +6,25 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "title": "Decaran: Become Human",
         "tabTitle": "星空支线关卡：Decaran: Become Human",
         "tag": "Starfield Side Quest Level Design",
-        "type": "《星空》单人支线任务关卡",
-        "role": "关卡设计 / 任务设计 / Gameplay 实现",
-        "time": "10 周 / 单人 / 约 300 小时",
-        "caption": "▲ 独立完成从空间规划、任务结构到脚本落地与测试迭代的完整支线关卡"
+        "type": "星空单人支线任务关卡设计",
+        "role": "关卡设计 / 任务设计 / 剧情设计 / Gameplay 实现",
+        "time": "10 周 / 单人",
+        "status": "已完成",
+        "statusUrl": "",
+        "statusLink": "",
+        "caption": "▲ 通过空间布局、战斗设计与环境叙事构建具有道德抉择的双结局任务体验"
       },
       "project2": {
         "title": "Ghost Ship",
         "tabTitle": "星空支线关卡：幽灵船",
-        "tag": "Horror Exploration Level Design",
-        "type": "《星空》恐怖探索向单人支线关卡",
-        "role": "关卡设计 / 环境叙事 / Gameplay 实现",
+        "tag": "Starfield Side Quest Level Design",
+        "type": "星空单人支线任务关卡设计",
+        "role": "关卡设计 / 剧情设计 / 环境叙事 / Gameplay 实现",
         "time": "8 周 / 单人",
-        "caption": "▲ 以状态变化、功能分区与循环路线，将废弃豪华邮轮组织成一段逐步升级的恐怖探索体验"
+        "status": "已完成 · Scrum 敏捷开发",
+        "statusUrl": "",
+        "statusLink": "",
+        "caption": "▲ 通过环境叙事、多区域探索与解谜战斗营造废弃豪华星际邮轮的沉浸式冒险体验"
       },
       "project3": {
         "title": "Hamsterballin’",
@@ -27,6 +33,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "3D / 本地多人 / 竞速 / 类马里奥赛车",
         "role": "最终关卡 / 索道系统 / 镜头设计",
         "time": "12 周 / 42人团队",
+        "status": "Steam 商店页已公开",
+        "statusUrl": "https://store.steampowered.com/app/4319370/Hamsterballin/",
+        "statusLink": "前往 Steam 商店页",
         "caption": "▲ 通过持续迭代优化高速竞速中的导航、路线选择与观赏体验"
       },
       "project4": {
@@ -36,6 +45,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "2D / 横板 / 平台跳跃 / 类《蔚蓝》",
         "role": "游戏设计 / 关卡设计",
         "time": "6 周 / 4人团队",
+        "status": "即将上线 Steam",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ 负责核心玩法设计与大部分关卡设计，并完成从教学到高难挑战的完整难度曲线设计"
       },
       "moreprojects": {
@@ -45,6 +57,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "关卡设计 / 研究 / 原型与独立创作",
         "role": "关卡设计 / 游戏设计 / 原型开发",
         "time": "2024 — 至今",
+        "status": "",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ 核心项目之外的关卡设计、研究与游戏开发实践"
       },
       "aboutme": {
@@ -54,6 +69,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "个人档案",
         "role": "关卡设计师 / 游戏设计师",
         "time": "Portfolio",
+        "status": "",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ 我喜欢从一个简单但有趣的机制开始，搭建整套玩法设计"
       }
     },
@@ -62,173 +80,95 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
+            "level": 2,
             "text": "一句话简介"
           },
           {
             "kind": "paragraph",
-            "text": "围绕中心枢纽、三阶段调查与道德抉择构建的《星空》原创支线任务；我使用 Creation Kit 独立完成约 18 分钟的室内外探索、战斗、谜题、对话与双结局流程。"
+            "text": "基于《星空》Creation Kit 独立设计并开发包含室内外场景的单人任务关卡，通过空间布局、战斗设计与环境叙事构建具有道德抉择的双结局任务体验。"
           },
           {
             "kind": "heading",
-            "text": "项目概览"
+            "level": 2,
+            "text": "游戏介绍"
           },
           {
             "kind": "paragraph",
-            "text": "职责｜关卡设计 / 任务设计 / Gameplay 实现\n开发｜10 周 / 单人 / 约 300 小时\n规模｜4 个室外空间 / 7 个室内空间\n流程｜约 18 分钟 / 双结局\n工具｜Starfield Creation Kit / Papyrus"
-          },
-          {
-            "kind": "paragraph",
-            "text": "玩家受雇调查 Decaran III 自动化工厂的机器人暴动。进入工厂后，玩家通过不同功能区收集线索、激活三台终端并逐步解锁核心区域，最终发现向导机器人 R6D7 正是觉醒事件的推动者。玩家必须在恢复生产与释放机器人之间作出选择，并承担相应后果。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "任务阶段｜玩家行动｜设计作用\n建立悬念｜调查室外工业区并接触工人、医生、雇佣兵与 R6D7｜通过不同立场建立冲突背景\n推进调查｜进入工厂，以中心大厅为枢纽探索三个分区｜交替组织探索、战斗、谜题与信息揭示\n揭示真相｜乘电梯抵达屋顶办公室，得知 R6D7 的真实身份｜改变玩家对任务与同伴的理解\n最终抉择｜返回中心大厅完成终战并决定工厂命运｜让前段角色关系与信息在结局汇合"
-          },
-          {
-            "kind": "image",
-            "caption": "关卡总览：室外工业区、工厂主体与垂直塔楼共同构成完整任务空间",
-            "src": "project1/images/level-overview.jpg"
-          },
-          {
-            "kind": "youtube",
-            "id": "lieJnrhMxWs",
-            "caption": "《Decaran: Become Human》完整游戏演示"
+            "text": "《星空（Starfield）》是 Bethesda Game Studios 开发的开放世界科幻 RPG。本项目基于官方 Creation Kit 制作，为游戏新增了一条可独立游玩的原创支线任务。"
           },
           {
             "kind": "heading",
-            "text": "设计目标"
+            "level": 2,
+            "text": "关卡介绍"
           },
           {
             "kind": "paragraph",
-            "text": "1. 让玩家在复杂工厂中保留探索自由，同时始终理解当前目标与全局位置。\n2. 让战斗、谜题、叙事信息与空间推进相互支撑，而不是彼此割裂。\n3. 让最终选择同时包含收益与代价，避免简单的善恶二分。"
+            "text": "《Decaran: Become Human（底卡伦：变人）》是星空支线任务关卡。玩家受雇调查 Decaran III 自动化工厂发生的异常事件，并在探索过程中逐步发现机器人觉醒的真相。随着剧情推进，玩家需要在恢复工厂生产与帮助机器人获得自由之间做出最终抉择，不同选择将导向两种截然不同的结局。"
+          },
+          {
+            "kind": "bilibili",
+            "id": "BV17NgU68EUY",
+            "caption": "《Decaran: Become Human》星空单人关卡演示"
           },
           {
             "kind": "heading",
-            "text": "01｜以中心大厅组织三阶段探索"
+            "level": 2,
+            "text": "我的工作"
           },
           {
             "kind": "paragraph",
-            "text": "工厂内部采用“中心大厅 + 三个任务分区”的枢纽结构。玩家首次进入大厅时就能看到锁定的中央电梯与三个状态指示器，从而提前理解长期目标；随后分别探索三个分区、完成战斗与终端交互，并多次返回大厅确认进度。"
+            "text": "1. 剧情设计（Narrative Design）\n• 设计完整支线剧情、任务目标及双结局结构。\n• 编写 NPC 对话、任务文本与环境叙事内容。\n• 通过道德两难抉择推动玩家思考机器人与人类的关系。"
           },
           {
             "kind": "paragraph",
-            "text": "大厅并非单纯的通行空间：它同时承担导航锚点、进度反馈、战斗场地和最终对决舞台。反复经过同一空间时，敌人、任务状态和可进入路线持续变化，使空间重用成为任务节奏的一部分。"
-          },
-          {
-            "kind": "image",
-            "caption": "中心大厅：中央电梯是长期目标，环绕空间连接三个任务分区",
-            "src": "project1/images/central-hub.jpg"
+            "text": "2. 关卡设计（Level Design）\n• 设计工厂整体空间布局、玩家路线与探索流程。\n• 构建战斗、探索、解谜交替推进的关卡节奏。\n• 通过主题分区强化空间导航与环境可读性。"
           },
           {
             "kind": "paragraph",
-            "text": "设计目标｜让玩家在非线性探索中维持方向感\n实现方法｜可见的长期目标 / 中心枢纽 / 功能分区 / 循环返回\n设计结果｜大厅由空旷通道转化为承担导航、进度、战斗与叙事的核心空间"
+            "text": "3. Gameplay 设计（Gameplay Design）\n• 配置敌人与战斗遭遇。\n• 设计 EMP 武器、激光机关、终端谜题等核心玩法。\n• 使用 Papyrus Script 实现任务逻辑与事件触发。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "4. Playtest 与迭代（Iteration）\n• 根据多轮 Playtest 持续优化 Flow、战斗难度、导航体验与环境叙事。\n• 修复脚本问题并完善最终版本。"
           },
           {
             "kind": "heading",
-            "text": "02｜通过视线建立交互与结果的因果关系"
-          },
-          {
-            "kind": "paragraph",
-            "text": "初版中，玩家需要启动三台终端解锁中央电梯，但终端与电梯在视觉上相互隔绝。玩家完成交互后只能依赖任务文字判断进度，难以理解自己的操作究竟改变了什么。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "我调整终端朝向并在交互区域增加观察窗，让玩家按下按钮时能够直接看到电梯对应的指示灯与门锁状态发生变化；同时使用电缆连接终端与目标装置，建立清晰的视觉因果关系。这次迭代把依赖文字提示的任务反馈，转化为玩家可以从环境中直接观察和理解的空间反馈。"
-          },
-          {
-            "kind": "image",
-            "caption": "室内任务路线：三个分区围绕中心大厅展开，并最终汇入中央电梯",
-            "src": "project1/images/interior-route.jpg"
-          },
-          {
-            "kind": "heading",
-            "text": "03｜用空间与敌人组合建立战斗递进"
-          },
-          {
-            "kind": "paragraph",
-            "text": "我通过近战突击机器人与远程机器人形成互补威胁，并让遭遇空间从紧凑房间、开放大厅逐步扩展到垂直区域。玩家需要根据视距、高低差、掩体和目标优先级持续调整站位，而不是用同一种策略重复清场。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "EMP 步枪 Novablast 为战斗提供了暂时瘫痪机器人的控制手段。前段遭遇用于让玩家理解失能机制，中段将近远程敌人组合在双层空间中，最终战则重用玩家已经熟悉的中心大厅，综合检验移动、目标选择与空间认知。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "阶段｜空间与敌人｜玩家决策\n前段教学｜紧凑房间 / 单一威胁｜理解 EMP 失能机制并建立基础战斗规则\n中段组合｜双层大厅 / 近战 + 远程机器人｜利用高低差与掩体判断目标优先级\n最终战斗｜重用中心大厅 / R6D7 与机器人增援｜在熟悉空间中综合运用武器、移动与路线认知"
-          },
-          {
-            "kind": "image",
-            "caption": "垂直通道通过激光障碍、高低差与回环路线改变移动节奏",
-            "src": "project1/images/vertical-shaft.jpg"
-          },
-          {
-            "kind": "heading",
-            "text": "04｜让最终选择改变角色与世界状态"
-          },
-          {
-            "kind": "paragraph",
-            "text": "我不希望“释放机器人”天然等同于正确答案，因此让两条分支都同时包含收益与代价。玩家在前段遇到的医生、工人、雇佣兵与机器人分别提供不同立场，使最终选择建立在任务过程中获得的信息和关系之上。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "最终选择｜即时结果｜后续影响\n消灭 R6D7，恢复生产｜机器人被镇压，工厂重新运转｜公司与雇佣兵关系改善，药品供应恢复，人类病患获救\n释放觉醒机器人｜机器人获得自由，工厂停止生产｜公司与雇佣兵转为敌对，药品供应中断，人类病患死亡"
-          },
-          {
-            "kind": "image",
-            "caption": "屋顶办公室利用夕阳、开阔视野与空间高度承载真相揭示",
-            "src": "project1/images/rooftop-reveal.jpg"
-          },
-          {
-            "kind": "image",
-            "caption": "玩家与 R6D7 的最终对话将任务信息汇聚为结局选择",
-            "src": "project1/images/final-choice.jpg"
-          },
-          {
-            "kind": "heading",
-            "text": "Gameplay 与任务实现"
-          },
-          {
-            "kind": "paragraph",
-            "text": "我使用 Creation Kit 完成空间搭建、敌人配置、任务目标、NPC 对话与关卡状态管理，并通过 Papyrus Script 和 Quest Stage 控制门锁、终端、敌对阵营、角色行为、终战触发及双结局结果。Alias 用于管理关键角色与任务对象，确保跨场景推进时任务状态保持一致。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "实现模块｜具体内容\n任务流程｜目标更新 / Quest Stage / 对话条件 / 双结局\n空间状态｜门锁 / 电梯 / 三台终端 / 隐藏入口\n角色与战斗｜NPC 行为 / 阵营敌对 / 战斗触发 / Boss 战\n玩家反馈｜任务文本 / 指示灯 / 观察窗 / 电缆引导"
-          },
-          {
-            "kind": "heading",
-            "text": "测试迭代"
-          },
-          {
-            "kind": "paragraph",
-            "text": "测试发现｜设计判断｜修改｜验证结果\n玩家启动终端后无法判断其作用｜交互对象与反馈目标缺少空间联系｜调整终端朝向并增加观察窗，使玩家直接看到电梯状态变化｜玩家无需依赖任务文字即可理解终端与电梯的关系\n完整激光平台段要求精确空中控制，与《星空》的移动手感不匹配｜挑战主要来自操作限制，而非有意义的空间决策｜缩减平台跳跃内容，保留激光作为局部障碍与区域限制｜降低流程中断，同时保留垂直区域的视觉识别与移动变化\n初版大厅体量较大，但主要承担通行功能｜高成本核心空间没有充分参与任务推进｜改为中心枢纽，使玩家多次返回并在终战中再次使用｜大厅同时承担导航、进度反馈、战斗和叙事功能"
-          },
-          {
-            "kind": "heading",
+            "level": 2,
             "text": "时间线"
           },
           {
             "kind": "paragraph",
-            "text": "Level Design Pitch｜2026.02.20｜确定主题、核心玩法、剧情框架与开发方向\nLevel Design Document｜2026.02.26｜完成 LDD，明确流程、空间布局、任务结构与战斗设计\nWhitebox｜2026.03.09｜完成白盒，验证空间布局、玩家流程与关卡节奏\nInitial Gameplay｜2026.03.29｜实现核心玩法、任务脚本与战斗系统，形成完整可玩流程\nGameplay Complete｜2026.04.18｜完成全部关卡内容并持续优化导航、战斗与任务体验\nAesthetics｜2026.04.26｜完成场景美术、灯光与环境表现\nRTM｜2026.05.03｜完成最终优化、Bug 修复与项目交付"
+            "text": "Level Design Pitch｜2026.02.20｜完成关卡 Pitch，确定主题、核心玩法、剧情框架与整体开发方向。\nLevel Design Document｜2026.02.26｜完成 LDD文档，明确关卡流程、空间布局、任务结构及战斗设计。\nWhitebox｜2026.03.09｜完成白盒搭建，验证空间布局、玩家流程与关卡节奏。\nInitial Gameplay｜2026.03.29｜完成核心玩法、任务脚本与战斗系统，实现可完整游玩的关卡。\nGameplay Complete｜2026.04.18｜完成全部关卡内容，并根据 Playtest 持续优化流程、导航与体验。\nAesthetics｜2026.04.26｜完成场景美术、灯光与环境表现，提升整体视觉品质。\nRTM｜2026.05.03｜完成最终优化、Bug 修复与项目交付。"
           },
           {
             "kind": "heading",
+            "level": 2,
+            "text": "测试迭代"
+          },
+          {
+            "kind": "paragraph",
+            "text": "反馈｜分析｜解决方案"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
             "text": "项目总结"
           },
           {
             "kind": "paragraph",
-            "text": "项目成果（What Went Well）\n• 独立完成一条包含室内外探索、战斗、谜题、NPC 对话与双结局的约 18 分钟支线任务。\n• 使用中心枢纽与三个功能分区组织任务流程，并通过空间反馈提升目标可读性。\n• 使用 Creation Kit 与 Papyrus 落地完整任务状态、角色行为和结局分支。"
+            "text": "项目亮点（What Went Well）\n• 整体美术表现较好。\n• 尝试并实现了一些新的设计思路。\n• 关卡垂直空间结构设计较为出色。\n• 能够根据 Milestone 节点和 Playtest 反馈持续优化关卡流程。"
           },
           {
             "kind": "paragraph",
-            "text": "优化方向（Even Better If）\n• 室外区域承担的玩法功能少于室内区域，后续应在白盒阶段更早验证各区域的内容密度。\n• 战斗难度与敌人组合验证不足，后续应增加战斗专项测试，而非只测试完整流程。\n• 初期在与基础移动手感不完全匹配的平台段投入过多时间，后续应更早验证机制与角色控制的适配性。"
+            "text": "优化方向（Even Better If）\n• 与 Stakeholder（导师、制作人等）的沟通还可以做得更好。\n• 激光平台跳跃玩法表现不够理想，如果有时间还应该继续打磨。\n• 叙事内容仍然不够充分。\n• 战斗难度偏低，缺乏挑战性。\n• 部分流程节奏仍有待优化。\n• 激光机制没有得到充分利用。\n• 室外区域内容较为薄弱。\n• 整体关卡品质距离预期仍有差距。"
           },
           {
             "kind": "paragraph",
-            "text": "项目收获（What I Learned）\n• 任务关卡并不是空间、剧情和战斗的简单叠加；目标、路线、信息与系统反馈必须共同服务于玩家当前的理解和决策。相比增加更多内容，更重要的是让每个空间承担明确功能，并让玩家能够从环境本身读懂自己的行动及其后果。"
+            "text": "项目收获（What I Learned）\n• 学会主动与 Stakeholder 沟通，并及时根据反馈进行调整。\n• 学会更加合理地安排开发时间。\n• 在项目初期，应尽快从整体层面掌握引擎和工具的使用。\n• 提高适应复杂、陌生开发工具的能力。\n• 认识到商业游戏引擎和公司内部工具并非完美，需要学会与工具限制共存。\n• 学会按照专业游戏开发流程完成一个完整的关卡项目。\n• 时间与精力管理是项目成功的关键因素。\n• 学会设计和优化关卡流程（Flow）。\n• 学会在游戏性与真实建筑逻辑之间寻找平衡。\n• 学会构建更加完整、结构清晰且服务于玩法的游戏叙事。"
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "附件"
           },
           {
@@ -268,248 +208,230 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
-            "text": "一句话简介"
+            "level": 2,
+            "text": "一句话介绍"
           },
           {
             "kind": "paragraph",
-            "text": "基于《星空》Creation Kit 独立完成的恐怖探索向支线关卡；玩家登上一艘失联的豪华星际邮轮，通过恢复供电、搜寻钥匙与电池、穿越通风管道，逐步揭开事故真相并在货舱完成最终战斗。"
+            "text": "基于《Starfield》Creation Kit 独立设计并开发恐怖探索向单人任务关卡，通过环境叙事、多区域探索与解谜战斗，营造废弃豪华星际邮轮的沉浸式冒险体验。"
           },
           {
             "kind": "heading",
-            "text": "项目概览"
+            "level": 2,
+            "text": "游戏介绍"
           },
           {
             "kind": "paragraph",
-            "text": "职责｜关卡设计 / 环境叙事 / Gameplay 实现\n开发｜8 周 / 单人 / Scrum\n结构｜6 个功能区 / 约 16 分钟目标流程\n玩法｜探索 / 解谜 / 潜行 / 战斗\n工具｜Starfield Creation Kit"
-          },
-          {
-            "kind": "paragraph",
-            "text": "我将现实邮轮的功能分区转化为适合第三人称 RPG 的关卡结构，并利用供电前后状态变化、上层奢华空间与下层工业空间的反差、钥匙与电池驱动的循环探索，构建从无力感、调查、威胁显现到最终对抗的完整节奏。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "任务阶段｜玩家行动｜体验目标\n建立无力感｜在黑暗、失重的主甲板登船｜限制信息与行动，建立未知威胁\n恢复秩序｜进入舰桥启动备用电源｜用重力、灯光与门锁变化提供阶段性释放\n调查真相｜搜索客舱、船员区与厨房｜通过功能分区和环境痕迹拼合事件经过\n威胁升级｜经通风管进入活动区，收集三块电池｜压缩空间、引入敌人并迫使玩家管理资源\n最终对抗｜用电池解锁货舱，取得燃料并迎战 Terrormorph｜将前段积累的压力释放为战斗高潮"
-          },
-          {
-            "kind": "image",
-            "caption": "关卡总览：六个功能区围绕供电、钥匙与电池目标逐步开放",
-            "src": "project2/images/level-overview.jpg"
+            "text": "《星空（Starfield）》是 Bethesda Game Studios 开发的开放世界科幻 RPG。本项目基于官方 Creation Kit 制作，为游戏新增了一条可独立游玩的原创支线任务。"
           },
           {
             "kind": "heading",
-            "text": "设计目标"
+            "level": 2,
+            "text": "关卡介绍"
           },
           {
             "kind": "paragraph",
-            "text": "1. 不依赖持续剥夺玩家能力，而是通过“有限反制手段”维持恐惧与主动性之间的平衡。\n2. 让邮轮的每个功能区同时承担空间辨识、叙事信息和玩法节奏，不把环境叙事做成额外收集项。\n3. 通过状态变化、单向捷径和区域重用，让有限规模的室内空间产生持续变化。"
+            "text": "《Ghost Ship（幽灵船）》是基于《星空（Starfield）》设计的一张单人支线任务关卡。玩家为调查失踪人员登上一艘失联的豪华星际邮轮，在探索过程中逐步恢复飞船供电、破解封锁区域、收集关键物资，并通过环境叙事揭开整艘飞船覆灭的真相，最终在货舱与未知生物展开决战。关卡融合探索、战斗、潜行、解谜与环境叙事，营造出类似《异形：隔离（Alien: Isolation）》的悬疑恐怖体验。"
+          },
+          {
+            "kind": "bilibili",
+            "id": "BV1i3gU6xEPm",
+            "caption": "《Ghost Ship》星空支线任务关卡演示"
           },
           {
             "kind": "heading",
-            "text": "01｜用空间状态变化建立恐怖节奏"
-          },
-          {
-            "kind": "paragraph",
-            "text": "关卡以黑暗、失重的主甲板开场。玩家只能依靠手电辨认空间，并被锁门引导至舰桥。启动备用电源后，重力、照明与部分门锁同时恢复：熟悉的空间由不可控转为可导航，玩家获得短暂安全感，也由被动求生转入主动调查。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "供电不是一次单纯的任务交互，而是整个关卡的节奏转折点。它同时改变移动方式、可见范围、空间情绪与可进入路线，让玩家明确感受到自己的行动重塑了环境。"
-          },
-          {
-            "kind": "image",
-            "caption": "舰桥：备用电源将灯光、重力和门锁状态整合为一次可感知的空间转变",
-            "src": "project2/images/bridge-power.jpg"
-          },
-          {
-            "kind": "paragraph",
-            "text": "设计目标｜用一次交互完成节奏转折，而非只更新任务文字\n实现方法｜失重与黑暗开场 / 舰桥作为可见目标 / 灯光、重力、门锁同步变化\n设计结果｜玩家在获得方向感与行动能力后，自然进入更开放的调查阶段"
+            "level": 2,
+            "text": "我的工作"
           },
           {
             "kind": "heading",
-            "text": "02｜把现实邮轮转化为可读的游戏空间"
+            "level": 3,
+            "text": "1. 整体关卡设计（Level Layout & Progression）"
           },
           {
             "kind": "paragraph",
-            "text": "我参考现实邮轮的甲板与功能布局，将关卡压缩为舰桥、客舱、船员区、厨房、活动区和货舱六个辨识度明确的区域。上层采用开阔、装饰性强的豪华空间；下层使用紧凑、重复、工业化的服务空间。材质、尺度、照明和陈设共同帮助玩家判断自己身处何处。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "真实建筑以容纳人流和满足功能为主，游戏关卡则必须服务镜头、敌人寻路、视线与节奏。因此我放大关键走廊和房间尺度，压缩重复舱室，并用主路径、侧房间和地标控制探索密度。"
-          },
-          {
-            "kind": "image",
-            "caption": "乘客区域：大窗、红毯与装饰照明建立豪华上层的视觉身份",
-            "src": "project2/images/passenger-luxury.jpg"
-          },
-          {
-            "kind": "image",
-            "caption": "船员区域：会议桌将空旷房间分割为环形路线，并形成稳定的空间锚点",
-            "src": "project2/images/crew-loop.jpg"
-          },
-          {
-            "kind": "paragraph",
-            "text": "现实参考｜邮轮功能分区、客舱排列、上下层服务关系\n设计转译｜减少楼层与重复房间，强化六个区域的主题差异\n玩法调整｜扩大第三人称镜头与大型敌人所需空间，加入回环、遮挡与捷径"
+            "text": "负责整体关卡流程设计，将舰桥、客舱、船员区、活动区、货舱等多个功能区域串联为完整探索路线，通过供电恢复、钥匙收集、电池解谜等机制逐步解锁新区域，构建层层递进的探索节奏。"
           },
           {
             "kind": "heading",
-            "text": "03｜用循环路线提高空间利用率"
+            "level": 3,
+            "text": "2. 环境叙事与氛围设计（Environmental Storytelling）"
           },
           {
             "kind": "paragraph",
-            "text": "关卡并非沿直线逐室推进。玩家从甲板进入舰桥恢复供电，再回到甲板进入客舱；随后通过船员区解锁厨房，经通风管抵达活动区，收集电池后沿大楼梯单向返回客舱，最终解锁货舱。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "这条路线让玩家多次回到已经认识的区域，但每次返回时目标、开放通路和威胁状态都不同。通风管提供狭窄的单向过渡，大楼梯则把玩家快速送回主路线，使“重访”承担导航确认、节奏切换和进度反馈，而不是无意义折返。"
-          },
-          {
-            "kind": "image",
-            "caption": "乘客大厅：连接客舱、厨房与活动区，是多次重访时确认方向的核心空间",
-            "src": "project2/images/passenger-hub.jpg"
-          },
-          {
-            "kind": "paragraph",
-            "text": "首次经过｜建立区域关系，发现被锁路线\n再次经过｜供电后开放新通路，进入调查阶段\n捷径返回｜从活动区单向回到客舱，带着电池前往货舱"
+            "text": "围绕废弃豪华星际邮轮设计整体世界观，通过尸体摆放、终端日志、场景细节、光照变化及空间破坏等环境叙事元素，引导玩家逐步推理事件真相，并营造《Alien》式悬疑恐怖氛围。"
           },
           {
             "kind": "heading",
-            "text": "04｜让环境叙事服务探索与决策"
+            "level": 3,
+            "text": "3. 探索、解谜与战斗设计（Gameplay Design）"
           },
           {
             "kind": "paragraph",
-            "text": "叙事信息被放置在玩家为了推进任务必须经过的空间中：客舱中的尸体与钥匙提示船员逃亡方向，厨房和通风系统说明幸存者如何绕过封锁，活动区的战斗痕迹与电池将事故规模转化为可操作目标。玩家不是停下来阅读完整背景，而是在寻找路线和资源时逐步拼合邮轮覆灭的过程。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "环境叙事也承担导航功能。尸体、破坏痕迹、异常照明和房间状态既是故事证据，也是指向下一个交互点的视觉线索，使叙事与关卡引导共用同一套空间语言。"
-          },
-          {
-            "kind": "image",
-            "caption": "餐厅与活动区域：明亮的公共空间被战斗痕迹和资源目标重新定义为威胁区域",
-            "src": "project2/images/event-area.jpg"
-          },
-          {
-            "kind": "paragraph",
-            "text": "叙事载体｜尸体 / 终端记录 / 战斗痕迹 / 异常照明 / 空间破坏\n关卡作用｜指向钥匙、通风管、电池与后续路线\n玩家理解｜从“邮轮为何失联”逐步转向“威胁仍在船上”"
+            "text": "设计恢复供电、钥匙探索、电池收集、通风管潜入、秘密房间等探索与解谜玩法，并配置 Xenogrub、Terrormorph 等敌人，使探索、解谜与战斗交替推进，持续提升关卡张力。"
           },
           {
             "kind": "heading",
-            "text": "05｜在恐惧与玩家主动性之间取得平衡"
+            "level": 3,
+            "text": "4. 关卡节奏设计（Pacing Design）"
           },
           {
             "kind": "paragraph",
-            "text": "早期测试中，完全没有武器虽然符合恐怖主题，却与《星空》玩家已经建立的战斗预期冲突。玩家面对威胁时只能逃跑，挫败感超过了恐惧感。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "我因此在前段提供电磁武器：它能够短暂麻痹敌人，却不能直接消灭主要威胁。玩家获得了观察、脱身与重新规划路线的手段，但仍无法通过正面输出解除风险。进入活动区后，战斗资源与敌人逐步增加，最终在货舱转为完整 Boss 战，实现从回避威胁到正面对抗的压力释放。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "阶段｜玩家能力｜威胁与空间｜设计意图\n开场探索｜手电与基础移动｜黑暗 / 失重 / 未知空间｜建立脆弱感与悬念\n中段调查｜电磁武器 / 钥匙 / 通风管｜狭窄路线 / 潜伏敌人｜给予有限控制权但保留风险\n活动区｜常规武器 / 电池目标｜Xenogrub 群体遭遇｜提高资源压力与行动密度\n货舱终战｜完整战斗能力｜Xenogrub + Terrormorph｜释放前段积累的压力"
-          },
-          {
-            "kind": "image",
-            "caption": "工业下层：更紧凑的服务空间与复杂遮挡，为后段威胁升级建立视觉与空间反差",
-            "src": "project2/images/industrial-lower-deck.jpg"
+            "text": "通过黑暗失重开场、供电恢复、自由探索、狭窄追逐、资源管理及最终 Boss 战等阶段，构建由探索逐步升级至高潮战斗的完整体验节奏。"
           },
           {
             "kind": "heading",
-            "text": "Gameplay 与任务实现"
-          },
-          {
-            "kind": "paragraph",
-            "text": "我使用 Creation Kit 完成六个区域的空间搭建、灯光与重力状态、门锁与钥匙、终端交互、通风管路线、三电池目标、敌人配置、任务阶段和存档点。任务状态将供电、区域开放与最终战斗串联起来，确保玩家每次完成目标后都能从环境变化中获得反馈。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "实现模块｜具体内容\n空间状态｜失重 / 灯光 / 备用电源 / 门锁 / 单向捷径\n任务推进｜钥匙 / 三块电池 / 目标更新 / 货舱解锁\n遭遇设计｜Xenogrub / Terrormorph / 敌人数量与触发位置\n风险控制｜Boss 房外安全屋 / 存档点 / 大型敌人寻路空间"
-          },
-          {
-            "kind": "heading",
-            "text": "测试迭代"
-          },
-          {
-            "kind": "paragraph",
-            "text": "测试发现｜设计判断｜修改｜验证结果\n完全没有武器使玩家只能逃跑，挫败感超过恐惧感｜恐怖应来自威胁与资源限制，而非彻底剥夺玩家选择｜在前段提供只能短暂麻痹敌人的电磁武器｜玩家获得脱身手段，但仍无法直接消灭主要威胁\n船员区空旷且缺少明确动线｜大房间没有遮挡、地标和路线选择，难以形成探索节奏｜用中央会议桌分割空间，外圈布置走廊与独立房间｜形成可辨认的环形路线，并提高视线与转角变化\n最终 Boss 战存档点位于战斗房间内部，可能造成反复载入即死亡｜存档位置没有为玩家提供重新准备的安全状态｜将存档点移至货舱外的安全屋，并调整任务触发位置｜玩家可在进入战斗前补给并重新制定策略，避免死亡循环\n大型敌人在狭窄室内移动受阻｜现实比例走廊与《星空》的大型 AI 尺寸不匹配｜扩大关键门洞与货舱战斗空间，减少阻挡物｜改善 Terrormorph 寻路，并为最终战提供可周旋路线"
-          },
-          {
-            "kind": "heading",
+            "level": 2,
             "text": "时间线"
           },
           {
             "kind": "paragraph",
-            "text": "Level Design Pitch｜2026.05.26｜确定废弃豪华邮轮主题、恐怖体验目标与核心流程\nLevel Design Document｜2026.06.01｜完成 LDD，明确六区布局、任务门槛、遭遇与环境叙事\nWhitebox｜2026.06.08｜搭建白盒，验证空间尺度、主路线与区域连接\nInitial Gameplay｜2026.06.22｜实现供电、钥匙、电池、通风管与基础遭遇\nGameplay Complete｜2026.07.06｜完成全部任务流程，并根据测试优化路线、敌人与触发器\nAesthetics｜2026.07.13｜完成区域美术、灯光、材质与环境布置\nRTM｜2026.07.19｜修复 Bug，调整 Boss 存档点并完成交付"
+            "text": "阶段｜时间｜工作内容\nLevel Design Pitch｜2026.05.26｜完成关卡 Pitch，确定主题、美术风格、核心玩法、剧情框架与整体关卡流程。\nLevel Design Document｜2026.06.01｜完成 LDD，明确空间布局、探索流程、解谜机制、战斗配置及环境叙事设计。\nWhitebox｜2026.06.08｜完成白盒搭建，验证空间布局、玩家流程、探索节奏与导航设计。\nInitial Gameplay｜2026.06.22｜完成核心 Gameplay，实现探索、解谜、战斗、环境叙事及任务流程，并开展 Playtest。\nGameplay Complete｜2026.07.06｜完成全部关卡内容开发，持续根据测试反馈优化 Flow、战斗体验、恐怖氛围与环境叙事。\nAesthetics｜2026.07.13｜完成场景美术、灯光、材质与环境布置，强化豪华邮轮废墟的视觉表现与沉浸感。\nRTM｜2026.07.19｜完成 Bug 修复、最终优化与项目交付。"
           },
           {
             "kind": "heading",
+            "level": 2,
+            "text": "测试迭代"
+          },
+          {
+            "kind": "paragraph",
+            "text": "问题｜解决方案｜结果\n即使是恐怖关卡，没有武器对玩家来说也很难受，尤其是在《星空》中。｜在早期给玩家配备“电磁枪”武器。｜玩家在游戏早期获得短暂麻痹敌人的能力，在拥有对抗手段的同时，依然无法完全杀死敌人，没有削弱恐惧感。\n船员区域过于空旷，动线不佳。｜对区域进行分割，在中心放置会议桌，周围设置一圈走廊，并在外层设置独立房间。｜形成复杂的回环结构，优化动线。\n存档点设置在最终 Boss 战房间内部，导致无限死亡。｜在最终 Boss 战房间外放置安全屋。｜解决死档问题。"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
             "text": "项目总结"
           },
           {
-            "kind": "paragraph",
-            "text": "项目成果（What Went Well）\n• 独立完成一条包含六个功能区、状态变化、循环探索、解谜与最终战斗的恐怖向支线关卡。\n• 通过豪华上层与工业下层的视觉反差、空间状态变化及环境痕迹建立清晰的区域身份与恐怖节奏。\n• 将现实邮轮结构压缩并转译为适合第三人称镜头、任务推进和敌人寻路的可玩空间。"
+            "kind": "heading",
+            "level": 3,
+            "text": "项目亮点（What Went Well）"
           },
           {
             "kind": "paragraph",
-            "text": "优化方向（Even Better If）\n• 环境叙事证据的层次仍可增加，使玩家不仅理解“发生了袭击”，也能更准确地还原事件时间线。\n• 最终货舱仍应在白盒阶段进行更多大型敌人专项测试，以进一步丰富掩体、周旋路线与阶段变化。\n• 部分区域的尺度先按现实参考搭建，后期才为镜头和 AI 放大；后续应更早建立可复用的游戏尺度标准。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "项目收获（What I Learned）\n• 现实建筑不能直接复制成游戏关卡。有效的转译需要保留功能关系与空间身份，同时重新设计尺度、路线、视线和内容密度。恐怖节奏也不等于持续压制玩家；通过有限反制、短暂安全感与环境状态变化，玩家的主动选择反而能让威胁更可信。"
+            "text": "• 打造不同区域风格截然不同的星际邮轮关卡。\n• 创造独特的恐怖游戏体验。\n• 成功重用区域与路线。"
           },
           {
             "kind": "heading",
-            "text": "附件"
+            "level": 3,
+            "text": "优化方向（Even Better If）"
           },
           {
-            "kind": "buttons",
-            "links": [
-              {
-                "label": "📄 查看 LDD｜完整关卡设计文档",
-                "href": "project2/pdfs/Ma _DFSI_LDD_01.pdf"
-              }
-            ]
+            "kind": "paragraph",
+            "text": "• 作为邮轮，关卡规模可以适当增大，结构适当复杂化。\n• 适当增加环境叙事内容。\n• 优化室内空间路线大小，以适应大型怪物的移动路径。\n• 增大 Boss 战区域，丰富单场战斗体验。"
           },
           {
-            "kind": "buttons",
-            "links": [
-              {
-                "label": "📄 查看 RTM ReadMe｜运行说明与最终更新",
-                "href": "project2/pdfs/Ma_DFSI_ReadMe_ RTM.pdf"
-              }
-            ]
+            "kind": "heading",
+            "level": 3,
+            "text": "项目收获（What I Learned）"
+          },
+          {
+            "kind": "paragraph",
+            "text": "• 总结“将现实建筑化作关卡设计”的经验。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "具体经验包括："
+          },
+          {
+            "kind": "paragraph",
+            "text": "1. 获取现实参考：例如，邮轮关卡参考迪士尼邮轮官网平面图。\n2. 适当简化结构：邮轮关卡不需要现实中的二十层大邮轮。\n3. 优化游戏尺寸：优化房间层高、走廊宽度，以适应游戏人物大小与镜头风格；例如，第三人称镜头往往需要更大的室内空间。\n4. 优化动线：现实建筑往往以安全、人流为准则设计动线，而关卡设计需要考虑心流、视线等因素。"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "附录"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 49：舰桥区域",
+            "src": "project2/images/bridgearea.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 50：船员区域 1",
+            "src": "project2/images/crewarea1.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 51：船员区域 2",
+            "src": "project2/images/crewarea2.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 52：船员区域 3",
+            "src": "project2/images/crewarea3.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 53：餐厅区域",
+            "src": "project2/images/diningarea.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 54：大厅区域",
+            "src": "project2/images/hallarea.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 55：厨房区域",
+            "src": "project2/images/kitchenarea.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 56：乘客区域 1",
+            "src": "project2/images/passengerarea1.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 57：乘客区域 2",
+            "src": "project2/images/passengerarea2.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 58：乘客区域 3",
+            "src": "project2/images/passengerarea3.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 59：乘客区域 4",
+            "src": "project2/images/passengerarea4.jpg"
           }
         ],
         "hero": {
           "src": "project2/cover.jpg",
-          "caption": "《Ghost Ship》项目主视觉"
+          "caption": "《Ghost Ship（幽灵船）》项目封面"
         }
       },
       "project3": {
         "blocks": [
           {
             "kind": "heading",
+            "level": 2,
             "text": "一句话简介"
           },
           {
             "kind": "paragraph",
-            "text": "《Hamsterballin'》是一款 UE5 本地多人竞速游戏。在 42 人团队中负责最终赛道、索道捷径系统与镜头演出设计。"
+            "text": "《Hamsterballin'》是一款 UE5 本地多人竞速游戏。在 42 人团队中负责最终赛道、索道捷径系统与镜头设计，通过持续迭代优化高速竞速中的导航、路线选择与观赏体验。"
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "项目介绍"
           },
           {
             "kind": "paragraph",
-            "text": "《Hamsterballin’》是一款本地多人竞速游戏，玩家操控可滚动弹跳的仓鼠球，在充满机关、捷径与立体地形的赛道中竞争。项目由 SMU Guildhall Team Game Project II 课程开发，42人团队历时12周完成，Steam商店页已公开。"
+            "text": "《Hamsterballin’》是一款本地多人竞速游戏，玩家操控可滚动弹跳的仓鼠球，在充满机关、捷径与立体地形的赛道中竞争。项目由 SMU Guildhall Team Game Project II 课程开发，42人团队历时12周完成，即将登陆 Steam。"
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "我的工作"
           },
           {
-            "kind": "paragraph",
-            "text": "### 1. 最终关卡：扭蛋机星系（Gacha Galaxy）"
+            "kind": "heading",
+            "level": 3,
+            "text": "1. 最终关卡：扭蛋机星系（Gacha Galaxy）"
           },
           {
             "kind": "paragraph",
@@ -525,8 +447,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "作为最终关卡主要负责人，我主导关卡的主题构思、赛道布局设计，以及与程序、美术团队的跨部门协作，推动关卡从概念设计到最终落地。"
           },
           {
-            "kind": "paragraph",
-            "text": "#### 1.1 确立关卡核心概念"
+            "kind": "heading",
+            "level": 4,
+            "text": "1.1 确立关卡核心概念"
           },
           {
             "kind": "paragraph",
@@ -547,8 +470,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project3/images/figure-03-track-start.jpg"
           },
           {
-            "kind": "paragraph",
-            "text": "#### 1.2 主导核心区域设计"
+            "kind": "heading",
+            "level": 4,
+            "text": "1.2 主导核心区域设计"
           },
           {
             "kind": "paragraph",
@@ -568,8 +492,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "扭蛋机作为关卡主体，承担导航、视觉焦点和关卡主题表达等多重职责，我与美术团队进行了大量跨部门沟通，持续调整模型尺寸、风格、赛道连接方式与玩家视线，确保美术表现能够服务于玩家导航与竞速体验。"
           },
           {
-            "kind": "paragraph",
-            "text": "#### 1.3 推动核心玩法迭代"
+            "kind": "heading",
+            "level": 4,
+            "text": "1.3 推动核心玩法迭代"
           },
           {
             "kind": "paragraph",
@@ -593,8 +518,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project3/images/figure-05-interior-cableway.jpg"
           },
           {
-            "kind": "paragraph",
-            "text": "#### 1.4 项目成果"
+            "kind": "heading",
+            "level": 4,
+            "text": "1.4 项目成果"
           },
           {
             "kind": "paragraph",
@@ -611,8 +537,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project3/images/figure-07-final-level-02.jpg"
           },
           {
-            "kind": "paragraph",
-            "text": "### 2. 索道系统及其镜头设计（Cableway System）"
+            "kind": "heading",
+            "level": 3,
+            "text": "2. 索道系统及其镜头设计（Cableway System）"
           },
           {
             "kind": "paragraph",
@@ -628,30 +555,27 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project3/images/figure-08-splatoon-cableway.jpg"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 9：POCT索道演示",
-            "src": "project3/images/figure-09-poct-cableway-demo.mp4",
-            "poster": "project3/images/figure-09-poct-cableway-demo-poster.jpg"
+            "src": "project3/images/figure-09-poct-cableway-demo.gif"
           },
           {
             "kind": "paragraph",
             "text": "但是在POCG玩法验证阶段中，我仍然不愿放弃这个方向。在继续探索后发现可以由3到4根索道将玩家仓鼠球夹在其中，仅靠物理便完美约束玩家，并且有着很强的趣味性和演出潜力，自此，该玩法便确立为项目主要玩法之一，预期作为赛道捷径来使用。"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 10：POCG索道演示",
-            "src": "project3/images/figure-10-pocg-cableway-demo.mp4",
-            "poster": "project3/images/figure-10-pocg-cableway-demo-poster.jpg"
+            "src": "project3/images/figure-10-pocg-cableway-demo.gif"
           },
           {
             "kind": "paragraph",
             "text": "在正式开发周期中，理所当然的，我负责与美术、程序组交流，继续开发索道系统。并且负责最终关卡中所有索道设计。我最引以为傲的索道是在赛道开始处，玩家即将通过扭蛋机上方“土星环”区域的索道，在这里，我将索道大幅延申出去，并且绕了一个反向的弯，形成优美弧度，让玩家先远离赛道，再高速切回中心。并使得摄像机大幅拉远、使用变焦镜头，让玩家感受疾速的同时欣赏以扭蛋机为中心的整个赛道。"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 11：扭蛋机变焦索道演出",
-            "src": "project3/images/figure-11-gacha-zoom-cableway-showcase.mp4",
-            "poster": "project3/images/figure-11-gacha-zoom-cableway-showcase-poster.jpg"
+            "src": "project3/images/figure-11-gacha-zoom-cableway-showcase.gif"
           },
           {
             "kind": "paragraph",
@@ -710,43 +634,38 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project3/images/level3cableway5.jpg"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 20：索道演出动画1",
-            "src": "project3/images/figure-20-cableway-animation-01.mp4",
-            "poster": "project3/images/figure-20-cableway-animation-01-poster.jpg"
+            "src": "project3/images/figure-20-cableway-animation-01.gif"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 21：索道演出动画2",
-            "src": "project3/images/figure-21-cableway-animation-02.mp4",
-            "poster": "project3/images/figure-21-cableway-animation-02-poster.jpg"
+            "src": "project3/images/figure-21-cableway-animation-02.gif"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 22：索道演出动画3",
-            "src": "project3/images/figure-22-cableway-animation-03.mp4",
-            "poster": "project3/images/figure-22-cableway-animation-03-poster.jpg"
+            "src": "project3/images/figure-22-cableway-animation-03.gif"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 23：索道演出动画4",
-            "src": "project3/images/figure-23-cableway-animation-04.mp4",
-            "poster": "project3/images/figure-23-cableway-animation-04-poster.jpg"
+            "src": "project3/images/figure-23-cableway-animation-04.gif"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 24：索道演出动画5",
-            "src": "project3/images/figure-24-cableway-animation-05.mp4",
-            "poster": "project3/images/figure-24-cableway-animation-05-poster.jpg"
+            "src": "project3/images/figure-24-cableway-animation-05.gif"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 25：索道演出动画6",
-            "src": "project3/images/figure-25-cableway-animation-06.mp4",
-            "poster": "project3/images/figure-25-cableway-animation-06-poster.jpg"
+            "src": "project3/images/figure-25-cableway-animation-06.gif"
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "时间线"
           },
           {
@@ -755,6 +674,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "测试迭代"
           },
           {
@@ -763,6 +683,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "项目总结"
           },
           {
@@ -779,6 +700,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "附件"
           },
           {
@@ -795,6 +717,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
+            "level": 2,
             "text": "一句话介绍"
           },
           {
@@ -803,6 +726,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "项目介绍"
           },
           {
@@ -810,17 +734,19 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "《FLING》是一款以精准操作为核心的 2D 平台跳跃游戏。玩家扮演一只狐狸，利用钓竿摆荡、抓取与位移，在幽暗神秘的洞穴中不断挑战高难度平台关卡。"
           },
           {
-            "kind": "youtube",
-            "id": "l4qM7wSsPoo",
-            "caption": "《FLING》玩法演示"
+            "kind": "bilibili",
+            "id": "BV1VLgU6XEEU",
+            "caption": "《FLING》游戏预告片"
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "我的工作"
           },
           {
-            "kind": "paragraph",
-            "text": "### 1. 游戏设计"
+            "kind": "heading",
+            "level": 3,
+            "text": "1. 游戏设计"
           },
           {
             "kind": "paragraph",
@@ -831,22 +757,19 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "最早，我们在头脑风暴中提出游戏初始概念，即让玩家使用钓竿作为钩锁来实现平台跳跃、战斗、钓鱼等玩法，并在一个类银世界中探索。这非常符合我的“从单一有趣玩法延申设计”的理念。"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 26：早期钓竿战斗演示",
-            "src": "project4/images/figure-26-early-combat-demo.mp4",
-            "poster": "project4/images/figure-26-early-combat-demo-poster.jpg"
+            "src": "project4/images/figure-26-early-combat-demo.gif"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 27：早期钓竿平台跳跃演示",
-            "src": "project4/images/figure-27-early-platforming-demo.mp4",
-            "poster": "project4/images/figure-27-early-platforming-demo-poster.jpg"
+            "src": "project4/images/figure-27-early-platforming-demo.gif"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 28：早期钓竿钓鱼演示",
-            "src": "project4/images/figure-28-early-fishing-demo.mp4",
-            "poster": "project4/images/figure-28-early-fishing-demo-poster.jpg"
+            "src": "project4/images/figure-28-early-fishing-demo.gif"
           },
           {
             "kind": "paragraph",
@@ -863,27 +786,26 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "但就在那一周末，我在怀旧游戏掌机上体验了《超级马里奥世界2：耀西岛》这款来自1995年SFC老游戏，其中的耀西拥有可以朝2D平面任意方向投掷蛋的能力。但是在只有十字键、AB键，连摇杆都没有的老游戏机上，这么复杂的操作该怎么完成呢？该游戏的解决方案是，在按下投掷键后，关卡内所有的机关和敌人停止行动，待玩家依靠准心慢慢选择方向并投掷出蛋后，时间才开始流动。"
+            "text": "但就在那一周末，我在怀旧游戏掌机上体验了《超级马里奥世界2：耀西岛》这款来自1992年的GBA老游戏，其中的耀西拥有可以朝2D平面任意方向投掷蛋的能力。但是在只有十字键、AB键，连摇杆都没有的老游戏机上，这么复杂的操作该怎么完成呢？该游戏的解决方案是，在按下投掷键后，关卡内所有的机关和敌人停止行动，待玩家依靠准心慢慢选择方向并投掷出蛋后，时间才开始流动。"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 30：从耀西的瞄准中汲取灵感",
-            "src": "project4/images/figure-30-yoshi-aiming-inspiration.mp4",
-            "poster": "project4/images/figure-30-yoshi-aiming-inspiration-poster.jpg"
+            "src": "project4/images/figure-30-yoshi-aiming-inspiration.gif"
           },
           {
             "kind": "paragraph",
             "text": "如此，我心目中便有了我们项目难题的解决方案。在新一周的开始，我提出了“时间停止”的机制，当玩家在空中并使用右摇杆发射钩锁时，时间停止，玩家可以有足够时间来精确操作钩锁方向，待释放右摇杆时，钩锁发出，时间恢复流动。程序只用了一分钟便实现了这一简单机制，但是这样的小改动却完全改变了游戏。对玩家操作精确性要求过高的问题迎刃而解，玩家拥有了更大的空间和容错来操作，投掷钩锁一收一放间也优化了游戏节奏，获得了更高的策略性与操作深度，成为了项目的核心玩法。（类似《塞尔达传说旷野之息》中，林克空中射箭会触发时间停止的机制）"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 31：空中钩锁时间停止",
-            "src": "project4/images/figure-31-midair-grappling-time-stop.mp4",
-            "poster": "project4/images/figure-31-midair-grappling-time-stop-poster.jpg"
+            "src": "project4/images/figure-31-midair-grappling-time-stop.gif"
           },
           {
-            "kind": "paragraph",
-            "text": "### 2. 关卡设计"
+            "kind": "heading",
+            "level": 3,
+            "text": "2. 关卡设计"
           },
           {
             "kind": "paragraph",
@@ -938,14 +860,16 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "时间线"
           },
           {
             "kind": "paragraph",
-            "text": "阶段｜时间｜工作内容\nPOCT｜10/4/2026｜头脑风暴，提出项目方向并做公开讲演\nPOCG｜10/11/2026｜完成游戏Demo，玩家可以使用钓竿移动、攻击小怪以及钓鱼。\nPrototype & Vertical Slice｜10/24/2026｜基于POCG设计关卡，但测试反馈不佳，项目一度陷入瓶颈。\nAlpha｜11/7/2026｜得出“时间停止”方案，拯救游戏。\nBeta｜11/21/2026｜持续开发游戏关卡，并且开放公开测试。\nLaunch｜11/3/2026｜最终测试。"
+            "text": "阶段｜时间｜工作内容\nPOCT｜10/4/2026｜头脑风暴，提出项目方向并做公开讲演\nPOCG｜10/11/2026｜完成游戏Demo，玩家可以使用钓竿移动、攻击小怪以及钓鱼。\nPrototype & Vertical Slice｜10/24/2026｜基于POCG设计关卡，但测试反馈不佳，项目一度陷入瓶颈。\nAlpha｜11/7/2026｜得出“时间停止”方案，拯救游戏。\nBeta｜11/21/2026｜持续开发游戏关卡，并且开放公开测试。\nLaunch｜11/3/2025｜最终测试。"
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "测试迭代"
           },
           {
@@ -954,6 +878,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "项目总结"
           },
           {
@@ -970,20 +895,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "附件"
-          },
-          {
-            "kind": "buttons",
-            "links": [
-              {
-                "label": "查看 FLING 游戏设计文档（PDF）",
-                "href": "project4/pdfs/fling_gdd.pdf"
-              },
-              {
-                "label": "查看 FLING ReadMe（PDF）",
-                "href": "project4/pdfs/GroundZero_FLING_Readme.pdf"
-              }
-            ]
           },
           {
             "kind": "paragraph",
@@ -1027,6 +940,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "The Way of Water｜《半条命 2》单人关卡"
           },
           {
@@ -1096,6 +1010,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "The Holy Grail｜《雷神之锤 3》CTF 多人地图"
           },
           {
@@ -1109,7 +1024,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "这是一张相对失败的Quake 3 竞技场多人地图。在制作此图之前，我真正玩过的射击游戏只有《喷射战士》（Splatoon）。我曾以为那就是 FPS 游戏的标准形态，因此我设计的地图也大多沿用了它的设计思路。《喷射战士》中几乎所有武器的射程都非常有限，导致地图往往过于开阔的原因。"
+            "text": "失败的Quake 3 竞技场多人地图。在制作此图之前，我真正玩过的射击游戏只有《喷射战士》（Splatoon）。我曾以为那就是 FPS 游戏的标准形态，因此我设计的地图也大多沿用了它的设计思路。《喷射战士》中几乎所有武器的射程都非常有限，导致地图往往过于开阔的原因。"
           },
           {
             "kind": "paragraph",
@@ -1138,6 +1053,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "毕业设计研究｜主题可供性与认知地图构建"
           },
           {
@@ -1171,6 +1087,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Box Shot｜UE5 高速 FPS 团队项目"
           },
           {
@@ -1184,6 +1101,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Escape from the Circus｜Global Game Jam"
           },
           {
@@ -1210,6 +1128,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "OGO｜BOOOM Game Jam"
           },
           {
@@ -1218,6 +1137,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "海错大爆钓｜原创卡牌桌游"
           },
           {
@@ -1255,6 +1175,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "简历"
           },
           {
@@ -1272,6 +1193,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "学习与实习经历"
           },
           {
@@ -1280,47 +1202,54 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "游戏经历"
           },
           {
-            "kind": "paragraph",
-            "text": "### 常玩品类"
+            "kind": "heading",
+            "level": 3,
+            "text": "常玩品类"
           },
           {
             "kind": "paragraph",
             "text": "• 角色扮演类\n• 卡牌类\n• 射击类\n• 平台跳跃\n• 独立游戏\n• 任天堂游戏"
           },
           {
-            "kind": "paragraph",
-            "text": "### 三款本命游戏"
+            "kind": "heading",
+            "level": 3,
+            "text": "三款本命游戏"
           },
           {
-            "kind": "paragraph",
-            "text": "#### 《Splatoon》系列｜1000+ 小时"
+            "kind": "heading",
+            "level": 4,
+            "text": "《Splatoon》系列｜1000+ 小时"
           },
           {
             "kind": "paragraph",
             "text": "它用“鱿鱼”这一概念统一玩法、美术与世界观，并通过射击、涂地、潜墨和墙面游泳构成独一无二的战斗与移动循环。\n它也让我意识到：即使核心交互同为射击，玩法模式与武器射程不同，地图的开放程度、垂直结构与视线控制逻辑也会完全不同。"
           },
           {
-            "kind": "paragraph",
-            "text": "#### 《任天堂全明星大乱斗》系列｜1000+ 小时"
+            "kind": "heading",
+            "level": 4,
+            "text": "《任天堂全明星大乱斗》系列｜1000+ 小时"
           },
           {
             "kind": "paragraph",
             "text": "它以“百分比积累＋击飞出场”取代传统血条，让追击、回场与场外攻防持续产生判断，也让比赛始终保留翻盘可能。\n它还能将不同类型、不同世界观的角色转化为鲜明而平衡的玩法，完美体现了任天堂“易上手，难精通”的设计理念。"
           },
           {
-            "kind": "paragraph",
-            "text": "#### 《蔚蓝（Celeste）》｜40+ 小时"
+            "kind": "heading",
+            "level": 4,
+            "text": "《蔚蓝（Celeste）》｜40+ 小时"
           },
           {
             "kind": "paragraph",
             "text": "我认为《蔚蓝》是难度曲线设计的教科书：玩家没有任何数值成长，只依靠自身技术进步，最终真正感受到“是我学会了登上这座山”。\n它通过章节、单屏房间、安全落脚点与单个机关层层拆分挑战，再以快速重生降低挫败感，让极高难度始终清晰、公平且令人愿意重试。"
           },
           {
-            "kind": "paragraph",
-            "text": "### 泛游戏经历"
+            "kind": "heading",
+            "level": 3,
+            "text": "泛游戏经历"
           },
           {
             "kind": "paragraph",
@@ -1342,18 +1271,24 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "tabTitle": "Starfield Side Quest: Decaran: Become Human",
         "tag": "Starfield Side Quest Level Design",
         "type": "Starfield Single-Player Side-Quest Level",
-        "role": "Level Design / Quest Design / Gameplay Implementation",
-        "time": "10 Weeks / Solo / Approx. 300 Hours",
-        "caption": "▲ A complete side-quest level independently developed from spatial planning and quest structure through scripting and iteration"
+        "role": "Level Design / Quest Design / Narrative Design / Gameplay Implementation",
+        "time": "10 Weeks / Solo",
+        "status": "Completed",
+        "statusUrl": "",
+        "statusLink": "",
+        "caption": "▲ A two-ending quest experience built through spatial layout, combat design, and environmental storytelling"
       },
       "project2": {
         "title": "Ghost Ship",
         "tabTitle": "Starfield Side Quest: Ghost Ship",
-        "tag": "Horror Exploration Level Design",
-        "type": "Starfield Horror-Exploration Side Quest",
-        "role": "Level Design / Environmental Storytelling / Gameplay Implementation",
+        "tag": "Starfield Side Quest Level Design",
+        "type": "Starfield Single-Player Side-Quest Level Design",
+        "role": "Level Design / Narrative Design / Environmental Storytelling / Gameplay Implementation",
         "time": "8 Weeks / Solo",
-        "caption": "▲ Turning an abandoned luxury liner into an escalating horror experience through state changes, functional zones, and looping routes"
+        "status": "Completed · Scrum Development",
+        "statusUrl": "",
+        "statusLink": "",
+        "caption": "▲ An immersive adventure aboard an abandoned luxury space liner, built through environmental storytelling, multi-zone exploration, puzzles, and combat"
       },
       "project3": {
         "title": "Hamsterballin’",
@@ -1362,6 +1297,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "3D / Local Multiplayer / Racing / Mario Kart–Like",
         "role": "Final Level / Cableway System / Camera Design",
         "time": "12 Weeks / 42-Person Team",
+        "status": "Steam Store Page Public",
+        "statusUrl": "https://store.steampowered.com/app/4319370/Hamsterballin/",
+        "statusLink": "View on Steam",
         "caption": "▲ Iterative improvements to navigation, route choice, and spectacle during high-speed racing"
       },
       "project4": {
@@ -1371,6 +1309,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "2D / Side-Scrolling / Platformer / Celeste-like",
         "role": "Game Design / Level Design",
         "time": "6 Weeks / 4-Person Team",
+        "status": "Coming Soon on Steam",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ Core gameplay and level design spanning a complete difficulty curve from tutorial to advanced challenge"
       },
       "moreprojects": {
@@ -1380,6 +1321,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "Level Design / Research / Prototypes & Independent Work",
         "role": "Level Design / Game Design / Prototyping",
         "time": "2024 — Present",
+        "status": "",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ Additional level design, research, and game development work beyond the four core case studies"
       },
       "aboutme": {
@@ -1389,6 +1333,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "Personal Profile",
         "role": "Level Designer / Game Designer",
         "time": "Portfolio",
+        "status": "",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ I like to start with one simple but interesting mechanic and build a complete gameplay system around it"
       }
     },
@@ -1397,32 +1344,30 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
+            "level": 2,
             "text": "One-Sentence Overview"
           },
           {
             "kind": "paragraph",
-            "text": "An original Starfield side quest built around a central hub, a three-stage investigation, and a morally ambiguous choice; I used the Creation Kit to independently deliver approximately 18 minutes of exploration, combat, puzzles, dialogue, and two endings across interior and exterior spaces."
+            "text": "A single-player quest level with both interior and exterior spaces, independently designed and developed in the Starfield Creation Kit, using spatial layout, combat design, and environmental storytelling to create a two-ending mission built around a moral choice."
           },
           {
             "kind": "heading",
-            "text": "Project Overview"
+            "level": 2,
+            "text": "Game Overview"
           },
           {
             "kind": "paragraph",
-            "text": "Role｜Level Design / Quest Design / Gameplay Implementation\nDevelopment｜10 Weeks / Solo / Approx. 300 Hours\nScope｜4 Exterior Spaces / 7 Interior Spaces\nPlaytime｜Approx. 18 Minutes / Two Endings\nTools｜Starfield Creation Kit / Papyrus"
+            "text": "Starfield is an open-world science-fiction RPG developed by Bethesda Game Studios. Built with the official Creation Kit, this project adds an original, independently playable side quest to the game."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Level Overview"
           },
           {
             "kind": "paragraph",
-            "text": "The player is hired to investigate a robot uprising at the automated Decaran III factory. Inside, they gather evidence across distinct functional zones, activate three terminals, and progressively unlock the core area. They eventually discover that their guide, R6D7, orchestrated the awakening. The player must choose between restoring production and freeing the robots, then face the consequences."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Quest Phase｜Player Action｜Design Purpose\nEstablish Mystery｜Investigate the exterior and meet workers, doctors, mercenaries, and R6D7｜Frame the conflict through competing perspectives\nAdvance Investigation｜Enter the factory and explore three zones around the central hall｜Alternate exploration, combat, puzzles, and information reveals\nReveal the Truth｜Ride the elevator to the rooftop office and learn R6D7's identity｜Reframe the mission and the player's relationship with their guide\nFinal Choice｜Return to the central hall, complete the final battle, and decide the factory's fate｜Bring earlier characters, information, and consequences together"
-          },
-          {
-            "kind": "image",
-            "caption": "Level overview: the exterior industrial park, factory, and vertical tower form one complete quest space",
-            "src": "project1/images/level-overview.jpg"
+            "text": "Decaran: Become Human is a Starfield side-quest level. The player is hired to investigate an abnormal incident at the automated Decaran III factory and gradually uncovers the truth behind the robots' awakening. As the story unfolds, the player must ultimately choose between restoring factory production and helping the robots gain their freedom. The two choices lead to dramatically different endings."
           },
           {
             "kind": "youtube",
@@ -1431,139 +1376,63 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "text": "Design Goals"
+            "level": 2,
+            "text": "My Work"
           },
           {
             "kind": "paragraph",
-            "text": "1. Preserve exploration freedom while keeping the player's current objective and global position readable.\n2. Integrate combat, puzzles, narrative information, and spatial progression instead of treating them as separate layers.\n3. Give both endings meaningful benefits and costs rather than presenting a simple good-versus-evil choice."
+            "text": "1. Narrative Design\n• Designed the complete side-quest narrative, mission objectives, and two-ending structure.\n• Wrote NPC dialogue, quest text, and environmental storytelling content.\n• Used a moral dilemma to encourage players to reflect on the relationship between robots and humans."
+          },
+          {
+            "kind": "paragraph",
+            "text": "2. Level Design\n• Designed the factory's overall spatial layout, player routes, and exploration flow.\n• Built a level rhythm that alternates among combat, exploration, and puzzle-solving.\n• Used thematic zoning to strengthen spatial navigation and environmental readability."
+          },
+          {
+            "kind": "paragraph",
+            "text": "3. Gameplay Design\n• Configured enemies and combat encounters.\n• Designed core gameplay elements including EMP weapons, laser obstacles, and terminal puzzles.\n• Used Papyrus Script to implement quest logic and event triggers."
+          },
+          {
+            "kind": "paragraph",
+            "text": "4. Playtesting and Iteration\n• Continuously refined flow, combat difficulty, navigation, and environmental storytelling through multiple rounds of playtesting.\n• Fixed scripting issues and completed the final build."
           },
           {
             "kind": "heading",
-            "text": "01｜Organizing Three-Stage Exploration Around a Central Hall"
-          },
-          {
-            "kind": "paragraph",
-            "text": "The factory interior uses a hub structure composed of a central hall and three objective zones. On first entering the hall, the player can see the locked central elevator and its three status indicators, establishing the long-term objective before exploration begins. The player then clears the surrounding zones, completes combat and terminal interactions, and repeatedly returns to confirm progress."
-          },
-          {
-            "kind": "paragraph",
-            "text": "The hall is more than a corridor. It serves as a navigational anchor, progress display, combat arena, and final confrontation space. Enemy states, quest progress, and accessible routes change between visits, turning spatial reuse into part of the quest rhythm."
-          },
-          {
-            "kind": "image",
-            "caption": "Central hall: the elevator presents the long-term objective while the surrounding space connects three quest zones",
-            "src": "project1/images/central-hub.jpg"
-          },
-          {
-            "kind": "paragraph",
-            "text": "Design Goal｜Maintain orientation during nonlinear exploration\nMethod｜Visible long-term objective / Central hub / Functional zoning / Return loops\nOutcome｜Converted an underused hall into the quest's navigational, progression, combat, and narrative core"
-          },
-          {
-            "kind": "heading",
-            "text": "02｜Connecting Interaction and Outcome Through Sightlines"
-          },
-          {
-            "kind": "paragraph",
-            "text": "In the initial version, the player activated three terminals to unlock the central elevator, but the terminals and elevator were visually separated. After interacting, the player had to rely on quest text to understand progress and could not see what their action had changed."
-          },
-          {
-            "kind": "paragraph",
-            "text": "I reoriented the terminals and added observation windows so the player could directly see the corresponding elevator light and lock state change. Visible cables connected each terminal to its target device, reinforcing the causal relationship. This iteration transformed text-dependent feedback into spatial feedback that players could observe and understand in the environment."
-          },
-          {
-            "kind": "image",
-            "caption": "Interior route: three objective zones branch from the central hall and converge on the elevator",
-            "src": "project1/images/interior-route.jpg"
-          },
-          {
-            "kind": "heading",
-            "text": "03｜Building Combat Escalation Through Space and Enemy Composition"
-          },
-          {
-            "kind": "paragraph",
-            "text": "Melee assault robots and ranged units create complementary threats, while encounter spaces expand from compact rooms to an open hall and vertical traversal areas. Players must continually reconsider sightlines, elevation, cover, and target priority instead of repeating a single clearing strategy."
-          },
-          {
-            "kind": "paragraph",
-            "text": "The Novablast EMP rifle adds a control option by temporarily incapacitating robots. Early encounters teach the stun behavior, the middle section combines melee and ranged enemies across two levels, and the final battle reuses the familiar central hall to test movement, target selection, and spatial knowledge together."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Stage｜Space and Enemies｜Player Decision\nEarly Tutorial｜Compact room / Single threat｜Learn the EMP stun and establish the basic combat rule\nMid-Quest Combination｜Two-level hall / Melee + ranged robots｜Use elevation and cover to prioritize targets\nFinal Battle｜Reused central hall / R6D7 and robot reinforcements｜Combine weapons, movement, and route knowledge in familiar space"
-          },
-          {
-            "kind": "image",
-            "caption": "The vertical shaft changes traversal rhythm through lasers, elevation, and a return loop",
-            "src": "project1/images/vertical-shaft.jpg"
-          },
-          {
-            "kind": "heading",
-            "text": "04｜Making the Final Choice Change Characters and World State"
-          },
-          {
-            "kind": "paragraph",
-            "text": "I did not want “free the robots” to be an automatically correct answer, so both branches carry benefits and costs. Doctors, workers, mercenaries, and robots encountered earlier each present a different stake in the conflict, grounding the final decision in information and relationships accumulated throughout the quest."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Final Choice｜Immediate Result｜Consequences\nDestroy R6D7 and restore production｜The robots are suppressed and the factory resumes operation｜Relations with the corporation and mercenaries improve, medicine production resumes, and the human patient survives\nFree the awakened robots｜The robots gain freedom and the factory shuts down｜The corporation and mercenaries become hostile, medicine supplies stop, and the human patient dies"
-          },
-          {
-            "kind": "image",
-            "caption": "The rooftop office uses sunset, long views, and elevation to stage the truth reveal",
-            "src": "project1/images/rooftop-reveal.jpg"
-          },
-          {
-            "kind": "image",
-            "caption": "The final conversation with R6D7 consolidates the quest's information into a consequential choice",
-            "src": "project1/images/final-choice.jpg"
-          },
-          {
-            "kind": "heading",
-            "text": "Gameplay and Quest Implementation"
-          },
-          {
-            "kind": "paragraph",
-            "text": "I used the Creation Kit to build spaces, configure enemies, create objectives, author NPC dialogue, and manage level states. Papyrus scripts and Quest Stages control locks, terminals, factions, character behavior, final-battle triggers, and both endings. Aliases manage critical actors and quest objects so state remains consistent across locations."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Implementation Area｜Delivered Content\nQuest Flow｜Objective updates / Quest Stages / Dialogue conditions / Two endings\nSpatial State｜Locks / Elevator / Three terminals / Hidden entrances\nCharacters and Combat｜NPC behavior / Faction hostility / Combat triggers / Boss battle\nPlayer Feedback｜Quest text / Signal lights / Observation windows / Cable guidance"
-          },
-          {
-            "kind": "heading",
-            "text": "Playtesting and Iteration"
-          },
-          {
-            "kind": "paragraph",
-            "text": "Finding｜Design Diagnosis｜Change｜Observed Result\nPlayers could not tell what a terminal changed｜The interaction and feedback target lacked a spatial relationship｜Reoriented terminals and added windows that reveal the elevator state change｜Players could understand the terminal–elevator relationship without relying on quest text\nThe full laser-platforming section demanded precise aerial control that did not fit Starfield's movement｜Difficulty came from control limitations rather than meaningful spatial decisions｜Reduced the platforming and retained lasers as local hazards and spatial constraints｜Reduced flow interruptions while preserving the vertical area's visual identity and movement variation\nThe initial hall was large but functioned mainly as a passage｜A high-cost core space was not contributing enough to progression｜Converted it into a hub revisited throughout the quest and reused for the final battle｜The hall now supports navigation, progress feedback, combat, and narrative"
-          },
-          {
-            "kind": "heading",
+            "level": 2,
             "text": "Timeline"
           },
           {
             "kind": "paragraph",
-            "text": "Level Design Pitch｜2026.02.20｜Established the theme, core gameplay, narrative framework, and development direction\nLevel Design Document｜2026.02.26｜Completed the LDD and defined flow, spatial layout, quest structure, and combat design\nWhitebox｜2026.03.09｜Validated spatial layout, player flow, and pacing\nInitial Gameplay｜2026.03.29｜Implemented core gameplay, quest scripts, and combat to produce a complete playable flow\nGameplay Complete｜2026.04.18｜Completed all level content and refined navigation, combat, and quest experience\nAesthetics｜2026.04.26｜Completed environment art, lighting, and presentation\nRTM｜2026.05.03｜Completed final polish, bug fixing, and delivery"
+            "text": "Level Design Pitch｜2026.02.20｜Completed the level pitch and established the theme, core gameplay, narrative framework, and overall development direction.\nLevel Design Document｜2026.02.26｜Completed the LDD and defined the level flow, spatial layout, quest structure, and combat design.\nWhitebox｜2026.03.09｜Completed the whitebox and validated the spatial layout, player flow, and level pacing.\nInitial Gameplay｜2026.03.29｜Implemented the core gameplay, quest scripts, and combat systems, producing a fully playable level.\nGameplay Complete｜2026.04.18｜Completed all level content and continued refining flow, navigation, and the overall experience based on playtesting.\nAesthetics｜2026.04.26｜Completed environment art, lighting, and environmental presentation to improve the overall visual quality.\nRTM｜2026.05.03｜Completed final polish, bug fixing, and project delivery."
           },
           {
             "kind": "heading",
+            "level": 2,
+            "text": "Playtesting and Iteration"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Feedback｜Analysis｜Solution"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
             "text": "Project Retrospective"
           },
           {
             "kind": "paragraph",
-            "text": "What Went Well\n• Independently completed an approximately 18-minute side quest containing interior and exterior exploration, combat, puzzles, NPC dialogue, and two endings.\n• Organized progression through a central hub and three functional zones, using spatial feedback to improve objective readability.\n• Implemented complete quest states, character behavior, and ending branches with the Creation Kit and Papyrus."
+            "text": "What Went Well\n• The overall visual presentation was strong.\n• I attempted and implemented several new design ideas.\n• The level's vertical spatial structure was well designed.\n• I continuously refined the level flow based on milestone reviews and playtest feedback."
           },
           {
             "kind": "paragraph",
-            "text": "Even Better If\n• The exterior supports less gameplay than the interior; future whitebox testing should validate content density across every major zone earlier.\n• Combat difficulty and enemy combinations received insufficient focused testing; future projects should include encounter-specific sessions in addition to full-flow playtests.\n• Too much early development time went into platforming that did not fully match the base movement model; mechanic-to-controller fit should be validated earlier."
+            "text": "Even Better If\n• Communication with stakeholders, including instructors and producers, could have been stronger.\n• The laser-platforming gameplay did not perform as well as intended and should have received further polish if time allowed.\n• The narrative content was still insufficient.\n• Combat difficulty was too low and lacked challenge.\n• Parts of the flow still needed improvement.\n• The laser mechanic was not used to its full potential.\n• The exterior area was relatively underdeveloped.\n• The overall level quality still fell short of my expectations."
           },
           {
             "kind": "paragraph",
-            "text": "What I Learned\n• A quest level is not a simple sum of space, narrative, and combat. Objectives, routes, information, and system feedback must work together to support the player's current understanding and decisions. Adding more content matters less than giving every space a clear function and allowing players to read the consequences of their actions from the environment itself."
+            "text": "What I Learned\n• Proactively communicate with stakeholders and respond to feedback promptly.\n• Plan development time more effectively.\n• Gain a holistic command of the engine and tools as early as possible in a project.\n• Improve my ability to adapt to complex and unfamiliar development tools.\n• Commercial game engines and internal company tools are imperfect, and designers must learn to work with their limitations.\n• Complete a full level project according to a professional game-development pipeline.\n• Time and energy management are crucial to a project's success.\n• Design and refine level flow.\n• Find a balance between gameplay and believable architectural logic.\n• Build game narratives that are more complete, clearly structured, and supportive of gameplay."
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Attachments"
           },
           {
@@ -1603,227 +1472,201 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
-            "text": "One-Line Summary"
+            "level": 2,
+            "text": "One-Sentence Overview"
           },
           {
             "kind": "paragraph",
-            "text": "A horror-exploration side quest built independently in the Starfield Creation Kit. The player boards a missing luxury space liner, restores power, searches for keys and batteries, crosses ventilation ducts, uncovers the disaster, and confronts the final threat in the cargo hold."
+            "text": "A horror-exploration single-player quest level independently designed and developed in the Starfield Creation Kit, using environmental storytelling, multi-zone exploration, puzzles, and combat to create an immersive adventure aboard an abandoned luxury space liner."
           },
           {
             "kind": "heading",
-            "text": "Project Overview"
+            "level": 2,
+            "text": "Game Overview"
           },
           {
             "kind": "paragraph",
-            "text": "Role｜Level Design / Environmental Storytelling / Gameplay Implementation\nDevelopment｜8 Weeks / Solo / Scrum\nStructure｜6 Functional Zones / Approx. 16-Minute Target Playthrough\nGameplay｜Exploration / Puzzles / Stealth / Combat\nTools｜Starfield Creation Kit"
-          },
-          {
-            "kind": "paragraph",
-            "text": "I translated the functional layout of a real cruise ship into a third-person RPG level. Power-state changes, the contrast between luxurious upper decks and industrial lower decks, and a key-and-battery-driven loop create a complete arc from vulnerability and investigation to revealed danger and final confrontation."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Quest Phase｜Player Action｜Experience Goal\nEstablish Vulnerability｜Board the dark, zero-gravity main deck｜Limit information and control to establish uncertainty\nRestore Order｜Reach the bridge and activate backup power｜Use gravity, lighting, and door changes as a moment of relief\nInvestigate｜Search passenger cabins, crew quarters, and the kitchen｜Reconstruct events through functional zones and environmental evidence\nEscalate Threat｜Use the vents to enter the event area and collect three batteries｜Compress space, introduce enemies, and increase resource pressure\nFinal Confrontation｜Unlock the cargo hold, retrieve fuel, and fight the Terrormorph｜Release accumulated tension through combat"
-          },
-          {
-            "kind": "image",
-            "caption": "Level overview: six functional zones unlock through power, key, and battery objectives",
-            "src": "project2/images/level-overview.jpg"
+            "text": "Starfield is an open-world science-fiction RPG developed by Bethesda Game Studios. Built with the official Creation Kit, this project adds an original, independently playable side quest to the game."
           },
           {
             "kind": "heading",
-            "text": "Design Goals"
+            "level": 2,
+            "text": "Level Overview"
           },
           {
             "kind": "paragraph",
-            "text": "1. Preserve fear without continuously stripping the player of agency, using limited counterplay instead.\n2. Make every ship zone support spatial recognition, narrative information, and pacing rather than treating environmental storytelling as optional collectibles.\n3. Use state changes, one-way shortcuts, and revisitation to create evolving play within a limited interior footprint."
+            "text": "Ghost Ship is a single-player side-quest level designed for Starfield. The player boards a missing luxury space liner to investigate a disappearance. During the exploration, the player gradually restores the ship's power, unlocks sealed areas, gathers key supplies, and uses environmental clues to uncover the truth behind the vessel's destruction, culminating in a final confrontation with an unknown creature in the cargo hold. The level combines exploration, combat, stealth, puzzles, and environmental storytelling to create a suspense-horror experience similar to Alien: Isolation."
           },
           {
             "kind": "heading",
-            "text": "01｜Building Horror Through Spatial State Changes"
-          },
-          {
-            "kind": "paragraph",
-            "text": "The level opens on a dark, zero-gravity main deck. The player relies on a flashlight to read the space and is directed by locked doors toward the bridge. Activating backup power restores gravity, lighting, and selected door access at once. A previously uncontrollable space becomes navigable, giving the player a brief sense of safety before the investigation expands."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Power restoration is not merely a quest checkbox. It changes movement, visibility, mood, and route availability simultaneously, allowing the player to feel that their action has reshaped the environment."
-          },
-          {
-            "kind": "image",
-            "caption": "Bridge: backup power unifies lighting, gravity, and door states into one perceptible spatial transition",
-            "src": "project2/images/bridge-power.jpg"
-          },
-          {
-            "kind": "paragraph",
-            "text": "Design Goal｜Create a pacing turn through interaction rather than quest text alone\nMethod｜Dark zero-gravity opening / visible bridge objective / synchronized lighting, gravity, and door changes\nResult｜Once orientation and control are restored, the player naturally shifts into open investigation"
+            "level": 2,
+            "text": "My Work"
           },
           {
             "kind": "heading",
-            "text": "02｜Translating a Real Liner into Readable Game Space"
+            "level": 3,
+            "text": "1. Overall Level Design (Level Layout & Progression)"
           },
           {
             "kind": "paragraph",
-            "text": "Using real cruise-ship decks and functional layouts as reference, I compressed the ship into six distinct zones: bridge, passenger cabins, crew quarters, kitchen, event area, and cargo hold. The upper deck uses open, decorative luxury spaces, while the lower deck relies on tighter, repetitive industrial service spaces. Materials, scale, lighting, and props help players identify their location."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Real buildings prioritize occupancy and circulation; game levels must also serve the camera, enemy navigation, sightlines, and pacing. I enlarged critical corridors and rooms, reduced repeated cabins, and balanced a main route with side rooms and landmarks."
-          },
-          {
-            "kind": "image",
-            "caption": "Passenger area: windows, carpet, and decorative lighting establish the identity of the luxury upper deck",
-            "src": "project2/images/passenger-luxury.jpg"
-          },
-          {
-            "kind": "image",
-            "caption": "Crew area: a central meeting table divides an empty room into a readable loop and landmark",
-            "src": "project2/images/crew-loop.jpg"
-          },
-          {
-            "kind": "paragraph",
-            "text": "Real Reference｜Cruise-ship functions, cabin arrangement, and upper/lower service relationships\nDesign Translation｜Fewer decks and repeated rooms, stronger thematic contrast between six zones\nGameplay Adjustment｜Third-person camera clearance, large-enemy navigation, loops, occlusion, and shortcuts"
+            "text": "Designed the complete level flow, connecting the bridge, passenger cabins, crew quarters, activity areas, cargo hold, and other functional zones into a coherent exploration route. Power restoration, key collection, battery puzzles, and related mechanics progressively unlock new areas and create an increasingly layered exploration rhythm."
           },
           {
             "kind": "heading",
-            "text": "03｜Increasing Spatial Value Through Looping Routes"
+            "level": 3,
+            "text": "2. Environmental Storytelling and Atmosphere Design"
           },
           {
             "kind": "paragraph",
-            "text": "The level does not advance room by room in a straight line. The player restores power at the bridge and returns to the deck to enter the passenger area; unlocks the kitchen through the crew area; reaches the event space through ventilation; and uses a one-way grand staircase to return to the passenger route before unlocking the cargo hold."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Players revisit known zones with different goals, routes, and threat states. The vent creates a tight one-way transition, while the staircase quickly reconnects with the main path. Revisitation therefore provides orientation, pacing shifts, and progress feedback rather than empty backtracking."
-          },
-          {
-            "kind": "image",
-            "caption": "Passenger hall: a core orientation space linking cabins, kitchen, and the event area across multiple visits",
-            "src": "project2/images/passenger-hub.jpg"
-          },
-          {
-            "kind": "paragraph",
-            "text": "First Visit｜Establish zone relationships and discover locked routes\nReturn Visit｜Open new paths after power restoration and begin investigation\nShortcut Return｜Carry batteries from the event area back toward the cargo hold"
+            "text": "Built the world of an abandoned luxury space liner. The placement of bodies, terminal logs, scene details, lighting changes, and environmental damage allows players to gradually infer what happened while establishing an Alien-like suspense-horror atmosphere."
           },
           {
             "kind": "heading",
-            "text": "04｜Making Environmental Storytelling Serve Navigation"
+            "level": 3,
+            "text": "3. Exploration, Puzzle, and Combat Design (Gameplay Design)"
           },
           {
             "kind": "paragraph",
-            "text": "Narrative evidence sits along spaces required for progression. Bodies and keys in the cabins suggest the crew's escape route; the kitchen and ventilation system show how survivors bypassed lockdown; battle damage and batteries in the event area turn the scale of the disaster into an actionable objective. The player reconstructs the liner's fall while searching for routes and resources."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Environmental storytelling also supports navigation. Bodies, damage, abnormal lighting, and room states function both as evidence and visual guidance toward the next interaction, allowing story and wayfinding to share the same spatial language."
-          },
-          {
-            "kind": "image",
-            "caption": "Event area: a public luxury space is redefined as a threat zone through battle evidence and resource objectives",
-            "src": "project2/images/event-area.jpg"
-          },
-          {
-            "kind": "paragraph",
-            "text": "Story Vehicles｜Bodies / Terminal logs / Battle damage / Abnormal lighting / Spatial destruction\nLevel Function｜Guide players toward keys, vents, batteries, and subsequent routes\nPlayer Understanding｜Shift from “Why is the liner missing?” to “The threat is still aboard”"
+            "text": "Designed power-restoration tasks, key searches, battery collection, ventilation-shaft infiltration, secret rooms, and other exploration and puzzle mechanics. Xenogrubs, Terrormorphs, and other enemies make exploration, puzzle-solving, and combat alternate throughout the experience, steadily increasing tension."
           },
           {
             "kind": "heading",
-            "text": "05｜Balancing Fear with Player Agency"
+            "level": 3,
+            "text": "4. Pacing Design"
           },
           {
             "kind": "paragraph",
-            "text": "Early testing showed that removing weapons entirely matched the horror theme but conflicted with expectations established by Starfield. With no response other than fleeing, frustration overtook fear."
-          },
-          {
-            "kind": "paragraph",
-            "text": "I introduced an EM weapon early in the level. It can briefly incapacitate threats but cannot eliminate the primary danger. The player gains time to observe, escape, and re-plan without being able to erase the risk through damage. Combat resources and enemies increase in the event area, then the cargo hold becomes a full boss encounter, releasing the pressure accumulated through earlier avoidance."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Phase｜Player Capability｜Threat and Space｜Design Intent\nOpening Exploration｜Flashlight and movement｜Darkness / zero gravity / unknown space｜Establish vulnerability and suspense\nMid-Level Investigation｜EM weapon / keys / vents｜Constrained routes / concealed threats｜Offer limited control while preserving danger\nEvent Area｜Conventional weapons / battery objective｜Xenogrub group encounter｜Increase resource pressure and action density\nCargo Finale｜Full combat capability｜Xenogrubs + Terrormorph｜Release accumulated tension"
-          },
-          {
-            "kind": "image",
-            "caption": "Industrial lower deck: tighter service spaces and denser occlusion create contrast for the late-level threat escalation",
-            "src": "project2/images/industrial-lower-deck.jpg"
+            "text": "Built a complete experiential arc through a dark zero-gravity opening, power restoration, free exploration, confined pursuit sequences, resource management, and a final boss battle, gradually escalating from exploration to climactic combat."
           },
           {
             "kind": "heading",
-            "text": "Gameplay and Quest Implementation"
-          },
-          {
-            "kind": "paragraph",
-            "text": "Using the Creation Kit, I built all six zones and implemented lighting and gravity states, doors and keys, terminals, ventilation routes, a three-battery objective, enemy encounters, quest stages, and save points. Quest state links power, zone access, and the final encounter so each completed objective produces visible environmental feedback."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Implementation Area｜Details\nSpatial State｜Zero gravity / Lighting / Backup power / Door locks / One-way shortcut\nQuest Progression｜Keys / Three batteries / Objective updates / Cargo unlock\nEncounter Design｜Xenogrub / Terrormorph / Enemy counts and trigger locations\nRisk Control｜Safe room outside boss arena / Save point / Large-enemy navigation space"
-          },
-          {
-            "kind": "heading",
-            "text": "Playtest Iteration"
-          },
-          {
-            "kind": "paragraph",
-            "text": "Finding｜Design Diagnosis｜Change｜Verified Outcome\nWith no weapon, players could only flee and frustration exceeded fear｜Horror should come from threat and resource limits, not the removal of all choice｜Provided an early EM weapon that only incapacitates enemies briefly｜Players gained an escape tool without being able to eliminate the primary threat\nThe crew area was empty and lacked a readable route｜The large room had no occlusion, landmark, or route choice｜Divided it with a central meeting table and placed rooms around an outer loop｜Created a recognizable circuit with more sightline and corner variation\nThe final boss save point was inside the arena, risking repeated deaths on reload｜The save state did not provide a safe opportunity to prepare｜Moved the save point to a safe room outside the cargo hold and adjusted triggers｜Players can resupply and plan before re-entering, avoiding a death loop\nLarge enemies were obstructed in narrow interiors｜Realistic corridor dimensions did not fit Starfield's large AI｜Enlarged critical doorways and the cargo combat space, reducing obstructions｜Improved Terrormorph navigation and created viable kiting routes"
-          },
-          {
-            "kind": "heading",
+            "level": 2,
             "text": "Timeline"
           },
           {
             "kind": "paragraph",
-            "text": "Level Design Pitch｜May 26, 2026｜Defined the abandoned luxury-liner theme, horror goals, and core flow\nLevel Design Document｜June 1, 2026｜Completed the LDD covering six-zone layout, gates, encounters, and environmental storytelling\nWhitebox｜June 8, 2026｜Validated scale, critical path, and zone connections\nInitial Gameplay｜June 22, 2026｜Implemented power, keys, batteries, vents, and initial encounters\nGameplay Complete｜July 6, 2026｜Completed the quest and iterated routes, enemies, and triggers through testing\nAesthetics｜July 13, 2026｜Completed environment art, lighting, materials, and set dressing\nRTM｜July 19, 2026｜Fixed bugs, revised the boss save point, and delivered the project"
+            "text": "Stage｜Date｜Work Completed\nLevel Design Pitch｜2026.05.26｜Completed the level pitch and established the theme, art direction, core gameplay, narrative framework, and overall level flow.\nLevel Design Document｜2026.06.01｜Completed the LDD and defined the spatial layout, exploration flow, puzzle mechanics, combat setup, and environmental storytelling design.\nWhitebox｜2026.06.08｜Completed the whitebox and validated the spatial layout, player flow, exploration pacing, and navigation design.\nInitial Gameplay｜2026.06.22｜Implemented the core gameplay, exploration, puzzles, combat, environmental storytelling, and quest flow, and began playtesting.\nGameplay Complete｜2026.07.06｜Completed all level content and continued refining flow, combat, horror atmosphere, and environmental storytelling based on test feedback.\nAesthetics｜2026.07.13｜Completed environment art, lighting, materials, and set dressing to strengthen the visual presentation and immersion of the ruined luxury liner.\nRTM｜2026.07.19｜Completed bug fixing, final polish, and project delivery."
           },
           {
             "kind": "heading",
+            "level": 2,
+            "text": "Playtesting and Iteration"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Issue｜Solution｜Result\nEven in a horror level, having no weapon felt frustrating to players, especially within Starfield.｜Gave the player an electromagnetic weapon early in the level.｜The player can briefly stun enemies early in the experience. This provides a way to resist threats without allowing the player to kill them outright, preserving the sense of fear.\nThe crew area was too open and had poor circulation.｜Divided the area with a central conference table, a surrounding loop corridor, and separate rooms around the outer edge.｜Created a more complex looping structure and improved circulation.\nThe save point was located inside the final boss room, creating an endless death loop.｜Placed a safe room outside the final boss arena.｜Eliminated the risk of an unusable save."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
             "text": "Project Retrospective"
           },
           {
-            "kind": "paragraph",
-            "text": "What Went Well\n• Independently completed a horror side quest spanning six functional zones, spatial state changes, looping exploration, puzzles, and a final encounter.\n• Established distinct zone identities and horror pacing through the contrast between luxurious and industrial decks, environmental state changes, and physical evidence.\n• Compressed and translated a real cruise-ship structure into playable space suited to a third-person camera, quest progression, and enemy navigation."
+            "kind": "heading",
+            "level": 3,
+            "text": "What Went Well"
           },
           {
             "kind": "paragraph",
-            "text": "Even Better If\n• Add more layers of environmental evidence so players can reconstruct not only that an attack occurred, but its precise chronology.\n• Run more focused large-enemy tests in the cargo hold during whitebox to further develop cover, kiting routes, and encounter phases.\n• Establish reusable gameplay-scale metrics earlier; several spaces began at realistic dimensions and required later enlargement for the camera and AI."
-          },
-          {
-            "kind": "paragraph",
-            "text": "What I Learned\n• A real building cannot be copied directly into a game level. Effective translation preserves functional relationships and spatial identity while redesigning scale, routes, sightlines, and content density. Horror pacing is also more than continuous disempowerment: limited counterplay, moments of relief, and environmental state changes can make danger feel more credible by preserving meaningful player choice."
+            "text": "• Created a space-liner level with strongly differentiated visual and functional areas.\n• Created a distinctive horror-game experience.\n• Successfully reused spaces and routes."
           },
           {
             "kind": "heading",
-            "text": "Attachments"
+            "level": 3,
+            "text": "Even Better If"
           },
           {
-            "kind": "buttons",
-            "links": [
-              {
-                "label": "📄 View LDD｜Complete Level Design Document",
-                "href": "project2/pdfs/Ma _DFSI_LDD_01.pdf"
-              }
-            ]
+            "kind": "paragraph",
+            "text": "• As a cruise liner, the level could be larger and structurally more complex.\n• Add more environmental storytelling content.\n• Adjust interior route dimensions to accommodate the movement paths of large creatures.\n• Enlarge the boss arena and enrich the single-encounter combat experience."
           },
           {
-            "kind": "buttons",
-            "links": [
-              {
-                "label": "📄 View RTM ReadMe｜Play Instructions and Final Update",
-                "href": "project2/pdfs/Ma_DFSI_ReadMe_ RTM.pdf"
-              }
-            ]
+            "kind": "heading",
+            "level": 3,
+            "text": "What I Learned"
+          },
+          {
+            "kind": "paragraph",
+            "text": "• Developed a practical approach for transforming real-world architecture into level design."
+          },
+          {
+            "kind": "paragraph",
+            "text": "The key lessons were:"
+          },
+          {
+            "kind": "paragraph",
+            "text": "1. Gather real-world references: for example, the cruise-liner level used deck plans from the Disney Cruise Line website as a reference.\n2. Simplify the structure appropriately: the level does not need to reproduce a real twenty-deck cruise ship.\n3. Adapt dimensions for gameplay: room heights and corridor widths must suit character scale and camera style; for example, third-person cameras often require larger interior spaces.\n4. Redesign circulation: real architecture prioritizes safety and pedestrian flow, while level design must also account for flow state, sightlines, and other gameplay needs."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Appendix"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 49: Bridge Area",
+            "src": "project2/images/bridgearea.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 50: Crew Area 1",
+            "src": "project2/images/crewarea1.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 51: Crew Area 2",
+            "src": "project2/images/crewarea2.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 52: Crew Area 3",
+            "src": "project2/images/crewarea3.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 53: Dining Area",
+            "src": "project2/images/diningarea.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 54: Hall Area",
+            "src": "project2/images/hallarea.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 55: Kitchen Area",
+            "src": "project2/images/kitchenarea.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 56: Passenger Area 1",
+            "src": "project2/images/passengerarea1.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 57: Passenger Area 2",
+            "src": "project2/images/passengerarea2.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 58: Passenger Area 3",
+            "src": "project2/images/passengerarea3.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "Figure 59: Passenger Area 4",
+            "src": "project2/images/passengerarea4.jpg"
           }
         ],
         "hero": {
           "src": "project2/cover.jpg",
-          "caption": "Ghost Ship key visual"
+          "caption": "Ghost Ship — Project Cover"
         }
       },
       "project3": {
         "blocks": [
           {
             "kind": "heading",
+            "level": 2,
             "text": "One-Sentence Overview"
           },
           {
@@ -1832,6 +1675,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Project Overview"
           },
           {
@@ -1840,11 +1684,13 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "My Work"
           },
           {
-            "kind": "paragraph",
-            "text": "### 1. Final Level: Gacha Galaxy"
+            "kind": "heading",
+            "level": 3,
+            "text": "1. Final Level: Gacha Galaxy"
           },
           {
             "kind": "paragraph",
@@ -1860,8 +1706,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "As the primary designer responsible for the final level, I led its thematic concept, track-layout design, and cross-disciplinary collaboration with programming and art, carrying the level from concept through final implementation."
           },
           {
-            "kind": "paragraph",
-            "text": "#### 1.1 Establishing the Core Level Concept"
+            "kind": "heading",
+            "level": 4,
+            "text": "1.1 Establishing the Core Level Concept"
           },
           {
             "kind": "paragraph",
@@ -1882,8 +1729,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project3/images/figure-03-track-start.jpg"
           },
           {
-            "kind": "paragraph",
-            "text": "#### 1.2 Leading the Design of the Core Areas"
+            "kind": "heading",
+            "level": 4,
+            "text": "1.2 Leading the Design of the Core Areas"
           },
           {
             "kind": "paragraph",
@@ -1903,8 +1751,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "As the central structure of the level, the gacha machine had to serve navigation, visual focus, and thematic communication simultaneously. I collaborated extensively with the art team, continually adjusting the model’s scale, style, track connections, and player sightlines so the visual presentation would support navigation and the racing experience."
           },
           {
-            "kind": "paragraph",
-            "text": "#### 1.3 Driving Iteration on the Core Gameplay"
+            "kind": "heading",
+            "level": 4,
+            "text": "1.3 Driving Iteration on the Core Gameplay"
           },
           {
             "kind": "paragraph",
@@ -1928,8 +1777,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project3/images/figure-05-interior-cableway.jpg"
           },
           {
-            "kind": "paragraph",
-            "text": "#### 1.4 Project Outcome"
+            "kind": "heading",
+            "level": 4,
+            "text": "1.4 Project Outcome"
           },
           {
             "kind": "paragraph",
@@ -1946,8 +1796,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project3/images/figure-07-final-level-02.jpg"
           },
           {
-            "kind": "paragraph",
-            "text": "### 2. Cableway System and Camera Design"
+            "kind": "heading",
+            "level": 3,
+            "text": "2. Cableway System and Camera Design"
           },
           {
             "kind": "paragraph",
@@ -1963,30 +1814,27 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project3/images/figure-08-splatoon-cableway.jpg"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 9: POCT cableway demonstration",
-            "src": "project3/images/figure-09-poct-cableway-demo.mp4",
-            "poster": "project3/images/figure-09-poct-cableway-demo-poster.jpg"
+            "src": "project3/images/figure-09-poct-cableway-demo.gif"
           },
           {
             "kind": "paragraph",
             "text": "During the POCG gameplay-validation phase, I was still unwilling to give up on the direction. Through further experimentation, I discovered that three to four cableways could hold the player’s hamster ball between them using physics alone. The result constrained the player perfectly while providing strong gameplay appeal and presentation potential. From that point onward, the Cableway became one of the project’s major mechanics and was intended for use as a track shortcut."
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 10: POCG cableway demonstration",
-            "src": "project3/images/figure-10-pocg-cableway-demo.mp4",
-            "poster": "project3/images/figure-10-pocg-cableway-demo-poster.jpg"
+            "src": "project3/images/figure-10-pocg-cableway-demo.gif"
           },
           {
             "kind": "paragraph",
             "text": "During full production, I naturally continued developing the Cableway system in collaboration with the art and programming teams, while also designing every cableway in the final level. The cableway I am most proud of appears near the beginning of the track as players approach the “Saturn ring” above the gacha machine. I extended the route far outward and added a reverse curve to create a graceful arc, sending players away from the track before cutting back toward the center at high speed. I also pulled the camera far back and used a zoom shot, allowing players to feel the speed while taking in the entire course centered on the gacha machine."
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 11: Gacha-machine zoom cableway sequence",
-            "src": "project3/images/figure-11-gacha-zoom-cableway-showcase.mp4",
-            "poster": "project3/images/figure-11-gacha-zoom-cableway-showcase-poster.jpg"
+            "src": "project3/images/figure-11-gacha-zoom-cableway-showcase.gif"
           },
           {
             "kind": "paragraph",
@@ -2045,43 +1893,38 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project3/images/level3cableway5.jpg"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 20: Cableway presentation animation 1",
-            "src": "project3/images/figure-20-cableway-animation-01.mp4",
-            "poster": "project3/images/figure-20-cableway-animation-01-poster.jpg"
+            "src": "project3/images/figure-20-cableway-animation-01.gif"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 21: Cableway presentation animation 2",
-            "src": "project3/images/figure-21-cableway-animation-02.mp4",
-            "poster": "project3/images/figure-21-cableway-animation-02-poster.jpg"
+            "src": "project3/images/figure-21-cableway-animation-02.gif"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 22: Cableway presentation animation 3",
-            "src": "project3/images/figure-22-cableway-animation-03.mp4",
-            "poster": "project3/images/figure-22-cableway-animation-03-poster.jpg"
+            "src": "project3/images/figure-22-cableway-animation-03.gif"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 23: Cableway presentation animation 4",
-            "src": "project3/images/figure-23-cableway-animation-04.mp4",
-            "poster": "project3/images/figure-23-cableway-animation-04-poster.jpg"
+            "src": "project3/images/figure-23-cableway-animation-04.gif"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 24: Cableway presentation animation 5",
-            "src": "project3/images/figure-24-cableway-animation-05.mp4",
-            "poster": "project3/images/figure-24-cableway-animation-05-poster.jpg"
+            "src": "project3/images/figure-24-cableway-animation-05.gif"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 25: Cableway presentation animation 6",
-            "src": "project3/images/figure-25-cableway-animation-06.mp4",
-            "poster": "project3/images/figure-25-cableway-animation-06-poster.jpg"
+            "src": "project3/images/figure-25-cableway-animation-06.gif"
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Timeline"
           },
           {
@@ -2090,6 +1933,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Playtesting and Iteration"
           },
           {
@@ -2098,6 +1942,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Project Retrospective"
           },
           {
@@ -2114,6 +1959,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Attachments"
           },
           {
@@ -2130,6 +1976,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
+            "level": 2,
             "text": "One-Sentence Overview"
           },
           {
@@ -2138,6 +1985,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Project Overview"
           },
           {
@@ -2151,11 +1999,13 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "My Work"
           },
           {
-            "kind": "paragraph",
-            "text": "### 1. Game Design"
+            "kind": "heading",
+            "level": 3,
+            "text": "1. Game Design"
           },
           {
             "kind": "paragraph",
@@ -2166,22 +2016,19 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "During our initial brainstorming, we proposed a game in which the player would use a fishing rod as a grappling hook for platforming, combat, fishing, and other actions while exploring a Metroidvania-like world. This closely matched my design philosophy of “extending an entire design from one simple, interesting mechanic.”"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 26: Early fishing-rod combat demonstration",
-            "src": "project4/images/figure-26-early-combat-demo.mp4",
-            "poster": "project4/images/figure-26-early-combat-demo-poster.jpg"
+            "src": "project4/images/figure-26-early-combat-demo.gif"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 27: Early fishing-rod platforming demonstration",
-            "src": "project4/images/figure-27-early-platforming-demo.mp4",
-            "poster": "project4/images/figure-27-early-platforming-demo-poster.jpg"
+            "src": "project4/images/figure-27-early-platforming-demo.gif"
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 28: Early fishing demonstration",
-            "src": "project4/images/figure-28-early-fishing-demo.mp4",
-            "poster": "project4/images/figure-28-early-fishing-demo-poster.jpg"
+            "src": "project4/images/figure-28-early-fishing-demo.gif"
           },
           {
             "kind": "paragraph",
@@ -2201,24 +2048,23 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "That weekend, I played Super Mario World 2: Yoshi's Island, a 1992 GBA game, on a retro handheld. In it, Yoshi could throw eggs in any direction across a 2D plane. But how could such a complex action be performed on an old handheld with only a directional pad and A and B buttons—not even an analog stick? The game's solution was that after the throw button was pressed, every obstacle and enemy in the level stopped moving. Time resumed only after the player slowly selected a direction with the aiming reticle and threw the egg."
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 30: Drawing inspiration from Yoshi's aiming system",
-            "src": "project4/images/figure-30-yoshi-aiming-inspiration.mp4",
-            "poster": "project4/images/figure-30-yoshi-aiming-inspiration-poster.jpg"
+            "src": "project4/images/figure-30-yoshi-aiming-inspiration.gif"
           },
           {
             "kind": "paragraph",
             "text": "This gave me a solution to our project's problem. At the beginning of the next week, I proposed a “time-stop” mechanic. When the player is airborne and uses the right stick to fire the grappling hook, time stops, giving the player enough time to aim precisely. When the right stick is released, the hook fires and time resumes. The programmer implemented this simple mechanic in only one minute, but that small change completely transformed the game. It resolved the excessive precision requirement, gave players more room and tolerance to act, improved the game's rhythm through the pull-and-release cadence of throwing the hook, and added strategic and mechanical depth. It became the project's core mechanic. This is similar to the time slowdown triggered when Link fires an arrow in midair in The Legend of Zelda: Breath of the Wild."
           },
           {
-            "kind": "animation",
+            "kind": "image",
             "caption": "Figure 31: Midair grappling time-stop",
-            "src": "project4/images/figure-31-midair-grappling-time-stop.mp4",
-            "poster": "project4/images/figure-31-midair-grappling-time-stop-poster.jpg"
+            "src": "project4/images/figure-31-midair-grappling-time-stop.gif"
           },
           {
-            "kind": "paragraph",
-            "text": "### 2. Level Design"
+            "kind": "heading",
+            "level": 3,
+            "text": "2. Level Design"
           },
           {
             "kind": "paragraph",
@@ -2273,6 +2119,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Timeline"
           },
           {
@@ -2281,6 +2128,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Playtesting and Iteration"
           },
           {
@@ -2289,6 +2137,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Project Retrospective"
           },
           {
@@ -2305,20 +2154,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Attachments"
-          },
-          {
-            "kind": "buttons",
-            "links": [
-              {
-                "label": "View the FLING Game Design Document (PDF)",
-                "href": "project4/pdfs/fling_gdd.pdf"
-              },
-              {
-                "label": "View the FLING ReadMe (PDF)",
-                "href": "project4/pdfs/GroundZero_FLING_Readme.pdf"
-              }
-            ]
           },
           {
             "kind": "paragraph",
@@ -2362,6 +2199,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "The Way of Water｜Half-Life 2 Single-Player Level"
           },
           {
@@ -2431,6 +2269,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "The Holy Grail｜Quake III Arena CTF Map"
           },
           {
@@ -2473,6 +2312,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Thesis Research｜Thematic Affordances and Cognitive Maps"
           },
           {
@@ -2506,6 +2346,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Box Shot｜UE5 High-Speed FPS Team Project"
           },
           {
@@ -2519,6 +2360,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Escape from the Circus｜Global Game Jam"
           },
           {
@@ -2545,6 +2387,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "OGO｜BOOOM Game Jam"
           },
           {
@@ -2553,6 +2396,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Big Fishing Boom｜Original Card Game"
           },
           {
@@ -2590,6 +2434,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Resumes"
           },
           {
@@ -2607,6 +2452,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Education & Experience"
           },
           {
@@ -2615,47 +2461,54 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
+            "level": 2,
             "text": "Gaming Experience"
           },
           {
-            "kind": "paragraph",
-            "text": "### Frequently Played Genres"
+            "kind": "heading",
+            "level": 3,
+            "text": "Frequently Played Genres"
           },
           {
             "kind": "paragraph",
             "text": "• Role-playing games\n• Card games\n• Shooters\n• Platformers\n• Indie games\n• Nintendo games"
           },
           {
-            "kind": "paragraph",
-            "text": "### Three Games Closest to My Heart"
+            "kind": "heading",
+            "level": 3,
+            "text": "Three Games Closest to My Heart"
           },
           {
-            "kind": "paragraph",
-            "text": "#### Splatoon Series｜1,000+ Hours"
+            "kind": "heading",
+            "level": 4,
+            "text": "Splatoon Series｜1,000+ Hours"
           },
           {
             "kind": "paragraph",
             "text": "Its squid concept unifies gameplay, art, and worldbuilding, while shooting, turfing, swimming through ink, and climbing painted walls create a uniquely cohesive combat and movement loop.\nIt also taught me that even when shooting is the shared core interaction, different modes and weapon ranges demand completely different approaches to openness, verticality, and sightline control."
           },
           {
-            "kind": "paragraph",
-            "text": "#### Super Smash Bros. Series｜1,000+ Hours"
+            "kind": "heading",
+            "level": 4,
+            "text": "Super Smash Bros. Series｜1,000+ Hours"
           },
           {
             "kind": "paragraph",
             "text": "By replacing health bars with accumulated damage and ring-outs, it turns every launch, recovery, and edge-guard into a decision while preserving comeback potential throughout a match.\nIt also translates characters from radically different genres and worlds into distinct yet balanced play styles, perfectly embodying Nintendo's “easy to learn, difficult to master” philosophy."
           },
           {
-            "kind": "paragraph",
-            "text": "#### Celeste｜40+ Hours"
+            "kind": "heading",
+            "level": 4,
+            "text": "Celeste｜40+ Hours"
           },
           {
             "kind": "paragraph",
             "text": "I consider Celeste a textbook in difficulty-curve design: with no numerical progression, reaching the summit comes entirely from the player's own growth and mastery.\nIt breaks challenges down through chapters, single-screen rooms, safe footholds, and individual obstacles, while near-instant restarts keep extreme difficulty readable, fair, and inviting to retry."
           },
           {
-            "kind": "paragraph",
-            "text": "### Broader Gaming Experience"
+            "kind": "heading",
+            "level": 3,
+            "text": "Broader Gaming Experience"
           },
           {
             "kind": "paragraph",

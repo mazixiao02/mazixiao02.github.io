@@ -84,15 +84,15 @@ During the POCT technical-validation phase, I drew inspiration from games such a
 
 ![Figure 8: Cableway in Splatoon](images/figure-08-splatoon-cableway.jpg)
 
-![Figure 9: POCT cableway demonstration](images/figure-09-poct-cableway-demo.mp4)
+![Figure 9: POCT cableway demonstration](images/figure-09-poct-cableway-demo.gif)
 
 During the POCG gameplay-validation phase, I was still unwilling to give up on the direction. Through further experimentation, I discovered that three to four cableways could hold the player’s hamster ball between them using physics alone. The result constrained the player perfectly while providing strong gameplay appeal and presentation potential. From that point onward, the Cableway became one of the project’s major mechanics and was intended for use as a track shortcut.
 
-![Figure 10: POCG cableway demonstration](images/figure-10-pocg-cableway-demo.mp4)
+![Figure 10: POCG cableway demonstration](images/figure-10-pocg-cableway-demo.gif)
 
 During full production, I naturally continued developing the Cableway system in collaboration with the art and programming teams, while also designing every cableway in the final level. The cableway I am most proud of appears near the beginning of the track as players approach the “Saturn ring” above the gacha machine. I extended the route far outward and added a reverse curve to create a graceful arc, sending players away from the track before cutting back toward the center at high speed. I also pulled the camera far back and used a zoom shot, allowing players to feel the speed while taking in the entire course centered on the gacha machine.
 
-![Figure 11: Gacha-machine zoom cableway sequence](images/figure-11-gacha-zoom-cableway-showcase.mp4)
+![Figure 11: Gacha-machine zoom cableway sequence](images/figure-11-gacha-zoom-cableway-showcase.gif)
 
 Late in development, I was asked to optimize every cableway camera across all levels. Although time was limited and the team told me I could decline if the workload felt too heavy, I chose to take on the task.
 
@@ -120,17 +120,17 @@ I quickly embedded myself with the other two level-design groups, communicated t
 
 ![Figure 19: Level 3 cableway 5](images/level3cableway5.jpg)
 
-![Figure 20: Cableway presentation animation 1](images/figure-20-cableway-animation-01.mp4)
+![Figure 20: Cableway presentation animation 1](images/figure-20-cableway-animation-01.gif)
 
-![Figure 21: Cableway presentation animation 2](images/figure-21-cableway-animation-02.mp4)
+![Figure 21: Cableway presentation animation 2](images/figure-21-cableway-animation-02.gif)
 
-![Figure 22: Cableway presentation animation 3](images/figure-22-cableway-animation-03.mp4)
+![Figure 22: Cableway presentation animation 3](images/figure-22-cableway-animation-03.gif)
 
-![Figure 23: Cableway presentation animation 4](images/figure-23-cableway-animation-04.mp4)
+![Figure 23: Cableway presentation animation 4](images/figure-23-cableway-animation-04.gif)
 
-![Figure 24: Cableway presentation animation 5](images/figure-24-cableway-animation-05.mp4)
+![Figure 24: Cableway presentation animation 5](images/figure-24-cableway-animation-05.gif)
 
-![Figure 25: Cableway presentation animation 6](images/figure-25-cableway-animation-06.mp4)
+![Figure 25: Cableway presentation animation 6](images/figure-25-cableway-animation-06.gif)
 
 ## Timeline
 
