@@ -1226,15 +1226,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "首先，《Splatoon》除了网络连接极不稳定、运营体系落后、匹配机制极不公平之外，是一款完美的游戏。它以“鱿鱼”这一概念提纲挈领地统筹了玩法、美术、剧情乃至音乐：鱿鱼会喷墨，所以使用墨汁射击；会变色，所以用颜色区分阵营；有领地意识，所以围绕涂地展开对战；会游泳，所以能够潜入墨汁。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "这些设定进一步构成了完整的游戏循环：玩家消耗墨水射击、击倒对手、积攒大招并扩大行动范围；再潜入墨水恢复墨量与生命、隐藏行踪、加速移动并攀上墙壁。“在墙面墨汁中游泳”更从根本上改变了 PvP 地图的垂直设计。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "当我观看 GDC 开发演讲，得知团队是先完成玩法、再引入“鱿鱼”概念时，我非常震惊。它也成为我早期 FPS PvP 关卡设计中的一份“反面教材”：由于《Splatoon》大多数武器相比传统 FPS 射程很短，所以地图可以更加开放；我曾照搬这种开放性，导致早期 FPS 地图缺少对枪线的控制。而传统 FPS 的武器射程近乎无限，需要通过弯折动线、遮挡和掩体切割视线。经过不断学习与实践，我逐渐理解：即使核心交互同为射击，玩法模式与武器射程不同，关卡设计逻辑也会完全不同。"
+            "text": "它用“鱿鱼”这一概念统一玩法、美术与世界观，并通过射击、涂地、潜墨和墙面游泳构成独一无二的战斗与移动循环。\n它也让我意识到：即使核心交互同为射击，玩法模式与武器射程不同，地图的开放程度、垂直结构与视线控制逻辑也会完全不同。"
           },
           {
             "kind": "heading",
@@ -1243,15 +1235,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "我最初因为它“游戏界百科全书”的名气而入坑，上手后发现，这款游戏完美体现了任天堂“易上手，难精通”的设计理念。它不同于传统格斗游戏，而是通过攻击为对手积累百分比；百分比越高，对手越容易被击飞出场。这一核心规则创造了传统血条制格斗游戏难以提供的可能性："
-          },
-          {
-            "kind": "paragraph",
-            "text": "1. 胜负并不单纯由生命值决定。玩家可以在对手百分比较低时通过场外击杀取胜，让整局始终保持紧张，也让落后者一直拥有翻盘机会。\n2. 战斗不再只围绕起手与固定连段展开。每次击飞后的追击、回场与场外攻防，都要求玩家持续判断并操作。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "本作最大的特殊之处，还在于汇集了游戏行业众多知名 IP 角色。不同世界观、不同类型的人物可以在同一舞台登场；每名角色都拥有鲜明的动作特征和独特玩法，却又能够平衡地共存于同一套系统之下，设计功力可见一斑。此外，其蓬勃的线下社群生态也进一步延长了游戏的生命力。"
+            "text": "它以“百分比积累＋击飞出场”取代传统血条，让追击、回场与场外攻防持续产生判断，也让比赛始终保留翻盘可能。\n它还能将不同类型、不同世界观的角色转化为鲜明而平衡的玩法，完美体现了任天堂“易上手，难精通”的设计理念。"
           },
           {
             "kind": "heading",
@@ -1260,19 +1244,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "我认为《蔚蓝》是游戏难度曲线设计的教科书，也是 2D 平台跳跃游戏的顶点。它以高难度闻名，但凭借出色的教程、节奏控制和逐章引入机制的方式，不断完成“起承转合”。玩家从头到尾没有任何数值或等级加成，完全依靠自身技术成长通关；最终站在山顶时，能够清晰回望自己一路走来的成长。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "《蔚蓝》“分而治之”的关卡设计同样对难度曲线起到了关键作用："
-          },
-          {
-            "kind": "paragraph",
-            "text": "• 游戏将主要机制分散到不同章节，每章只要求玩家认识、学习并反复训练一个新机制。\n• 每章再拆分为多个单屏房间，便于玩家理解、学习和重复练习。\n• 每个房间由一连串机关构成，但会被安全落脚点划分为若干段落，让玩家一次只解决一个局部问题。\n• 最终再落实到单个机关，让玩家通过反复尝试掌握精确操作。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "这种类似计算机编程中自上而下、分而治之的设计思想，使游戏的难度曲线格外优雅。近乎零等待的快速重生机制，也让高难挑战始终保持低挫败、高反馈的节奏。"
+            "text": "我认为《蔚蓝》是难度曲线设计的教科书：玩家没有任何数值成长，只依靠自身技术进步，最终真正感受到“是我学会了登上这座山”。\n它通过章节、单屏房间、安全落脚点与单个机关层层拆分挑战，再以快速重生降低挫败感，让极高难度始终清晰、公平且令人愿意重试。"
           },
           {
             "kind": "heading",
@@ -2513,15 +2485,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "First, aside from its extremely unstable online connection, outdated live operations, and profoundly unfair matchmaking, Splatoon is a perfect game. Its squid concept serves as a unifying idea across gameplay, art, narrative, and even music: squids spray ink, so the weapons fire ink; squids change color, so color identifies each team; squids are territorial, so teams battle by covering ground; and squids swim, so players can dive into their own ink."
-          },
-          {
-            "kind": "paragraph",
-            "text": "These ideas form a complete gameplay loop. Players spend ink to shoot, splat opponents, charge special weapons, and expand their movement space; then they dive into ink to refill ammunition and health, hide, move faster, and climb walls. The ability to swim through ink painted on walls fundamentally changes the vertical design of PvP maps."
-          },
-          {
-            "kind": "paragraph",
-            "text": "When I watched the team's GDC talk and learned that the mechanics came first and the squid concept was added later, I was stunned. Splatoon also became a useful “counterexample” in my early FPS PvP level design. Because most of its weapons have much shorter ranges than those in traditional shooters, its maps can remain relatively open. I initially copied that openness, leaving my early FPS maps without enough control over sightlines. Traditional FPS weapons can threaten players across far greater distances, so curved routes, occluders, and cover are needed to break up lines of fire. Through continued practice, I learned that even when shooting is the shared core interaction, different modes and weapon ranges demand entirely different level-design logic."
+            "text": "Its squid concept unifies gameplay, art, and worldbuilding, while shooting, turfing, swimming through ink, and climbing painted walls create a uniquely cohesive combat and movement loop.\nIt also taught me that even when shooting is the shared core interaction, different modes and weapon ranges demand completely different approaches to openness, verticality, and sightline control."
           },
           {
             "kind": "heading",
@@ -2530,15 +2494,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "I was initially drawn to the series by its reputation as an encyclopedia of video games. Once I started playing, I found that it perfectly embodies Nintendo's philosophy of being easy to learn and difficult to master. Instead of using a traditional health bar, attacks build an opponent's damage percentage; the higher that percentage becomes, the farther the opponent can be launched. This core rule creates possibilities that conventional health-based fighting games struggle to offer:"
-          },
-          {
-            "kind": "paragraph",
-            "text": "1. A match is not decided simply by remaining health. A player can secure an early offstage knockout while the opponent is still at a relatively low percentage, keeping every moment tense and preserving comeback opportunities.\n2. Combat is not limited to finding an opening and repeating a fixed combo. Every launch leads into another sequence of pursuit, recovery, edge-guarding, and immediate decision-making."
-          },
-          {
-            "kind": "paragraph",
-            "text": "The game's other defining strength is its roster of iconic characters from across the industry. Fighters with entirely different worlds, histories, and genres can share one stage. Each has a distinct movement language and play style, yet all remain legible and reasonably balanced within the same system. Its thriving offline community further extends the game's longevity."
+            "text": "By replacing health bars with accumulated damage and ring-outs, it turns every launch, recovery, and edge-guard into a decision while preserving comeback potential throughout a match.\nIt also translates characters from radically different genres and worlds into distinct yet balanced play styles, perfectly embodying Nintendo's “easy to learn, difficult to master” philosophy."
           },
           {
             "kind": "heading",
@@ -2547,19 +2503,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "I consider Celeste a textbook in difficulty-curve design and the pinnacle of 2D platforming. It is famous for being difficult, yet its excellent tutorials, pacing, and chapter-by-chapter introduction of mechanics create a constant rhythm of setup, development, variation, and resolution. Players receive no numerical upgrades or level bonuses; they reach the summit entirely by improving their own skill. Standing at the top, they can look back and clearly recognize how far they have come."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Celeste's divide-and-conquer approach to level design is equally important to that curve:"
-          },
-          {
-            "kind": "paragraph",
-            "text": "• Major mechanics are distributed across separate chapters, so each chapter asks the player to understand, learn, and repeatedly practice one new idea.\n• Each chapter is divided into single-screen rooms that are easy to read, learn, and retry.\n• Each room contains a chain of obstacles, but safe landing points break that chain into smaller segments, allowing the player to solve one local problem at a time.\n• Each segment ultimately resolves into individual obstacles that can be mastered through repetition."
-          },
-          {
-            "kind": "paragraph",
-            "text": "This top-down, divide-and-conquer structure—much like decomposition in programming—gives the game an exceptionally elegant difficulty curve. Its near-instant restart also keeps demanding challenges low in downtime and high in feedback."
+            "text": "I consider Celeste a textbook in difficulty-curve design: with no numerical progression, reaching the summit comes entirely from the player's own growth and mastery.\nIt breaks challenges down through chapters, single-screen rooms, safe footholds, and individual obstacles, while near-instant restarts keep extreme difficulty readable, fair, and inviting to retry."
           },
           {
             "kind": "heading",

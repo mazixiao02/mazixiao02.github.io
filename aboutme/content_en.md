@@ -42,33 +42,18 @@ Sep 2021 – Jun 2025｜Zhejiang Sci-Tech University｜B.S. in Computer Science 
 
 #### Splatoon Series｜1,000+ Hours
 
-First, aside from its extremely unstable online connection, outdated live operations, and profoundly unfair matchmaking, Splatoon is a perfect game. Its squid concept serves as a unifying idea across gameplay, art, narrative, and even music: squids spray ink, so the weapons fire ink; squids change color, so color identifies each team; squids are territorial, so teams battle by covering ground; and squids swim, so players can dive into their own ink.
-
-These ideas form a complete gameplay loop. Players spend ink to shoot, splat opponents, charge special weapons, and expand their movement space; then they dive into ink to refill ammunition and health, hide, move faster, and climb walls. The ability to swim through ink painted on walls fundamentally changes the vertical design of PvP maps.
-
-When I watched the team's GDC talk and learned that the mechanics came first and the squid concept was added later, I was stunned. Splatoon also became a useful “counterexample” in my early FPS PvP level design. Because most of its weapons have much shorter ranges than those in traditional shooters, its maps can remain relatively open. I initially copied that openness, leaving my early FPS maps without enough control over sightlines. Traditional FPS weapons can threaten players across far greater distances, so curved routes, occluders, and cover are needed to break up lines of fire. Through continued practice, I learned that even when shooting is the shared core interaction, different modes and weapon ranges demand entirely different level-design logic.
+Its squid concept unifies gameplay, art, and worldbuilding, while shooting, turfing, swimming through ink, and climbing painted walls create a uniquely cohesive combat and movement loop.
+It also taught me that even when shooting is the shared core interaction, different modes and weapon ranges demand completely different approaches to openness, verticality, and sightline control.
 
 #### Super Smash Bros. Series｜1,000+ Hours
 
-I was initially drawn to the series by its reputation as an encyclopedia of video games. Once I started playing, I found that it perfectly embodies Nintendo's philosophy of being easy to learn and difficult to master. Instead of using a traditional health bar, attacks build an opponent's damage percentage; the higher that percentage becomes, the farther the opponent can be launched. This core rule creates possibilities that conventional health-based fighting games struggle to offer:
-
-1. A match is not decided simply by remaining health. A player can secure an early offstage knockout while the opponent is still at a relatively low percentage, keeping every moment tense and preserving comeback opportunities.
-2. Combat is not limited to finding an opening and repeating a fixed combo. Every launch leads into another sequence of pursuit, recovery, edge-guarding, and immediate decision-making.
-
-The game's other defining strength is its roster of iconic characters from across the industry. Fighters with entirely different worlds, histories, and genres can share one stage. Each has a distinct movement language and play style, yet all remain legible and reasonably balanced within the same system. Its thriving offline community further extends the game's longevity.
+By replacing health bars with accumulated damage and ring-outs, it turns every launch, recovery, and edge-guard into a decision while preserving comeback potential throughout a match.
+It also translates characters from radically different genres and worlds into distinct yet balanced play styles, perfectly embodying Nintendo's “easy to learn, difficult to master” philosophy.
 
 #### Celeste｜40+ Hours
 
-I consider Celeste a textbook in difficulty-curve design and the pinnacle of 2D platforming. It is famous for being difficult, yet its excellent tutorials, pacing, and chapter-by-chapter introduction of mechanics create a constant rhythm of setup, development, variation, and resolution. Players receive no numerical upgrades or level bonuses; they reach the summit entirely by improving their own skill. Standing at the top, they can look back and clearly recognize how far they have come.
-
-Celeste's divide-and-conquer approach to level design is equally important to that curve:
-
-• Major mechanics are distributed across separate chapters, so each chapter asks the player to understand, learn, and repeatedly practice one new idea.
-• Each chapter is divided into single-screen rooms that are easy to read, learn, and retry.
-• Each room contains a chain of obstacles, but safe landing points break that chain into smaller segments, allowing the player to solve one local problem at a time.
-• Each segment ultimately resolves into individual obstacles that can be mastered through repetition.
-
-This top-down, divide-and-conquer structure—much like decomposition in programming—gives the game an exceptionally elegant difficulty curve. Its near-instant restart also keeps demanding challenges low in downtime and high in feedback.
+I consider Celeste a textbook in difficulty-curve design: with no numerical progression, reaching the summit comes entirely from the player's own growth and mastery.
+It breaks challenges down through chapters, single-screen rooms, safe footholds, and individual obstacles, while near-instant restarts keep extreme difficulty readable, fair, and inviting to retry.
 
 ### Broader Gaming Experience
 
