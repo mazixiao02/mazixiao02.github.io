@@ -29,11 +29,11 @@ hero_caption: 《FLING》项目封面
 
 最早，我们在头脑风暴中提出游戏初始概念，即让玩家使用钓竿作为钩锁来实现平台跳跃、战斗、钓鱼等玩法，并在一个类银世界中探索。这非常符合我的“从单一有趣玩法延申设计”的理念。
 
-![Figure 26：早期钓竿战斗演示](images/figure-26-early-combat-demo.gif)
+![Figure 26：早期钓竿战斗演示](images/figure-26-early-combat-demo.mp4)
 
-![Figure 27：早期钓竿平台跳跃演示](images/figure-27-early-platforming-demo.gif)
+![Figure 27：早期钓竿平台跳跃演示](images/figure-27-early-platforming-demo.mp4)
 
-![Figure 28：早期钓竿钓鱼演示](images/figure-28-early-fishing-demo.gif)
+![Figure 28：早期钓竿钓鱼演示](images/figure-28-early-fishing-demo.mp4)
 
 但在考虑开发周期之后，我们决定聚焦平台跳跃玩法集中开发，并采用类蔚蓝的线性关卡。
 
@@ -43,11 +43,11 @@ hero_caption: 《FLING》项目封面
 
 但就在那一周末，我在怀旧游戏掌机上体验了《超级马里奥世界2：耀西岛》这款来自1995年SFC老游戏，其中的耀西拥有可以朝2D平面任意方向投掷蛋的能力。但是在只有十字键、AB键，连摇杆都没有的老游戏机上，这么复杂的操作该怎么完成呢？该游戏的解决方案是，在按下投掷键后，关卡内所有的机关和敌人停止行动，待玩家依靠准心慢慢选择方向并投掷出蛋后，时间才开始流动。
 
-![Figure 30：从耀西的瞄准中汲取灵感](images/figure-30-yoshi-aiming-inspiration.gif)
+![Figure 30：从耀西的瞄准中汲取灵感](images/figure-30-yoshi-aiming-inspiration.mp4)
 
 如此，我心目中便有了我们项目难题的解决方案。在新一周的开始，我提出了“时间停止”的机制，当玩家在空中并使用右摇杆发射钩锁时，时间停止，玩家可以有足够时间来精确操作钩锁方向，待释放右摇杆时，钩锁发出，时间恢复流动。程序只用了一分钟便实现了这一简单机制，但是这样的小改动却完全改变了游戏。对玩家操作精确性要求过高的问题迎刃而解，玩家拥有了更大的空间和容错来操作，投掷钩锁一收一放间也优化了游戏节奏，获得了更高的策略性与操作深度，成为了项目的核心玩法。（类似《塞尔达传说旷野之息》中，林克空中射箭会触发时间停止的机制）
 
-![Figure 31：空中钩锁时间停止](images/figure-31-midair-grappling-time-stop.gif)
+![Figure 31：空中钩锁时间停止](images/figure-31-midair-grappling-time-stop.mp4)
 
 ### 2. 关卡设计
 

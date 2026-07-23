@@ -3,6 +3,7 @@
 
   const FRONT_MATTER_RE = /^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)$/;
   const IMAGE_RE = /^!\[(.*?)\]\((.*?)\)\s*$/;
+  const ANIMATION_RE = /\.mp4$/i;
   const YOUTUBE_RE = /^@\[youtube\]\((\S+?)(?:\s+["“](.*?)["”])?\)\s*$/;
   const LINK_RE = /\[([^\]]+)\]\(([^)]+)\)/g;
   const LINKS_ONLY_RE = /^(?:\s*\[[^\]]+\]\([^)]+\)\s*)+$/;
@@ -92,7 +93,17 @@
       const imageMatch = stripped.match(IMAGE_RE);
       if (imageMatch) {
         flushParagraph();
-        blocks.push({ kind: 'image', caption: imageMatch[1].trim(), src: resolvePath(projectId, imageMatch[2].trim()) });
+        const src = resolvePath(projectId, imageMatch[2].trim());
+        if (ANIMATION_RE.test(src)) {
+          blocks.push({
+            kind: 'animation',
+            caption: imageMatch[1].trim(),
+            src,
+            poster: src.replace(/\.mp4$/i, '-poster.jpg'),
+          });
+        } else {
+          blocks.push({ kind: 'image', caption: imageMatch[1].trim(), src });
+        }
         return;
       }
 

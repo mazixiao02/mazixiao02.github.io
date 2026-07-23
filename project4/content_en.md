@@ -29,11 +29,11 @@ This was a project beset by challenges from the moment it began.
 
 During our initial brainstorming, we proposed a game in which the player would use a fishing rod as a grappling hook for platforming, combat, fishing, and other actions while exploring a Metroidvania-like world. This closely matched my design philosophy of “extending an entire design from one simple, interesting mechanic.”
 
-![Figure 26: Early fishing-rod combat demonstration](images/figure-26-early-combat-demo.gif)
+![Figure 26: Early fishing-rod combat demonstration](images/figure-26-early-combat-demo.mp4)
 
-![Figure 27: Early fishing-rod platforming demonstration](images/figure-27-early-platforming-demo.gif)
+![Figure 27: Early fishing-rod platforming demonstration](images/figure-27-early-platforming-demo.mp4)
 
-![Figure 28: Early fishing demonstration](images/figure-28-early-fishing-demo.gif)
+![Figure 28: Early fishing demonstration](images/figure-28-early-fishing-demo.mp4)
 
 After considering the development schedule, however, we decided to focus entirely on platforming and adopt a linear structure similar to Celeste.
 
@@ -43,11 +43,11 @@ Our prototype was then largely established. Early testing, however, showed that 
 
 That weekend, I played Super Mario World 2: Yoshi's Island, a 1992 GBA game, on a retro handheld. In it, Yoshi could throw eggs in any direction across a 2D plane. But how could such a complex action be performed on an old handheld with only a directional pad and A and B buttons—not even an analog stick? The game's solution was that after the throw button was pressed, every obstacle and enemy in the level stopped moving. Time resumed only after the player slowly selected a direction with the aiming reticle and threw the egg.
 
-![Figure 30: Drawing inspiration from Yoshi's aiming system](images/figure-30-yoshi-aiming-inspiration.gif)
+![Figure 30: Drawing inspiration from Yoshi's aiming system](images/figure-30-yoshi-aiming-inspiration.mp4)
 
 This gave me a solution to our project's problem. At the beginning of the next week, I proposed a “time-stop” mechanic. When the player is airborne and uses the right stick to fire the grappling hook, time stops, giving the player enough time to aim precisely. When the right stick is released, the hook fires and time resumes. The programmer implemented this simple mechanic in only one minute, but that small change completely transformed the game. It resolved the excessive precision requirement, gave players more room and tolerance to act, improved the game's rhythm through the pull-and-release cadence of throwing the hook, and added strategic and mechanical depth. It became the project's core mechanic. This is similar to the time slowdown triggered when Link fires an arrow in midair in The Legend of Zelda: Breath of the Wild.
 
-![Figure 31: Midair grappling time-stop](images/figure-31-midair-grappling-time-stop.gif)
+![Figure 31: Midair grappling time-stop](images/figure-31-midair-grappling-time-stop.mp4)
 
 ### 2. Level Design
 
