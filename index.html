@@ -810,13 +810,12 @@
       return match ? Number(match[1]) : 0;
     }
 
-    function isWayOfWaterPair(blocks, startIndex) {
-      const first = blocks[startIndex];
-      const second = blocks[startIndex + 1];
-      return first?.kind === 'image'
-        && second?.kind === 'image'
-        && /figure-42-the-way-of-water-screenshot-1\.jpg$/i.test(String(first.src || ''))
-        && /figure-45-the-way-of-water-screenshot-4\.jpg$/i.test(String(second.src || ''));
+    function collectWayOfWaterScreenshots(blocks, startIndex) {
+      const expected = [42, 43, 44, 45, 46, 47];
+      const images = expected.map((number, offset) => blocks[startIndex + offset]);
+      const valid = images.every((block, offset) => block?.kind === 'image'
+        && new RegExp(`figure-${expected[offset]}-the-way-of-water-screenshot-[1-6]\\.jpg$`, 'i').test(String(block.src || '')));
+      return valid ? images : [];
     }
 
     function collectFigureRange(blocks, startIndex, firstFigure, lastFigure) {
@@ -877,10 +876,13 @@
       let html = '';
       for (let index = 0; index < source.length; index += 1) {
         const block = source[index];
-        if (projectId === 'moreprojects' && isWayOfWaterPair(source, index)) {
-          html += mediaPairGridBlock(source.slice(index, index + 2));
-          index += 1;
-          continue;
+        if (projectId === 'moreprojects') {
+          const wayOfWaterScreenshots = collectWayOfWaterScreenshots(source, index);
+          if (wayOfWaterScreenshots.length) {
+            html += mediaPairGridBlock(wayOfWaterScreenshots);
+            index += wayOfWaterScreenshots.length - 1;
+            continue;
+          }
         }
         if (projectId === 'project3' && figureNumber(block) === 12) {
           const galleryImages = collectFigureRange(source, index, 12, 19);

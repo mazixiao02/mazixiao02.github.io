@@ -25,7 +25,15 @@ FPS 单人关卡｜关卡设计 / Gameplay 实现｜Hammer Editor｜水体物理
 
 ![利用水体、电力与垂直空间组织解谜和战斗](images/figure-42-the-way-of-water-screenshot-1.jpg)
 
+![The Way of Water 实机截图 2](images/figure-43-the-way-of-water-screenshot-2.jpg)
+
+![The Way of Water 实机截图 3](images/figure-44-the-way-of-water-screenshot-3.jpg)
+
 ![关卡通过环境状态变化持续更新玩家目标](images/figure-45-the-way-of-water-screenshot-4.jpg)
+
+![The Way of Water 实机截图 5](images/figure-46-the-way-of-water-screenshot-5.jpg)
+
+![The Way of Water 实机截图 6](images/figure-47-the-way-of-water-screenshot-6.jpg)
 
 @[youtube](https://youtu.be/ljxY9222A-8 "《The Way of Water》完整流程演示")
 
@@ -39,11 +47,15 @@ FPS 单人关卡｜关卡设计 / Gameplay 实现｜Hammer Editor｜水体物理
 
 ![The Holy Grail 对称 CTF 地图](images/figure-40-the-holy-grail-quake3-ctf-level.jpg)
 
-这是一张失败的《Quake III Arena》CTF 多人地图。在制作此图之前，我对 PvP 射击游戏的主要认知来自《喷射战士》（Splatoon），因此直接沿用了它的地图设计思路。然而，《喷射战士》的武器射程普遍较短，而《雷神之锤 3》的武器射程、移动速度与交战节奏完全不同，最终导致地图过于开阔、长视线缺少切割，Railgun 资源过多，部分坡道与通路也无法稳定支撑高速移动和交火。
+这是一张相对失败的Quake 3 竞技场多人地图。在制作此图之前，我真正玩过的射击游戏只有《喷射战士》（Splatoon）。我曾以为那就是 FPS 游戏的标准形态，因此我设计的地图也大多沿用了它的设计思路。《喷射战士》中几乎所有武器的射程都非常有限，导致地图往往过于开阔的原因。
 
-在开始体验《守望先锋》等 FPS 游戏并重新分析多人地图后，我发现传统 FPS 有着截然不同的空间逻辑。为了避免形成贯穿地图的远距离射击通道，入口、墙体、转角和掩体需要持续切割视线，让玩家以更可控的角度进入交火。相比之下，《喷射战士》的地图可以更加开阔，因为较短的射程与涂地机制会自然限制交战范围。
+然而，在我开始玩《守望先锋》（Overwatch）之后，发现真正的 FPS 游戏有着截然不同的设计逻辑。由于武器的有效射程远得多，其关卡设计往往不符合直觉。例如，入口处通常紧挨着墙壁，几乎每个转角都设有掩体，从而在玩家交火时形成狭窄的射击角度。为了防止玩家形成长距离的射击通道，视线往往被不断切割。结果，FPS 地图通常显得曲折复杂，仿佛置身于纽约街头。相比之下，《喷射战士》的地图则显得更为开阔，更像现实世界的空间，布局也更符合自然的建筑结构。
 
-这次失败让我认识到，FPS 关卡设计不能脱离具体游戏讨论。武器射程、移动方式、击杀时间与模式目标，会共同决定视线长度、掩体密度、路线宽度、资源位置和出生朝向。地图 PDF 中记录了我当时设计的 5v5 对称 CTF 布局、15 分钟对局、5 次夺旗目标，以及武器、弹药、护甲、医疗、跳板、岩浆与 Quad Damage 的完整配置。
+自此，我明白了，FPS游戏的关卡设计主要取决于两点：
+
+o	引擎的选择：引擎技术的选择决定了地图的开放程度。例如，与 Bungie 最新的引擎相比，idTech 3 引擎在几何体复杂度和渲染距离方面存在局限性。因此，idTech 3 制作的地图通常规模较小，通过尽量减少长距离视线的技术手段来确保高性能运行。
+
+o	FPS 游戏的具体子类型：游戏子类型决定了地图体验的核心目标。例如，撤离类射击游戏（Extraction shooters）强调致命性，通过设计让玩家容易从不同角度遭受攻击的场景来体现这一点；相比之下，竞技场射击游戏则截然不同，其体验经过精心设计，旨在营造一种平衡感。
 
 [查看多人地图设计图（PDF）](pdfs/The_Holy_Grail_CTF_Map.pdf)
 

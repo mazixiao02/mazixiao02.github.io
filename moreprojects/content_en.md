@@ -25,7 +25,15 @@ The design uses windows, lighting, and enemy placement to establish distant goal
 
 ![Water, electricity, and vertical space organize puzzles and combat](images/figure-42-the-way-of-water-screenshot-1.jpg)
 
+![The Way of Water gameplay screenshot 2](images/figure-43-the-way-of-water-screenshot-2.jpg)
+
+![The Way of Water gameplay screenshot 3](images/figure-44-the-way-of-water-screenshot-3.jpg)
+
 ![Environmental state changes continually update the player's objective](images/figure-45-the-way-of-water-screenshot-4.jpg)
+
+![The Way of Water gameplay screenshot 5](images/figure-46-the-way-of-water-screenshot-5.jpg)
+
+![The Way of Water gameplay screenshot 6](images/figure-47-the-way-of-water-screenshot-6.jpg)
 
 @[youtube](https://youtu.be/ljxY9222A-8 "The Way of Water Full Playthrough")
 
@@ -39,11 +47,15 @@ Arena FPS / CTF｜Layout / Combat Routes / Item Placement｜Radiant｜Solo
 
 ![The Holy Grail symmetrical CTF map](images/figure-40-the-holy-grail-quake3-ctf-level.jpg)
 
-This was a failed Quake III Arena CTF multiplayer map. Before creating it, most of my knowledge of PvP shooters came from Splatoon, so I directly carried its map-design assumptions into this project. Splatoon's weapons generally operate at short range, while Quake III has very different weapon ranges, movement speed, and combat pacing. As a result, my map was too open, long sightlines were insufficiently broken up, Railguns were over-supplied, and several ramps and paths did not reliably support high-speed movement and combat.
+A failed Quake 3 Arena multiplayer map. Before making this map, the only shooter I had truly played was Splatoon. I once believed that it represented the standard form of FPS games, so the map I designed largely followed its design approach. Almost every weapon in Splatoon has a very limited range, which is the reason its maps tend to be overly open.
 
-After playing Overwatch and re-examining multiplayer FPS maps, I discovered a very different spatial logic. Entrances, walls, corners, and cover repeatedly break sightlines so that players enter combat from more controlled angles instead of firing across the entire map. Splatoon can support more open layouts because its shorter weapon ranges and ink-based territory mechanics naturally constrain engagement distance.
+However, after I began playing Overwatch, I discovered that true FPS games follow a completely different design logic. Because their weapons have much longer effective ranges, their level design is often counterintuitive. For example, entrances are usually placed immediately beside walls, and almost every corner provides cover, creating narrow firing angles when players engage. Sightlines are continually broken to prevent players from forming long-distance firing lanes. As a result, FPS maps often feel winding and complex, like being on the streets of New York. By comparison, Splatoon maps appear more open, resemble real-world spaces more closely, and follow more natural architectural layouts.
 
-This failure taught me that FPS level design cannot be separated from the specific game. Weapon range, movement model, time to kill, and mode objectives collectively determine sightline length, cover density, route width, item placement, and spawn orientation. The map PDF records the original 5v5 symmetrical CTF layout, 15-minute match time, five-capture goal, and its full weapon, ammunition, armor, health, bounce-pad, lava, and Quad Damage setup.
+From that point on, I understood that FPS level design mainly depends on two factors:
+
+o	The choice of engine: The chosen engine technology determines how open a map can be. For example, compared with Bungie's latest engine, idTech 3 has limitations in geometric complexity and rendering distance. Maps made with idTech 3 are therefore generally smaller and use techniques that minimize long-distance sightlines to ensure high-performance operation.
+
+o	The specific FPS subgenre: The subgenre determines the core goal of the map experience. Extraction shooters, for example, emphasize lethality by designing situations in which players can easily be attacked from multiple angles. Arena shooters are entirely different: their experience is carefully designed to create a sense of balance.
 
 [View Multiplayer Map Design (PDF)](pdfs/The_Holy_Grail_CTF_Map.pdf)
 
