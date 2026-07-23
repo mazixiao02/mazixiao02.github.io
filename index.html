@@ -810,6 +810,15 @@
       return match ? Number(match[1]) : 0;
     }
 
+    function isWayOfWaterPair(blocks, startIndex) {
+      const first = blocks[startIndex];
+      const second = blocks[startIndex + 1];
+      return first?.kind === 'image'
+        && second?.kind === 'image'
+        && /figure-42-the-way-of-water-screenshot-1\.jpg$/i.test(String(first.src || ''))
+        && /figure-45-the-way-of-water-screenshot-4\.jpg$/i.test(String(second.src || ''));
+    }
+
     function collectFigureRange(blocks, startIndex, firstFigure, lastFigure) {
       const images = [];
       for (let number = firstFigure; number <= lastFigure; number += 1) {
@@ -868,6 +877,11 @@
       let html = '';
       for (let index = 0; index < source.length; index += 1) {
         const block = source[index];
+        if (projectId === 'moreprojects' && isWayOfWaterPair(source, index)) {
+          html += mediaPairGridBlock(source.slice(index, index + 2));
+          index += 1;
+          continue;
+        }
         if (projectId === 'project3' && figureNumber(block) === 12) {
           const galleryImages = collectFigureRange(source, index, 12, 19);
           if (galleryImages.length) {
