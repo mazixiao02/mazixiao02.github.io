@@ -411,6 +411,14 @@
       overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.22);
     }
     .showcase-block img { width: 100%; display: block; height: auto; }
+    .showcase-animation {
+      position: relative;
+      aspect-ratio: 16 / 9;
+    }
+    .showcase-animation video {
+      display: block; width: 100%; height: 100%; object-fit: cover;
+      background: #222222;
+    }
     .showcase-caption { font-size: 11.5px; color: #999999; text-align: center; margin-top: 10px; margin-bottom: 42px; }
     .reading-media-slot {
       width: 100%; max-width: 780px;
@@ -419,6 +427,9 @@
     .detail-section .showcase-caption { width: 100%; max-width: 780px; }
     .detail-section .showcase-image,
     .detail-section .showcase-image-caption {
+      width: 66.6667%; max-width: 520px; margin-left: auto; margin-right: auto;
+    }
+    .detail-section .showcase-compact-media {
       width: 66.6667%; max-width: 520px; margin-left: auto; margin-right: auto;
     }
     .detail-section .showcase-block iframe {
@@ -537,6 +548,7 @@
   .showcase-block iframe{height:auto;aspect-ratio:16 / 9;}
   .detail-section .showcase-image,
   .detail-section .showcase-image-caption,
+  .detail-section .showcase-compact-media,
   .media-carousel{width:100%;max-width:520px;}
   .media-pair-grid{grid-template-columns:1fr;gap:24px;}
   .media-carousel-arrow{width:38px;height:52px;}
@@ -788,13 +800,35 @@
       </div>`;
     }
 
+    const compactFigureFiles = new Set([
+      'figure-09-poct-cableway-demo.mp4',
+      'figure-10-pocg-cableway-demo.mp4',
+      'figure-11-gacha-zoom-cableway-showcase.mp4',
+      'figure-30-yoshi-aiming-inspiration.mp4',
+      'figure-31-midair-grappling-time-stop.mp4',
+      'figure-33-final-level.jpg',
+      'figure-34-room-12.jpg'
+    ]);
+
+    function isCompactFigure(src) {
+      const filename = String(src || '').split('/').pop().split('?')[0].toLowerCase();
+      return compactFigureFiles.has(filename);
+    }
+
     function imageBlock(image, isHero = false) {
       const width = isHero ? safeHeroWidth(image.width) : '';
       const style = width ? ` style="max-width:${width}; margin-left:auto; margin-right:auto;"` : '';
       const loading = isHero ? 'eager' : 'lazy';
       const heroClass = isHero ? ' showcase-hero' : '';
-      const media = `<div class="showcase-block showcase-image${heroClass}"${style}><img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.caption)}" loading="${loading}"></div><div class="showcase-caption showcase-image-caption${heroClass}"${style}>${escapeHtml(image.caption)}</div>`;
+      const compactClass = isCompactFigure(image.src) ? ' showcase-compact-media' : '';
+      const media = `<div class="showcase-block showcase-image${heroClass}${compactClass}"${style}><img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.caption)}" loading="${loading}"></div><div class="showcase-caption showcase-image-caption${heroClass}${compactClass}"${style}>${escapeHtml(image.caption)}</div>`;
       return isHero ? media : `<div class="reading-media-slot">${media}</div>`;
+    }
+
+    function animationBlock(animation) {
+      const compactClass = isCompactFigure(animation.src) ? ' showcase-compact-media' : '';
+      const media = `<div class="showcase-block showcase-animation${compactClass}"><video data-lazy-animation data-src="${escapeHtml(animation.src)}" data-poster="${escapeHtml(animation.poster)}" preload="none" muted loop playsinline aria-label="${escapeHtml(animation.caption)}"></video></div><div class="showcase-caption showcase-animation-caption${compactClass}">${escapeHtml(animation.caption)}</div>`;
+      return `<div class="reading-media-slot">${media}</div>`;
     }
 
     function videoBlock(video) {
@@ -810,7 +844,7 @@
     }
 
     function figureNumber(block) {
-      if (!block || block.kind !== 'image') return 0;
+      if (!block || !['image', 'animation'].includes(block.kind)) return 0;
       const match = String(block.caption || '').match(/^Figure\s+(\d+)\s*[:：]/i);
       return match ? Number(match[1]) : 0;
     }
@@ -849,12 +883,12 @@
     }
 
     function mediaPairGridBlock(images) {
-      const items = images.map(image => `<div class="media-pair-item">${imageBlock(image)}</div>`).join('');
+      const items = images.map(media => `<div class="media-pair-item">${media.kind === 'animation' ? animationBlock(media) : imageBlock(media)}</div>`).join('');
       return `<div class="media-pair-grid">${items}</div>`;
     }
 
     function mediaTripleGridBlock(images) {
-      const items = images.map(image => `<div class="media-pair-item">${imageBlock(image)}</div>`).join('');
+      const items = images.map(media => `<div class="media-pair-item">${media.kind === 'animation' ? animationBlock(media) : imageBlock(media)}</div>`).join('');
       return `<div class="media-pair-grid media-triple-grid">${items}</div>`;
     }
 
@@ -868,6 +902,7 @@
       if (block.kind === 'heading') return headingBlock(block.text || '', context.id, context.depth || 2);
       if (block.kind === 'paragraph') return richParagraphHtml(block.text || '', context.sectionTitle || '');
       if (block.kind === 'image') return imageBlock(block);
+      if (block.kind === 'animation') return animationBlock(block);
       if (block.kind === 'youtube') return videoBlock(block);
       if (block.kind === 'bilibili') return bilibiliBlock(block);
       if (block.kind === 'buttons') return buttonsBlock(block);
@@ -965,6 +1000,56 @@
           event.preventDefault();
           showImage(activeIndex + (event.key === 'ArrowRight' ? 1 : -1));
         });
+      });
+    }
+
+    function bindLazyAnimations(root) {
+      const animations = [...root.querySelectorAll('[data-lazy-animation]')];
+      if (!animations.length) return;
+      const shouldAutoplay = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        && !navigator.connection?.saveData;
+
+      const load = video => {
+        if (video.dataset.loaded === 'true') return;
+        video.poster = video.dataset.poster;
+        video.src = video.dataset.src;
+        video.dataset.loaded = 'true';
+        video.load();
+      };
+
+      if (!('IntersectionObserver' in window)) {
+        animations.forEach(video => {
+          load(video);
+          if (shouldAutoplay) video.play().catch(() => {});
+          else video.controls = true;
+        });
+        return;
+      }
+
+      const loadObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          load(entry.target);
+          loadObserver.unobserve(entry.target);
+        });
+      }, { root: rightPanel, rootMargin: '600px 0px' });
+
+      const playbackObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const video = entry.target;
+          if (entry.isIntersecting) {
+            load(video);
+            if (shouldAutoplay) video.play().catch(() => {});
+            else video.controls = true;
+          } else {
+            video.pause();
+          }
+        });
+      }, { root: rightPanel, threshold: 0.15 });
+
+      animations.forEach(video => {
+        loadObserver.observe(video);
+        playbackObserver.observe(video);
       });
     }
 
@@ -1169,6 +1254,7 @@
           wrapper.classList.remove('content-fade');
           rightPanel.scrollTop = 0;
           bindMediaCarousels(wrapper);
+          bindLazyAnimations(wrapper);
           bindTableOfContents();
         }, 150);
       }
