@@ -95,9 +95,14 @@ def parse_blocks(body: str, project_id: str, language: str) -> list[dict[str, An
             flush_paragraph(paragraph_lines, blocks, project_id)
             continue
 
-        if stripped.startswith("## "):
+        heading_match = re.fullmatch(r"(#{2,4})\s+(.+)", stripped)
+        if heading_match:
             flush_paragraph(paragraph_lines, blocks, project_id)
-            blocks.append({"kind": "heading", "text": stripped[3:].strip()})
+            blocks.append({
+                "kind": "heading",
+                "level": len(heading_match.group(1)),
+                "text": heading_match.group(2).strip(),
+            })
             continue
 
         image_match = IMAGE_RE.fullmatch(stripped)
