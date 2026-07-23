@@ -1148,8 +1148,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "moreprojects/images/figure-47-the-way-of-water-screenshot-6.jpg"
           },
           {
-            "kind": "youtube",
-            "id": "ljxY9222A-8",
+            "kind": "bilibili",
+            "id": "BV1V5gU6WEzT",
             "caption": "《The Way of Water》完整流程演示"
           },
           {

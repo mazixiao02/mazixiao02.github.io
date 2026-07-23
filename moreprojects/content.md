@@ -35,7 +35,7 @@ FPS 单人关卡｜关卡设计 / Gameplay 实现｜Hammer Editor｜水体物理
 
 ![The Way of Water 实机截图 6](images/figure-47-the-way-of-water-screenshot-6.jpg)
 
-@[youtube](https://youtu.be/ljxY9222A-8 "《The Way of Water》完整流程演示")
+@[bilibili](https://www.bilibili.com/video/BV1V5gU6WEzT/ "《The Way of Water》完整流程演示")
 
 [查看关卡设计文档（PDF）](pdfs/MaZ_HL2_LDD.pdf)
 [查看 ReadMe（PDF）](pdfs/MaZ_HL2_Readme_GC_Lite.pdf)
