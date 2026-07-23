@@ -995,6 +995,17 @@
 
     document.addEventListener('DOMContentLoaded', async () => {
       const projectIds = ['project3', 'project4', 'project1', 'project2', 'moreprojects', 'aboutme'];
+      const projectHashes = {
+        project1: 'decaran',
+        project2: 'ghost-ship',
+        project3: 'hamsterballin',
+        project4: 'fling',
+        moreprojects: 'more-projects',
+        aboutme: 'about',
+      };
+      const hashProjects = new Map(
+        Object.entries(projectHashes).map(([projectId, hash]) => [hash, projectId])
+      );
       const interfaceText = {
         zh: {
           name: '马子潇',
@@ -1048,6 +1059,24 @@
       let projectContent = {};
       let tocObserver = null;
       let tocVisibilityCleanup = null;
+
+      function projectIdFromHash() {
+        const hash = decodeURIComponent(window.location.hash.slice(1)).trim().toLowerCase();
+        return hashProjects.get(hash) || 'aboutme';
+      }
+
+      function setActiveProject(projectId) {
+        items.forEach(item => {
+          item.classList.toggle('active', item.getAttribute('data-id') === projectId);
+        });
+      }
+
+      function updateProjectHash(projectId, replace = false) {
+        const nextHash = `#${projectHashes[projectId] || projectHashes.aboutme}`;
+        if (window.location.hash === nextHash) return;
+        const method = replace ? 'replaceState' : 'pushState';
+        window.history[method](null, '', nextHash);
+      }
 
       function applyPhysics(item, card) {
         item.addEventListener('mousemove', (e) => {
@@ -1214,15 +1243,26 @@
 
       items.forEach(item => item.addEventListener('click', () => {
         if (item.classList.contains('active')) return;
-        items.forEach(i => i.classList.remove('active'));
-        item.classList.add('active');
-        renderPage(item.getAttribute('data-id'));
+        const projectId = item.getAttribute('data-id');
+        setActiveProject(projectId);
+        updateProjectHash(projectId);
+        renderPage(projectId);
       }));
+
+      window.addEventListener('hashchange', () => {
+        const projectId = projectIdFromHash();
+        if (projectId === currentProjectId) return;
+        setActiveProject(projectId);
+        renderPage(projectId);
+      });
 
       languageToggle.addEventListener('change', () => {
         activateLanguage(languageToggle.checked ? 'en' : 'zh', true);
       });
 
+      currentProjectId = projectIdFromHash();
+      setActiveProject(currentProjectId);
+      updateProjectHash(currentProjectId, true);
       await activateLanguage(currentLanguage);
     });
   </script>
