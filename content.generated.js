@@ -62,7 +62,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
-            "level": 2,
             "text": "一句话简介"
           },
           {
@@ -71,7 +70,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "项目概览"
           },
           {
@@ -98,7 +96,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "设计目标"
           },
           {
@@ -107,7 +104,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "01｜以中心大厅组织三阶段探索"
           },
           {
@@ -129,7 +125,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "02｜通过视线建立交互与结果的因果关系"
           },
           {
@@ -147,7 +142,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "03｜用空间与敌人组合建立战斗递进"
           },
           {
@@ -169,7 +163,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "04｜让最终选择改变角色与世界状态"
           },
           {
@@ -192,7 +185,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Gameplay 与任务实现"
           },
           {
@@ -205,7 +197,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "测试迭代"
           },
           {
@@ -214,7 +205,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "时间线"
           },
           {
@@ -223,7 +213,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "项目总结"
           },
           {
@@ -240,7 +229,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "附件"
           },
           {
@@ -280,7 +268,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
-            "level": 2,
             "text": "一句话简介"
           },
           {
@@ -289,7 +276,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "项目概览"
           },
           {
@@ -311,7 +297,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "设计目标"
           },
           {
@@ -320,7 +305,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "01｜用空间状态变化建立恐怖节奏"
           },
           {
@@ -342,7 +326,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "02｜把现实邮轮转化为可读的游戏空间"
           },
           {
@@ -369,7 +352,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "03｜用循环路线提高空间利用率"
           },
           {
@@ -391,7 +373,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "04｜让环境叙事服务探索与决策"
           },
           {
@@ -413,7 +394,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "05｜在恐惧与玩家主动性之间取得平衡"
           },
           {
@@ -435,7 +415,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Gameplay 与任务实现"
           },
           {
@@ -448,7 +427,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "测试迭代"
           },
           {
@@ -457,7 +435,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "时间线"
           },
           {
@@ -466,7 +443,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "项目总结"
           },
           {
@@ -483,7 +459,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "附件"
           },
           {
@@ -514,7 +489,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
-            "level": 2,
             "text": "一句话简介"
           },
           {
@@ -523,7 +497,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "项目介绍"
           },
           {
@@ -532,13 +505,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "我的工作"
           },
           {
-            "kind": "heading",
-            "level": 3,
-            "text": "1. 最终关卡：扭蛋机星系（Gacha Galaxy）"
+            "kind": "paragraph",
+            "text": "### 1. 最终关卡：扭蛋机星系（Gacha Galaxy）"
           },
           {
             "kind": "paragraph",
@@ -554,9 +525,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "作为最终关卡主要负责人，我主导关卡的主题构思、赛道布局设计，以及与程序、美术团队的跨部门协作，推动关卡从概念设计到最终落地。"
           },
           {
-            "kind": "heading",
-            "level": 4,
-            "text": "1.1 确立关卡核心概念"
+            "kind": "paragraph",
+            "text": "#### 1.1 确立关卡核心概念"
           },
           {
             "kind": "paragraph",
@@ -577,9 +547,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project3/images/figure-03-track-start.jpg"
           },
           {
-            "kind": "heading",
-            "level": 4,
-            "text": "1.2 主导核心区域设计"
+            "kind": "paragraph",
+            "text": "#### 1.2 主导核心区域设计"
           },
           {
             "kind": "paragraph",
@@ -599,9 +568,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "扭蛋机作为关卡主体，承担导航、视觉焦点和关卡主题表达等多重职责，我与美术团队进行了大量跨部门沟通，持续调整模型尺寸、风格、赛道连接方式与玩家视线，确保美术表现能够服务于玩家导航与竞速体验。"
           },
           {
-            "kind": "heading",
-            "level": 4,
-            "text": "1.3 推动核心玩法迭代"
+            "kind": "paragraph",
+            "text": "#### 1.3 推动核心玩法迭代"
           },
           {
             "kind": "paragraph",
@@ -625,9 +593,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project3/images/figure-05-interior-cableway.jpg"
           },
           {
-            "kind": "heading",
-            "level": 4,
-            "text": "1.4 项目成果"
+            "kind": "paragraph",
+            "text": "#### 1.4 项目成果"
           },
           {
             "kind": "paragraph",
@@ -644,9 +611,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project3/images/figure-07-final-level-02.jpg"
           },
           {
-            "kind": "heading",
-            "level": 3,
-            "text": "2. 索道系统及其镜头设计（Cableway System）"
+            "kind": "paragraph",
+            "text": "### 2. 索道系统及其镜头设计（Cableway System）"
           },
           {
             "kind": "paragraph",
@@ -781,7 +747,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "时间线"
           },
           {
@@ -790,7 +755,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "测试迭代"
           },
           {
@@ -799,7 +763,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "项目总结"
           },
           {
@@ -816,7 +779,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "附件"
           },
           {
@@ -833,7 +795,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
-            "level": 2,
             "text": "一句话介绍"
           },
           {
@@ -842,7 +803,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "项目介绍"
           },
           {
@@ -856,13 +816,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "我的工作"
           },
           {
-            "kind": "heading",
-            "level": 3,
-            "text": "1. 游戏设计"
+            "kind": "paragraph",
+            "text": "### 1. 游戏设计"
           },
           {
             "kind": "paragraph",
@@ -924,9 +882,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "poster": "project4/images/figure-31-midair-grappling-time-stop-poster.jpg"
           },
           {
-            "kind": "heading",
-            "level": 3,
-            "text": "2. 关卡设计"
+            "kind": "paragraph",
+            "text": "### 2. 关卡设计"
           },
           {
             "kind": "paragraph",
@@ -981,7 +938,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "时间线"
           },
           {
@@ -990,7 +946,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "测试迭代"
           },
           {
@@ -999,7 +954,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "项目总结"
           },
           {
@@ -1016,7 +970,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "附件"
           },
           {
@@ -1074,7 +1027,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "The Way of Water｜《半条命 2》单人关卡"
           },
           {
@@ -1144,7 +1096,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "The Holy Grail｜《雷神之锤 3》CTF 多人地图"
           },
           {
@@ -1187,7 +1138,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "毕业设计研究｜主题可供性与认知地图构建"
           },
           {
@@ -1221,7 +1171,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Box Shot｜UE5 高速 FPS 团队项目"
           },
           {
@@ -1235,7 +1184,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Escape from the Circus｜Global Game Jam"
           },
           {
@@ -1262,7 +1210,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "OGO｜BOOOM Game Jam"
           },
           {
@@ -1271,7 +1218,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "海错大爆钓｜原创卡牌桌游"
           },
           {
@@ -1309,7 +1255,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "简历"
           },
           {
@@ -1327,7 +1272,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "学习与实习经历"
           },
           {
@@ -1336,54 +1280,47 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "游戏经历"
           },
           {
-            "kind": "heading",
-            "level": 3,
-            "text": "常玩品类"
+            "kind": "paragraph",
+            "text": "### 常玩品类"
           },
           {
             "kind": "paragraph",
             "text": "• 角色扮演类\n• 卡牌类\n• 射击类\n• 平台跳跃\n• 独立游戏\n• 任天堂游戏"
           },
           {
-            "kind": "heading",
-            "level": 3,
-            "text": "三款本命游戏"
+            "kind": "paragraph",
+            "text": "### 三款本命游戏"
           },
           {
-            "kind": "heading",
-            "level": 4,
-            "text": "《Splatoon》系列｜1000+ 小时"
+            "kind": "paragraph",
+            "text": "#### 《Splatoon》系列｜1000+ 小时"
           },
           {
             "kind": "paragraph",
             "text": "它用“鱿鱼”这一概念统一玩法、美术与世界观，并通过射击、涂地、潜墨和墙面游泳构成独一无二的战斗与移动循环。\n它也让我意识到：即使核心交互同为射击，玩法模式与武器射程不同，地图的开放程度、垂直结构与视线控制逻辑也会完全不同。"
           },
           {
-            "kind": "heading",
-            "level": 4,
-            "text": "《任天堂全明星大乱斗》系列｜1000+ 小时"
+            "kind": "paragraph",
+            "text": "#### 《任天堂全明星大乱斗》系列｜1000+ 小时"
           },
           {
             "kind": "paragraph",
             "text": "它以“百分比积累＋击飞出场”取代传统血条，让追击、回场与场外攻防持续产生判断，也让比赛始终保留翻盘可能。\n它还能将不同类型、不同世界观的角色转化为鲜明而平衡的玩法，完美体现了任天堂“易上手，难精通”的设计理念。"
           },
           {
-            "kind": "heading",
-            "level": 4,
-            "text": "《蔚蓝（Celeste）》｜40+ 小时"
+            "kind": "paragraph",
+            "text": "#### 《蔚蓝（Celeste）》｜40+ 小时"
           },
           {
             "kind": "paragraph",
             "text": "我认为《蔚蓝》是难度曲线设计的教科书：玩家没有任何数值成长，只依靠自身技术进步，最终真正感受到“是我学会了登上这座山”。\n它通过章节、单屏房间、安全落脚点与单个机关层层拆分挑战，再以快速重生降低挫败感，让极高难度始终清晰、公平且令人愿意重试。"
           },
           {
-            "kind": "heading",
-            "level": 3,
-            "text": "泛游戏经历"
+            "kind": "paragraph",
+            "text": "### 泛游戏经历"
           },
           {
             "kind": "paragraph",
@@ -1460,7 +1397,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
-            "level": 2,
             "text": "One-Sentence Overview"
           },
           {
@@ -1469,7 +1405,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Project Overview"
           },
           {
@@ -1496,7 +1431,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Design Goals"
           },
           {
@@ -1505,7 +1439,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "01｜Organizing Three-Stage Exploration Around a Central Hall"
           },
           {
@@ -1527,7 +1460,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "02｜Connecting Interaction and Outcome Through Sightlines"
           },
           {
@@ -1545,7 +1477,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "03｜Building Combat Escalation Through Space and Enemy Composition"
           },
           {
@@ -1567,7 +1498,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "04｜Making the Final Choice Change Characters and World State"
           },
           {
@@ -1590,7 +1520,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Gameplay and Quest Implementation"
           },
           {
@@ -1603,7 +1532,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Playtesting and Iteration"
           },
           {
@@ -1612,7 +1540,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Timeline"
           },
           {
@@ -1621,7 +1548,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Project Retrospective"
           },
           {
@@ -1638,7 +1564,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Attachments"
           },
           {
@@ -1678,7 +1603,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
-            "level": 2,
             "text": "One-Line Summary"
           },
           {
@@ -1687,7 +1611,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Project Overview"
           },
           {
@@ -1709,7 +1632,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Design Goals"
           },
           {
@@ -1718,7 +1640,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "01｜Building Horror Through Spatial State Changes"
           },
           {
@@ -1740,7 +1661,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "02｜Translating a Real Liner into Readable Game Space"
           },
           {
@@ -1767,7 +1687,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "03｜Increasing Spatial Value Through Looping Routes"
           },
           {
@@ -1789,7 +1708,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "04｜Making Environmental Storytelling Serve Navigation"
           },
           {
@@ -1811,7 +1729,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "05｜Balancing Fear with Player Agency"
           },
           {
@@ -1833,7 +1750,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Gameplay and Quest Implementation"
           },
           {
@@ -1846,7 +1762,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Playtest Iteration"
           },
           {
@@ -1855,7 +1770,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Timeline"
           },
           {
@@ -1864,7 +1778,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Project Retrospective"
           },
           {
@@ -1881,7 +1794,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Attachments"
           },
           {
@@ -1912,7 +1824,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
-            "level": 2,
             "text": "One-Sentence Overview"
           },
           {
@@ -1921,7 +1832,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Project Overview"
           },
           {
@@ -1930,13 +1840,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "My Work"
           },
           {
-            "kind": "heading",
-            "level": 3,
-            "text": "1. Final Level: Gacha Galaxy"
+            "kind": "paragraph",
+            "text": "### 1. Final Level: Gacha Galaxy"
           },
           {
             "kind": "paragraph",
@@ -1952,9 +1860,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "As the primary designer responsible for the final level, I led its thematic concept, track-layout design, and cross-disciplinary collaboration with programming and art, carrying the level from concept through final implementation."
           },
           {
-            "kind": "heading",
-            "level": 4,
-            "text": "1.1 Establishing the Core Level Concept"
+            "kind": "paragraph",
+            "text": "#### 1.1 Establishing the Core Level Concept"
           },
           {
             "kind": "paragraph",
@@ -1975,9 +1882,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project3/images/figure-03-track-start.jpg"
           },
           {
-            "kind": "heading",
-            "level": 4,
-            "text": "1.2 Leading the Design of the Core Areas"
+            "kind": "paragraph",
+            "text": "#### 1.2 Leading the Design of the Core Areas"
           },
           {
             "kind": "paragraph",
@@ -1997,9 +1903,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "As the central structure of the level, the gacha machine had to serve navigation, visual focus, and thematic communication simultaneously. I collaborated extensively with the art team, continually adjusting the model’s scale, style, track connections, and player sightlines so the visual presentation would support navigation and the racing experience."
           },
           {
-            "kind": "heading",
-            "level": 4,
-            "text": "1.3 Driving Iteration on the Core Gameplay"
+            "kind": "paragraph",
+            "text": "#### 1.3 Driving Iteration on the Core Gameplay"
           },
           {
             "kind": "paragraph",
@@ -2023,9 +1928,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project3/images/figure-05-interior-cableway.jpg"
           },
           {
-            "kind": "heading",
-            "level": 4,
-            "text": "1.4 Project Outcome"
+            "kind": "paragraph",
+            "text": "#### 1.4 Project Outcome"
           },
           {
             "kind": "paragraph",
@@ -2042,9 +1946,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project3/images/figure-07-final-level-02.jpg"
           },
           {
-            "kind": "heading",
-            "level": 3,
-            "text": "2. Cableway System and Camera Design"
+            "kind": "paragraph",
+            "text": "### 2. Cableway System and Camera Design"
           },
           {
             "kind": "paragraph",
@@ -2179,7 +2082,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Timeline"
           },
           {
@@ -2188,7 +2090,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Playtesting and Iteration"
           },
           {
@@ -2197,7 +2098,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Project Retrospective"
           },
           {
@@ -2214,7 +2114,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Attachments"
           },
           {
@@ -2231,7 +2130,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "blocks": [
           {
             "kind": "heading",
-            "level": 2,
             "text": "One-Sentence Overview"
           },
           {
@@ -2240,7 +2138,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Project Overview"
           },
           {
@@ -2254,13 +2151,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "My Work"
           },
           {
-            "kind": "heading",
-            "level": 3,
-            "text": "1. Game Design"
+            "kind": "paragraph",
+            "text": "### 1. Game Design"
           },
           {
             "kind": "paragraph",
@@ -2322,9 +2217,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "poster": "project4/images/figure-31-midair-grappling-time-stop-poster.jpg"
           },
           {
-            "kind": "heading",
-            "level": 3,
-            "text": "2. Level Design"
+            "kind": "paragraph",
+            "text": "### 2. Level Design"
           },
           {
             "kind": "paragraph",
@@ -2379,7 +2273,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Timeline"
           },
           {
@@ -2388,7 +2281,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Playtesting and Iteration"
           },
           {
@@ -2397,7 +2289,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Project Retrospective"
           },
           {
@@ -2414,7 +2305,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Attachments"
           },
           {
@@ -2472,7 +2362,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "The Way of Water｜Half-Life 2 Single-Player Level"
           },
           {
@@ -2542,7 +2431,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "The Holy Grail｜Quake III Arena CTF Map"
           },
           {
@@ -2585,7 +2473,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Thesis Research｜Thematic Affordances and Cognitive Maps"
           },
           {
@@ -2619,7 +2506,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Box Shot｜UE5 High-Speed FPS Team Project"
           },
           {
@@ -2633,7 +2519,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Escape from the Circus｜Global Game Jam"
           },
           {
@@ -2660,7 +2545,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "OGO｜BOOOM Game Jam"
           },
           {
@@ -2669,7 +2553,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Big Fishing Boom｜Original Card Game"
           },
           {
@@ -2707,7 +2590,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Resumes"
           },
           {
@@ -2725,7 +2607,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Education & Experience"
           },
           {
@@ -2734,54 +2615,47 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "heading",
-            "level": 2,
             "text": "Gaming Experience"
           },
           {
-            "kind": "heading",
-            "level": 3,
-            "text": "Frequently Played Genres"
+            "kind": "paragraph",
+            "text": "### Frequently Played Genres"
           },
           {
             "kind": "paragraph",
             "text": "• Role-playing games\n• Card games\n• Shooters\n• Platformers\n• Indie games\n• Nintendo games"
           },
           {
-            "kind": "heading",
-            "level": 3,
-            "text": "Three Games Closest to My Heart"
+            "kind": "paragraph",
+            "text": "### Three Games Closest to My Heart"
           },
           {
-            "kind": "heading",
-            "level": 4,
-            "text": "Splatoon Series｜1,000+ Hours"
+            "kind": "paragraph",
+            "text": "#### Splatoon Series｜1,000+ Hours"
           },
           {
             "kind": "paragraph",
             "text": "Its squid concept unifies gameplay, art, and worldbuilding, while shooting, turfing, swimming through ink, and climbing painted walls create a uniquely cohesive combat and movement loop.\nIt also taught me that even when shooting is the shared core interaction, different modes and weapon ranges demand completely different approaches to openness, verticality, and sightline control."
           },
           {
-            "kind": "heading",
-            "level": 4,
-            "text": "Super Smash Bros. Series｜1,000+ Hours"
+            "kind": "paragraph",
+            "text": "#### Super Smash Bros. Series｜1,000+ Hours"
           },
           {
             "kind": "paragraph",
             "text": "By replacing health bars with accumulated damage and ring-outs, it turns every launch, recovery, and edge-guard into a decision while preserving comeback potential throughout a match.\nIt also translates characters from radically different genres and worlds into distinct yet balanced play styles, perfectly embodying Nintendo's “easy to learn, difficult to master” philosophy."
           },
           {
-            "kind": "heading",
-            "level": 4,
-            "text": "Celeste｜40+ Hours"
+            "kind": "paragraph",
+            "text": "#### Celeste｜40+ Hours"
           },
           {
             "kind": "paragraph",
             "text": "I consider Celeste a textbook in difficulty-curve design: with no numerical progression, reaching the summit comes entirely from the player's own growth and mastery.\nIt breaks challenges down through chapters, single-screen rooms, safe footholds, and individual obstacles, while near-instant restarts keep extreme difficulty readable, fair, and inviting to retry."
           },
           {
-            "kind": "heading",
-            "level": 3,
-            "text": "Broader Gaming Experience"
+            "kind": "paragraph",
+            "text": "### Broader Gaming Experience"
           },
           {
             "kind": "paragraph",
