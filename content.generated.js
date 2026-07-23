@@ -9,6 +9,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "《星空》单人支线任务关卡",
         "role": "关卡设计 / 任务设计 / Gameplay 实现",
         "time": "10 周 / 单人 / 约 300 小时",
+        "status": "已完成",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ 独立完成从空间规划、任务结构到脚本落地与测试迭代的完整支线关卡"
       },
       "project2": {
@@ -18,6 +21,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "《星空》恐怖探索向单人支线关卡",
         "role": "关卡设计 / 环境叙事 / Gameplay 实现",
         "time": "8 周 / 单人",
+        "status": "已完成",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ 以状态变化、功能分区与循环路线，将废弃豪华邮轮组织成一段逐步升级的恐怖探索体验"
       },
       "project3": {
@@ -27,6 +33,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "3D / 本地多人 / 竞速 / 类马里奥赛车",
         "role": "最终关卡 / 索道系统 / 镜头设计",
         "time": "12 周 / 42人团队",
+        "status": "Steam 商店页已公开",
+        "statusUrl": "https://store.steampowered.com/app/4319370/Hamsterballin/",
+        "statusLink": "前往 Steam 商店页",
         "caption": "▲ 通过持续迭代优化高速竞速中的导航、路线选择与观赏体验"
       },
       "project4": {
@@ -36,6 +45,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "2D / 横板 / 平台跳跃 / 类《蔚蓝》",
         "role": "游戏设计 / 关卡设计",
         "time": "6 周 / 4人团队",
+        "status": "即将上线 Steam",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ 负责核心玩法设计与大部分关卡设计，并完成从教学到高难挑战的完整难度曲线设计"
       },
       "moreprojects": {
@@ -45,6 +57,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "关卡设计 / 研究 / 原型与独立创作",
         "role": "关卡设计 / 游戏设计 / 原型开发",
         "time": "2024 — 至今",
+        "status": "",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ 核心项目之外的关卡设计、研究与游戏开发实践"
       },
       "aboutme": {
@@ -54,6 +69,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "个人档案",
         "role": "关卡设计师 / 游戏设计师",
         "time": "Portfolio",
+        "status": "",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ 我喜欢从一个简单但有趣的机制开始，搭建整套玩法设计"
       }
     },
@@ -1407,6 +1425,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "Starfield Single-Player Side-Quest Level",
         "role": "Level Design / Quest Design / Gameplay Implementation",
         "time": "10 Weeks / Solo / Approx. 300 Hours",
+        "status": "Completed",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ A complete side-quest level independently developed from spatial planning and quest structure through scripting and iteration"
       },
       "project2": {
@@ -1416,6 +1437,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "Starfield Horror-Exploration Side Quest",
         "role": "Level Design / Environmental Storytelling / Gameplay Implementation",
         "time": "8 Weeks / Solo",
+        "status": "Completed",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ Turning an abandoned luxury liner into an escalating horror experience through state changes, functional zones, and looping routes"
       },
       "project3": {
@@ -1425,6 +1449,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "3D / Local Multiplayer / Racing / Mario Kart–Like",
         "role": "Final Level / Cableway System / Camera Design",
         "time": "12 Weeks / 42-Person Team",
+        "status": "Steam Store Page Public",
+        "statusUrl": "https://store.steampowered.com/app/4319370/Hamsterballin/",
+        "statusLink": "View on Steam",
         "caption": "▲ Iterative improvements to navigation, route choice, and spectacle during high-speed racing"
       },
       "project4": {
@@ -1434,6 +1461,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "2D / Side-Scrolling / Platformer / Celeste-like",
         "role": "Game Design / Level Design",
         "time": "6 Weeks / 4-Person Team",
+        "status": "Coming Soon on Steam",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ Core gameplay and level design spanning a complete difficulty curve from tutorial to advanced challenge"
       },
       "moreprojects": {
@@ -1443,6 +1473,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "Level Design / Research / Prototypes & Independent Work",
         "role": "Level Design / Game Design / Prototyping",
         "time": "2024 — Present",
+        "status": "",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ Additional level design, research, and game development work beyond the four core case studies"
       },
       "aboutme": {
@@ -1452,6 +1485,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "Personal Profile",
         "role": "Level Designer / Game Designer",
         "time": "Portfolio",
+        "status": "",
+        "statusUrl": "",
+        "statusLink": "",
         "caption": "▲ I like to start with one simple but interesting mechanic and build a complete gameplay system around it"
       }
     },
