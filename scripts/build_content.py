@@ -15,6 +15,7 @@ LANGUAGES = {"zh": "content.md", "en": "content_en.md"}
 FRONT_MATTER_RE = re.compile(r"^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)$")
 IMAGE_RE = re.compile(r"^!\[(.*?)\]\((.*?)\)\s*$")
 YOUTUBE_RE = re.compile(r'^@\[youtube\]\((\S+?)(?:\s+["“](.*?)["”])?\)\s*$')
+BILIBILI_RE = re.compile(r'^@\[bilibili\]\((\S+?)(?:\s+["“](.*?)["”])?\)\s*$')
 LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 LINKS_ONLY_RE = re.compile(r"^(?:\s*\[[^\]]+\]\([^)]+\)\s*)+$")
 
@@ -56,6 +57,12 @@ def youtube_id(value: str) -> str:
     return value
 
 
+def bilibili_id(value: str) -> str:
+    value = value.strip()
+    found = re.search(r"(BV[A-Za-z0-9]+)", value, re.I)
+    return found.group(1) if found else value
+
+
 def flush_paragraph(lines: list[str], blocks: list[dict[str, Any]], project_id: str) -> None:
     if not lines:
         return
@@ -87,14 +94,9 @@ def parse_blocks(body: str, project_id: str, language: str) -> list[dict[str, An
             flush_paragraph(paragraph_lines, blocks, project_id)
             continue
 
-        heading_match = re.fullmatch(r"(#{2,4})\s+(.+)", stripped)
-        if heading_match:
+        if stripped.startswith("## "):
             flush_paragraph(paragraph_lines, blocks, project_id)
-            blocks.append({
-                "kind": "heading",
-                "level": len(heading_match.group(1)),
-                "text": heading_match.group(2).strip(),
-            })
+            blocks.append({"kind": "heading", "text": stripped[3:].strip()})
             continue
 
         image_match = IMAGE_RE.fullmatch(stripped)
@@ -114,6 +116,16 @@ def parse_blocks(body: str, project_id: str, language: str) -> list[dict[str, An
                 "kind": "youtube",
                 "id": youtube_id(youtube_match.group(1)),
                 "caption": (youtube_match.group(2) or ("YouTube Video" if language == "en" else "YouTube 视频")).strip(),
+            })
+            continue
+
+        bilibili_match = BILIBILI_RE.fullmatch(stripped)
+        if bilibili_match:
+            flush_paragraph(paragraph_lines, blocks, project_id)
+            blocks.append({
+                "kind": "bilibili",
+                "id": bilibili_id(bilibili_match.group(1)),
+                "caption": (bilibili_match.group(2) or "Bilibili 视频").strip(),
             })
             continue
 
@@ -149,9 +161,6 @@ def parse_project(project_id: str, language: str, filename: str) -> tuple[dict[s
         "type": meta["type"],
         "role": meta["role"],
         "time": meta["time"],
-        "status": meta.get("status", ""),
-        "statusUrl": resolve_path(project_id, meta["status_url"]) if meta.get("status_url") else "",
-        "statusLink": meta.get("status_link", ""),
         "caption": meta["caption"],
     }
     content: dict[str, Any] = {"blocks": parse_blocks(body, project_id, language)}

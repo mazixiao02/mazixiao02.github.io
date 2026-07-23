@@ -106,9 +106,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "《Decaran: Become Human（底卡伦：变人）》是星空支线任务关卡。玩家受雇调查 Decaran III 自动化工厂发生的异常事件，并在探索过程中逐步发现机器人觉醒的真相。随着剧情推进，玩家需要在恢复工厂生产与帮助机器人获得自由之间做出最终抉择，不同选择将导向两种截然不同的结局。"
           },
           {
-            "kind": "youtube",
-            "id": "lieJnrhMxWs",
-            "caption": "《底卡伦：变人》完整游戏演示"
+            "kind": "bilibili",
+            "id": "BV17NgU68EUY",
+            "caption": "《Decaran: Become Human》星空单人关卡演示"
           },
           {
             "kind": "heading",
@@ -232,6 +232,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           {
             "kind": "paragraph",
             "text": "《Ghost Ship（幽灵船）》是基于《星空（Starfield）》设计的一张单人支线任务关卡。玩家为调查失踪人员登上一艘失联的豪华星际邮轮，在探索过程中逐步恢复飞船供电、破解封锁区域、收集关键物资，并通过环境叙事揭开整艘飞船覆灭的真相，最终在货舱与未知生物展开决战。关卡融合探索、战斗、潜行、解谜与环境叙事，营造出类似《异形：隔离（Alien: Isolation）》的悬疑恐怖体验。"
+          },
+          {
+            "kind": "bilibili",
+            "id": "BV1i3gU6xEPm",
+            "caption": "《Ghost Ship》星空支线任务关卡演示"
           },
           {
             "kind": "heading",
@@ -729,9 +734,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "《FLING》是一款以精准操作为核心的 2D 平台跳跃游戏。玩家扮演一只狐狸，利用钓竿摆荡、抓取与位移，在幽暗神秘的洞穴中不断挑战高难度平台关卡。"
           },
           {
-            "kind": "youtube",
-            "id": "l4qM7wSsPoo",
-            "caption": "《FLING》玩法演示"
+            "kind": "bilibili",
+            "id": "BV1VLgU6XEEU",
+            "caption": "《FLING》游戏预告片"
           },
           {
             "kind": "heading",

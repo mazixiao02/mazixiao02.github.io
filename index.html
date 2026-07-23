@@ -804,6 +804,11 @@
       return `<div class="showcase-block showcase-video"><iframe src="${source}" width="100%" height="450" title="${escapeHtml(video.caption)}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="showcase-caption showcase-video-caption">▶ ${escapeHtml(video.caption)}</div>`;
     }
 
+    function bilibiliBlock(video) {
+      const source = `https://player.bilibili.com/player.html?bvid=${encodeURIComponent(video.id)}&autoplay=0`;
+      return `<div class="showcase-block showcase-video"><iframe src="${source}" width="100%" height="450" title="${escapeHtml(video.caption)}" frameborder="0" scrolling="no" allow="autoplay; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="showcase-caption showcase-video-caption">▶ ${escapeHtml(video.caption)}</div>`;
+    }
+
     function figureNumber(block) {
       if (!block || block.kind !== 'image') return 0;
       const match = String(block.caption || '').match(/^Figure\s+(\d+)\s*[:：]/i);
@@ -864,6 +869,7 @@
       if (block.kind === 'paragraph') return richParagraphHtml(block.text || '', context.sectionTitle || '');
       if (block.kind === 'image') return imageBlock(block);
       if (block.kind === 'youtube') return videoBlock(block);
+      if (block.kind === 'bilibili') return bilibiliBlock(block);
       if (block.kind === 'buttons') return buttonsBlock(block);
       return '';
     }
