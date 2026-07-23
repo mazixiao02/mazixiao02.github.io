@@ -6,13 +6,13 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "title": "Decaran: Become Human",
         "tabTitle": "星空支线关卡：Decaran: Become Human",
         "tag": "Starfield Side Quest Level Design",
-        "type": "《星空》单人支线任务关卡",
-        "role": "关卡设计 / 任务设计 / Gameplay 实现",
-        "time": "10 周 / 单人 / 约 300 小时",
+        "type": "星空单人支线任务关卡设计",
+        "role": "关卡设计 / 任务设计 / 剧情设计 / Gameplay 实现",
+        "time": "10 周 / 单人",
         "status": "已完成",
         "statusUrl": "",
         "statusLink": "",
-        "caption": "▲ 独立完成从空间规划、任务结构到脚本落地与测试迭代的完整支线关卡"
+        "caption": "▲ 通过空间布局、战斗设计与环境叙事构建具有道德抉择的双结局任务体验"
       },
       "project2": {
         "title": "Ghost Ship",
@@ -53,14 +53,14 @@ window.SITE_CONTENT_BY_LANGUAGE = {
       "moreprojects": {
         "title": "更多项目",
         "tabTitle": "更多项目",
-        "tag": "Prototypes & Other Works",
-        "type": "多类型项目与玩法原型",
-        "role": "设计 / 原型 / 协作开发",
-        "time": "Ongoing",
+        "tag": "Selected Works",
+        "type": "关卡设计 / 研究 / 原型与独立创作",
+        "role": "关卡设计 / 游戏设计 / 原型开发",
+        "time": "2024 — 至今",
         "status": "",
         "statusUrl": "",
         "statusLink": "",
-        "caption": "▲ 其他游戏设计、交互原型与独立创作归档"
+        "caption": "▲ 核心项目之外的关卡设计、研究与游戏开发实践"
       },
       "aboutme": {
         "title": "关于我",
@@ -85,150 +85,51 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "围绕中心枢纽、三阶段调查与道德抉择构建的《星空》原创支线任务；我使用 Creation Kit 独立完成约 18 分钟的室内外探索、战斗、谜题、对话与双结局流程。"
+            "text": "基于《星空》Creation Kit 独立设计并开发包含室内外场景的单人任务关卡，通过空间布局、战斗设计与环境叙事构建具有道德抉择的双结局任务体验。"
           },
           {
             "kind": "heading",
             "level": 2,
-            "text": "项目概览"
+            "text": "游戏介绍"
           },
           {
             "kind": "paragraph",
-            "text": "职责｜关卡设计 / 任务设计 / Gameplay 实现\n开发｜10 周 / 单人 / 约 300 小时\n规模｜4 个室外空间 / 7 个室内空间\n流程｜约 18 分钟 / 双结局\n工具｜Starfield Creation Kit / Papyrus"
-          },
-          {
-            "kind": "paragraph",
-            "text": "玩家受雇调查 Decaran III 自动化工厂的机器人暴动。进入工厂后，玩家通过不同功能区收集线索、激活三台终端并逐步解锁核心区域，最终发现向导机器人 R6D7 正是觉醒事件的推动者。玩家必须在恢复生产与释放机器人之间作出选择，并承担相应后果。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "任务阶段｜玩家行动｜设计作用\n建立悬念｜调查室外工业区并接触工人、医生、雇佣兵与 R6D7｜通过不同立场建立冲突背景\n推进调查｜进入工厂，以中心大厅为枢纽探索三个分区｜交替组织探索、战斗、谜题与信息揭示\n揭示真相｜乘电梯抵达屋顶办公室，得知 R6D7 的真实身份｜改变玩家对任务与同伴的理解\n最终抉择｜返回中心大厅完成终战并决定工厂命运｜让前段角色关系与信息在结局汇合"
-          },
-          {
-            "kind": "image",
-            "caption": "关卡总览：室外工业区、工厂主体与垂直塔楼共同构成完整任务空间",
-            "src": "project1/images/level-overview.jpg"
-          },
-          {
-            "kind": "youtube",
-            "id": "lieJnrhMxWs",
-            "caption": "《Decaran: Become Human》完整游戏演示"
+            "text": "《星空（Starfield）》是 Bethesda Game Studios 开发的开放世界科幻 RPG。本项目基于官方 Creation Kit 制作，为游戏新增了一条可独立游玩的原创支线任务。"
           },
           {
             "kind": "heading",
             "level": 2,
-            "text": "设计目标"
+            "text": "关卡介绍"
           },
           {
             "kind": "paragraph",
-            "text": "1. 让玩家在复杂工厂中保留探索自由，同时始终理解当前目标与全局位置。\n2. 让战斗、谜题、叙事信息与空间推进相互支撑，而不是彼此割裂。\n3. 让最终选择同时包含收益与代价，避免简单的善恶二分。"
+            "text": "《Decaran: Become Human（底卡伦：变人）》是星空支线任务关卡。玩家受雇调查 Decaran III 自动化工厂发生的异常事件，并在探索过程中逐步发现机器人觉醒的真相。随着剧情推进，玩家需要在恢复工厂生产与帮助机器人获得自由之间做出最终抉择，不同选择将导向两种截然不同的结局。"
+          },
+          {
+            "kind": "bilibili",
+            "id": "BV17NgU68EUY",
+            "caption": "《Decaran: Become Human》星空单人关卡演示"
           },
           {
             "kind": "heading",
             "level": 2,
-            "text": "01｜以中心大厅组织三阶段探索"
+            "text": "我的工作"
           },
           {
             "kind": "paragraph",
-            "text": "工厂内部采用“中心大厅 + 三个任务分区”的枢纽结构。玩家首次进入大厅时就能看到锁定的中央电梯与三个状态指示器，从而提前理解长期目标；随后分别探索三个分区、完成战斗与终端交互，并多次返回大厅确认进度。"
+            "text": "1. 剧情设计（Narrative Design）\n• 设计完整支线剧情、任务目标及双结局结构。\n• 编写 NPC 对话、任务文本与环境叙事内容。\n• 通过道德两难抉择推动玩家思考机器人与人类的关系。"
           },
           {
             "kind": "paragraph",
-            "text": "大厅并非单纯的通行空间：它同时承担导航锚点、进度反馈、战斗场地和最终对决舞台。反复经过同一空间时，敌人、任务状态和可进入路线持续变化，使空间重用成为任务节奏的一部分。"
-          },
-          {
-            "kind": "image",
-            "caption": "中心大厅：中央电梯是长期目标，环绕空间连接三个任务分区",
-            "src": "project1/images/central-hub.jpg"
+            "text": "2. 关卡设计（Level Design）\n• 设计工厂整体空间布局、玩家路线与探索流程。\n• 构建战斗、探索、解谜交替推进的关卡节奏。\n• 通过主题分区强化空间导航与环境可读性。"
           },
           {
             "kind": "paragraph",
-            "text": "设计目标｜让玩家在非线性探索中维持方向感\n实现方法｜可见的长期目标 / 中心枢纽 / 功能分区 / 循环返回\n设计结果｜大厅由空旷通道转化为承担导航、进度、战斗与叙事的核心空间"
-          },
-          {
-            "kind": "heading",
-            "level": 2,
-            "text": "02｜通过视线建立交互与结果的因果关系"
+            "text": "3. Gameplay 设计（Gameplay Design）\n• 配置敌人与战斗遭遇。\n• 设计 EMP 武器、激光机关、终端谜题等核心玩法。\n• 使用 Papyrus Script 实现任务逻辑与事件触发。"
           },
           {
             "kind": "paragraph",
-            "text": "初版中，玩家需要启动三台终端解锁中央电梯，但终端与电梯在视觉上相互隔绝。玩家完成交互后只能依赖任务文字判断进度，难以理解自己的操作究竟改变了什么。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "我调整终端朝向并在交互区域增加观察窗，让玩家按下按钮时能够直接看到电梯对应的指示灯与门锁状态发生变化；同时使用电缆连接终端与目标装置，建立清晰的视觉因果关系。这次迭代把依赖文字提示的任务反馈，转化为玩家可以从环境中直接观察和理解的空间反馈。"
-          },
-          {
-            "kind": "image",
-            "caption": "室内任务路线：三个分区围绕中心大厅展开，并最终汇入中央电梯",
-            "src": "project1/images/interior-route.jpg"
-          },
-          {
-            "kind": "heading",
-            "level": 2,
-            "text": "03｜用空间与敌人组合建立战斗递进"
-          },
-          {
-            "kind": "paragraph",
-            "text": "我通过近战突击机器人与远程机器人形成互补威胁，并让遭遇空间从紧凑房间、开放大厅逐步扩展到垂直区域。玩家需要根据视距、高低差、掩体和目标优先级持续调整站位，而不是用同一种策略重复清场。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "EMP 步枪 Novablast 为战斗提供了暂时瘫痪机器人的控制手段。前段遭遇用于让玩家理解失能机制，中段将近远程敌人组合在双层空间中，最终战则重用玩家已经熟悉的中心大厅，综合检验移动、目标选择与空间认知。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "阶段｜空间与敌人｜玩家决策\n前段教学｜紧凑房间 / 单一威胁｜理解 EMP 失能机制并建立基础战斗规则\n中段组合｜双层大厅 / 近战 + 远程机器人｜利用高低差与掩体判断目标优先级\n最终战斗｜重用中心大厅 / R6D7 与机器人增援｜在熟悉空间中综合运用武器、移动与路线认知"
-          },
-          {
-            "kind": "image",
-            "caption": "垂直通道通过激光障碍、高低差与回环路线改变移动节奏",
-            "src": "project1/images/vertical-shaft.jpg"
-          },
-          {
-            "kind": "heading",
-            "level": 2,
-            "text": "04｜让最终选择改变角色与世界状态"
-          },
-          {
-            "kind": "paragraph",
-            "text": "我不希望“释放机器人”天然等同于正确答案，因此让两条分支都同时包含收益与代价。玩家在前段遇到的医生、工人、雇佣兵与机器人分别提供不同立场，使最终选择建立在任务过程中获得的信息和关系之上。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "最终选择｜即时结果｜后续影响\n消灭 R6D7，恢复生产｜机器人被镇压，工厂重新运转｜公司与雇佣兵关系改善，药品供应恢复，人类病患获救\n释放觉醒机器人｜机器人获得自由，工厂停止生产｜公司与雇佣兵转为敌对，药品供应中断，人类病患死亡"
-          },
-          {
-            "kind": "image",
-            "caption": "屋顶办公室利用夕阳、开阔视野与空间高度承载真相揭示",
-            "src": "project1/images/rooftop-reveal.jpg"
-          },
-          {
-            "kind": "image",
-            "caption": "玩家与 R6D7 的最终对话将任务信息汇聚为结局选择",
-            "src": "project1/images/final-choice.jpg"
-          },
-          {
-            "kind": "heading",
-            "level": 2,
-            "text": "Gameplay 与任务实现"
-          },
-          {
-            "kind": "paragraph",
-            "text": "我使用 Creation Kit 完成空间搭建、敌人配置、任务目标、NPC 对话与关卡状态管理，并通过 Papyrus Script 和 Quest Stage 控制门锁、终端、敌对阵营、角色行为、终战触发及双结局结果。Alias 用于管理关键角色与任务对象，确保跨场景推进时任务状态保持一致。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "实现模块｜具体内容\n任务流程｜目标更新 / Quest Stage / 对话条件 / 双结局\n空间状态｜门锁 / 电梯 / 三台终端 / 隐藏入口\n角色与战斗｜NPC 行为 / 阵营敌对 / 战斗触发 / Boss 战\n玩家反馈｜任务文本 / 指示灯 / 观察窗 / 电缆引导"
-          },
-          {
-            "kind": "heading",
-            "level": 2,
-            "text": "测试迭代"
-          },
-          {
-            "kind": "paragraph",
-            "text": "测试发现｜设计判断｜修改｜验证结果\n玩家启动终端后无法判断其作用｜交互对象与反馈目标缺少空间联系｜调整终端朝向并增加观察窗，使玩家直接看到电梯状态变化｜玩家无需依赖任务文字即可理解终端与电梯的关系\n完整激光平台段要求精确空中控制，与《星空》的移动手感不匹配｜挑战主要来自操作限制，而非有意义的空间决策｜缩减平台跳跃内容，保留激光作为局部障碍与区域限制｜降低流程中断，同时保留垂直区域的视觉识别与移动变化\n初版大厅体量较大，但主要承担通行功能｜高成本核心空间没有充分参与任务推进｜改为中心枢纽，使玩家多次返回并在终战中再次使用｜大厅同时承担导航、进度反馈、战斗和叙事功能"
+            "text": "4. Playtest 与迭代（Iteration）\n• 根据多轮 Playtest 持续优化 Flow、战斗难度、导航体验与环境叙事。\n• 修复脚本问题并完善最终版本。"
           },
           {
             "kind": "heading",
@@ -237,7 +138,16 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "Level Design Pitch｜2026.02.20｜确定主题、核心玩法、剧情框架与开发方向\nLevel Design Document｜2026.02.26｜完成 LDD，明确流程、空间布局、任务结构与战斗设计\nWhitebox｜2026.03.09｜完成白盒，验证空间布局、玩家流程与关卡节奏\nInitial Gameplay｜2026.03.29｜实现核心玩法、任务脚本与战斗系统，形成完整可玩流程\nGameplay Complete｜2026.04.18｜完成全部关卡内容并持续优化导航、战斗与任务体验\nAesthetics｜2026.04.26｜完成场景美术、灯光与环境表现\nRTM｜2026.05.03｜完成最终优化、Bug 修复与项目交付"
+            "text": "Level Design Pitch｜2026.02.20｜完成关卡 Pitch，确定主题、核心玩法、剧情框架与整体开发方向。\nLevel Design Document｜2026.02.26｜完成 LDD文档，明确关卡流程、空间布局、任务结构及战斗设计。\nWhitebox｜2026.03.09｜完成白盒搭建，验证空间布局、玩家流程与关卡节奏。\nInitial Gameplay｜2026.03.29｜完成核心玩法、任务脚本与战斗系统，实现可完整游玩的关卡。\nGameplay Complete｜2026.04.18｜完成全部关卡内容，并根据 Playtest 持续优化流程、导航与体验。\nAesthetics｜2026.04.26｜完成场景美术、灯光与环境表现，提升整体视觉品质。\nRTM｜2026.05.03｜完成最终优化、Bug 修复与项目交付。"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "测试迭代"
+          },
+          {
+            "kind": "paragraph",
+            "text": "反馈｜分析｜解决方案"
           },
           {
             "kind": "heading",
@@ -246,15 +156,15 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "项目成果（What Went Well）\n• 独立完成一条包含室内外探索、战斗、谜题、NPC 对话与双结局的约 18 分钟支线任务。\n• 使用中心枢纽与三个功能分区组织任务流程，并通过空间反馈提升目标可读性。\n• 使用 Creation Kit 与 Papyrus 落地完整任务状态、角色行为和结局分支。"
+            "text": "项目亮点（What Went Well）\n• 整体美术表现较好。\n• 尝试并实现了一些新的设计思路。\n• 关卡垂直空间结构设计较为出色。\n• 能够根据 Milestone 节点和 Playtest 反馈持续优化关卡流程。"
           },
           {
             "kind": "paragraph",
-            "text": "优化方向（Even Better If）\n• 室外区域承担的玩法功能少于室内区域，后续应在白盒阶段更早验证各区域的内容密度。\n• 战斗难度与敌人组合验证不足，后续应增加战斗专项测试，而非只测试完整流程。\n• 初期在与基础移动手感不完全匹配的平台段投入过多时间，后续应更早验证机制与角色控制的适配性。"
+            "text": "优化方向（Even Better If）\n• 与 Stakeholder（导师、制作人等）的沟通还可以做得更好。\n• 激光平台跳跃玩法表现不够理想，如果有时间还应该继续打磨。\n• 叙事内容仍然不够充分。\n• 战斗难度偏低，缺乏挑战性。\n• 部分流程节奏仍有待优化。\n• 激光机制没有得到充分利用。\n• 室外区域内容较为薄弱。\n• 整体关卡品质距离预期仍有差距。"
           },
           {
             "kind": "paragraph",
-            "text": "项目收获（What I Learned）\n• 任务关卡并不是空间、剧情和战斗的简单叠加；目标、路线、信息与系统反馈必须共同服务于玩家当前的理解和决策。相比增加更多内容，更重要的是让每个空间承担明确功能，并让玩家能够从环境本身读懂自己的行动及其后果。"
+            "text": "项目收获（What I Learned）\n• 学会主动与 Stakeholder 沟通，并及时根据反馈进行调整。\n• 学会更加合理地安排开发时间。\n• 在项目初期，应尽快从整体层面掌握引擎和工具的使用。\n• 提高适应复杂、陌生开发工具的能力。\n• 认识到商业游戏引擎和公司内部工具并非完美，需要学会与工具限制共存。\n• 学会按照专业游戏开发流程完成一个完整的关卡项目。\n• 时间与精力管理是项目成功的关键因素。\n• 学会设计和优化关卡流程（Flow）。\n• 学会在游戏性与真实建筑逻辑之间寻找平衡。\n• 学会构建更加完整、结构清晰且服务于玩法的游戏叙事。"
           },
           {
             "kind": "heading",
@@ -322,6 +232,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           {
             "kind": "paragraph",
             "text": "《Ghost Ship（幽灵船）》是基于《星空（Starfield）》设计的一张单人支线任务关卡。玩家为调查失踪人员登上一艘失联的豪华星际邮轮，在探索过程中逐步恢复飞船供电、破解封锁区域、收集关键物资，并通过环境叙事揭开整艘飞船覆灭的真相，最终在货舱与未知生物展开决战。关卡融合探索、战斗、潜行、解谜与环境叙事，营造出类似《异形：隔离（Alien: Isolation）》的悬疑恐怖体验。"
+          },
+          {
+            "kind": "bilibili",
+            "id": "BV1i3gU6xEPm",
+            "caption": "《Ghost Ship》星空支线任务关卡演示"
           },
           {
             "kind": "heading",
@@ -428,19 +343,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "附录"
           },
           {
-            "kind": "buttons",
-            "links": [
-              {
-                "label": "查看 Ghost Ship 关卡设计文档（PDF）",
-                "href": "project2/pdfs/Ma _DFSI_LDD_01.pdf"
-              },
-              {
-                "label": "查看 Ghost Ship RTM ReadMe（PDF）",
-                "href": "project2/pdfs/Ma_DFSI_ReadMe_ RTM.pdf"
-              }
-            ]
-          },
-          {
             "kind": "image",
             "caption": "Figure 49：舰桥区域",
             "src": "project2/images/bridgearea.jpg"
@@ -510,7 +412,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "《Hamsterballin'》是一款 UE5 本地多人竞速游戏。在 42 人团队中负责最终赛道、索道捷径系统与镜头演出设计。"
+            "text": "《Hamsterballin'》是一款 UE5 本地多人竞速游戏。在 42 人团队中负责最终赛道、索道捷径系统与镜头设计，通过持续迭代优化高速竞速中的导航、路线选择与观赏体验。"
           },
           {
             "kind": "heading",
@@ -519,7 +421,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "《Hamsterballin’》是一款本地多人竞速游戏，玩家操控可滚动弹跳的仓鼠球，在充满机关、捷径与立体地形的赛道中竞争。项目由 SMU Guildhall Team Game Project II 课程开发，42人团队历时12周完成，Steam商店页已公开。"
+            "text": "《Hamsterballin’》是一款本地多人竞速游戏，玩家操控可滚动弹跳的仓鼠球，在充满机关、捷径与立体地形的赛道中竞争。项目由 SMU Guildhall Team Game Project II 课程开发，42人团队历时12周完成，即将登陆 Steam。"
           },
           {
             "kind": "heading",
@@ -832,9 +734,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "《FLING》是一款以精准操作为核心的 2D 平台跳跃游戏。玩家扮演一只狐狸，利用钓竿摆荡、抓取与位移，在幽暗神秘的洞穴中不断挑战高难度平台关卡。"
           },
           {
-            "kind": "youtube",
-            "id": "l4qM7wSsPoo",
-            "caption": "《FLING》玩法演示"
+            "kind": "bilibili",
+            "id": "BV1VLgU6XEEU",
+            "caption": "《FLING》游戏预告片"
           },
           {
             "kind": "heading",
@@ -884,7 +786,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "但就在那一周末，我在怀旧游戏掌机上体验了《超级马里奥世界2：耀西岛》这款来自1995年SFC老游戏，其中的耀西拥有可以朝2D平面任意方向投掷蛋的能力。但是在只有十字键、AB键，连摇杆都没有的老游戏机上，这么复杂的操作该怎么完成呢？该游戏的解决方案是，在按下投掷键后，关卡内所有的机关和敌人停止行动，待玩家依靠准心慢慢选择方向并投掷出蛋后，时间才开始流动。"
+            "text": "但就在那一周末，我在怀旧游戏掌机上体验了《超级马里奥世界2：耀西岛》这款来自1992年的GBA老游戏，其中的耀西拥有可以朝2D平面任意方向投掷蛋的能力。但是在只有十字键、AB键，连摇杆都没有的老游戏机上，这么复杂的操作该怎么完成呢？该游戏的解决方案是，在按下投掷键后，关卡内所有的机关和敌人停止行动，待玩家依靠准心慢慢选择方向并投掷出蛋后，时间才开始流动。"
           },
           {
             "kind": "image",
@@ -963,7 +865,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "阶段｜时间｜工作内容\nPOCT｜10/4/2026｜头脑风暴，提出项目方向并做公开讲演\nPOCG｜10/11/2026｜完成游戏Demo，玩家可以使用钓竿移动、攻击小怪以及钓鱼。\nPrototype & Vertical Slice｜10/24/2026｜基于POCG设计关卡，但测试反馈不佳，项目一度陷入瓶颈。\nAlpha｜11/7/2026｜得出“时间停止”方案，拯救游戏。\nBeta｜11/21/2026｜持续开发游戏关卡，并且开放公开测试。\nLaunch｜11/3/2026｜最终测试。"
+            "text": "阶段｜时间｜工作内容\nPOCT｜10/4/2026｜头脑风暴，提出项目方向并做公开讲演\nPOCG｜10/11/2026｜完成游戏Demo，玩家可以使用钓竿移动、攻击小怪以及钓鱼。\nPrototype & Vertical Slice｜10/24/2026｜基于POCG设计关卡，但测试反馈不佳，项目一度陷入瓶颈。\nAlpha｜11/7/2026｜得出“时间停止”方案，拯救游戏。\nBeta｜11/21/2026｜持续开发游戏关卡，并且开放公开测试。\nLaunch｜11/3/2025｜最终测试。"
           },
           {
             "kind": "heading",
@@ -995,19 +897,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "kind": "heading",
             "level": 2,
             "text": "附件"
-          },
-          {
-            "kind": "buttons",
-            "links": [
-              {
-                "label": "查看 FLING 游戏设计文档（PDF）",
-                "href": "project4/pdfs/fling_gdd.pdf"
-              },
-              {
-                "label": "查看 FLING ReadMe（PDF）",
-                "href": "project4/pdfs/GroundZero_FLING_Readme.pdf"
-              }
-            ]
           },
           {
             "kind": "paragraph",
@@ -1046,98 +935,75 @@ window.SITE_CONTENT_BY_LANGUAGE = {
       "moreprojects": {
         "blocks": [
           {
-            "kind": "heading",
-            "level": 2,
-            "text": "海错大爆钓"
-          },
-          {
-            "kind": "image",
-            "caption": "Figure 39：《海错大爆钓》桌游",
-            "src": "moreprojects/images/figure-39-big-fishing-boom-board-game.jpg"
-          },
-          {
             "kind": "paragraph",
-            "text": "原创卡牌桌游设计，于上海 SHM 桌游展及“中国好桌游”展出，目前正与出版社推进出版合作。"
+            "text": "这里收录了四个核心案例之外的项目，重点展示我在 FPS 关卡、设计研究、快速原型与独立创作方面的能力。项目按照与关卡策划岗位的相关性排列。"
           },
           {
             "kind": "heading",
             "level": 2,
-            "text": "The Holy Grail"
+            "text": "The Way of Water｜《半条命 2》单人关卡"
+          },
+          {
+            "kind": "paragraph",
+            "text": "项目类型｜负责内容｜工具｜核心机制\nFPS 单人关卡｜关卡设计 / Gameplay 实现｜Hammer Editor｜水体物理 / 电力系统"
           },
           {
             "kind": "image",
-            "caption": "Figure 40：《The Holy Grail》雷神之锤 3 CTF 关卡设计",
-            "src": "moreprojects/images/figure-40-the-holy-grail-quake3-ctf-level.jpg"
-          },
-          {
-            "kind": "paragraph",
-            "text": "这是一张失败的《Quake III Arena》CTF 多人地图。在制作此图之前，我真正玩过的射击游戏只有《喷射战士》（Splatoon）。我曾以为那就是 FPS 游戏的标准形态，因此地图大多沿用了它的设计思路。《喷射战士》中几乎所有武器的射程都非常有限，这也导致我设计的地图过于开阔。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "然而，在我开始玩《守望先锋》（Overwatch）之后，我发现传统 FPS 游戏有着截然不同的设计逻辑。由于武器的有效射程远得多，其关卡设计往往并不符合直觉：入口通常紧挨着墙壁，几乎每个转角都设有掩体，从而在玩家交火时形成狭窄的射击角度。为了避免出现贯穿地图的长距离射击通道，视线也会被不断切割。结果，FPS 地图通常显得曲折复杂，仿佛置身于纽约街头。相比之下，《喷射战士》的地图更加开阔，更接近现实空间，布局也更符合自然的建筑结构。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "自此，我明白了，FPS 游戏的关卡设计主要取决于两点："
-          },
-          {
-            "kind": "paragraph",
-            "text": "• 引擎的选择：引擎技术决定了地图的开放程度。例如，与 Bungie 最新的引擎相比，id Tech 3 在几何体复杂度和渲染距离方面存在局限性。因此，使用 id Tech 3 制作的地图通常规模较小，并通过尽量减少长距离视线来确保高性能运行。\n• FPS 游戏的具体子类型：游戏子类型决定了地图体验的核心目标。例如，撤离类射击游戏（Extraction Shooter）强调致命性，会通过让玩家容易受到多角度攻击的场景体现这一点；竞技场射击游戏则截然不同，其体验经过精心设计，旨在营造一种平衡感。"
-          },
-          {
-            "kind": "heading",
-            "level": 2,
-            "text": "The Way of Water"
-          },
-          {
-            "kind": "image",
-            "caption": "Figure 41：The Way of Water 地图设计",
+            "caption": "The Way of Water 关卡布局与玩家流程",
             "src": "moreprojects/images/figure-41-the-way-of-water-map.jpg"
           },
           {
+            "kind": "paragraph",
+            "text": "我围绕《半条命 2》的水体物理与电力系统设计了一段完整的单人 FPS 流程：玩家深入发生事故的水下设施，在“水体导电”的持续威胁下切断电源、改变水位并寻找逃生路线。关卡将战斗、解谜和空间状态变化整合在同一条推进链中，而不是把机制作为彼此独立的房间挑战。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "设计重点包括利用窗户、灯光和敌人布置建立远期目标；通过断电前后的环境变化让玩家理解行动结果；并在潜水探索、室内交火和涨水逃生之间切换节奏。这个项目训练了我围绕引擎既有机制组织玩法、控制视线，以及用环境本身完成玩家引导的能力。"
+          },
+          {
             "kind": "image",
-            "caption": "Figure 42：The Way of Water 截图 1",
+            "caption": "利用水体、电力与垂直空间组织解谜和战斗",
             "src": "moreprojects/images/figure-42-the-way-of-water-screenshot-1.jpg"
           },
           {
             "kind": "image",
-            "caption": "Figure 43：The Way of Water 截图 2",
+            "caption": "The Way of Water 实机截图 2",
             "src": "moreprojects/images/figure-43-the-way-of-water-screenshot-2.jpg"
           },
           {
             "kind": "image",
-            "caption": "Figure 44：The Way of Water 截图 3",
+            "caption": "The Way of Water 实机截图 3",
             "src": "moreprojects/images/figure-44-the-way-of-water-screenshot-3.jpg"
           },
           {
             "kind": "image",
-            "caption": "Figure 45：The Way of Water 截图 4",
+            "caption": "关卡通过环境状态变化持续更新玩家目标",
             "src": "moreprojects/images/figure-45-the-way-of-water-screenshot-4.jpg"
           },
           {
             "kind": "image",
-            "caption": "Figure 46：The Way of Water 截图 5",
+            "caption": "The Way of Water 实机截图 5",
             "src": "moreprojects/images/figure-46-the-way-of-water-screenshot-5.jpg"
           },
           {
             "kind": "image",
-            "caption": "Figure 47：The Way of Water 截图 6",
+            "caption": "The Way of Water 实机截图 6",
             "src": "moreprojects/images/figure-47-the-way-of-water-screenshot-6.jpg"
           },
           {
-            "kind": "paragraph",
-            "text": "使用 Hammer Editor 制作的《半条命 2》FPS 单人关卡。围绕水体物理与电力机制设计战斗及解谜流程，控制玩家引导、战斗节奏与空间视线。"
+            "kind": "youtube",
+            "id": "ljxY9222A-8",
+            "caption": "《The Way of Water》完整流程演示"
           },
           {
             "kind": "buttons",
             "links": [
               {
-                "label": "查看 The Way of Water 关卡设计文档（PDF）",
+                "label": "查看关卡设计文档（PDF）",
                 "href": "moreprojects/pdfs/MaZ_HL2_LDD.pdf"
               },
               {
-                "label": "查看 The Way of Water ReadMe（PDF）",
+                "label": "查看 ReadMe（PDF）",
                 "href": "moreprojects/pdfs/MaZ_HL2_Readme_GC_Lite.pdf"
               }
             ]
@@ -1145,34 +1011,102 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           {
             "kind": "heading",
             "level": 2,
-            "text": "A study on the influence of thematic affordances on players’ cognitive map construction"
+            "text": "The Holy Grail｜《雷神之锤 3》CTF 多人地图"
           },
           {
             "kind": "paragraph",
-            "text": "毕设题目，从三层认知分层展开研究："
+            "text": "项目类型｜负责内容｜工具｜开发方式\n竞技场 FPS / CTF｜布局 / 交战路线 / 资源配置｜Radiant｜单人"
+          },
+          {
+            "kind": "image",
+            "caption": "The Holy Grail 对称 CTF 地图",
+            "src": "moreprojects/images/figure-40-the-holy-grail-quake3-ctf-level.jpg"
           },
           {
             "kind": "paragraph",
-            "text": "• 主题可供性（Thematic Affordance）：玩家能否通过具有主题特色的环境线索识别空间的功能。\n• 功能分区（Functional Zoning）：主题性的环境暗示（Affordances）是否有助于玩家区分功能区域，并感知区域间清晰的过渡。\n• 认知地图构建（Cognitive Map Construction）：玩家能否利用不同的区域构建出关于整体环境的认知地图。"
+            "text": "失败的Quake 3 竞技场多人地图。在制作此图之前，我真正玩过的射击游戏只有《喷射战士》（Splatoon）。我曾以为那就是 FPS 游戏的标准形态，因此我设计的地图也大多沿用了它的设计思路。《喷射战士》中几乎所有武器的射程都非常有限，导致地图往往过于开阔的原因。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "然而，在我开始玩《守望先锋》（Overwatch）之后，发现真正的 FPS 游戏有着截然不同的设计逻辑。由于武器的有效射程远得多，其关卡设计往往不符合直觉。例如，入口处通常紧挨着墙壁，几乎每个转角都设有掩体，从而在玩家交火时形成狭窄的射击角度。为了防止玩家形成长距离的射击通道，视线往往被不断切割。结果，FPS 地图通常显得曲折复杂，仿佛置身于纽约街头。相比之下，《喷射战士》的地图则显得更为开阔，更像现实世界的空间，布局也更符合自然的建筑结构。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "自此，我明白了，FPS游戏的关卡设计主要取决于两点："
+          },
+          {
+            "kind": "paragraph",
+            "text": "o\t引擎的选择：引擎技术的选择决定了地图的开放程度。例如，与 Bungie 最新的引擎相比，idTech 3 引擎在几何体复杂度和渲染距离方面存在局限性。因此，idTech 3 制作的地图通常规模较小，通过尽量减少长距离视线的技术手段来确保高性能运行。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "o\tFPS 游戏的具体子类型：游戏子类型决定了地图体验的核心目标。例如，撤离类射击游戏（Extraction shooters）强调致命性，通过设计让玩家容易从不同角度遭受攻击的场景来体现这一点；相比之下，竞技场射击游戏则截然不同，其体验经过精心设计，旨在营造一种平衡感。"
+          },
+          {
+            "kind": "buttons",
+            "links": [
+              {
+                "label": "查看多人地图设计图（PDF）",
+                "href": "moreprojects/pdfs/The_Holy_Grail_CTF_Map.pdf"
+              }
+            ]
           },
           {
             "kind": "heading",
             "level": 2,
-            "text": "Box Shot"
+            "text": "毕业设计研究｜主题可供性与认知地图构建"
+          },
+          {
+            "kind": "paragraph",
+            "text": "研究主题｜研究对象｜核心变量｜项目状态\n关卡设计研究｜复杂室内环境｜主题可供性｜正在制作中"
+          },
+          {
+            "kind": "paragraph",
+            "text": "我的毕业设计研究主题为“A Study on the Influence of Thematic Affordances on Players’ Cognitive Map Construction”，研究主题可供性如何影响玩家理解复杂室内环境，并建立对整体空间的认知表征。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "主题可供性指环境通过建筑设计、视觉主题、环境叙事、物件摆放与空间构成传达功能意义的能力。玩家无需依赖明确指令或 UI，也能够从环境本身推断空间的用途。研究从两个连续的认知层次展开："
+          },
+          {
+            "kind": "paragraph",
+            "text": "• 功能可读性：玩家能否通过一致的主题物件、建筑特征与视觉线索识别空间功能，并形成稳定记忆。\n• 认知地图构建：玩家能否将已识别的功能区域作为空间锚点，理解区域之间的位置、连接关系与整体组织结构。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "研究计划使用 Starfield Creation Kit 制作由多个功能区域、走廊、楼梯、电梯与中央中庭组成的大型室内关卡，并通过玩家探索、空间重访和测试，验证玩家是否能够从局部功能识别逐步形成全局认知地图。最终目标是把“环境主题是否清晰”转化为可观察、可测试的关卡设计问题。"
+          },
+          {
+            "kind": "buttons",
+            "links": [
+              {
+                "label": "查看 Thesis Topic Best Practices（PDF）",
+                "href": "moreprojects/pdfs/Thesis_Topic_Best_Practices.pdf"
+              }
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Box Shot｜UE5 高速 FPS 团队项目"
           },
           {
             "kind": "image",
-            "caption": "Figure 48：Box Shot 关卡原型",
+            "caption": "Box Shot 关卡原型",
             "src": "moreprojects/images/figure-48-box-shot-level-prototype.jpg"
           },
           {
             "kind": "paragraph",
-            "text": "42 人团队 UE5 高速 FPS 项目，正在研发中。"
+            "text": "42 人团队开发的 UE5 高速 FPS 项目，目前仍在研发中。该项目将进一步扩展我在高速移动、战斗空间与大型跨职能团队协作方面的经验；在内容允许公开后，我会补充具体职责、关卡流程与测试迭代。"
           },
           {
             "kind": "heading",
             "level": 2,
-            "text": "Escape from the Circus"
+            "text": "Escape from the Circus｜Global Game Jam"
+          },
+          {
+            "kind": "paragraph",
+            "text": "项目类型｜职责｜工具｜周期\n2D 平台跳跃 / 面部识别交互｜程序开发｜Unity｜48 小时"
           },
           {
             "kind": "youtube",
@@ -1181,13 +1115,13 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "Global Game Jam 项目，基于面部识别交互的 Unity 2D 平台跳跃游戏，担任程序开发，在 48 小时内开发完成。"
+            "text": "玩家通过面部动作控制角色完成平台跳跃。我负责程序开发，与团队在 48 小时内完成从交互概念、原型验证到可玩版本的完整流程。这次项目强化了我快速理解陌生输入方式、限定范围并交付可玩原型的能力。"
           },
           {
             "kind": "buttons",
             "links": [
               {
-                "label": "Global Game Jam 项目页",
+                "label": "查看 Global Game Jam 项目页",
                 "href": "https://globalgamejam.org/games/2024/escape-circus-2"
               }
             ]
@@ -1195,20 +1129,34 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           {
             "kind": "heading",
             "level": 2,
-            "text": "OGO"
+            "text": "OGO｜BOOOM Game Jam"
           },
           {
             "kind": "paragraph",
-            "text": "BOOOM Game Jam 项目，也是我第一次参加 Game Jam。使用 Unreal Engine 制作的 2D 平台跳跃游戏。"
+            "text": "我第一次参加 Game Jam 时使用 Unreal Engine 制作的 2D 平台跳跃游戏。项目让我初次经历在强时间限制下确定核心玩法、快速制作关卡并完成团队交付的全过程。"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "海错大爆钓｜原创卡牌桌游"
           },
           {
             "kind": "paragraph",
-            "text": "机核链接：OGO | 机核 GCORES"
+            "text": "项目类型｜职责｜项目状态\n原创卡牌桌游｜独立游戏设计｜展出 / 出版合作推进中"
+          },
+          {
+            "kind": "image",
+            "caption": "《海错大爆钓》原创卡牌桌游",
+            "src": "moreprojects/images/figure-39-big-fishing-boom-board-game.jpg"
+          },
+          {
+            "kind": "paragraph",
+            "text": "我独立设计的原创卡牌桌游，曾于上海 SHM 桌游展及“中国好桌游”展出，目前正与出版社推进出版合作。这个长期项目让我在数字游戏之外持续训练规则设计、数值迭代、实体测试与面向真实玩家解释复杂系统的能力。"
           }
         ],
         "hero": {
           "src": "moreprojects/cover.jpg",
-          "caption": "更多项目封面"
+          "caption": "更多项目"
         }
       },
       "aboutme": {
@@ -1278,15 +1226,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "首先，《Splatoon》除了网络连接极不稳定、运营体系落后、匹配机制极不公平之外，是一款完美的游戏。它以“鱿鱼”这一概念提纲挈领地统筹了玩法、美术、剧情乃至音乐：鱿鱼会喷墨，所以使用墨汁射击；会变色，所以用颜色区分阵营；有领地意识，所以围绕涂地展开对战；会游泳，所以能够潜入墨汁。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "这些设定进一步构成了完整的游戏循环：玩家消耗墨水射击、击倒对手、积攒大招并扩大行动范围；再潜入墨水恢复墨量与生命、隐藏行踪、加速移动并攀上墙壁。“在墙面墨汁中游泳”更从根本上改变了 PvP 地图的垂直设计。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "当我观看 GDC 开发演讲，得知团队是先完成玩法、再引入“鱿鱼”概念时，我非常震惊。它也成为我早期 FPS PvP 关卡设计中的一份“反面教材”：由于《Splatoon》大多数武器相比传统 FPS 射程很短，所以地图可以更加开放；我曾照搬这种开放性，导致早期 FPS 地图缺少对枪线的控制。而传统 FPS 的武器射程近乎无限，需要通过弯折动线、遮挡和掩体切割视线。经过不断学习与实践，我逐渐理解：即使核心交互同为射击，玩法模式与武器射程不同，关卡设计逻辑也会完全不同。"
+            "text": "它用“鱿鱼”这一概念统一玩法、美术与世界观，并通过射击、涂地、潜墨和墙面游泳构成独一无二的战斗与移动循环。\n它也让我意识到：即使核心交互同为射击，玩法模式与武器射程不同，地图的开放程度、垂直结构与视线控制逻辑也会完全不同。"
           },
           {
             "kind": "heading",
@@ -1295,15 +1235,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "我最初因为它“游戏界百科全书”的名气而入坑，上手后发现，这款游戏完美体现了任天堂“易上手，难精通”的设计理念。它不同于传统格斗游戏，而是通过攻击为对手积累百分比；百分比越高，对手越容易被击飞出场。这一核心规则创造了传统血条制格斗游戏难以提供的可能性："
-          },
-          {
-            "kind": "paragraph",
-            "text": "1. 胜负并不单纯由生命值决定。玩家可以在对手百分比较低时通过场外击杀取胜，让整局始终保持紧张，也让落后者一直拥有翻盘机会。\n2. 战斗不再只围绕起手与固定连段展开。每次击飞后的追击、回场与场外攻防，都要求玩家持续判断并操作。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "本作最大的特殊之处，还在于汇集了游戏行业众多知名 IP 角色。不同世界观、不同类型的人物可以在同一舞台登场；每名角色都拥有鲜明的动作特征和独特玩法，却又能够平衡地共存于同一套系统之下，设计功力可见一斑。此外，其蓬勃的线下社群生态也进一步延长了游戏的生命力。"
+            "text": "它以“百分比积累＋击飞出场”取代传统血条，让追击、回场与场外攻防持续产生判断，也让比赛始终保留翻盘可能。\n它还能将不同类型、不同世界观的角色转化为鲜明而平衡的玩法，完美体现了任天堂“易上手，难精通”的设计理念。"
           },
           {
             "kind": "heading",
@@ -1312,19 +1244,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "我认为《蔚蓝》是游戏难度曲线设计的教科书，也是 2D 平台跳跃游戏的顶点。它以高难度闻名，但凭借出色的教程、节奏控制和逐章引入机制的方式，不断完成“起承转合”。玩家从头到尾没有任何数值或等级加成，完全依靠自身技术成长通关；最终站在山顶时，能够清晰回望自己一路走来的成长。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "《蔚蓝》“分而治之”的关卡设计同样对难度曲线起到了关键作用："
-          },
-          {
-            "kind": "paragraph",
-            "text": "• 游戏将主要机制分散到不同章节，每章只要求玩家认识、学习并反复训练一个新机制。\n• 每章再拆分为多个单屏房间，便于玩家理解、学习和重复练习。\n• 每个房间由一连串机关构成，但会被安全落脚点划分为若干段落，让玩家一次只解决一个局部问题。\n• 最终再落实到单个机关，让玩家通过反复尝试掌握精确操作。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "这种类似计算机编程中自上而下、分而治之的设计思想，使游戏的难度曲线格外优雅。近乎零等待的快速重生机制，也让高难挑战始终保持低挫败、高反馈的节奏。"
+            "text": "我认为《蔚蓝》是难度曲线设计的教科书：玩家没有任何数值成长，只依靠自身技术进步，最终真正感受到“是我学会了登上这座山”。\n它通过章节、单屏房间、安全落脚点与单个机关层层拆分挑战，再以快速重生降低挫败感，让极高难度始终清晰、公平且令人愿意重试。"
           },
           {
             "kind": "heading",
@@ -1351,12 +1271,12 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "tabTitle": "Starfield Side Quest: Decaran: Become Human",
         "tag": "Starfield Side Quest Level Design",
         "type": "Starfield Single-Player Side-Quest Level",
-        "role": "Level Design / Quest Design / Gameplay Implementation",
-        "time": "10 Weeks / Solo / Approx. 300 Hours",
+        "role": "Level Design / Quest Design / Narrative Design / Gameplay Implementation",
+        "time": "10 Weeks / Solo",
         "status": "Completed",
         "statusUrl": "",
         "statusLink": "",
-        "caption": "▲ A complete side-quest level independently developed from spatial planning and quest structure through scripting and iteration"
+        "caption": "▲ A two-ending quest experience built through spatial layout, combat design, and environmental storytelling"
       },
       "project2": {
         "title": "Ghost Ship",
@@ -1397,14 +1317,14 @@ window.SITE_CONTENT_BY_LANGUAGE = {
       "moreprojects": {
         "title": "More Projects",
         "tabTitle": "More Projects",
-        "tag": "Prototypes & Other Works",
-        "type": "Multi-Genre Projects and Gameplay Prototypes",
-        "role": "Design / Prototyping / Collaborative Development",
-        "time": "Ongoing",
+        "tag": "Selected Works",
+        "type": "Level Design / Research / Prototypes & Independent Work",
+        "role": "Level Design / Game Design / Prototyping",
+        "time": "2024 — Present",
         "status": "",
         "statusUrl": "",
         "statusLink": "",
-        "caption": "▲ An archive of additional game designs, interactive prototypes, and independent work"
+        "caption": "▲ Additional level design, research, and game development work beyond the four core case studies"
       },
       "aboutme": {
         "title": "About Me",
@@ -1429,29 +1349,25 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "An original Starfield side quest built around a central hub, a three-stage investigation, and a morally ambiguous choice; I used the Creation Kit to independently deliver approximately 18 minutes of exploration, combat, puzzles, dialogue, and two endings across interior and exterior spaces."
+            "text": "A single-player quest level with both interior and exterior spaces, independently designed and developed in the Starfield Creation Kit, using spatial layout, combat design, and environmental storytelling to create a two-ending mission built around a moral choice."
           },
           {
             "kind": "heading",
             "level": 2,
-            "text": "Project Overview"
+            "text": "Game Overview"
           },
           {
             "kind": "paragraph",
-            "text": "Role｜Level Design / Quest Design / Gameplay Implementation\nDevelopment｜10 Weeks / Solo / Approx. 300 Hours\nScope｜4 Exterior Spaces / 7 Interior Spaces\nPlaytime｜Approx. 18 Minutes / Two Endings\nTools｜Starfield Creation Kit / Papyrus"
+            "text": "Starfield is an open-world science-fiction RPG developed by Bethesda Game Studios. Built with the official Creation Kit, this project adds an original, independently playable side quest to the game."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Level Overview"
           },
           {
             "kind": "paragraph",
-            "text": "The player is hired to investigate a robot uprising at the automated Decaran III factory. Inside, they gather evidence across distinct functional zones, activate three terminals, and progressively unlock the core area. They eventually discover that their guide, R6D7, orchestrated the awakening. The player must choose between restoring production and freeing the robots, then face the consequences."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Quest Phase｜Player Action｜Design Purpose\nEstablish Mystery｜Investigate the exterior and meet workers, doctors, mercenaries, and R6D7｜Frame the conflict through competing perspectives\nAdvance Investigation｜Enter the factory and explore three zones around the central hall｜Alternate exploration, combat, puzzles, and information reveals\nReveal the Truth｜Ride the elevator to the rooftop office and learn R6D7's identity｜Reframe the mission and the player's relationship with their guide\nFinal Choice｜Return to the central hall, complete the final battle, and decide the factory's fate｜Bring earlier characters, information, and consequences together"
-          },
-          {
-            "kind": "image",
-            "caption": "Level overview: the exterior industrial park, factory, and vertical tower form one complete quest space",
-            "src": "project1/images/level-overview.jpg"
+            "text": "Decaran: Become Human is a Starfield side-quest level. The player is hired to investigate an abnormal incident at the automated Decaran III factory and gradually uncovers the truth behind the robots' awakening. As the story unfolds, the player must ultimately choose between restoring factory production and helping the robots gain their freedom. The two choices lead to dramatically different endings."
           },
           {
             "kind": "youtube",
@@ -1461,118 +1377,23 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           {
             "kind": "heading",
             "level": 2,
-            "text": "Design Goals"
+            "text": "My Work"
           },
           {
             "kind": "paragraph",
-            "text": "1. Preserve exploration freedom while keeping the player's current objective and global position readable.\n2. Integrate combat, puzzles, narrative information, and spatial progression instead of treating them as separate layers.\n3. Give both endings meaningful benefits and costs rather than presenting a simple good-versus-evil choice."
-          },
-          {
-            "kind": "heading",
-            "level": 2,
-            "text": "01｜Organizing Three-Stage Exploration Around a Central Hall"
+            "text": "1. Narrative Design\n• Designed the complete side-quest narrative, mission objectives, and two-ending structure.\n• Wrote NPC dialogue, quest text, and environmental storytelling content.\n• Used a moral dilemma to encourage players to reflect on the relationship between robots and humans."
           },
           {
             "kind": "paragraph",
-            "text": "The factory interior uses a hub structure composed of a central hall and three objective zones. On first entering the hall, the player can see the locked central elevator and its three status indicators, establishing the long-term objective before exploration begins. The player then clears the surrounding zones, completes combat and terminal interactions, and repeatedly returns to confirm progress."
+            "text": "2. Level Design\n• Designed the factory's overall spatial layout, player routes, and exploration flow.\n• Built a level rhythm that alternates among combat, exploration, and puzzle-solving.\n• Used thematic zoning to strengthen spatial navigation and environmental readability."
           },
           {
             "kind": "paragraph",
-            "text": "The hall is more than a corridor. It serves as a navigational anchor, progress display, combat arena, and final confrontation space. Enemy states, quest progress, and accessible routes change between visits, turning spatial reuse into part of the quest rhythm."
-          },
-          {
-            "kind": "image",
-            "caption": "Central hall: the elevator presents the long-term objective while the surrounding space connects three quest zones",
-            "src": "project1/images/central-hub.jpg"
+            "text": "3. Gameplay Design\n• Configured enemies and combat encounters.\n• Designed core gameplay elements including EMP weapons, laser obstacles, and terminal puzzles.\n• Used Papyrus Script to implement quest logic and event triggers."
           },
           {
             "kind": "paragraph",
-            "text": "Design Goal｜Maintain orientation during nonlinear exploration\nMethod｜Visible long-term objective / Central hub / Functional zoning / Return loops\nOutcome｜Converted an underused hall into the quest's navigational, progression, combat, and narrative core"
-          },
-          {
-            "kind": "heading",
-            "level": 2,
-            "text": "02｜Connecting Interaction and Outcome Through Sightlines"
-          },
-          {
-            "kind": "paragraph",
-            "text": "In the initial version, the player activated three terminals to unlock the central elevator, but the terminals and elevator were visually separated. After interacting, the player had to rely on quest text to understand progress and could not see what their action had changed."
-          },
-          {
-            "kind": "paragraph",
-            "text": "I reoriented the terminals and added observation windows so the player could directly see the corresponding elevator light and lock state change. Visible cables connected each terminal to its target device, reinforcing the causal relationship. This iteration transformed text-dependent feedback into spatial feedback that players could observe and understand in the environment."
-          },
-          {
-            "kind": "image",
-            "caption": "Interior route: three objective zones branch from the central hall and converge on the elevator",
-            "src": "project1/images/interior-route.jpg"
-          },
-          {
-            "kind": "heading",
-            "level": 2,
-            "text": "03｜Building Combat Escalation Through Space and Enemy Composition"
-          },
-          {
-            "kind": "paragraph",
-            "text": "Melee assault robots and ranged units create complementary threats, while encounter spaces expand from compact rooms to an open hall and vertical traversal areas. Players must continually reconsider sightlines, elevation, cover, and target priority instead of repeating a single clearing strategy."
-          },
-          {
-            "kind": "paragraph",
-            "text": "The Novablast EMP rifle adds a control option by temporarily incapacitating robots. Early encounters teach the stun behavior, the middle section combines melee and ranged enemies across two levels, and the final battle reuses the familiar central hall to test movement, target selection, and spatial knowledge together."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Stage｜Space and Enemies｜Player Decision\nEarly Tutorial｜Compact room / Single threat｜Learn the EMP stun and establish the basic combat rule\nMid-Quest Combination｜Two-level hall / Melee + ranged robots｜Use elevation and cover to prioritize targets\nFinal Battle｜Reused central hall / R6D7 and robot reinforcements｜Combine weapons, movement, and route knowledge in familiar space"
-          },
-          {
-            "kind": "image",
-            "caption": "The vertical shaft changes traversal rhythm through lasers, elevation, and a return loop",
-            "src": "project1/images/vertical-shaft.jpg"
-          },
-          {
-            "kind": "heading",
-            "level": 2,
-            "text": "04｜Making the Final Choice Change Characters and World State"
-          },
-          {
-            "kind": "paragraph",
-            "text": "I did not want “free the robots” to be an automatically correct answer, so both branches carry benefits and costs. Doctors, workers, mercenaries, and robots encountered earlier each present a different stake in the conflict, grounding the final decision in information and relationships accumulated throughout the quest."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Final Choice｜Immediate Result｜Consequences\nDestroy R6D7 and restore production｜The robots are suppressed and the factory resumes operation｜Relations with the corporation and mercenaries improve, medicine production resumes, and the human patient survives\nFree the awakened robots｜The robots gain freedom and the factory shuts down｜The corporation and mercenaries become hostile, medicine supplies stop, and the human patient dies"
-          },
-          {
-            "kind": "image",
-            "caption": "The rooftop office uses sunset, long views, and elevation to stage the truth reveal",
-            "src": "project1/images/rooftop-reveal.jpg"
-          },
-          {
-            "kind": "image",
-            "caption": "The final conversation with R6D7 consolidates the quest's information into a consequential choice",
-            "src": "project1/images/final-choice.jpg"
-          },
-          {
-            "kind": "heading",
-            "level": 2,
-            "text": "Gameplay and Quest Implementation"
-          },
-          {
-            "kind": "paragraph",
-            "text": "I used the Creation Kit to build spaces, configure enemies, create objectives, author NPC dialogue, and manage level states. Papyrus scripts and Quest Stages control locks, terminals, factions, character behavior, final-battle triggers, and both endings. Aliases manage critical actors and quest objects so state remains consistent across locations."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Implementation Area｜Delivered Content\nQuest Flow｜Objective updates / Quest Stages / Dialogue conditions / Two endings\nSpatial State｜Locks / Elevator / Three terminals / Hidden entrances\nCharacters and Combat｜NPC behavior / Faction hostility / Combat triggers / Boss battle\nPlayer Feedback｜Quest text / Signal lights / Observation windows / Cable guidance"
-          },
-          {
-            "kind": "heading",
-            "level": 2,
-            "text": "Playtesting and Iteration"
-          },
-          {
-            "kind": "paragraph",
-            "text": "Finding｜Design Diagnosis｜Change｜Observed Result\nPlayers could not tell what a terminal changed｜The interaction and feedback target lacked a spatial relationship｜Reoriented terminals and added windows that reveal the elevator state change｜Players could understand the terminal–elevator relationship without relying on quest text\nThe full laser-platforming section demanded precise aerial control that did not fit Starfield's movement｜Difficulty came from control limitations rather than meaningful spatial decisions｜Reduced the platforming and retained lasers as local hazards and spatial constraints｜Reduced flow interruptions while preserving the vertical area's visual identity and movement variation\nThe initial hall was large but functioned mainly as a passage｜A high-cost core space was not contributing enough to progression｜Converted it into a hub revisited throughout the quest and reused for the final battle｜The hall now supports navigation, progress feedback, combat, and narrative"
+            "text": "4. Playtesting and Iteration\n• Continuously refined flow, combat difficulty, navigation, and environmental storytelling through multiple rounds of playtesting.\n• Fixed scripting issues and completed the final build."
           },
           {
             "kind": "heading",
@@ -1581,7 +1402,16 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "Level Design Pitch｜2026.02.20｜Established the theme, core gameplay, narrative framework, and development direction\nLevel Design Document｜2026.02.26｜Completed the LDD and defined flow, spatial layout, quest structure, and combat design\nWhitebox｜2026.03.09｜Validated spatial layout, player flow, and pacing\nInitial Gameplay｜2026.03.29｜Implemented core gameplay, quest scripts, and combat to produce a complete playable flow\nGameplay Complete｜2026.04.18｜Completed all level content and refined navigation, combat, and quest experience\nAesthetics｜2026.04.26｜Completed environment art, lighting, and presentation\nRTM｜2026.05.03｜Completed final polish, bug fixing, and delivery"
+            "text": "Level Design Pitch｜2026.02.20｜Completed the level pitch and established the theme, core gameplay, narrative framework, and overall development direction.\nLevel Design Document｜2026.02.26｜Completed the LDD and defined the level flow, spatial layout, quest structure, and combat design.\nWhitebox｜2026.03.09｜Completed the whitebox and validated the spatial layout, player flow, and level pacing.\nInitial Gameplay｜2026.03.29｜Implemented the core gameplay, quest scripts, and combat systems, producing a fully playable level.\nGameplay Complete｜2026.04.18｜Completed all level content and continued refining flow, navigation, and the overall experience based on playtesting.\nAesthetics｜2026.04.26｜Completed environment art, lighting, and environmental presentation to improve the overall visual quality.\nRTM｜2026.05.03｜Completed final polish, bug fixing, and project delivery."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Playtesting and Iteration"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Feedback｜Analysis｜Solution"
           },
           {
             "kind": "heading",
@@ -1590,15 +1420,15 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "What Went Well\n• Independently completed an approximately 18-minute side quest containing interior and exterior exploration, combat, puzzles, NPC dialogue, and two endings.\n• Organized progression through a central hub and three functional zones, using spatial feedback to improve objective readability.\n• Implemented complete quest states, character behavior, and ending branches with the Creation Kit and Papyrus."
+            "text": "What Went Well\n• The overall visual presentation was strong.\n• I attempted and implemented several new design ideas.\n• The level's vertical spatial structure was well designed.\n• I continuously refined the level flow based on milestone reviews and playtest feedback."
           },
           {
             "kind": "paragraph",
-            "text": "Even Better If\n• The exterior supports less gameplay than the interior; future whitebox testing should validate content density across every major zone earlier.\n• Combat difficulty and enemy combinations received insufficient focused testing; future projects should include encounter-specific sessions in addition to full-flow playtests.\n• Too much early development time went into platforming that did not fully match the base movement model; mechanic-to-controller fit should be validated earlier."
+            "text": "Even Better If\n• Communication with stakeholders, including instructors and producers, could have been stronger.\n• The laser-platforming gameplay did not perform as well as intended and should have received further polish if time allowed.\n• The narrative content was still insufficient.\n• Combat difficulty was too low and lacked challenge.\n• Parts of the flow still needed improvement.\n• The laser mechanic was not used to its full potential.\n• The exterior area was relatively underdeveloped.\n• The overall level quality still fell short of my expectations."
           },
           {
             "kind": "paragraph",
-            "text": "What I Learned\n• A quest level is not a simple sum of space, narrative, and combat. Objectives, routes, information, and system feedback must work together to support the player's current understanding and decisions. Adding more content matters less than giving every space a clear function and allowing players to read the consequences of their actions from the environment itself."
+            "text": "What I Learned\n• Proactively communicate with stakeholders and respond to feedback promptly.\n• Plan development time more effectively.\n• Gain a holistic command of the engine and tools as early as possible in a project.\n• Improve my ability to adapt to complex and unfamiliar development tools.\n• Commercial game engines and internal company tools are imperfect, and designers must learn to work with their limitations.\n• Complete a full level project according to a professional game-development pipeline.\n• Time and energy management are crucial to a project's success.\n• Design and refine level flow.\n• Find a balance between gameplay and believable architectural logic.\n• Build game narratives that are more complete, clearly structured, and supportive of gameplay."
           },
           {
             "kind": "heading",
@@ -1770,19 +1600,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "kind": "heading",
             "level": 2,
             "text": "Appendix"
-          },
-          {
-            "kind": "buttons",
-            "links": [
-              {
-                "label": "View the Ghost Ship Level Design Document (PDF)",
-                "href": "project2/pdfs/Ma _DFSI_LDD_01.pdf"
-              },
-              {
-                "label": "View the Ghost Ship RTM ReadMe (PDF)",
-                "href": "project2/pdfs/Ma_DFSI_ReadMe_ RTM.pdf"
-              }
-            ]
           },
           {
             "kind": "image",
@@ -2341,19 +2158,6 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "Attachments"
           },
           {
-            "kind": "buttons",
-            "links": [
-              {
-                "label": "View the FLING Game Design Document (PDF)",
-                "href": "project4/pdfs/fling_gdd.pdf"
-              },
-              {
-                "label": "View the FLING ReadMe (PDF)",
-                "href": "project4/pdfs/GroundZero_FLING_Readme.pdf"
-              }
-            ]
-          },
-          {
             "kind": "paragraph",
             "text": "Team Photos:"
           },
@@ -2390,98 +2194,75 @@ window.SITE_CONTENT_BY_LANGUAGE = {
       "moreprojects": {
         "blocks": [
           {
-            "kind": "heading",
-            "level": 2,
-            "text": "Big Fishing Boom"
-          },
-          {
-            "kind": "image",
-            "caption": "Figure 39: Big Fishing Boom tabletop game",
-            "src": "moreprojects/images/figure-39-big-fishing-boom-board-game.jpg"
-          },
-          {
             "kind": "paragraph",
-            "text": "An original card-based tabletop game exhibited at the Shanghai SHM Board Game Expo and the China Good Board Game showcase. I am currently working with a publisher toward publication."
+            "text": "This page collects selected work beyond my four core case studies, highlighting my experience in FPS level design, design research, rapid prototyping, and independent creation. Projects are ordered by relevance to level design roles."
           },
           {
             "kind": "heading",
             "level": 2,
-            "text": "The Holy Grail"
+            "text": "The Way of Water｜Half-Life 2 Single-Player Level"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Project Type｜Responsibilities｜Tool｜Core Systems\nSingle-Player FPS Level｜Level Design / Gameplay Implementation｜Hammer Editor｜Water Physics / Electrical Systems"
           },
           {
             "kind": "image",
-            "caption": "Figure 40: The Holy Grail — Quake III Arena CTF level design",
-            "src": "moreprojects/images/figure-40-the-holy-grail-quake3-ctf-level.jpg"
-          },
-          {
-            "kind": "paragraph",
-            "text": "This was a failed Quake III Arena CTF multiplayer map. Before creating it, the only shooter I had seriously played was Splatoon. I assumed it represented the standard form of FPS design, so I carried many of its design principles into my own map. Because nearly every weapon in Splatoon has a very limited effective range, the resulting map was far too open."
-          },
-          {
-            "kind": "paragraph",
-            "text": "After I began playing Overwatch, however, I discovered that traditional FPS games follow a very different design logic. Because their weapons are effective across much longer distances, their level design often feels counterintuitive: entrances are commonly placed directly beside walls, nearly every corner provides cover, and combat is shaped around narrow firing angles. Sightlines are repeatedly interrupted to prevent long firing lanes from spanning the map. As a result, FPS maps often feel winding and complex, almost like the streets of New York. Splatoon maps, by contrast, are generally more open, closer to real-world spaces, and more consistent with natural architectural layouts."
-          },
-          {
-            "kind": "paragraph",
-            "text": "From this experience, I learned that FPS level design is shaped primarily by two factors:"
-          },
-          {
-            "kind": "paragraph",
-            "text": "• Engine choice: Engine technology determines how open a map can be. Compared with Bungie's latest engine, id Tech 3 is limited in geometric complexity and rendering distance. Maps built with id Tech 3 are therefore usually smaller and use techniques that minimize long sightlines to maintain high performance.\n• FPS subgenre: The subgenre defines the experience a map must support. Extraction shooters, for example, emphasize lethality and often place players in spaces where they can be attacked from multiple angles. Arena shooters are fundamentally different: their encounters are carefully structured to create a sense of balance."
-          },
-          {
-            "kind": "heading",
-            "level": 2,
-            "text": "The Way of Water"
-          },
-          {
-            "kind": "image",
-            "caption": "Figure 41: The Way of Water map design",
+            "caption": "The Way of Water level layout and player flow",
             "src": "moreprojects/images/figure-41-the-way-of-water-map.jpg"
           },
           {
+            "kind": "paragraph",
+            "text": "I designed a complete single-player FPS sequence around Half-Life 2's water physics and electrical systems. The player enters a damaged underwater facility, shuts down power under the persistent threat of electrified water, changes water levels, and searches for an escape route. Combat, puzzles, and environmental state changes form one continuous progression rather than a series of isolated mechanic rooms."
+          },
+          {
+            "kind": "paragraph",
+            "text": "The design uses windows, lighting, and enemy placement to establish distant goals; clear before-and-after states to communicate the consequences of player actions; and pacing shifts between underwater exploration, interior combat, and a rising-water escape. This project strengthened my ability to build around an engine's existing systems, control sightlines, and guide players through the environment itself."
+          },
+          {
             "kind": "image",
-            "caption": "Figure 42: The Way of Water — Screenshot 1",
+            "caption": "Water, electricity, and vertical space organize puzzles and combat",
             "src": "moreprojects/images/figure-42-the-way-of-water-screenshot-1.jpg"
           },
           {
             "kind": "image",
-            "caption": "Figure 43: The Way of Water — Screenshot 2",
+            "caption": "The Way of Water gameplay screenshot 2",
             "src": "moreprojects/images/figure-43-the-way-of-water-screenshot-2.jpg"
           },
           {
             "kind": "image",
-            "caption": "Figure 44: The Way of Water — Screenshot 3",
+            "caption": "The Way of Water gameplay screenshot 3",
             "src": "moreprojects/images/figure-44-the-way-of-water-screenshot-3.jpg"
           },
           {
             "kind": "image",
-            "caption": "Figure 45: The Way of Water — Screenshot 4",
+            "caption": "Environmental state changes continually update the player's objective",
             "src": "moreprojects/images/figure-45-the-way-of-water-screenshot-4.jpg"
           },
           {
             "kind": "image",
-            "caption": "Figure 46: The Way of Water — Screenshot 5",
+            "caption": "The Way of Water gameplay screenshot 5",
             "src": "moreprojects/images/figure-46-the-way-of-water-screenshot-5.jpg"
           },
           {
             "kind": "image",
-            "caption": "Figure 47: The Way of Water — Screenshot 6",
+            "caption": "The Way of Water gameplay screenshot 6",
             "src": "moreprojects/images/figure-47-the-way-of-water-screenshot-6.jpg"
           },
           {
-            "kind": "paragraph",
-            "text": "A Half-Life 2 single-player FPS level created in Hammer Editor. Combat and puzzle flow are built around water physics and electrical systems, with deliberate control of player guidance, combat pacing, and spatial sightlines."
+            "kind": "youtube",
+            "id": "ljxY9222A-8",
+            "caption": "The Way of Water Full Playthrough"
           },
           {
             "kind": "buttons",
             "links": [
               {
-                "label": "View The Way of Water Level Design Document (PDF)",
+                "label": "View Level Design Document (PDF)",
                 "href": "moreprojects/pdfs/MaZ_HL2_LDD.pdf"
               },
               {
-                "label": "View The Way of Water ReadMe (PDF)",
+                "label": "View ReadMe (PDF)",
                 "href": "moreprojects/pdfs/MaZ_HL2_Readme_GC_Lite.pdf"
               }
             ]
@@ -2489,34 +2270,102 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           {
             "kind": "heading",
             "level": 2,
-            "text": "A Study on the Influence of Thematic Affordances on Players’ Cognitive Map Construction"
+            "text": "The Holy Grail｜Quake III Arena CTF Map"
           },
           {
             "kind": "paragraph",
-            "text": "My thesis investigates three layers of spatial cognition:"
+            "text": "Project Type｜Responsibilities｜Tool｜Development\nArena FPS / CTF｜Layout / Combat Routes / Item Placement｜Radiant｜Solo"
+          },
+          {
+            "kind": "image",
+            "caption": "The Holy Grail symmetrical CTF map",
+            "src": "moreprojects/images/figure-40-the-holy-grail-quake3-ctf-level.jpg"
           },
           {
             "kind": "paragraph",
-            "text": "• Thematic Affordance: Whether players can recognize the function of a space through thematically distinctive environmental cues.\n• Functional Zoning: Whether thematic environmental affordances help players distinguish functional areas and perceive clear transitions between them.\n• Cognitive Map Construction: Whether players can use differentiated regions to construct a cognitive map of the overall environment."
+            "text": "A failed Quake 3 Arena multiplayer map. Before making this map, the only shooter I had truly played was Splatoon. I once believed that it represented the standard form of FPS games, so the map I designed largely followed its design approach. Almost every weapon in Splatoon has a very limited range, which is the reason its maps tend to be overly open."
+          },
+          {
+            "kind": "paragraph",
+            "text": "However, after I began playing Overwatch, I discovered that true FPS games follow a completely different design logic. Because their weapons have much longer effective ranges, their level design is often counterintuitive. For example, entrances are usually placed immediately beside walls, and almost every corner provides cover, creating narrow firing angles when players engage. Sightlines are continually broken to prevent players from forming long-distance firing lanes. As a result, FPS maps often feel winding and complex, like being on the streets of New York. By comparison, Splatoon maps appear more open, resemble real-world spaces more closely, and follow more natural architectural layouts."
+          },
+          {
+            "kind": "paragraph",
+            "text": "From that point on, I understood that FPS level design mainly depends on two factors:"
+          },
+          {
+            "kind": "paragraph",
+            "text": "o\tThe choice of engine: The chosen engine technology determines how open a map can be. For example, compared with Bungie's latest engine, idTech 3 has limitations in geometric complexity and rendering distance. Maps made with idTech 3 are therefore generally smaller and use techniques that minimize long-distance sightlines to ensure high-performance operation."
+          },
+          {
+            "kind": "paragraph",
+            "text": "o\tThe specific FPS subgenre: The subgenre determines the core goal of the map experience. Extraction shooters, for example, emphasize lethality by designing situations in which players can easily be attacked from multiple angles. Arena shooters are entirely different: their experience is carefully designed to create a sense of balance."
+          },
+          {
+            "kind": "buttons",
+            "links": [
+              {
+                "label": "View Multiplayer Map Design (PDF)",
+                "href": "moreprojects/pdfs/The_Holy_Grail_CTF_Map.pdf"
+              }
+            ]
           },
           {
             "kind": "heading",
             "level": 2,
-            "text": "Box Shot"
+            "text": "Thesis Research｜Thematic Affordances and Cognitive Maps"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Research Area｜Subject｜Independent Variable｜Status\nLevel Design Research｜Complex Interior Environments｜Thematic Affordances｜In Development"
+          },
+          {
+            "kind": "paragraph",
+            "text": "My thesis, “A Study on the Influence of Thematic Affordances on Players’ Cognitive Map Construction,” examines how thematic affordances influence players' understanding of complex interior environments and their construction of cognitive representations of the overall space."
+          },
+          {
+            "kind": "paragraph",
+            "text": "Thematic affordances describe an environment's ability to communicate functional meaning through architectural design, visual themes, environmental storytelling, object placement, and spatial composition. Players can infer a space's purpose from the environment itself without relying on explicit instructions or UI. The research is organized into two sequential cognitive layers:"
+          },
+          {
+            "kind": "paragraph",
+            "text": "• Functional Readability: Can players identify a space's function through consistent thematic objects, architectural features, and visual cues, and retain that understanding?\n• Cognitive Mapping: Can players use recognized functional zones as spatial anchors to understand positional relationships, connections, and the overall organization of the environment?"
+          },
+          {
+            "kind": "paragraph",
+            "text": "The study will use Starfield Creation Kit to build a large interior level composed of multiple functional zones connected by corridors, stairs, elevators, and a central atrium. Through exploration, revisitation, and player testing, it will examine whether players can progress from local functional recognition to a coherent global cognitive map. The goal is to turn the broad question of whether an environment has a “clear theme” into an observable, testable level-design problem."
+          },
+          {
+            "kind": "buttons",
+            "links": [
+              {
+                "label": "View Thesis Topic Best Practices (PDF)",
+                "href": "moreprojects/pdfs/Thesis_Topic_Best_Practices.pdf"
+              }
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Box Shot｜UE5 High-Speed FPS Team Project"
           },
           {
             "kind": "image",
-            "caption": "Figure 48: Box Shot level prototype",
+            "caption": "Box Shot level prototype",
             "src": "moreprojects/images/figure-48-box-shot-level-prototype.jpg"
           },
           {
             "kind": "paragraph",
-            "text": "A high-speed UE5 FPS project developed by a 42-person team, currently in production."
+            "text": "An in-development UE5 high-speed FPS created by a 42-person team. The project extends my experience with high-speed movement, combat spaces, and large cross-disciplinary production. I will add my specific responsibilities, level flow, and testing iterations when the material can be publicly shared."
           },
           {
             "kind": "heading",
             "level": 2,
-            "text": "Escape from the Circus"
+            "text": "Escape from the Circus｜Global Game Jam"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Project Type｜Role｜Tool｜Duration\n2D Platformer / Facial-Recognition Input｜Programmer｜Unity｜48 Hours"
           },
           {
             "kind": "youtube",
@@ -2525,13 +2374,13 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "A Global Game Jam Unity 2D platformer built around facial-recognition interaction. I served as a programmer, and the project was completed within 48 hours."
+            "text": "Players control a platforming character through facial gestures. I worked as a programmer and collaborated with the team to take the project from interaction concept and prototype validation to a playable build within 48 hours. The project strengthened my ability to understand an unfamiliar input method, constrain scope, and deliver a working prototype under severe time limits."
           },
           {
             "kind": "buttons",
             "links": [
               {
-                "label": "Global Game Jam Project Page",
+                "label": "View Global Game Jam Project Page",
                 "href": "https://globalgamejam.org/games/2024/escape-circus-2"
               }
             ]
@@ -2539,20 +2388,34 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           {
             "kind": "heading",
             "level": 2,
-            "text": "OGO"
+            "text": "OGO｜BOOOM Game Jam"
           },
           {
             "kind": "paragraph",
-            "text": "A 2D platformer created in Unreal Engine for the BOOOM Game Jam. This was my first Game Jam project."
+            "text": "My first Game Jam project, a 2D platformer created in Unreal Engine. It gave me my first complete experience of defining a core mechanic, building levels rapidly, and delivering as a team under a strict time limit."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Big Fishing Boom｜Original Card Game"
           },
           {
             "kind": "paragraph",
-            "text": "GCORES Link: OGO | GCORES"
+            "text": "Project Type｜Role｜Status\nOriginal Card Game｜Independent Game Designer｜Exhibited / Publication Discussions"
+          },
+          {
+            "kind": "image",
+            "caption": "Big Fishing Boom original card game",
+            "src": "moreprojects/images/figure-39-big-fishing-boom-board-game.jpg"
+          },
+          {
+            "kind": "paragraph",
+            "text": "An original card game I designed independently. It has been exhibited at the Shanghai SHM Board Game Expo and the China Good Board Game showcase, and I am currently working with a publisher toward publication. Beyond digital games, this long-term project continues to develop my skills in rule design, numerical iteration, physical playtesting, and communicating complex systems to real players."
           }
         ],
         "hero": {
           "src": "moreprojects/cover.jpg",
-          "caption": "More Projects — Cover"
+          "caption": "More Projects"
         }
       },
       "aboutme": {
@@ -2622,15 +2485,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "First, aside from its extremely unstable online connection, outdated live operations, and profoundly unfair matchmaking, Splatoon is a perfect game. Its squid concept serves as a unifying idea across gameplay, art, narrative, and even music: squids spray ink, so the weapons fire ink; squids change color, so color identifies each team; squids are territorial, so teams battle by covering ground; and squids swim, so players can dive into their own ink."
-          },
-          {
-            "kind": "paragraph",
-            "text": "These ideas form a complete gameplay loop. Players spend ink to shoot, splat opponents, charge special weapons, and expand their movement space; then they dive into ink to refill ammunition and health, hide, move faster, and climb walls. The ability to swim through ink painted on walls fundamentally changes the vertical design of PvP maps."
-          },
-          {
-            "kind": "paragraph",
-            "text": "When I watched the team's GDC talk and learned that the mechanics came first and the squid concept was added later, I was stunned. Splatoon also became a useful “counterexample” in my early FPS PvP level design. Because most of its weapons have much shorter ranges than those in traditional shooters, its maps can remain relatively open. I initially copied that openness, leaving my early FPS maps without enough control over sightlines. Traditional FPS weapons can threaten players across far greater distances, so curved routes, occluders, and cover are needed to break up lines of fire. Through continued practice, I learned that even when shooting is the shared core interaction, different modes and weapon ranges demand entirely different level-design logic."
+            "text": "Its squid concept unifies gameplay, art, and worldbuilding, while shooting, turfing, swimming through ink, and climbing painted walls create a uniquely cohesive combat and movement loop.\nIt also taught me that even when shooting is the shared core interaction, different modes and weapon ranges demand completely different approaches to openness, verticality, and sightline control."
           },
           {
             "kind": "heading",
@@ -2639,15 +2494,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "I was initially drawn to the series by its reputation as an encyclopedia of video games. Once I started playing, I found that it perfectly embodies Nintendo's philosophy of being easy to learn and difficult to master. Instead of using a traditional health bar, attacks build an opponent's damage percentage; the higher that percentage becomes, the farther the opponent can be launched. This core rule creates possibilities that conventional health-based fighting games struggle to offer:"
-          },
-          {
-            "kind": "paragraph",
-            "text": "1. A match is not decided simply by remaining health. A player can secure an early offstage knockout while the opponent is still at a relatively low percentage, keeping every moment tense and preserving comeback opportunities.\n2. Combat is not limited to finding an opening and repeating a fixed combo. Every launch leads into another sequence of pursuit, recovery, edge-guarding, and immediate decision-making."
-          },
-          {
-            "kind": "paragraph",
-            "text": "The game's other defining strength is its roster of iconic characters from across the industry. Fighters with entirely different worlds, histories, and genres can share one stage. Each has a distinct movement language and play style, yet all remain legible and reasonably balanced within the same system. Its thriving offline community further extends the game's longevity."
+            "text": "By replacing health bars with accumulated damage and ring-outs, it turns every launch, recovery, and edge-guard into a decision while preserving comeback potential throughout a match.\nIt also translates characters from radically different genres and worlds into distinct yet balanced play styles, perfectly embodying Nintendo's “easy to learn, difficult to master” philosophy."
           },
           {
             "kind": "heading",
@@ -2656,19 +2503,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "I consider Celeste a textbook in difficulty-curve design and the pinnacle of 2D platforming. It is famous for being difficult, yet its excellent tutorials, pacing, and chapter-by-chapter introduction of mechanics create a constant rhythm of setup, development, variation, and resolution. Players receive no numerical upgrades or level bonuses; they reach the summit entirely by improving their own skill. Standing at the top, they can look back and clearly recognize how far they have come."
-          },
-          {
-            "kind": "paragraph",
-            "text": "Celeste's divide-and-conquer approach to level design is equally important to that curve:"
-          },
-          {
-            "kind": "paragraph",
-            "text": "• Major mechanics are distributed across separate chapters, so each chapter asks the player to understand, learn, and repeatedly practice one new idea.\n• Each chapter is divided into single-screen rooms that are easy to read, learn, and retry.\n• Each room contains a chain of obstacles, but safe landing points break that chain into smaller segments, allowing the player to solve one local problem at a time.\n• Each segment ultimately resolves into individual obstacles that can be mastered through repetition."
-          },
-          {
-            "kind": "paragraph",
-            "text": "This top-down, divide-and-conquer structure—much like decomposition in programming—gives the game an exceptionally elegant difficulty curve. Its near-instant restart also keeps demanding challenges low in downtime and high in feedback."
+            "text": "I consider Celeste a textbook in difficulty-curve design: with no numerical progression, reaching the summit comes entirely from the player's own growth and mastery.\nIt breaks challenges down through chapters, single-screen rooms, safe footholds, and individual obstacles, while near-instant restarts keep extreme difficulty readable, fair, and inviting to retry."
           },
           {
             "kind": "heading",
