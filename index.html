@@ -429,6 +429,9 @@
     .detail-section .showcase-image-caption {
       width: 66.6667%; max-width: 520px; margin-left: auto; margin-right: auto;
     }
+    .detail-section .showcase-compact-media {
+      width: 66.6667%; max-width: 520px; margin-left: auto; margin-right: auto;
+    }
     .detail-section .showcase-block iframe {
       display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 16 / 9;
     }
@@ -545,6 +548,7 @@
   .showcase-block iframe{height:auto;aspect-ratio:16 / 9;}
   .detail-section .showcase-image,
   .detail-section .showcase-image-caption,
+  .detail-section .showcase-compact-media,
   .media-carousel{width:100%;max-width:520px;}
   .media-pair-grid{grid-template-columns:1fr;gap:24px;}
   .media-carousel-arrow{width:38px;height:52px;}
@@ -796,17 +800,34 @@
       </div>`;
     }
 
+    const compactFigureFiles = new Set([
+      'figure-09-poct-cableway-demo.mp4',
+      'figure-10-pocg-cableway-demo.mp4',
+      'figure-11-gacha-zoom-cableway-showcase.mp4',
+      'figure-30-yoshi-aiming-inspiration.mp4',
+      'figure-31-midair-grappling-time-stop.mp4',
+      'figure-33-final-level.jpg',
+      'figure-34-room-12.jpg'
+    ]);
+
+    function isCompactFigure(src) {
+      const filename = String(src || '').split('/').pop().split('?')[0].toLowerCase();
+      return compactFigureFiles.has(filename);
+    }
+
     function imageBlock(image, isHero = false) {
       const width = isHero ? safeHeroWidth(image.width) : '';
       const style = width ? ` style="max-width:${width}; margin-left:auto; margin-right:auto;"` : '';
       const loading = isHero ? 'eager' : 'lazy';
       const heroClass = isHero ? ' showcase-hero' : '';
-      const media = `<div class="showcase-block showcase-image${heroClass}"${style}><img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.caption)}" loading="${loading}"></div><div class="showcase-caption showcase-image-caption${heroClass}"${style}>${escapeHtml(image.caption)}</div>`;
+      const compactClass = isCompactFigure(image.src) ? ' showcase-compact-media' : '';
+      const media = `<div class="showcase-block showcase-image${heroClass}${compactClass}"${style}><img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.caption)}" loading="${loading}"></div><div class="showcase-caption showcase-image-caption${heroClass}${compactClass}"${style}>${escapeHtml(image.caption)}</div>`;
       return isHero ? media : `<div class="reading-media-slot">${media}</div>`;
     }
 
     function animationBlock(animation) {
-      const media = `<div class="showcase-block showcase-animation"><video data-lazy-animation data-src="${escapeHtml(animation.src)}" data-poster="${escapeHtml(animation.poster)}" preload="none" muted loop playsinline aria-label="${escapeHtml(animation.caption)}"></video></div><div class="showcase-caption showcase-animation-caption">${escapeHtml(animation.caption)}</div>`;
+      const compactClass = isCompactFigure(animation.src) ? ' showcase-compact-media' : '';
+      const media = `<div class="showcase-block showcase-animation${compactClass}"><video data-lazy-animation data-src="${escapeHtml(animation.src)}" data-poster="${escapeHtml(animation.poster)}" preload="none" muted loop playsinline aria-label="${escapeHtml(animation.caption)}"></video></div><div class="showcase-caption showcase-animation-caption${compactClass}">${escapeHtml(animation.caption)}</div>`;
       return `<div class="reading-media-slot">${media}</div>`;
     }
 
