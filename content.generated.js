@@ -110,9 +110,9 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "src": "project1/images/level-overview.jpg"
           },
           {
-            "kind": "youtube",
-            "id": "lieJnrhMxWs",
-            "caption": "《Decaran: Become Human》完整游戏演示"
+            "kind": "bilibili",
+            "id": "BV17NgU68EUY",
+            "caption": "《Decaran: Become Human》星空单人关卡演示"
           },
           {
             "kind": "heading",
@@ -326,6 +326,11 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "kind": "image",
             "caption": "关卡总览：六个功能区围绕供电、钥匙与电池目标逐步开放",
             "src": "project2/images/level-overview.jpg"
+          },
+          {
+            "kind": "bilibili",
+            "id": "BV1i3gU6xEPm",
+            "caption": "《Ghost Ship》星空支线任务关卡演示"
           },
           {
             "kind": "heading",
@@ -868,8 +873,8 @@ window.SITE_CONTENT_BY_LANGUAGE = {
             "text": "《FLING》是一款以精准操作为核心的 2D 平台跳跃游戏。玩家扮演一只狐狸，利用钓竿摆荡、抓取与位移，在幽暗神秘的洞穴中不断挑战高难度平台关卡。"
           },
           {
-            "kind": "youtube",
-            "id": "l4qM7wSsPoo",
+            "kind": "bilibili",
+            "id": "BV1VLgU6XEEU",
             "caption": "《FLING》玩法演示"
           },
           {

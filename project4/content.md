@@ -19,7 +19,7 @@ hero_caption: 《FLING》项目封面
 
 《FLING》是一款以精准操作为核心的 2D 平台跳跃游戏。玩家扮演一只狐狸，利用钓竿摆荡、抓取与位移，在幽暗神秘的洞穴中不断挑战高难度平台关卡。
 
-@[youtube](https://youtu.be/l4qM7wSsPoo "《FLING》玩法演示")
+@[bilibili](BV1VLgU6XEEU "《FLING》玩法演示")
 
 ## 我的工作
 

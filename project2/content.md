@@ -34,6 +34,8 @@ hero_caption: 《Ghost Ship》项目主视觉
 
 ![关卡总览：六个功能区围绕供电、钥匙与电池目标逐步开放](images/level-overview.jpg)
 
+@[bilibili](BV1i3gU6xEPm "《Ghost Ship》星空支线任务关卡演示")
+
 ## 设计目标
 
 1. 不依赖持续剥夺玩家能力，而是通过“有限反制手段”维持恐惧与主动性之间的平衡。

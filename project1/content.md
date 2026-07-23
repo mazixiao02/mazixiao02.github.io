@@ -33,7 +33,7 @@ hero_caption: 《Decaran: Become Human》项目主视觉
 
 ![关卡总览：室外工业区、工厂主体与垂直塔楼共同构成完整任务空间](images/level-overview.jpg)
 
-@[youtube](lieJnrhMxWs "《Decaran: Become Human》完整游戏演示")
+@[bilibili](BV17NgU68EUY "《Decaran: Become Human》星空单人关卡演示")
 
 ## 设计目标
 
