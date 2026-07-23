@@ -6,13 +6,13 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "title": "Decaran: Become Human",
         "tabTitle": "星空支线关卡：Decaran: Become Human",
         "tag": "Starfield Side Quest Level Design",
-        "type": "星空单人支线任务关卡设计",
-        "role": "关卡设计 / 任务设计 / 剧情设计 / Gameplay 实现",
-        "time": "10 周 / 单人",
+        "type": "《星空》单人支线任务关卡",
+        "role": "关卡设计 / 任务设计 / Gameplay 实现",
+        "time": "10 周 / 单人 / 约 300 小时",
         "status": "已完成",
         "statusUrl": "",
         "statusLink": "",
-        "caption": "▲ 通过空间布局、战斗设计与环境叙事构建具有道德抉择的双结局任务体验"
+        "caption": "▲ 独立完成从空间规划、任务结构到脚本落地与测试迭代的完整支线关卡"
       },
       "project2": {
         "title": "Ghost Ship",
@@ -85,60 +85,141 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "基于《星空》Creation Kit 独立设计并开发包含室内外场景的单人任务关卡，通过空间布局、战斗设计与环境叙事构建具有道德抉择的双结局任务体验。"
+            "text": "围绕中心枢纽、三阶段调查与道德抉择构建的《星空》原创支线任务；我使用 Creation Kit 独立完成约 18 分钟的室内外探索、战斗、谜题、对话与双结局流程。"
           },
           {
             "kind": "heading",
             "level": 2,
-            "text": "游戏介绍"
+            "text": "项目概览"
           },
           {
             "kind": "paragraph",
-            "text": "《星空（Starfield）》是 Bethesda Game Studios 开发的开放世界科幻 RPG。本项目基于官方 Creation Kit 制作，为游戏新增了一条可独立游玩的原创支线任务。"
-          },
-          {
-            "kind": "heading",
-            "level": 2,
-            "text": "关卡介绍"
+            "text": "职责｜关卡设计 / 任务设计 / Gameplay 实现\n开发｜10 周 / 单人 / 约 300 小时\n规模｜4 个室外空间 / 7 个室内空间\n流程｜约 18 分钟 / 双结局\n工具｜Starfield Creation Kit / Papyrus"
           },
           {
             "kind": "paragraph",
-            "text": "《Decaran: Become Human（底卡伦：变人）》是星空支线任务关卡。玩家受雇调查 Decaran III 自动化工厂发生的异常事件，并在探索过程中逐步发现机器人觉醒的真相。随着剧情推进，玩家需要在恢复工厂生产与帮助机器人获得自由之间做出最终抉择，不同选择将导向两种截然不同的结局。"
+            "text": "玩家受雇调查 Decaran III 自动化工厂的机器人暴动。进入工厂后，玩家通过不同功能区收集线索、激活三台终端并逐步解锁核心区域，最终发现向导机器人 R6D7 正是觉醒事件的推动者。玩家必须在恢复生产与释放机器人之间作出选择，并承担相应后果。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "任务阶段｜玩家行动｜设计作用\n建立悬念｜调查室外工业区并接触工人、医生、雇佣兵与 R6D7｜通过不同立场建立冲突背景\n推进调查｜进入工厂，以中心大厅为枢纽探索三个分区｜交替组织探索、战斗、谜题与信息揭示\n揭示真相｜乘电梯抵达屋顶办公室，得知 R6D7 的真实身份｜改变玩家对任务与同伴的理解\n最终抉择｜返回中心大厅完成终战并决定工厂命运｜让前段角色关系与信息在结局汇合"
+          },
+          {
+            "kind": "image",
+            "caption": "关卡总览：室外工业区、工厂主体与垂直塔楼共同构成完整任务空间",
+            "src": "project1/images/level-overview.jpg"
           },
           {
             "kind": "youtube",
             "id": "lieJnrhMxWs",
-            "caption": "《底卡伦：变人》完整游戏演示"
+            "caption": "《Decaran: Become Human》完整游戏演示"
           },
           {
             "kind": "heading",
             "level": 2,
-            "text": "我的工作"
+            "text": "设计目标"
           },
           {
             "kind": "paragraph",
-            "text": "1. 剧情设计（Narrative Design）\n• 设计完整支线剧情、任务目标及双结局结构。\n• 编写 NPC 对话、任务文本与环境叙事内容。\n• 通过道德两难抉择推动玩家思考机器人与人类的关系。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "2. 关卡设计（Level Design）\n• 设计工厂整体空间布局、玩家路线与探索流程。\n• 构建战斗、探索、解谜交替推进的关卡节奏。\n• 通过主题分区强化空间导航与环境可读性。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "3. Gameplay 设计（Gameplay Design）\n• 配置敌人与战斗遭遇。\n• 设计 EMP 武器、激光机关、终端谜题等核心玩法。\n• 使用 Papyrus Script 实现任务逻辑与事件触发。"
-          },
-          {
-            "kind": "paragraph",
-            "text": "4. Playtest 与迭代（Iteration）\n• 根据多轮 Playtest 持续优化 Flow、战斗难度、导航体验与环境叙事。\n• 修复脚本问题并完善最终版本。"
+            "text": "1. 让玩家在复杂工厂中保留探索自由，同时始终理解当前目标与全局位置。\n2. 让战斗、谜题、叙事信息与空间推进相互支撑，而不是彼此割裂。\n3. 让最终选择同时包含收益与代价，避免简单的善恶二分。"
           },
           {
             "kind": "heading",
             "level": 2,
-            "text": "时间线"
+            "text": "01｜以中心大厅组织三阶段探索"
           },
           {
             "kind": "paragraph",
-            "text": "Level Design Pitch｜2026.02.20｜完成关卡 Pitch，确定主题、核心玩法、剧情框架与整体开发方向。\nLevel Design Document｜2026.02.26｜完成 LDD文档，明确关卡流程、空间布局、任务结构及战斗设计。\nWhitebox｜2026.03.09｜完成白盒搭建，验证空间布局、玩家流程与关卡节奏。\nInitial Gameplay｜2026.03.29｜完成核心玩法、任务脚本与战斗系统，实现可完整游玩的关卡。\nGameplay Complete｜2026.04.18｜完成全部关卡内容，并根据 Playtest 持续优化流程、导航与体验。\nAesthetics｜2026.04.26｜完成场景美术、灯光与环境表现，提升整体视觉品质。\nRTM｜2026.05.03｜完成最终优化、Bug 修复与项目交付。"
+            "text": "工厂内部采用“中心大厅 + 三个任务分区”的枢纽结构。玩家首次进入大厅时就能看到锁定的中央电梯与三个状态指示器，从而提前理解长期目标；随后分别探索三个分区、完成战斗与终端交互，并多次返回大厅确认进度。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "大厅并非单纯的通行空间：它同时承担导航锚点、进度反馈、战斗场地和最终对决舞台。反复经过同一空间时，敌人、任务状态和可进入路线持续变化，使空间重用成为任务节奏的一部分。"
+          },
+          {
+            "kind": "image",
+            "caption": "中心大厅：中央电梯是长期目标，环绕空间连接三个任务分区",
+            "src": "project1/images/central-hub.jpg"
+          },
+          {
+            "kind": "paragraph",
+            "text": "设计目标｜让玩家在非线性探索中维持方向感\n实现方法｜可见的长期目标 / 中心枢纽 / 功能分区 / 循环返回\n设计结果｜大厅由空旷通道转化为承担导航、进度、战斗与叙事的核心空间"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "02｜通过视线建立交互与结果的因果关系"
+          },
+          {
+            "kind": "paragraph",
+            "text": "初版中，玩家需要启动三台终端解锁中央电梯，但终端与电梯在视觉上相互隔绝。玩家完成交互后只能依赖任务文字判断进度，难以理解自己的操作究竟改变了什么。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "我调整终端朝向并在交互区域增加观察窗，让玩家按下按钮时能够直接看到电梯对应的指示灯与门锁状态发生变化；同时使用电缆连接终端与目标装置，建立清晰的视觉因果关系。这次迭代把依赖文字提示的任务反馈，转化为玩家可以从环境中直接观察和理解的空间反馈。"
+          },
+          {
+            "kind": "image",
+            "caption": "室内任务路线：三个分区围绕中心大厅展开，并最终汇入中央电梯",
+            "src": "project1/images/interior-route.jpg"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "03｜用空间与敌人组合建立战斗递进"
+          },
+          {
+            "kind": "paragraph",
+            "text": "我通过近战突击机器人与远程机器人形成互补威胁，并让遭遇空间从紧凑房间、开放大厅逐步扩展到垂直区域。玩家需要根据视距、高低差、掩体和目标优先级持续调整站位，而不是用同一种策略重复清场。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "EMP 步枪 Novablast 为战斗提供了暂时瘫痪机器人的控制手段。前段遭遇用于让玩家理解失能机制，中段将近远程敌人组合在双层空间中，最终战则重用玩家已经熟悉的中心大厅，综合检验移动、目标选择与空间认知。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "阶段｜空间与敌人｜玩家决策\n前段教学｜紧凑房间 / 单一威胁｜理解 EMP 失能机制并建立基础战斗规则\n中段组合｜双层大厅 / 近战 + 远程机器人｜利用高低差与掩体判断目标优先级\n最终战斗｜重用中心大厅 / R6D7 与机器人增援｜在熟悉空间中综合运用武器、移动与路线认知"
+          },
+          {
+            "kind": "image",
+            "caption": "垂直通道通过激光障碍、高低差与回环路线改变移动节奏",
+            "src": "project1/images/vertical-shaft.jpg"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "04｜让最终选择改变角色与世界状态"
+          },
+          {
+            "kind": "paragraph",
+            "text": "我不希望“释放机器人”天然等同于正确答案，因此让两条分支都同时包含收益与代价。玩家在前段遇到的医生、工人、雇佣兵与机器人分别提供不同立场，使最终选择建立在任务过程中获得的信息和关系之上。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "最终选择｜即时结果｜后续影响\n消灭 R6D7，恢复生产｜机器人被镇压，工厂重新运转｜公司与雇佣兵关系改善，药品供应恢复，人类病患获救\n释放觉醒机器人｜机器人获得自由，工厂停止生产｜公司与雇佣兵转为敌对，药品供应中断，人类病患死亡"
+          },
+          {
+            "kind": "image",
+            "caption": "屋顶办公室利用夕阳、开阔视野与空间高度承载真相揭示",
+            "src": "project1/images/rooftop-reveal.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "玩家与 R6D7 的最终对话将任务信息汇聚为结局选择",
+            "src": "project1/images/final-choice.jpg"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Gameplay 与任务实现"
+          },
+          {
+            "kind": "paragraph",
+            "text": "我使用 Creation Kit 完成空间搭建、敌人配置、任务目标、NPC 对话与关卡状态管理，并通过 Papyrus Script 和 Quest Stage 控制门锁、终端、敌对阵营、角色行为、终战触发及双结局结果。Alias 用于管理关键角色与任务对象，确保跨场景推进时任务状态保持一致。"
+          },
+          {
+            "kind": "paragraph",
+            "text": "实现模块｜具体内容\n任务流程｜目标更新 / Quest Stage / 对话条件 / 双结局\n空间状态｜门锁 / 电梯 / 三台终端 / 隐藏入口\n角色与战斗｜NPC 行为 / 阵营敌对 / 战斗触发 / Boss 战\n玩家反馈｜任务文本 / 指示灯 / 观察窗 / 电缆引导"
           },
           {
             "kind": "heading",
@@ -147,7 +228,16 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "| 问题 | 解决方案 | 结果 |\n|---|---|---|\n| 在室内部分通过三台终端解锁电梯门的谜题视线不佳。 | 在每个终端位置开窗，玩家按下按钮时能够看见对应门解锁。 | 玩家在交互的同时能够看到对应结果。 |\n| 平台跳跃玩法不适合《星空》。 | 删去整段平台跳跃区域。 | 舍弃关卡短板，优化动线。 |\n| 室内大厅区域地编美观，但空旷且缺乏内容。 | 加强室内大厅区域重用，让玩家多次探索。 | 大厅区域得到充分利用；重复探索优化了动线，并增添趣味。 |"
+            "text": "测试发现｜设计判断｜修改｜验证结果\n玩家启动终端后无法判断其作用｜交互对象与反馈目标缺少空间联系｜调整终端朝向并增加观察窗，使玩家直接看到电梯状态变化｜玩家无需依赖任务文字即可理解终端与电梯的关系\n完整激光平台段要求精确空中控制，与《星空》的移动手感不匹配｜挑战主要来自操作限制，而非有意义的空间决策｜缩减平台跳跃内容，保留激光作为局部障碍与区域限制｜降低流程中断，同时保留垂直区域的视觉识别与移动变化\n初版大厅体量较大，但主要承担通行功能｜高成本核心空间没有充分参与任务推进｜改为中心枢纽，使玩家多次返回并在终战中再次使用｜大厅同时承担导航、进度反馈、战斗和叙事功能"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "时间线"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Level Design Pitch｜2026.02.20｜确定主题、核心玩法、剧情框架与开发方向\nLevel Design Document｜2026.02.26｜完成 LDD，明确流程、空间布局、任务结构与战斗设计\nWhitebox｜2026.03.09｜完成白盒，验证空间布局、玩家流程与关卡节奏\nInitial Gameplay｜2026.03.29｜实现核心玩法、任务脚本与战斗系统，形成完整可玩流程\nGameplay Complete｜2026.04.18｜完成全部关卡内容并持续优化导航、战斗与任务体验\nAesthetics｜2026.04.26｜完成场景美术、灯光与环境表现\nRTM｜2026.05.03｜完成最终优化、Bug 修复与项目交付"
           },
           {
             "kind": "heading",
@@ -156,15 +246,15 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "项目亮点（What Went Well）\n• 整体美术表现较好。\n• 尝试并实现了一些新的设计思路。\n• 关卡垂直空间结构设计较为出色。\n• 能够根据 Milestone 节点和 Playtest 反馈持续优化关卡流程。"
+            "text": "项目成果（What Went Well）\n• 独立完成一条包含室内外探索、战斗、谜题、NPC 对话与双结局的约 18 分钟支线任务。\n• 使用中心枢纽与三个功能分区组织任务流程，并通过空间反馈提升目标可读性。\n• 使用 Creation Kit 与 Papyrus 落地完整任务状态、角色行为和结局分支。"
           },
           {
             "kind": "paragraph",
-            "text": "优化方向（Even Better If）\n• 与 Stakeholder（导师、制作人等）的沟通还可以做得更好。\n• 激光平台跳跃玩法表现不够理想，如果有时间还应该继续打磨。\n• 叙事内容仍然不够充分。\n• 战斗难度偏低，缺乏挑战性。\n• 部分流程节奏仍有待优化。\n• 激光机制没有得到充分利用。\n• 室外区域内容较为薄弱。\n• 整体关卡品质距离预期仍有差距。"
+            "text": "优化方向（Even Better If）\n• 室外区域承担的玩法功能少于室内区域，后续应在白盒阶段更早验证各区域的内容密度。\n• 战斗难度与敌人组合验证不足，后续应增加战斗专项测试，而非只测试完整流程。\n• 初期在与基础移动手感不完全匹配的平台段投入过多时间，后续应更早验证机制与角色控制的适配性。"
           },
           {
             "kind": "paragraph",
-            "text": "项目收获（What I Learned）\n• 学会主动与 Stakeholder 沟通，并及时根据反馈进行调整。\n• 学会更加合理地安排开发时间。\n• 在项目初期，应尽快从整体层面掌握引擎和工具的使用。\n• 提高适应复杂、陌生开发工具的能力。\n• 认识到商业游戏引擎和公司内部工具并非完美，需要学会与工具限制共存。\n• 学会按照专业游戏开发流程完成一个完整的关卡项目。\n• 时间与精力管理是项目成功的关键因素。\n• 学会设计和优化关卡流程（Flow）。\n• 学会在游戏性与真实建筑逻辑之间寻找平衡。\n• 学会构建更加完整、结构清晰且服务于玩法的游戏叙事。"
+            "text": "项目收获（What I Learned）\n• 任务关卡并不是空间、剧情和战斗的简单叠加；目标、路线、信息与系统反馈必须共同服务于玩家当前的理解和决策。相比增加更多内容，更重要的是让每个空间承担明确功能，并让玩家能够从环境本身读懂自己的行动及其后果。"
           },
           {
             "kind": "heading",
@@ -1261,12 +1351,12 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "tabTitle": "Starfield Side Quest: Decaran: Become Human",
         "tag": "Starfield Side Quest Level Design",
         "type": "Starfield Single-Player Side-Quest Level",
-        "role": "Level Design / Quest Design / Narrative Design / Gameplay Implementation",
-        "time": "10 Weeks / Solo",
+        "role": "Level Design / Quest Design / Gameplay Implementation",
+        "time": "10 Weeks / Solo / Approx. 300 Hours",
         "status": "Completed",
         "statusUrl": "",
         "statusLink": "",
-        "caption": "▲ A two-ending quest experience built through spatial layout, combat design, and environmental storytelling"
+        "caption": "▲ A complete side-quest level independently developed from spatial planning and quest structure through scripting and iteration"
       },
       "project2": {
         "title": "Ghost Ship",
@@ -1339,25 +1429,29 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "A single-player quest level with both interior and exterior spaces, independently designed and developed in the Starfield Creation Kit, using spatial layout, combat design, and environmental storytelling to create a two-ending mission built around a moral choice."
+            "text": "An original Starfield side quest built around a central hub, a three-stage investigation, and a morally ambiguous choice; I used the Creation Kit to independently deliver approximately 18 minutes of exploration, combat, puzzles, dialogue, and two endings across interior and exterior spaces."
           },
           {
             "kind": "heading",
             "level": 2,
-            "text": "Game Overview"
+            "text": "Project Overview"
           },
           {
             "kind": "paragraph",
-            "text": "Starfield is an open-world science-fiction RPG developed by Bethesda Game Studios. Built with the official Creation Kit, this project adds an original, independently playable side quest to the game."
-          },
-          {
-            "kind": "heading",
-            "level": 2,
-            "text": "Level Overview"
+            "text": "Role｜Level Design / Quest Design / Gameplay Implementation\nDevelopment｜10 Weeks / Solo / Approx. 300 Hours\nScope｜4 Exterior Spaces / 7 Interior Spaces\nPlaytime｜Approx. 18 Minutes / Two Endings\nTools｜Starfield Creation Kit / Papyrus"
           },
           {
             "kind": "paragraph",
-            "text": "Decaran: Become Human is a Starfield side-quest level. The player is hired to investigate an abnormal incident at the automated Decaran III factory and gradually uncovers the truth behind the robots' awakening. As the story unfolds, the player must ultimately choose between restoring factory production and helping the robots gain their freedom. The two choices lead to dramatically different endings."
+            "text": "The player is hired to investigate a robot uprising at the automated Decaran III factory. Inside, they gather evidence across distinct functional zones, activate three terminals, and progressively unlock the core area. They eventually discover that their guide, R6D7, orchestrated the awakening. The player must choose between restoring production and freeing the robots, then face the consequences."
+          },
+          {
+            "kind": "paragraph",
+            "text": "Quest Phase｜Player Action｜Design Purpose\nEstablish Mystery｜Investigate the exterior and meet workers, doctors, mercenaries, and R6D7｜Frame the conflict through competing perspectives\nAdvance Investigation｜Enter the factory and explore three zones around the central hall｜Alternate exploration, combat, puzzles, and information reveals\nReveal the Truth｜Ride the elevator to the rooftop office and learn R6D7's identity｜Reframe the mission and the player's relationship with their guide\nFinal Choice｜Return to the central hall, complete the final battle, and decide the factory's fate｜Bring earlier characters, information, and consequences together"
+          },
+          {
+            "kind": "image",
+            "caption": "Level overview: the exterior industrial park, factory, and vertical tower form one complete quest space",
+            "src": "project1/images/level-overview.jpg"
           },
           {
             "kind": "youtube",
@@ -1367,32 +1461,109 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           {
             "kind": "heading",
             "level": 2,
-            "text": "My Work"
+            "text": "Design Goals"
           },
           {
             "kind": "paragraph",
-            "text": "1. Narrative Design\n• Designed the complete side-quest narrative, mission objectives, and two-ending structure.\n• Wrote NPC dialogue, quest text, and environmental storytelling content.\n• Used a moral dilemma to encourage players to reflect on the relationship between robots and humans."
-          },
-          {
-            "kind": "paragraph",
-            "text": "2. Level Design\n• Designed the factory's overall spatial layout, player routes, and exploration flow.\n• Built a level rhythm that alternates among combat, exploration, and puzzle-solving.\n• Used thematic zoning to strengthen spatial navigation and environmental readability."
-          },
-          {
-            "kind": "paragraph",
-            "text": "3. Gameplay Design\n• Configured enemies and combat encounters.\n• Designed core gameplay elements including EMP weapons, laser obstacles, and terminal puzzles.\n• Used Papyrus Script to implement quest logic and event triggers."
-          },
-          {
-            "kind": "paragraph",
-            "text": "4. Playtesting and Iteration\n• Continuously refined flow, combat difficulty, navigation, and environmental storytelling through multiple rounds of playtesting.\n• Fixed scripting issues and completed the final build."
+            "text": "1. Preserve exploration freedom while keeping the player's current objective and global position readable.\n2. Integrate combat, puzzles, narrative information, and spatial progression instead of treating them as separate layers.\n3. Give both endings meaningful benefits and costs rather than presenting a simple good-versus-evil choice."
           },
           {
             "kind": "heading",
             "level": 2,
-            "text": "Timeline"
+            "text": "01｜Organizing Three-Stage Exploration Around a Central Hall"
           },
           {
             "kind": "paragraph",
-            "text": "Level Design Pitch｜2026.02.20｜Completed the level pitch and established the theme, core gameplay, narrative framework, and overall development direction.\nLevel Design Document｜2026.02.26｜Completed the LDD and defined the level flow, spatial layout, quest structure, and combat design.\nWhitebox｜2026.03.09｜Completed the whitebox and validated the spatial layout, player flow, and level pacing.\nInitial Gameplay｜2026.03.29｜Implemented the core gameplay, quest scripts, and combat systems, producing a fully playable level.\nGameplay Complete｜2026.04.18｜Completed all level content and continued refining flow, navigation, and the overall experience based on playtesting.\nAesthetics｜2026.04.26｜Completed environment art, lighting, and environmental presentation to improve the overall visual quality.\nRTM｜2026.05.03｜Completed final polish, bug fixing, and project delivery."
+            "text": "The factory interior uses a hub structure composed of a central hall and three objective zones. On first entering the hall, the player can see the locked central elevator and its three status indicators, establishing the long-term objective before exploration begins. The player then clears the surrounding zones, completes combat and terminal interactions, and repeatedly returns to confirm progress."
+          },
+          {
+            "kind": "paragraph",
+            "text": "The hall is more than a corridor. It serves as a navigational anchor, progress display, combat arena, and final confrontation space. Enemy states, quest progress, and accessible routes change between visits, turning spatial reuse into part of the quest rhythm."
+          },
+          {
+            "kind": "image",
+            "caption": "Central hall: the elevator presents the long-term objective while the surrounding space connects three quest zones",
+            "src": "project1/images/central-hub.jpg"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Design Goal｜Maintain orientation during nonlinear exploration\nMethod｜Visible long-term objective / Central hub / Functional zoning / Return loops\nOutcome｜Converted an underused hall into the quest's navigational, progression, combat, and narrative core"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "02｜Connecting Interaction and Outcome Through Sightlines"
+          },
+          {
+            "kind": "paragraph",
+            "text": "In the initial version, the player activated three terminals to unlock the central elevator, but the terminals and elevator were visually separated. After interacting, the player had to rely on quest text to understand progress and could not see what their action had changed."
+          },
+          {
+            "kind": "paragraph",
+            "text": "I reoriented the terminals and added observation windows so the player could directly see the corresponding elevator light and lock state change. Visible cables connected each terminal to its target device, reinforcing the causal relationship. This iteration transformed text-dependent feedback into spatial feedback that players could observe and understand in the environment."
+          },
+          {
+            "kind": "image",
+            "caption": "Interior route: three objective zones branch from the central hall and converge on the elevator",
+            "src": "project1/images/interior-route.jpg"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "03｜Building Combat Escalation Through Space and Enemy Composition"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Melee assault robots and ranged units create complementary threats, while encounter spaces expand from compact rooms to an open hall and vertical traversal areas. Players must continually reconsider sightlines, elevation, cover, and target priority instead of repeating a single clearing strategy."
+          },
+          {
+            "kind": "paragraph",
+            "text": "The Novablast EMP rifle adds a control option by temporarily incapacitating robots. Early encounters teach the stun behavior, the middle section combines melee and ranged enemies across two levels, and the final battle reuses the familiar central hall to test movement, target selection, and spatial knowledge together."
+          },
+          {
+            "kind": "paragraph",
+            "text": "Stage｜Space and Enemies｜Player Decision\nEarly Tutorial｜Compact room / Single threat｜Learn the EMP stun and establish the basic combat rule\nMid-Quest Combination｜Two-level hall / Melee + ranged robots｜Use elevation and cover to prioritize targets\nFinal Battle｜Reused central hall / R6D7 and robot reinforcements｜Combine weapons, movement, and route knowledge in familiar space"
+          },
+          {
+            "kind": "image",
+            "caption": "The vertical shaft changes traversal rhythm through lasers, elevation, and a return loop",
+            "src": "project1/images/vertical-shaft.jpg"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "04｜Making the Final Choice Change Characters and World State"
+          },
+          {
+            "kind": "paragraph",
+            "text": "I did not want “free the robots” to be an automatically correct answer, so both branches carry benefits and costs. Doctors, workers, mercenaries, and robots encountered earlier each present a different stake in the conflict, grounding the final decision in information and relationships accumulated throughout the quest."
+          },
+          {
+            "kind": "paragraph",
+            "text": "Final Choice｜Immediate Result｜Consequences\nDestroy R6D7 and restore production｜The robots are suppressed and the factory resumes operation｜Relations with the corporation and mercenaries improve, medicine production resumes, and the human patient survives\nFree the awakened robots｜The robots gain freedom and the factory shuts down｜The corporation and mercenaries become hostile, medicine supplies stop, and the human patient dies"
+          },
+          {
+            "kind": "image",
+            "caption": "The rooftop office uses sunset, long views, and elevation to stage the truth reveal",
+            "src": "project1/images/rooftop-reveal.jpg"
+          },
+          {
+            "kind": "image",
+            "caption": "The final conversation with R6D7 consolidates the quest's information into a consequential choice",
+            "src": "project1/images/final-choice.jpg"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Gameplay and Quest Implementation"
+          },
+          {
+            "kind": "paragraph",
+            "text": "I used the Creation Kit to build spaces, configure enemies, create objectives, author NPC dialogue, and manage level states. Papyrus scripts and Quest Stages control locks, terminals, factions, character behavior, final-battle triggers, and both endings. Aliases manage critical actors and quest objects so state remains consistent across locations."
+          },
+          {
+            "kind": "paragraph",
+            "text": "Implementation Area｜Delivered Content\nQuest Flow｜Objective updates / Quest Stages / Dialogue conditions / Two endings\nSpatial State｜Locks / Elevator / Three terminals / Hidden entrances\nCharacters and Combat｜NPC behavior / Faction hostility / Combat triggers / Boss battle\nPlayer Feedback｜Quest text / Signal lights / Observation windows / Cable guidance"
           },
           {
             "kind": "heading",
@@ -1401,7 +1572,16 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "Feedback｜Analysis｜Solution"
+            "text": "Finding｜Design Diagnosis｜Change｜Observed Result\nPlayers could not tell what a terminal changed｜The interaction and feedback target lacked a spatial relationship｜Reoriented terminals and added windows that reveal the elevator state change｜Players could understand the terminal–elevator relationship without relying on quest text\nThe full laser-platforming section demanded precise aerial control that did not fit Starfield's movement｜Difficulty came from control limitations rather than meaningful spatial decisions｜Reduced the platforming and retained lasers as local hazards and spatial constraints｜Reduced flow interruptions while preserving the vertical area's visual identity and movement variation\nThe initial hall was large but functioned mainly as a passage｜A high-cost core space was not contributing enough to progression｜Converted it into a hub revisited throughout the quest and reused for the final battle｜The hall now supports navigation, progress feedback, combat, and narrative"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Timeline"
+          },
+          {
+            "kind": "paragraph",
+            "text": "Level Design Pitch｜2026.02.20｜Established the theme, core gameplay, narrative framework, and development direction\nLevel Design Document｜2026.02.26｜Completed the LDD and defined flow, spatial layout, quest structure, and combat design\nWhitebox｜2026.03.09｜Validated spatial layout, player flow, and pacing\nInitial Gameplay｜2026.03.29｜Implemented core gameplay, quest scripts, and combat to produce a complete playable flow\nGameplay Complete｜2026.04.18｜Completed all level content and refined navigation, combat, and quest experience\nAesthetics｜2026.04.26｜Completed environment art, lighting, and presentation\nRTM｜2026.05.03｜Completed final polish, bug fixing, and delivery"
           },
           {
             "kind": "heading",
@@ -1410,15 +1590,15 @@ window.SITE_CONTENT_BY_LANGUAGE = {
           },
           {
             "kind": "paragraph",
-            "text": "What Went Well\n• The overall visual presentation was strong.\n• I attempted and implemented several new design ideas.\n• The level's vertical spatial structure was well designed.\n• I continuously refined the level flow based on milestone reviews and playtest feedback."
+            "text": "What Went Well\n• Independently completed an approximately 18-minute side quest containing interior and exterior exploration, combat, puzzles, NPC dialogue, and two endings.\n• Organized progression through a central hub and three functional zones, using spatial feedback to improve objective readability.\n• Implemented complete quest states, character behavior, and ending branches with the Creation Kit and Papyrus."
           },
           {
             "kind": "paragraph",
-            "text": "Even Better If\n• Communication with stakeholders, including instructors and producers, could have been stronger.\n• The laser-platforming gameplay did not perform as well as intended and should have received further polish if time allowed.\n• The narrative content was still insufficient.\n• Combat difficulty was too low and lacked challenge.\n• Parts of the flow still needed improvement.\n• The laser mechanic was not used to its full potential.\n• The exterior area was relatively underdeveloped.\n• The overall level quality still fell short of my expectations."
+            "text": "Even Better If\n• The exterior supports less gameplay than the interior; future whitebox testing should validate content density across every major zone earlier.\n• Combat difficulty and enemy combinations received insufficient focused testing; future projects should include encounter-specific sessions in addition to full-flow playtests.\n• Too much early development time went into platforming that did not fully match the base movement model; mechanic-to-controller fit should be validated earlier."
           },
           {
             "kind": "paragraph",
-            "text": "What I Learned\n• Proactively communicate with stakeholders and respond to feedback promptly.\n• Plan development time more effectively.\n• Gain a holistic command of the engine and tools as early as possible in a project.\n• Improve my ability to adapt to complex and unfamiliar development tools.\n• Commercial game engines and internal company tools are imperfect, and designers must learn to work with their limitations.\n• Complete a full level project according to a professional game-development pipeline.\n• Time and energy management are crucial to a project's success.\n• Design and refine level flow.\n• Find a balance between gameplay and believable architectural logic.\n• Build game narratives that are more complete, clearly structured, and supportive of gameplay."
+            "text": "What I Learned\n• A quest level is not a simple sum of space, narrative, and combat. Objectives, routes, information, and system feedback must work together to support the player's current understanding and decisions. Adding more content matters less than giving every space a clear function and allowing players to read the consequences of their actions from the environment itself."
           },
           {
             "kind": "heading",
