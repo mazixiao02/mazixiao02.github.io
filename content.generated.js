@@ -33,7 +33,7 @@ window.SITE_CONTENT_BY_LANGUAGE = {
         "type": "3D / 本地多人 / 竞速 / 类马里奥赛车",
         "role": "最终关卡 / 索道系统 / 镜头设计",
         "time": "12 周 / 42人团队",
-        "status": "Steam 商店页已公开",
+        "status": "已上线Steam商店",
         "statusUrl": "https://store.steampowered.com/app/4319370/Hamsterballin/",
         "statusLink": "前往 Steam 商店页",
         "caption": "▲ 通过持续迭代优化高速竞速中的导航、路线选择与观赏体验"
